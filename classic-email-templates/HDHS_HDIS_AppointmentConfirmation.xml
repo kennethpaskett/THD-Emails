@@ -1,0 +1,128 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<!--================================== START CSS SECTION **PLEASE DO NOT TOUCH** =================================================================-->
+
+<c:evfc_CSSEmailTemplates ></c:evfc_CSSEmailTemplates> 
+
+<!--================================== END CSS SECTION **PLEASE DO NOT TOUCH** =================================================================--> 
+  
+</head>
+
+<body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+        <!--[if !mso]><!-->
+        <tr>
+        <!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width: 100% !important; border-top-style: none; Margin: 0; padding:0;">
+                
+                <table class="wrapper" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 640px; border: none;">   
+<!--==================================================================START PREHEADER SECTION============================================================================== -->
+    
+<div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+    <c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01></div>
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+<div style="display:none; max-height:0px; overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+    
+<!--=====================================================================END PREHEADER SECTION============================================================================== -->
+    
+    
+
+<!-- ========================================^^^^^^^^^THE BELOW SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^======================================== -->    
+    
+    <tr>
+        <td bgcolor="#ffffff" valign="top">
+            <table class="mob_width94" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="Margin:0 auto; width:600px;">
+                <tr>
+                    <td align="center">
+                      <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
+<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
+
+                          
+                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <c:pvfc_ServiceDetails_HDIS logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get ready for your in-home consultation!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreCity__c}" imgPathFull="{!$Label.CX_LibraryHDHS_HDIS_AppointmentConfirmationHeroD}" imgPathMobile="{!$Label.CX_LibraryHDHS_HDIS_AppointmentConfirmationHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}"  Title="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.PhoneNumber__c}" SPNum2="{!relatedTo.StoreCity__c}" SPemail="{!relatedTo.RefString__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.AltPhone__c}"  custemail="{!relatedTo.ToEmail__c}"  jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.StoreName__c}"></c:pvfc_ServiceDetails_HDIS>
+                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                          
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re looking forward to learning more about your {!relatedTo.ProductName__c} project goals! You can review your appointment details and what to expect. There will be some important choices to make during your consultation, so please have a property owner present."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================--> 
+                          
+                        <!--===============NON GARAGE or CLOSET ORGANIZATION===================--> 
+                        <!--===============WHAT HAPPENS NEXT SECTION===================--> 
+                        <apex:outputText rendered="{!!(relatedTo.ProductName__c == 'Garage Organization' || relatedTo.ProductName__c == 'Closet Organization')}">
+                        <c:pvfc_WhatNext_08 BulletOneText="Ahead of your appointment, you can gather any ideas you may have for your project. You’ll want to budget around 60-90 minutes to discuss your project goals with your design consultant." BulletTwoText="On the day of your appointment, your consultant, {!relatedTo.SourceName__c}, will arrive wearing a Home Depot apron and badge. We want you to have peace of mind knowing we’ve background-checked anyone who may enter your home." BulletThreeText="Your design consultant will bring product samples and help you select the best products for your needs, style and budget. They will also walk you through the project process from start to finish, discuss financing options and provide a quote." WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>
+                        </apex:outputText>
+                        <!--===============/WHAT HAPPENS NEXT SECTION===================-->
+                        <!--===============/NON GARAGE or CLOSET ORGANIZATION===================-->
+
+                        <!--===============GARAGE or CLOSET ORGANIZATION PROJECT===================-->
+                        <!--===============WHAT HAPPENS NEXT SECTION===================--> 
+                        <apex:outputText rendered="{!relatedTo.ProductName__c == 'Garage Organization' || relatedTo.ProductName__c == 'Closet Organization'}">
+                        <c:pvfc_WhatNext_08 BulletOneText="Ahead of your appointment, you can gather any ideas you may have for your project. We included a few project guides below for inspiration. You'll also want to budget 60-90 minutes to discuss your project goals with your design consultant." BulletTwoText="On the day of your appointment, your consultant, {!relatedTo.SourceName__c}, will arrive wearing a Home Depot apron and badge. We want you to have peace of mind knowing we’ve background-checked anyone who may enter your home." BulletThreeText="Your design consultant will bring product samples and help you select the best products for your needs, style and budget. They will also walk you through the project process from start to finish, discuss financing options and provide a quote." WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>
+                        <!--===============/WHAT HAPPENS NEXT SECTION===================-->
+
+                        <!--===============PROJECT GUIDES SECTION===================-->
+                        <C:pvfc_LinkedBulletedListWithIcon_01 sectionHeaderText="Project Guides" headerDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" headerDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" itemOneIcon="{!$Label.CX_LibraryIconToolbelt}" itemOneText="Home Organization Services" itemOneLink="https://www.homedepot.com/services/c/home-organization/22ef3e97b" itemTwoIcon="{!$Label.CX_LibraryIconPricetag}" itemTwoText="Home Organization Cost Guide" itemTwoLink="https://www.homedepot.com/services/c/cost-install-custom-closet/22ef3e97b" itemThreeIcon="{!$Label.CX_LibraryIconClipboard}" itemThreeText="Home Organization Design Guide" itemThreeLink="https://online.fliphtml5.com/asnje/jmew/#p=1"></c:pvfc_LinkedBulletedListWithIcon_01>
+                        <!--===============/PROJECT GUIDES SECTION===================-->
+                        </apex:outputText>
+                        <!--===============/GARAGE or CLOSET ORGANIZATION===================--> 
+                    
+                        <!--===============WHY HOME DEPOT SECTION===================--> 
+                        <c:pvfc_ValueProps_03 ApplyNowURL="{!relatedTo.AltRefUrl__c}" affordableImg="{!$Label.CX_LibraryCoreAffordableIcon}" licensedImg="{!$Label.CX_LibraryCoreLicensedIcon}" blackhomedepotImg="{!$Label.CX_LibraryCoreBlackHomeDepotIcon}" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_03>
+                        <!--===============WHY HOME DEPOT SECTION===================-->
+                    
+
+                        <!--===============QUICK LINKS SECTION===================-->
+                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions> 
+                        <!--===============QUICK LINKS SECTION===================-->
+                          
+                        <!--===============FOOTER SECTION===================--> 
+                        <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
+                        <!--===============FOOTER SECTION===================-->
+
+                        <!--===============PIXEL TRACKING===================-->
+                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+                        <!--===============PIXEL TRACKING===================-->
+
+<!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>   
+<!-- =========================**********************NO CODING BELOW THIS LINE********************************=============================== -->                        
+</table>
+</td>
+<td class="hide-for-small">&zwnj;</td>
+</tr>
+</table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
