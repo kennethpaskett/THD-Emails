@@ -65,7 +65,7 @@
                                     <tr>
                                         <td valign="top" width="100%">
                                             <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                                style="margin: 0 auto;">
+                                                style="margin: 0;">
                                                 <tr>
                                                     <td class="mso_text" align="left" valign="top"
                                                         style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; width: 45px; max-width: 45px;"
