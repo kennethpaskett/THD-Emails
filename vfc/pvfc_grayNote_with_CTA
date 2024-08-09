@@ -1,0 +1,34 @@
+<apex:component access="global">
+  <apex:attribute name="headline" description="Headline" type="String" />
+  <apex:attribute name="copy" description="Copy" type="String" />
+  <apex:attribute name="ctaText" description="Call to action text" type="String" />
+  <apex:attribute name="ctaURL" description="Call to action URL" type="String" />
+  
+<!--================================== GRAY BOXED SECTION **PLEASE DO NOT TOUCH*** ===============================================================-->                                       
+                             <tr>
+                                <td bgcolor="#efefef" valign="top">
+                                    <table bgcolor="#efefef" class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width:600px;" width="600">
+                                        <tr><td height="15" style="height: 15px; mso-line-height-rule: exactly; line-height: 100%; font-size: 15px;">&nbsp;</td></tr>
+                                        <tr>
+                                            <td bgcolor="#efefef" valign="middle">
+                                                <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 560px;" width="560">
+                                                    <tr><td height="10" style="height: 10px; mso-line-height-rule: exactly; line-height: 100%; font-size: 10px;">&nbsp;</td></tr>
+                                                    <tr>
+                                                        <td class="mob_padB20" valign="top" width="500" style="width:500px;font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:18px; line-height: 22px; color:#000000; font-weight:bold; padding:0 0 0 20px; mso-padding-alt:0 0 0 17.5pt;">{!headline}<br/>
+                                                            
+                                                        <span style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:18px; line-height: 22px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">{!copy} <a href="{!ctaURL}">{!ctaText}</a></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr><td height="10" style="height: 10px; mso-line-height-rule: exactly; line-height: 100%; font-size: 10px;">&nbsp;</td></tr>
+                                                </table>
+                                            </td>
+                                        </tr> 
+                                        <tr><td height="15" style="height: 15px; mso-line-height-rule: exactly; line-height: 100%; font-size: 15px;">&nbsp;</td></tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td height="30" style="height: 30px; mso-line-height-rule: exactly; line-height: 100%; font-size: 30px;">&nbsp;</td></tr>
+
+<!--================================== /GRAY BOXED SECTION **PLEASE DO NOT TOUCH** =================================================================-->              
+
+</apex:component>
