@@ -1,7 +1,7 @@
 [
     {
-    "targetField": "RefString__c",
-    "sourceField": "RefString__c",
+    "targetField": "AltString__c",
+    "sourceField": "AltString__c",
     "sourceObject": "JRN",
     "required": "true"
     },
@@ -36,8 +36,8 @@
     "required": "true"
     },
     {
-    "targetField": "AltRefUrl__c",
-    "sourceField": "URLValue1__c",
+    "targetField": "RefString__c",
+    "sourceField": "RefString__c",
     "sourceObject": "JRN",
     "required": "true"
     },
