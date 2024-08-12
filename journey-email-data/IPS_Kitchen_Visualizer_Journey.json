@@ -1,164 +1,50 @@
 [
-{
-"targetField": "RefPhone__c",
-"sourceField": "Stage__c",
-"sourceObject": "JRN",
-"required": "true"
-},
-{
-"targetField": "AltPhone__c",
-"sourceField": "Stage__c",
-"sourceObject": "JRN",
-"required": "true"
-},
-{
-"targetField": "RefString__c",
-"sourceField": "RefString__c",
-"sourceObject": "JRN",
-"required": "true"
-},
-{
-"targetField": "FirstName__c",
-"sourceField": "Account.FirstName",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "LastName__c",
-"sourceField": "Account.LastName",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "AltDate__c",
-"sourceField": "HDMS_Measure_Date__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "RefDate__c",
-"sourceField": "HDMS_Measure_Date__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "Street__c",
-"sourceField": "Account.PersonMailingStreet",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "City__c",
-"sourceField": "Account.PersonMailingCity",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "State__c",
-"sourceField": "Account.PersonMailingState",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "Zipcode__c",
-"sourceField": "Account.PersonMailingPostalCode",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "DocumentNo__c",
-"sourceField": "HDMS_Measure_Number__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "RefNumber__c",
-"sourceField": "COM_Measure_Order_Number__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "Amount__c",
-"sourceField": "CreditMeasurePrice__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "TotalAmount__c",
-"sourceField": "MeasureFeeTax__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "PhoneNumber__c",
-"sourceField": "Customer_Phone_Formatted__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "StoreName__c",
-"sourceField": "Referral_Store__r.name",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "StoreStreet__c",
-"sourceField": "Referral_Store__r.Street__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "StoreCity__c",
-"sourceField": "Referral_Store__r.city__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "StoreState__c",
-"sourceField": "Referral_Store__r.state__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "StoreZipcode__c",
-"sourceField": "Referral_Store__r.Postal_Code__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "StorePhone__c",
-"sourceField": "Referral_Store__r.Phone__c",
-"sourceObject": "BO",
-"required": "false"
-},
-{
-"targetField": "Name",
-"sourceField": "Id",
-"sourceObject": "BO",
-"required": "true"
-},
-{
-"targetField": "ToEmail__c",
-"sourceField": "Lead_Email__c",
-"sourceObject": "BO",
-"required": "true"
-},
-{
-"targetField": "TemplateCode__c",
-"sourceField": "TemplateCode__c",
-"sourceObject": "JRN",
-"required": "true"
-},
-{
-"targetField": "Title__c",
-"sourceField": "EmailSubject__c",
-"sourceObject": "JRN",
-"required": "true"
-},
-{
-"targetField": "Journey__c",
-"sourceField": "Id",
-"sourceObject": "JRN",
-"required": "true"
-}
-]
+    {
+    "targetField": "RefString__c",
+    "sourceField": "RefString__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "TemplateCode__c",
+    "sourceField": "TemplateCode__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "Title__c",
+    "sourceField": "EmailSubject__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "Journey__c",
+    "sourceField": "Id",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "ToEmail__c",
+    "sourceField": "Lead_Email__c",
+    "sourceObject": "BO",
+    "required": "true"
+    },
+    {
+    "targetField": "RefURL__c",
+    "sourceField": "Configurator_Link__c",
+    "sourceObject": "BO",
+    "required": "true"
+    },
+    {
+    "targetField": "AltRefUrl__c",
+    "sourceField": "URLValue1__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "AltRefUrl2__c",
+    "sourceField": "URLValue__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    }
+    ]

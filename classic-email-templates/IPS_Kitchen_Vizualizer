@@ -1,4 +1,4 @@
-<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
+<messaging:emailTemplate subject="{!relatedTo.Title__c}" relatedToType="hms_EmailData__c" recipientType="Lead" > 
 <messaging:htmlEmailBody >
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -71,7 +71,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                     <!--================= /GREETING SECTION =================-->
 
                     <!--================= VIEW IMAGE BUTTON SECTION =================--> 
-                        <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.configurator_link__c}" buttonImg="{!$Label.CX_LibraryBtnOrangeViewImages}" ></c:pvfc_ReviewPayButton_01>
+                        <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.RefURL__c}" buttonImg="{!$Label.CX_LibraryBtnOrangeViewImages}" ></c:pvfc_ReviewPayButton_01>
                     <!--================= /VIEW IMAGE BUTTON SECTION =================--> 
 
                     <!--================= NEXT STEPS SECTION ===================-->   
@@ -101,11 +101,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         </tr>
                         <!-- ===== /CUSTOM CODE FOR EMAIL SPECIFIC ===== -->
 
-                        <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.survey_link__c}" buttonImg="{!$Label.CX_LibraryBtnOutlineOrangeTakeSurvey}" ></c:pvfc_ReviewPayButton_01>
+                        <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.AltRefUrl__c}" buttonImg="{!$Label.CX_LibraryBtnOutlineOrangeTakeSurvey}" ></c:pvfc_ReviewPayButton_01>
                     <!--================= /NEXT STEPS SECTION ===================-->
 
                     <!--================= SCHEDULE CONSULTATION SECTION ===================-->  
-                        <c:pvfc_grayNote_with_CTA_01 headline="Ready to get started?" copy=" Discuss your project with a Home Depot kitchen expert during a free consultation." ctaText="Schedule Free Consultation" ctaURL="{!relatedTo.consultaion_link__c}" ></c:pvfc_grayNote_with_CTA_01>
+                        <c:pvfc_grayNote_with_CTA_01 headline="Ready to get started?" copy=" Discuss your project with a Home Depot kitchen expert during a free consultation." ctaText="Schedule Free Consultation" ctaURL="{!relatedTo.AltRefUrl2__c}" ></c:pvfc_grayNote_with_CTA_01>
                     <!--================= /SCHEDULE CONSULTATION SECTION ===================-->  
 
                     
