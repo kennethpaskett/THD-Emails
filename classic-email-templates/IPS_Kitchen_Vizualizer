@@ -101,7 +101,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         </tr>
                         <!-- ===== /CUSTOM CODE FOR EMAIL SPECIFIC ===== -->
 
-                        <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.AltRefUrl__c}" buttonImg="{!$Label.CX_LibraryBtnOutlineOrangeTakeSurvey}" ></c:pvfc_ReviewPayButton_01>
+                        <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.RefString__c}" buttonImg="{!$Label.CX_LibraryBtnOutlineOrangeTakeSurvey}" ></c:pvfc_ReviewPayButton_01>
                     <!--================= /NEXT STEPS SECTION ===================-->
 
                     <!--================= SCHEDULE CONSULTATION SECTION ===================-->  
