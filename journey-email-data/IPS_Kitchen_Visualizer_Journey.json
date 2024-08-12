@@ -1,0 +1,50 @@
+[
+    {
+    "targetField": "RefString__c",
+    "sourceField": "RefString__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "TemplateCode__c",
+    "sourceField": "TemplateCode__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "Title__c",
+    "sourceField": "EmailSubject__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "Journey__c",
+    "sourceField": "Id",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "ToEmail__c",
+    "sourceField": "Lead_Email__c",
+    "sourceObject": "BO",
+    "required": "true"
+    },
+    {
+    "targetField": "RefURL__c",
+    "sourceField": "Configurator_Link__c",
+    "sourceObject": "BO",
+    "required": "true"
+    },
+    {
+    "targetField": "AltRefUrl__c",
+    "sourceField": "URLValue1__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    },
+    {
+    "targetField": "AltRefUrl2__c",
+    "sourceField": "URLValue__c",
+    "sourceObject": "JRN",
+    "required": "true"
+    }
+    ]
