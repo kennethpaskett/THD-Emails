@@ -1,0 +1,115 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<!--================================== START CSS SECTION **PLEASE DO NOT TOUCH** =================================================================-->
+
+<c:evfc_CSSEmailTemplates ></c:evfc_CSSEmailTemplates> 
+
+<!--================================== END CSS SECTION **PLEASE DO NOT TOUCH** =================================================================--> 
+  
+</head>
+
+<body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+        <!--[if !mso]><!-->
+        <tr>
+        <!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width: 100% !important; border-top-style: none; Margin: 0; padding:0;">
+                
+                <table class="wrapper" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 640px; border: none;">   
+<!--==================================================================START PREHEADER SECTION============================================================================== -->
+    
+<div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+    <c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01></div>
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+<div style="display:none; max-height:0px; overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+    
+<!--=====================================================================END PREHEADER SECTION============================================================================== -->
+    
+    
+
+<!-- ========================================^^^^^^^^^THE BELOW SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^======================================== -->    
+    
+    <tr>
+        <td bgcolor="#ffffff" valign="top">
+            <table class="mob_width94" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="Margin:0 auto; width:600px;">
+                <tr>
+                    <td align="center">
+                      <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
+<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
+
+                        <!--===============HEADER SECTION===================-->
+                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Schedule your free in-home consultation today!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryHVACServiceHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <!--===============HEADER SECTION===================-->
+                          
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Still interested in HVAC services? Give us a call to schedule your free in-home consultation! We’re here to answer your questions and assess your needs. During your consultation, our authorized local service provider will determine the best system for your home and needs and provide a free estimate."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        
+                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <c:pvfc_HDIS_Call_Now_02 YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}" URLCopy="HVAC Installation & Replacement at The Home Depot" URLLink="{!relatedTo.RefURL__c}" TextCopy="Learn more about our fast, reliable HVAC Services:" OrangeBannerD="{!$Label.CX_LibraryCoreOrangePaintBanner2}" OrangeBannerM="{!$Label.CX_LibraryCoreOrangePaintBanner2}" PhoneIcon="{!$Label.CX_LibraryWhitePhoneIcon}" BannerNumber1="{!relatedTo.PhoneNumber__c}"></c:pvfc_HDIS_Call_Now_02>
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+                        
+                        <!--===============TAKE ADVANTAGE SECTION===================--> 
+                        <c:pvfc_Take_Advantage_1Row_V3 OfferPromoImageD="{!$Label.CX_LibraryHVACPromoHeroD}" TagCopy="Take Advantage of a Great Deal!" OfferPromoImageM="{!$Label.CX_LibraryHVACPromoHeroM}" TagIcon="{!$Label.CX_LibraryCouponIconOrange}" OfferHeaderText="{!relatedTo.RefString__c}" OfferHeaderText2="{!relatedTo.StoreStreet__c}" OfferDescText="{!relatedTo.LongText__c}" SeeDetails="{!relatedTo.AltRefUrl__c}" SeeDetailsCopy="See Details"></c:pvfc_Take_Advantage_1Row_V3>
+                        <!--===============TAKE ADVANTAGE SECTION===================--> 
+                        
+                        <!--===============WHY HOME DEPOT SECTION===================--> 
+                        <c:pvfc_ValueProps_05 ApplyNowURL="{!$Label.HVACApplyNowURL}" iconOne="{!$Label.CX_LibraryLicensedIcon}" iconOneHeader="Trusted Professionals" iconOneDescription="The Home Depot's local heating and cooling professionals are licensed, insured and background checked for your peace of mind." iconTwo="{!$Label.CX_LibraryLightingBoltIcon}" iconTwoHeader="Fast Response" iconTwoDescription="Get a fast response from an approved Home Depot provider so your HVAC is up and running again ASAP. 24/7 emergency service is available in most locations." iconThree="{!$Label.CX_LibraryOrangeThumbsUp}" iconThreeHeader="Quality Work Guaranteed" iconThreeDescription="We back all our heating and cooling installations with a one-year warranty, and our repairs and tune-up services with a 90-day guarantee." iconFour="{!$Label.CX_LibraryCoreAffordableIconOrange}" iconFourHeader="Affordable Financing" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" iconFourDescription="We offer a wide range of affordable financing options, including The Home Depot Consumer Credit Card and The Home Depot Project Loan." WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_05>
+                        <!--===============WHY HOME DEPOT SECTION===================-->  
+                        
+                        <!--===============QUICK LINKS SECTION===================-->
+                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="HVAC Installation" ql_03_URL="https://www.homedepot.com/services/c/hvac-installation/c16fbb4b7" ql_04_copy="HVAC Repair" ql_04_URL="https://www.homedepot.com/services/c/hvac-repair-b/673dcc2c8" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
+                        <!--===============QUICK LINKS SECTION===================-->
+               
+                        <!--===============FOOTER SECTION===================--> 
+                        <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
+                        <!--===============FOOTER SECTION===================-->
+
+                        <!--===============PIXEL TRACKING===================-->
+                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+                        <!--===============PIXEL TRACKING===================-->
+
+<!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>   
+<!-- =========================**********************NO CODING BELOW THIS LINE********************************=============================== -->                        
+</table>
+</td>
+<td class="hide-for-small">&zwnj;</td>
+</tr>
+</table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
