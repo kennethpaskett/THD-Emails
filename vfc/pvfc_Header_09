@@ -1,15 +1,13 @@
 <apex:component access="global">
+  <apex:attribute name="logoLink" description="Logo image URL" type="String" />
+  <apex:attribute name="imgLogo" description="Path for the home depot logo" type="String" />
+  <apex:attribute name="phoneIcon" description="path to phone icon" type="String" />
   <apex:attribute name="phoneNum1" description="Phone number" type="String" />
   <apex:attribute name="phoneNum2" description="Phone number" type="String" />  
-  <apex:attribute name="phoneIcon" description="path to phone icon" type="String" />
-  <apex:attribute name="imgLogo" description="Path for the home depot logo" type="String" />
-  <apex:attribute name="imgPathFull" description="Path for the hero image, full-size" type="String" />
-  <apex:attribute name="imgPathMobile" description="Path for the hero image, mobile-size" type="String" />
   <apex:attribute name="imgPathDivider" description="Path for the divider image, desktop/mobile-size" type="String" />
   <apex:attribute name="titleCopy" description="Title headline" type="String" />
-  <apex:attribute name="heroLink" description="Hero image URL" type="String" />
-  <apex:attribute name="logoLink" description="Logo image URL" type="String" />
-  <apex:attribute name="TestNum" description="Phone number" type="String" />
+  <apex:attribute name="imgPathFull" description="Path for the hero image, full-size" type="String" />
+
      
 
 <!--================================== START HEADER/HERO SECTION **PLEASE DO NOT TOUCH** =====================================================================-->
