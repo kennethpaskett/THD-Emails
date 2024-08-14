@@ -9,99 +9,63 @@
 <!--========================================= START SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** =======================================================================-->
 <tr>
     <td valign="top">
-        <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
+        <table class="wrapper" align="left" border="0" cellpadding="0" cellspacing="0"
             style="Margin: 0 auto; width:600px;" width="600">
             <tr>
-                <td valign="top">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto" width="600">
+                <td>
+                    <table class="wrapper" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto; width:600px;">
                         <tr>
-                            <th class="mob_stack" valign="top">
-                                <table align="Left" border="0" cellpadding="0" cellspacing="0"
-                                    style="Margin: 0 auto; width: 300px;">
-                                    <tr>
-                                        <td class="mso_text" align="center" valign="top"
-                                            style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:22px; line-height: 28px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
-                                            Action Requested</td>
-                                    </tr>
-                                    <tr>
-                                        <td height="5"
-                                            style="height: 5px; mso-line-height-rule: exactly; line-height: 100%; font-size: 5px;">
-                                            &nbsp;
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="hide" valign="top"><img src="{!SignAndPayDivider}" width="295"
-                                                style="width: 295px; height: 3px;" height="3" class="fluid" />
-                                        </th>
-                                    </tr>
-                                    <!--[if !mso]><!-- -->
-                                    <tr style="max-height: 0px; overflow: hidden;display:none;float:left;" class="show">
-                                        <th valign="top"><img src="{!SignAndPayDividerM}" style=" height: 3px;"
-                                                height="3" class="fluid" />
-                                        </th>
-                                    </tr>
-                                    <!--<![endif]-->
-                                    <tr>
-                                        <td height="15"
-                                            style="height: 15px; mso-line-height-rule: exactly; line-height: 100%; font-size: 15px;">
-                                            &nbsp;
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-size: 20; font-weight: bolder">
-                                        Balance:
-                                        <apex:outputText value="{0,number, $###,##0.00}">
-                                                <apex:param value="{!totalAmt}" />
-                                            </apex:outputText>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="20"
-                                            style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">
-                                            &nbsp;
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="{!$Label.Customer_Community_URL}"> <img src="{!SignAndPayButton}" /></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">
-                                            &nbsp;
-                                        </td>
-                                    </tr>
-                                </table>
-                            </th>
-                            <th class="mob_stack" valign="top">
-                                <table align="Left" border="0" cellpadding="0" cellspacing="0"
-                                    style="Margin: 0 auto; width: 300px;">
-                                    <td>
-                                        <table align="Left" border="0" cellpadding="0" cellspacing="0"
-                                            style="Margin: 0 auto; width:285px;">
-                                            <td class="hide" align="left" valign="top"
-                                                style="font-family:Arial, Helvetica, sans-serif; text-align:right; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; width:285px"
-                                                width="285"><img src="{!CoreSignAndPayBodyD}" width="285"
-                                                    style="width:285px;" />
-                                            </td>
-
-                                            <!--[if !mso]-->
-                                            <td style="max-height: 0px; overflow: hidden;display:none;float:left;"
-                                                class="show" valign="top"><img src="{!CoreSignAndPayBodyM}" />
-                                            </td>
-                                            <!--{end if}-->
-                                        </table>
-                                    </td>
-                                </table>
-                            </th>
+                            <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:22px; line-height: 28px; color:#000000; font-weight:normal; white-space: nowrap; border-bottom: 3px solid #f96302; padding:0 0 5px 0;">
+                                Action&nbsp;Requested
+                            </td>
+                            <td style="border-bottom: 1px solid #999999; width: 100%;"></td>
+                        </tr>
+                        <tr>
+                            <td height="15" style="height: 15px; line-height: 15px; font-size: 15px;">&nbsp;</td>
                         </tr>
                     </table>
                 </td>
             </tr>
             <tr>
-                <td height="25"
-                    style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                <td style="font-size: 20; font-weight: bolder">
+                Balance:
+                <apex:outputText value="{0,number, $###,##0.00}">
+                        <apex:param value="{!totalAmt}" />
+                    </apex:outputText>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td height="20"
+                    style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:240px;">
+                        <tr>
+                            <td align="center" bgcolor="#F96302" style="padding: 0;">
+                            <!--[if mso]>
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{!$Label.Customer_Community_URL}" style="height:40px;v-text-anchor:middle;width:240px;" strokecolor="#C14C00" fillcolor="#F96302">
+                                <w:anchorlock/>
+                                <center style="color:#FFFFFF;font-family:Arial,sans-serif;font-size:16px;">Review and Pay</center>
+                            </v:rect>
+                            <![endif]-->
+                            
+                            <!--[if !mso]><!-- -->
+                            <a href="{!$Label.Customer_Community_URL}" target="_blank" style="font-size: 16px; font-family: Arial, sans-serif; color: #FFFFFF; text-decoration: none; width: 100%; max-width: 220px; padding: 8px 10px 6px; display: block; border-bottom: 5px solid #C14C00; background-color:#F96302; text-align:center;">
+                                Review and Pay
+                            </a>
+                            <!--<![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">
+                    &nbsp;
                 </td>
             </tr>
         </table>
