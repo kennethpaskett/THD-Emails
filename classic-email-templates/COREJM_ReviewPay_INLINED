@@ -64,8 +64,15 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
 
                         <!--===============HEADER SECTION===================-->
-                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
-                        <c:pvfc_Header_08 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="You have a new payment request!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryCoreSignAndPayHeroD}" imgPathMobile="{!$Label.CX_LibraryCoreSignAndPayHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_08>
+                        <c:pvfc_Header_09
+                            logoLink="https://www.homedepot.com/services/"
+                            imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}"
+                            phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}"
+                            phoneNum1="{!relatedTo.RefPhone__c}"
+                            imgPathDivider="{!$Label.CX_LibraryCTQDivider}"
+                            titleCopy="You have a new payment request!"
+                            imgPathFull="{!$Label.CX_LibraryCoreSignAndPayHeroD}" >
+                        </c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
@@ -76,8 +83,12 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <c:pvfc_ServiceDetails_06 SignAndPayDivider="{!$Label.CX_LibraryCoreSignAndPayDividerD}" SignAndPayDividerM="{!$Label.CX_LibraryCoreSignAndPayDividerM}" CoreSignAndPayBodyD="{!$Label.CX_LibraryCoreSignAndPayRequestD}" CoreSignAndPayBodyM="{!$Label.CX_LibraryCoreSignAndPayRequestM}"  SignAndPayButton="{!$Label.CX_LibraryCoreReviewPayButton}" totalAmt="{!relatedTo.Amount__c}"></c:pvfc_ServiceDetails_06>
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
 
+                        <tr>
+                            <td align="center" class="mso_text" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;"><b>If you would like to pay by phone or have questions, call your service provider, {!relatedTo.SourceName__c}: <a class="a2" href="tel:{!relatedTo.RefPhone__c}">{!relatedTo.RefPhone__c}</a></b></td>
+                        </tr>
+
                         <!--===============WHAT NEXT SECTION===================--> 
-                        <c:pvfc_WhatNext_07 bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}" bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}" bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" SPName="{!relatedTo.SourceName__c}" QuestionNumber="{!relatedTo.RefPhone__c}"  BulletOneText="Click the link above to review your quote and pay." BulletTwoText="Once you've paid, we'll email a copy of your receipt." BulletThreeText="Your Service Provider will follow up with you regarding any next steps." ></c:pvfc_WhatNext_07>  
+                        <c:pvfc_WhatNext_08 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" BulletOneText="Click the link above to review your quote and pay." BulletTwoText="Once you've paid, we'll email a copy of your receipt." BulletThreeText="Your Service Provider will follow up with you regarding any next steps." ></c:pvfc_WhatNext_08>  
                         <!--===============WHAT NEXT SECTION===================--> 
 
                         <!--===============QUICK LINKS SECTION===================-->

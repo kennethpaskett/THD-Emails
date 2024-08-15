@@ -73,13 +73,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============SCHEDULE APPOINTMENT SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_06 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Find your appointment details listed below, along with your service provider's contact information. " phoneNum1="{!relatedTo.StoreName__c}" phoneNum2="{!relatedTo.StorePhone__c}"></c:pvfc_Greeting_06>
+                        <c:pvfc_Greeting_06 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Please review your appointment details and your service provider's contact information." phoneNum1="{!relatedTo.StoreName__c}" phoneNum2="{!relatedTo.StorePhone__c}"></c:pvfc_Greeting_06>
                         <!--===============GREETING SECTION===================-->    
                           
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                        
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
                         <c:pvfc_ServiceDetails_03 ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.PhoneNumber__c}" SPNum2="{!relatedTo.StorePhone__c}" SPemail="{!relatedTo.BranchName__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.DocumentNo__c}"  custemail="{!relatedTo.ToEmail__c}"></c:pvfc_ServiceDetails_03>
-
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                           
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 
