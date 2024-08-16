@@ -1,0 +1,245 @@
+<apex:component access="global">
+    <apex:attribute name="sectionHeader" description="Section header" type="string" />
+
+    <apex:attribute name="area1icon" description="1st area icon" type="String" />
+    <apex:attribute name="area1Header" description="1st area header" type="String" />
+    <apex:attribute name="area1BodyCopy" description="1st area body copy" type="String" />
+    <apex:attribute name="area1CTA" description="1st area Call to Action" type="String" />
+    <apex:attribute name="area1URL" description="1st area Call to Action's URL" type="String" />
+
+    <apex:attribute name="area2icon" description="2nd area icon" type="String" />
+    <apex:attribute name="area2Header" description="2nd area Headline" type="String" />
+    <apex:attribute name="area2BodyCopy" description="2nd area body copy" type="String" />
+    <apex:attribute name="area2CTA" description="2nd area Call to Action" type="String" />
+    <apex:attribute name="area2URL" description="2nd area Call to Action's URL" type="String" />
+
+    <apex:attribute name="area3icon" description="3rd area icon" type="String" />
+    <apex:attribute name="area3Header" description="3rd area Headline" type="String" />
+    <apex:attribute name="area3BodyCopy" description="3rd area body copy" type="String" />
+    <apex:attribute name="area3CTA" description="3rd area Call to Action" type="String" />
+    <apex:attribute name="area3URL" description="3rd area Call to Action's URL" type="String" />
+
+    <apex:attribute name="area4icon" description="4th area icon" type="String" />
+    <apex:attribute name="area4Header" description="4th area Headline" type="String" />
+    <apex:attribute name="area4BodyCopy" description="4th area body copy" type="String" />
+    <apex:attribute name="area4CTA" description="4th area Call to Action" type="String" />
+    <apex:attribute name="area4URL" description="4th area Call to Action's URL" type="String" />
+
+<!--================================== START INSTALLERS DETAILS **PLEASE DO NOT TOUCH** =================================================================-->                                       
+                             <tr>
+                                <td valign="top">
+                                     
+                                    <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:600px;" width="600">       
+                                        <tr>
+                                            <c:pvfc_SectionHeader headline="{!sectionHeader}" />
+                                        </tr>
+                                        <tr>
+                                            <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 25px; font-size: 25px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 600px;" width="600">
+                                                    <tr>
+                                                        <th class="mob_stack" valign="top">
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 300px;">
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table class="wrapper" align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto;">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; width: 35px; max-width: 35px;" width="35">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 35px; max-width: 35px;" width="35">
+                                                                                        <tr>
+                                                                                            <td class="mob_width26" valign="top">
+                                                                                                <img src="{!area1icon}" class="mob_width26" width="26" style="width: 26px; max-width: 26px;"/>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                                <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:20px; line-height: 24px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0; letter-spacing: -1px; ">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 265px; text-align:left;" width="265">
+                                                                                        <tr>
+                                                                                            <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:20px; line-height: 24px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0; letter-spacing: -1px;"><b>{!area1Header}</b></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="8" style="height: 8px; mso-line-height-rule: exactly; line-height: 8px; font-size: 8px;">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 290px;" width="290">
+                                                                            <tr>
+                                                                                <td class="mob_padB20" align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:18px; line-height: 22px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">{!area1BodyCopy}<apex:outputtext rendered="{!AND(area1CTA != '' && area1URL != '')}">
+                                                                                    <br></br>
+                                                                                    <a href="{!area1URL}" target="_blank" class="a2" style="display: block;"><span style="display: block;">{!area1CTA}</span></a> 
+                                                                                </apex:outputtext>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </th>
+                                                        <th class="mob_stack" valign="top" width="280" style="width: 280px;">
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 280px;" width="280">
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto;">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; width: 35px; max-width: 35px;" width="35">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 35px; max-width: 35px;" width="35">
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mob_width26">
+                                                                                                <img src="{!area2icon}" class="mob_width26" width="26" style="width: 26px; max-width: 26px;"/>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                                <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:20px; line-height: 24px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0; letter-spacing: -1px;">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 265px; text-align:left;" width="265">
+                                                                                        <tr>
+                                                                                            <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:20px; line-height: 24px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0; letter-spacing: -1px;"><b>{!area2Header}</b></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="8" style="height: 8px; mso-line-height-rule: exactly; line-height: 8px; font-size: 8px;">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="mob_padB20" valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 280px;" width="280">
+                                                                            <tr>
+                                                                                <td class="mob_padB20" align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:18px; line-height: 22px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">{!area2BodyCopy}<apex:outputtext rendered="{!AND(area2CTA != '' && area2URL != '')}">
+                                                                                    <br></br>
+                                                                                    <a href="{!area2URL}" target="_blank" class="a2" style="display: block;"><span style="display: block;">{!area2CTA}</span></a> 
+                                                                                </apex:outputtext>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hide" height="40" style="height: 40px; mso-line-height-rule: exactly; line-height: 40px; font-size: 40px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 600px;" width="600">
+                                                    <tr>
+                                                        <th valign="top" class="mob_stack">
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 300px;" width="300">
+                                                                <tr><td class="hide" height="10" style="height: 10px; mso-line-height-rule: exactly; line-height: 10px; font-size: 10px;">&nbsp;</td></tr>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto;">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; width: 35px; max-width: 35px;" width="35">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 35px; max-width: 35px;" width="35">
+                                                                                        <tr>
+                                                                                            <td class="mob_width26" valign="top">
+                                                                                                <img src="{!area3icon}" class="mob_width26" width="26" style="width: 26px; max-width: 26px;"/>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                                <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:20px; line-height: 24px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0; letter-spacing: -1px; ">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 265px; text-align:left;" width="265">
+                                                                                        <tr>
+                                                                                            <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:20px; line-height: 24px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0; letter-spacing: -1px;"><b>{!area3Header}</b></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="8" style="height: 8px; mso-line-height-rule: exactly; line-height: 8px; font-size: 8px;">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="mob_padB20" valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 290px;" width="290">
+                                                                            <tr>
+                                                                                <td class="mso_text" align="center" valign="top" style="font-family:Tahoma,Arial, Helvetica, sans-serif; text-align:left; font-size:18px; line-height: 22px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">{!area3BodyCopy}<apex:outputtext rendered="{!AND(area3CTA != '' && area3URL != '')}">
+                                                                                    <br></br>
+                                                                                    <a href="{!area3URL}" target="_blank" class="a2" style="display: block;"><span style="display: block;">{!area3CTA}</span></a> 
+                                                                                </apex:outputtext>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </th>
+                                                        <th class="mob_stack" valign="top">
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 290px;">
+                                                                <apex:outputtext rendered="{!AND(area4Header != '', area4BodyCopy != '')}"> <!--Only display grid content if header and description are available-->
+                                                                <tr>
+                                                                    <td height="10" style="height: 10px; mso-line-height-rule: exactly; line-height: 10px; font-size: 10px;">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="mob_padT20" valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto;">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; width: 35px; max-width: 35px;" width="35">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 35px; max-width: 35px;" width="35">
+                                                                                        <tr>
+                                                                                            <td class="mob_width26" valign="top">
+                                                                                                <img src="{!area4icon}" class="mob_width26" width="26" style="width: 26px; max-width: 26px;"/>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                                <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:20px; line-height: 24px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0; letter-spacing: -1px; ">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 265px; text-align:left;" width="265">
+                                                                                        <tr>
+                                                                                            <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:20px; line-height: 24px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0; letter-spacing: -1px;"><b>{!area4Header}</b></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="8" style="height: 8px; mso-line-height-rule: exactly; line-height: 8px; font-size: 8px;">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 280px;" width="280">
+                                                                            <tr>
+                                                                                <td class="mso_text" align="center" valign="top" style="font-family:Tahoma,Arial, Helvetica, sans-serif; text-align:left; font-size:18px; line-height: 22px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">{!area4BodyCopy}<apex:outputtext rendered="{!AND(area4CTA != '' && area4URL != '')}">
+                                                                                    <br></br>
+                                                                                    <a href="{!area4URL}" target="_blank" class="a2" style="display: block;"><span style="display: block;">{!area4CTA}</span></a> 
+                                                                                </apex:outputtext>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                </apex:outputtext>
+                                                            </table>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+<!--================================== END INSTALLERS DETAILS **PLEASE DO NOT TOUCH** =================================================================-->              
+
+</apex:component>
