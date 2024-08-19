@@ -81,7 +81,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--=============== /NEED HELP SECTION ===================--> 
                           
                         <!--=============== WHAT NEXT SECTION ===================--> 
-                        <c:pvfc_WhatNext_08 BulletOneText="Our service provider will call to schedule a time to come to your home to collect precise measurements and other information which will facilitate your design and full project quote." BulletTwoText="You will be asked if you prefer to work with a virtual or in-store designer.." BulletThreeText="After your measure, a designer from Home Depot will reach out within 3-5 business days to schedule your first design appointment either in-store or virtually, based on your preference." WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>  
+                        <c:pvfc_WhatNext_08 BulletOneText="Our service provider will call to schedule a time to come to your home to collect precise measurements and other information which will facilitate your design and full project quote." BulletTwoText="You will be asked if you prefer to work with a virtual or in-store designer." BulletThreeText="After your measure, a designer from Home Depot will reach out within 3-5 business days to schedule your first design appointment either in-store or virtually, based on your preference." WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>  
                         <!--=============== /WHAT NEXT SECTION ===================-->
                         
                         <!--=============== WHY HOME DEPOT SECTION ===================--> 
@@ -102,7 +102,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--=============== /WHY HOME DEPOT SECTION ===================-->
                        
                         <!--=============== QUICK LINKS SECTION ===================-->
-                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Kitchen Design Services" ql_03_URL="https://www.homedepot.com/services/c/kitchen-design/01575162c?vfrom=search-results&hp=" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
+                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Kitchen Design Services" ql_03_URL="https://www.homedepot.com/services/c/kitchen-design/01575162c?vfrom=search-results&hp=?cm_mmc=hd_email-_-cc_SiteAnalysis_KDPage  " custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
                         <!--=============== /QUICK LINKS SECTION ===================-->
                           
                           
