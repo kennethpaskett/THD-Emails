@@ -80,7 +80,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================-->
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                        <c:pvfc_ServiceDetails_06 SignAndPayDivider="{!$Label.CX_LibraryCoreSignAndPayDividerD}" SignAndPayDividerM="{!$Label.CX_LibraryCoreSignAndPayDividerM}" CoreSignAndPayBodyD="{!$Label.CX_LibraryCoreSignAndPayRequestD}" CoreSignAndPayBodyM="{!$Label.CX_LibraryCoreSignAndPayRequestM}"  SignAndPayButton="{!$Label.CX_LibraryCoreReviewSignButton}" totalAmt="{!relatedTo.Amount__c}"></c:pvfc_ServiceDetails_06>
+                        <c:pvfc_ServiceDetails_06 SignAndPayDivider="{!$Label.CX_LibraryCoreSignAndPayDividerD}" SignAndPayDividerM="{!$Label.CX_LibraryCoreSignAndPayDividerM}" CoreSignAndPayBodyD="{!$Label.CX_LibraryCoreSignAndPayRequestD}" CoreSignAndPayBodyM="{!$Label.CX_LibraryCoreSignAndPayRequestM}"  SignAndPayButton="Review and Sign" totalAmt="{!relatedTo.Amount__c}"></c:pvfc_ServiceDetails_06>
                         <!--===============SERVICE AND CUSTOMER SECTION===================-->
 
                         <tr>
