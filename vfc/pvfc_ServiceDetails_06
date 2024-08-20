@@ -42,17 +42,10 @@
                         &nbsp;
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse: separate; width: 100%; max-width: 240px;">
-                            <tr>
-                                <td align="center" valign="middle" style="border: 0; mso-border-alt: 1px solid #F96302; border-bottom: 5px solid #C14C00; mso-border-bottom-alt: 5px solid #C14C00; background-color: #F96302; font-family: arial, sans-serif; font-size: 16px; line-height: 1; mso-line-height-alt: 16px; color: #ffffff;">
-                                    <a href="{!$Label.Customer_Community_URL}" style="display: inline-block; color: #ffffff; text-decoration: none; text-align: center; padding: 13px 20px 11px; mso-padding-alt: 11px; mso-border-alt: 1px solid #F96302; width: 100%; max-width: 200px;"><!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]-->Review and Pay<!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]--></a>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+
+                <c:pvfc_buttonLink position="center" style="primary" ctaText="Review and Pay" ctaURL="{!$Label.Customer_Community_URL}">
+                </c:pvfc_buttonLink>
+
                 <tr>
                     <td height="25"
                         style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">

@@ -1,0 +1,45 @@
+<apex:component access="global">
+    <apex:attribute name="position" description="How the button is horizontally aligned. Accepts left, center, right." type="String" />
+    <apex:attribute name="style" description="Button style. Accepts primary, secondary." type="String" />
+    <apex:attribute name="ctaText" description="Text to appear in the button." type="String" />
+    <apex:attribute name="ctaURL" description="Where the button should link" type="String" />
+
+    <tr>
+        <td>
+            <table align="{!position}" role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse: separate; width: 100%; max-width: 600px;">
+                <tr>
+
+                    <!-- Display left cell if position is center or right -->
+                    <apex:outputtext rendered="{!position == 'center' || position == 'right'}">
+                    <td height="0"
+                        style="height: 0px; mso-line-height-rule: exactly; line-height: 100%; font-size: 0px;">
+                        &nbsp;
+                    </td>
+                    </apex:outputtext>
+
+                    <!-- Display primary button's style if no style is defined -->
+                    <apex:outputtext rendered="{!style == 'primary' || style == ''}">
+                    <td align="center" valign="middle" style="border: 0; mso-border-alt: 1px solid #F96302; border-bottom: 5px solid #C14C00; mso-border-bottom-alt: 5px solid #C14C00; background-color: #F96302; font-family: arial, sans-serif; font-size: 16px; line-height: 1; mso-line-height-alt: 16px; color: #ffffff; width: 240px;">
+                        <a href="{!ctaURL}" style="display: inline-block; color: #ffffff; text-decoration: none; text-align: center; padding: 13px 20px 11px; mso-padding-alt: 11px;mso-border-alt: 1px solid #F96302; width: 100%; max-width: 200px;"><!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]-->{!ctaText}<!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]--></a>
+                    </td>
+                    </apex:outputtext>
+
+                    <!-- Display secondary button's style -->
+                    <apex:outputtext rendered="{!style == 'secondary'}">
+                    <td align="center" valign="middle" style="border: 1px solid #f96302; mso-border-alt: 1px solid #F96302; background-color: #FFFFFF; font-family: arial, sans-serif; font-size: 16px; line-height: 1; mso-line-height-alt: 16px; color: #F96302; mso-padding-alt: 13px 20px 11px; width: 240px;">
+                        <a href="{!ctaURL}" style="display: inline-block; color: #F96302; text-decoration: none; text-align: center; padding: 13px 20px 11px; mso-padding-alt: 11px; width: 100%; max-width: 200px;"><!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]-->{!ctaText}<!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]--></a>
+                    </td>
+                    </apex:outputtext>
+
+                    <!-- Display right cell if position is center or left -->
+                    <apex:outputtext rendered="{!position == 'center' || position == 'left'}">
+                    <td height="0"
+                        style="height: 0px; mso-line-height-rule: exactly; line-height: 100%; font-size: 0px;">
+                        &nbsp;
+                    </td>
+                    </apex:outputtext>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</apex:component>
