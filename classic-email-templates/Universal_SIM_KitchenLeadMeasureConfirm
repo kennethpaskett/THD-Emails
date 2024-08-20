@@ -65,11 +65,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
                         <!--=============== HEADER SECTION ===================-->
                         <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
-                        <c:pvfc_Header_08 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Thank you for requesting a kitchen site analysis measure!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryHeroKitchenAnalysis}" imgPathMobile="{!$Label.CX_LibraryHeroKitchenAnalysis_sm}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_08>
+                        <c:pvfc_Header_08 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Thank you for requesting a kitchen site analysis!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryHeroKitchenAnalysis}" imgPathMobile="{!$Label.CX_LibraryHeroKitchenAnalysis_sm}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_08>
                         <!--=============== /HEADER SECTION ===================--> 
                           
                         <!--=============== GREETING SECTION ===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We look forward to helping with your kitchen project. Now that you’ve purchased your site analysis measure, the next step will be to schedule your appointment. We’ll have one of our authorized service providers call you within the next 2 business days to set up a time to visit your home. The installer will collect measurements and information to get you started on your design and ultimately, your full project quote."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We look forward to helping with your kitchen project. Now that you’ve purchased your site analysis, the next step will be to schedule your appointment. We’ll have one of our authorized service providers call you within the next 2 business days to set up a time to visit your home. The installer will collect measurements and information to get you started on your design and ultimately, your full project quote."></c:pvfc_Greeting_04>
                         <!--=============== /GREETING SECTION ===================--> 
                         
                         <!--=============== SERVICE AND CUSTOMER SECTION ===================--> 
