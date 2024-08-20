@@ -64,8 +64,15 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
 
                         <!--===============HEADER SECTION===================-->
-                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
-                        <c:pvfc_Header_08 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="You have new documents to sign and a payment request!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryCoreSignAndPayHeroD}" imgPathMobile="{!$Label.CX_LibraryCoreSignAndPayHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_08>
+                        <c:pvfc_Header_09
+                            logoLink="https://www.homedepot.com/services/"
+                            imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}"
+                            phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}"
+                            phoneNum1="{!relatedTo.RefPhone__c}"
+                            imgPathDivider="{!$Label.CX_LibraryCTQDivider}"
+                            titleCopy="You have new documents to sign and a payment request!"
+                            imgPathFull="{!$Label.CX_LibraryCoreSignAndPayHeroD}" >
+                        </c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
@@ -73,12 +80,16 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================-->
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                        <c:pvfc_ServiceDetails_06 SignAndPayDivider="{!$Label.CX_LibraryCoreSignAndPayDividerD}" SignAndPayDividerM="{!$Label.CX_LibraryCoreSignAndPayDividerM}" CoreSignAndPayBodyD="{!$Label.CX_LibraryCoreSignAndPayRequestD}" CoreSignAndPayBodyM="{!$Label.CX_LibraryCoreSignAndPayRequestM}"  SignAndPayButton="{!$Label.CX_LibraryCoreSignAndPayButtonD}" totalAmt="{!relatedTo.Amount__c}"></c:pvfc_ServiceDetails_06>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <c:pvfc_ServiceDetails_06 SignAndPayDivider="{!$Label.CX_LibraryCoreSignAndPayDividerD}" SignAndPayDividerM="{!$Label.CX_LibraryCoreSignAndPayDividerM}" CoreSignAndPayBodyD="{!$Label.CX_LibraryCoreSignAndPayRequestD}" CoreSignAndPayBodyM="{!$Label.CX_LibraryCoreSignAndPayRequestM}"  SignAndPayButton="Sign and Pay" totalAmt="{!relatedTo.Amount__c}"></c:pvfc_ServiceDetails_06>
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
 
-                        <!--===============WHY HOME DEPOT SECTION===================--> 
-                        <c:pvfc_WhatNext_07 BulletOneText="Enter your email address in the portal to get your verification code." BulletTwoText="Once you gain access to your account, you can review and sign your documents and process your payment." BulletThreeText="We'll email a copy of your receipt, and your Service Provider will follow up regarding next steps." WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" SPName="{!relatedTo.SourceName__c}" QuestionNumber="{!relatedTo.RefPhone__c}"  ></c:pvfc_WhatNext_07>  
-                    
+                        <tr>
+                            <td align="center" class="mso_text" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;"><b>If you would like to pay by phone or have questions, call your service provider, {!relatedTo.SourceName__c}: <a class="a2" href="tel:{!relatedTo.RefPhone__c}">{!relatedTo.RefPhone__c}</a></b></td>
+                        </tr>
+
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        <c:pvfc_WhatNext_08 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" BulletOneText="Enter your email address in the portal to get your verification code." BulletTwoText="Once you gain access to your account, you can review and sign your documents and process your payment." BulletThreeText="We'll email a copy of your receipt, and your Service Provider will follow up regarding next steps." ></c:pvfc_WhatNext_08>  
+                        <!--===============WHATS NEXT SECTION===================-->
 
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
