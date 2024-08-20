@@ -62,9 +62,15 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                     <td align="center">
                       <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
-                        
+
                         <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_13 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryHomeServicesLogo}" titleCopy="Check out your available financing options!" imgPathFull="{!$Label.CXLibraryDTChargeAfterHero}" imgPathMobile="{!$Label.CXLibraryMBChargeAfterHero}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_13>
+                        <c:pvfc_Header_11_v2
+                            logoLink="https://www.homedepot.com/services/"
+                            imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}"
+                            imgPathDivider="{!$Label.CX_LibraryCTQDivider}"
+                            titleCopy="Check out your available financing options!"
+                            imgPathFull="{!$Label.CXLibraryDTChargeAfterHero}" >
+                        </c:pvfc_Header_11_v2>
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
