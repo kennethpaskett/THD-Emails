@@ -64,24 +64,38 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
 
                         <!--===============HEADER SECTION===================-->
-                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Good news! We rescheduled your appointment!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreCity__c}" imgPathFull="{!$Label.CXLibrarySFICoreAppRemHeroD}" imgPathMobile="{!$Label.CXLibrarySFICoreAppRemHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09
+                            logoLink="https://www.homedepot.com/services/"
+                            imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}"
+                            titleCopy="Good news! We rescheduled your appointment!"
+                            phoneNum1="{!relatedTo.RefPhone__c}"
+                            phoneNum2="{!relatedTo.StoreCity__c}"
+                            imgPathFull="{!$Label.CXLibrarySFICoreAppRemHeroD}"
+                            imgPathDivider="{!$Label.CX_LibraryCTQDivider}"
+                            phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" >
+                        </c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
-                          
-                        <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_06 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your rescheduled appointment details are listed below, along with your service provider's contact information." PhoneNum1="{!relatedTo.AltPhone__c}" PhoneNum2="{!relatedTo.StoreCity__c}"></c:pvfc_Greeting_06>
-                        <!--===============GREETING SECTION===================--> 
                           
                         <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
                         <c:pvfc_ScheduledAppt_02 YourScheduledApptDividerD="{!$Label.CX_LibraryCoreYourScheduledApptDivider}" YourScheduledApptDividerM="{!$Label.CX_LibraryCoreYourScheduledApptDividerM}" SPName="{!relatedTo.SourceName__c}" jobDate="{!relatedTo.RefDate__c}" jobStartTime="{!relatedTo.RefTime__c}" jobEndTime="{!relatedTo.AltTime__c}"></c:pvfc_ScheduledAppt_02>
-                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->   
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
+                          
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_06 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Please review your rescheduled appointment details, along with your service provider's contact information." PhoneNum1="{!relatedTo.AltPhone__c}" PhoneNum2="{!relatedTo.StoreCity__c}"></c:pvfc_Greeting_06>
+                        <!--===============GREETING SECTION===================-->  
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         <c:pvfc_ServiceDetails_03 ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.StorePhone__c}" SPnum2="{!relatedTo.StoreCity__c}" SPemail="{!relatedTo.BranchName__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c}, {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.PhoneNumber__c}"  custemail="{!relatedTo.ToEmail__c}"></c:pvfc_ServiceDetails_03>
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                           
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 
-                        <c:pvfc_WhatNext_02 bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}" bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}" bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_02>
+                        <c:pvfc_WhatNext_08
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                            BulletOneText="Your service provider will call on the day of your appointment to let you know they’re on the way. Remember, you will need to be present."
+                            BulletTwoText="	During your in-home consultation, our trusted service provider will take any necessary measurements or assessments, review options and provide a project quote."
+                            BulletThreeText="	When you are ready to move forward, our service provider will help you with the payment process and financing options." >
+                        </c:pvfc_WhatNext_08>
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 
 
                     
