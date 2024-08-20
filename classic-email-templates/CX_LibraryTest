@@ -1,0 +1,463 @@
+<messaging:emailTemplate subject="INTERNAL TESTING" recipientType="Lead" relatedToType="hms_EmailData__c">
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<!--================================== START CSS SECTION **PLEASE DO NOT TOUCH** =================================================================-->
+
+<c:evfc_CSSEmailTemplates ></c:evfc_CSSEmailTemplates> 
+
+<!--================================== END CSS SECTION **PLEASE DO NOT TOUCH** =================================================================--> 
+  
+</head>
+
+<body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+        <!--[if !mso]><!-->
+        <tr>
+        <!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width: 100% !important; border-top-style: none; Margin: 0; padding:0;">
+                
+                <table class="wrapper" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 640px; border: none;">   
+<!--==================================================================START PREHEADER SECTION============================================================================== -->
+    
+<div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+    <c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01></div>
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+<div style="display:none; max-height:0px; overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+    
+<!--=====================================================================END PREHEADER SECTION============================================================================== -->
+    
+    
+
+<!-- ========================================^^^^^^^^^THE BELOW SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^======================================== -->    
+    
+    <tr>
+        <td bgcolor="#ffffff" valign="top">
+            <table class="mob_width94" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="Margin:0 auto; width:600px;">
+                <tr>
+                    <td align="center">
+                      <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
+<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
+
+                        <tr>
+                            <td align="center" class="mso_text" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">If you would like to pay by phone or have questions, call your service provider {{relatedTo.SourceName__c}}: <a class="a2" href="tel:{!relatedTo.RefPhone__c}">{{relatedTo.RefPhone__c}}</a></td>
+                        </tr>
+
+                        <!--=============== VALUE PROP SECTION ===================-->
+                        <tr>
+                            <td><h1>pvfc_ValueProps_01</h1></td>
+                        </tr>
+                        <c:pvfc_ValueProps_01
+                            vpData="{{vpData}}"
+                            ApplyNowURL="{{ApplyNowURL}}" >
+                        </c:pvfc_ValueProps_01>
+
+                        <tr>
+                            <td><h1>pvfc_ValueProps_02</h1></td>
+                        </tr>
+                        <c:pvfc_ValueProps_02
+                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                            iconOneHeader="{{iconOneHeader}}"
+                            iconTwoHeader="{{iconTwoHeader}}"
+                            iconThreeHeader="{{iconThreeHeader}}"
+                            iconOneDescription="{{iconOneDescription}}"
+                            iconTwoDescription="{{iconTwoDescription}}"
+                            iconThreeDescription="{{iconThreeDescription}}"
+                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+                            ApplyNowURL="{{ApplyNowURL}}" >
+                        </c:pvfc_ValueProps_02>
+
+                        <tr>
+                            <td><h1>pvfc_ValueProps_03</h1></td>
+                        </tr>
+                        <c:pvfc_ValueProps_03
+                            vpData="{{vpData}}"
+                            phoneNum="{{phoneNum}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            affordableImg="https://placehold.co/52x48?text=52x48{{affordableImg}}"
+                            licensedImg="https://placehold.co/40x48?text=40x48{{licensedImg}}"
+                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+                            ApplyNowURL="{{ApplyNowURL}}" >
+                        </c:pvfc_ValueProps_03>
+
+                        <tr>
+                            <td><h1>pvfc_ValueProps_04</h1></td>
+                        </tr>
+                        <c:pvfc_ValueProps_04
+                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                            iconOneHeader="{{iconOneHeader}}"
+                            iconTwoHeader="{{iconTwoHeader}}"
+                            iconThreeHeader="{{iconThreeHeader}}"
+                            iconFourHeader="{{iconFourHeader}}"
+                            iconOneDescription="{{iconOneDescription}}"
+                            iconTwoDescription="{{iconTwoDescription}}"
+                            iconThreeDescription="{{iconThreeDescription}}"
+                            iconFourDescription="{{iconFourDescription}}"
+                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+                            ApplyNowURL="{{ApplyNowURL}}" >
+                        </c:pvfc_ValueProps_04>
+
+                        <tr>
+                            <td><h1>pvfc_ValueProps_05</h1></td>
+                        </tr>
+                        <c:pvfc_ValueProps_05
+                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                            iconOneHeader="{{iconOneHeader}}"
+                            iconTwoHeader="{{iconTwoHeader}}"
+                            iconThreeHeader="{{iconThreeHeader}}"
+                            iconFourHeader="{{iconFourHeader}}"
+                            iconOneDescription="{{iconOneDescription}}"
+                            iconTwoDescription="{{iconTwoDescription}}"
+                            iconThreeDescription="{{iconThreeDescription}}"
+                            iconFourDescription="{{iconFourDescription}}"
+                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
+                        </c:pvfc_ValueProps_05>
+
+                        <tr>
+                            <td><h1>pvfc_ValueProps_05_v2</h1></td>
+                        </tr>
+                        <c:pvfc_ValueProps_05_v2
+                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                            iconOneHeader="{{iconOneHeader}}"
+                            iconTwoHeader="{{iconTwoHeader}}"
+                            iconThreeHeader="{{iconThreeHeader}}"
+                            iconFourHeader="{{iconFourHeader}}"
+                            iconOneDescription="{{iconOneDescription}}"
+                            iconTwoDescription="{{iconTwoDescription}}"
+                            iconThreeDescription="{{iconThreeDescription}}"
+                            iconFourDescription="{{iconFourDescription}}"
+                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
+                        </c:pvfc_ValueProps_05_v2>
+
+                        <tr>
+                            <td><h1>pvfc_ValueProps_06</h1></td>
+                        </tr>
+                        <c:pvfc_ValueProps_06
+                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                            iconOneHeader="{{iconOneHeader}}"
+                            iconTwoHeader="{{iconTwoHeader}}"
+                            iconThreeHeader="{{iconThreeHeader}}"
+                            iconFourHeader="{{iconFourHeader}}"
+                            iconOneDescription="{{iconOneDescription}}"
+                            iconTwoDescription="{{iconTwoDescription}}"
+                            iconThreeDescription="{{iconThreeDescription}}"
+                            iconFourDescription="{{iconFourDescription}}"
+                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
+                        </c:pvfc_ValueProps_06>
+
+                        <tr>
+                            <td><h1>pvfc_ValueProps_07</h1></td>
+                        </tr>
+                        <c:pvfc_ValueProps_07
+                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                            iconOneHeader="{{iconOneHeader}}"
+                            iconTwoHeader="{{iconTwoHeader}}"
+                            iconThreeHeader="{{iconThreeHeader}}"
+                            iconFourHeader="{{iconFourHeader}}"
+                            iconOneDescription="{{iconOneDescription}}"
+                            iconTwoDescription="{{iconTwoDescription}}"
+                            iconThreeDescription="{{iconThreeDescription}}"
+                            iconFourDescription="{{iconFourDescription}}"
+                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
+                        </c:pvfc_ValueProps_07>
+
+                        <tr>
+                            <td><h1>pvfc_ValueProps_LAM</h1></td>
+                        </tr>
+                        <c:pvfc_ValueProps_LAM
+                            vpData="{{vpData}}"
+                            phoneNum="{{phoneNum}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            affordableImg="https://placehold.co/52x48?text=52x48{{affordableImg}}"
+                            licensedImg="https://placehold.co/40x48?text=40x48{{licensedImg}}"
+                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+                            ApplyNowURL="{{ApplyNowURL}}" >
+                        </c:pvfc_ValueProps_LAM>
+
+                        <tr>
+                            <td><h1>pvfc_ValuePropsDynamic_01</h1></td>
+                        </tr>
+                        <c:pvfc_ValuePropsDynamic_01
+                            sectionHeader="{{Section header}}"
+                            area1icon="https://placehold.co/26x26?text=26x26{{area1icon}}"
+                            area1Header="{{1st area header}}"
+                            area1BodyCopy="{{1st area body copy}}"
+                            area1CTA="{{1st area Call to Action}}"
+                            area1URL="{{1st area Call to Action's URL}}"
+                            area2icon="https://placehold.co/26x26?text=26x26{{area2icon}}"
+                            area2Header="{{2nd area Headline}}"
+                            area2BodyCopy="{{2nd area body copy}}"
+                            area2CTA="{{2nd area Call to Action}}"
+                            area2URL="{{2nd area Call to Action's URL}}"
+                            area3icon="https://placehold.co/26x26?text=26x26{{area3icon}}"
+                            area3Header="{{3rd area Headline}}"
+                            area3BodyCopy="{{3rd area body copy}}"
+                            area3CTA="{{3rd area Call to Action}}"
+                            area3URL="{{3rd area Call to Action's URL}}"
+                            area4icon="https://placehold.co/26x26?text=26x26{{area4icon}}"
+                            area4Header="{{4th area Headline}}"
+                            area4BodyCopy="{{4th area body copy}}"
+                            area4CTA="{{4th area Call to Action}}"
+                            area4URL="{{4th area Call to Action's URL}}" >
+                        </c:pvfc_ValuePropsDynamic_01>
+                        <!--=============== /VALUE PROP SECTION ===================-->
+
+                        <!--=============== WHAT NEXT SECTION ===================-->
+                        <tr>
+                            <td><h1>pvfc_WhatNext_01</h1></td>
+                        </tr>
+                        <c:pvfc_WhatNext_01 vpData="{{vpData}}"
+                            phoneNum1="{{phoneNum1}}"
+                            phoneNum2="{{phoneNum2}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            bulletOneTxt1="{{bulletOneTxt1}}"
+                            bulletTwoTxt1="{{bulletTwoTxt1}}"
+                            bulletThreeTxt1="{{bulletThreeTxt1}}"
+                            bulletOneTxt2="{{bulletOneTxt2}}"
+                            bulletTwoTxt2="{{bulletTwoTxt2}}"
+                            bulletThreeTxt2="{{bulletThreeTxt2}}"
+                            bulletThreeTxt3="{{bulletThreeTxt3}}"
+                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                            licensedImg="{{licensedImg}}"
+                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" >
+                        </c:pvfc_WhatNext_01>
+
+                        <tr>
+                            <td><h1>pvfc_WhatNext_02</h1></td>
+                        </tr>
+                        <c:pvfc_WhatNext_02 vpData="{{vpData}}"
+                            phoneNum="{{phoneNum}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                            licensedImg="{{licensedImg}}"
+                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" >
+                        </c:pvfc_WhatNext_02>
+
+                        <tr>
+                            <td><h1>pvfc_WhatNext_03</h1></td>
+                        </tr>
+                        <c:pvfc_WhatNext_03 vpData="{{vpData}}"
+                            phoneNum="{{phoneNum}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                            licensedImg="{{licensedImg}}"
+                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                            QuestionNumber="{{QuestionNumber}}" >
+                        </c:pvfc_WhatNext_03>
+
+                        <tr>
+                            <td><h1>pvfc_WhatNext_04</h1></td>
+                        </tr>
+                        <c:pvfc_WhatNext_04 vpData="{{vpData}}"
+                            phoneNum="{{phoneNum}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                            licensedImg="{{licensedImg}}"
+                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                            storeName="{{storeName}}"
+                            storeStreet="{{storeStreet}}"
+                            storeCity="{{storeCity}}"
+                            storeState="{{storeState}}"
+                            storeZip="{{storeZip}}"
+                            storePhoneNumber="{{storePhoneNumber}}" >
+                        </c:pvfc_WhatNext_04>
+
+                        <tr>
+                            <td><h1>pvfc_WhatNext_05</h1></td>
+                        </tr>
+                        <c:pvfc_WhatNext_05 vpData="{{vpData}}"
+                            phoneNum="{{phoneNum}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                            licensedImg="{{licensedImg}}"
+                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" >
+                        </c:pvfc_WhatNext_05>
+
+                        <tr>
+                            <td><h1>pvfc_WhatNext_06</h1></td>
+                        </tr>
+                        <c:pvfc_WhatNext_06 imgLogo="{{imgLogo}}"
+                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                            licensedImg="{{licensedImg}}"
+                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" >
+                        </c:pvfc_WhatNext_06>
+
+                        <tr>
+                            <td><h1>pvfc_WhatNext_07</h1></td>
+                        </tr>
+                        <c:pvfc_WhatNext_07 vpData="{{vpData}}"
+                            phoneNum="{{phoneNum}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                            licensedImg="{{licensedImg}}"
+                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                            QuestionNumber="{{QuestionNumber}}"
+                            SPName="{{SPName}}"
+                            BulletOneText="{{BulletOneText}}"
+                            BulletTwoText="{{BulletTwoText}}"
+                            BulletThreeText="{{BulletThreeText}}" >
+                        </c:pvfc_WhatNext_07>
+
+                        <tr>
+                            <td><h1>pvfc_WhatNext_08</h1></td>
+                        </tr>
+                        <c:pvfc_WhatNext_08 vpData="{{vpData}}"
+                            phoneNum="{{phoneNum}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                            licensedImg="{{licensedImg}}"
+                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                            QuestionNumber="{{QuestionNumber}}"
+                            SPName="{{SPName}}"
+                            BulletOneText="{{BulletOneText}}"
+                            BulletTwoText="{{BulletTwoText}}"
+                            BulletThreeText="{{BulletThreeText}}" >
+                        </c:pvfc_WhatNext_08> 
+
+                        <tr>
+                            <td><h1>pvfc_WhatNext_09</h1></td>
+                        </tr>
+                        <c:pvfc_WhatNext_09 vpData="{{vpData}}"
+                            phoneNum="{{phoneNum}}"
+                            phoneIcon="{{phoneIcon}}"
+                            imgLogo="{{imgLogo}}"
+                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                            licensedImg="{{licensedImg}}"
+                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                            QuestionNumber="{{QuestionNumber}}"
+                            SPName="{{SPName}}"
+                            BulletOneText="{{BulletOneText}}"
+                            BulletTwoText="{{BulletTwoText}}"
+                            BulletThreeText="{{BulletThreeText}}" >
+                        </c:pvfc_WhatNext_09> 
+                        <!--===============/WHAT NEXT SECTION===================--> 
+
+                        <!--===============QUICK LINKS SECTION===================-->
+                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
+                        <!--===============QUICK LINKS SECTION===================-->
+                          
+                        <!--===============FOOTER SECTION===================--> 
+                        <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
+                        <!--===============FOOTER SECTION===================-->
+
+                        <!--===============PIXEL TRACKING===================-->
+                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+                        <!--===============PIXEL TRACKING===================-->
+
+<!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>   
+<!-- =========================**********************NO CODING BELOW THIS LINE********************************=============================== -->                        
+</table>
+</td>
+<td class="hide-for-small">&zwnj;</td>
+</tr>
+</table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
