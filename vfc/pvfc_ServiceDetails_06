@@ -43,7 +43,7 @@
                     </td>
                 </tr>
 
-                <c:pvfc_buttonLink position="center" style="primary" ctaText="Review and Pay" ctaURL="{!$Label.Customer_Community_URL}">
+                <c:pvfc_buttonLink position="center" style="primary" ctaText="{!SignAndPayButton}" ctaURL="{!$Label.Customer_Community_URL}">
                 </c:pvfc_buttonLink>
 
                 <tr>
