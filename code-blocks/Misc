@@ -1,0 +1,28 @@
+<c:pvfc_AdditionalRscs_01
+    interiorDoorsImg="https://placehold.co/358x258?text=358x258{{interiorDoorsImg}}"
+    stormScreenDoorsImg="https://placehold.co/358x258?text=358x258{{stormScreenDoorsImg}}"
+    exteriorDoorsImg="https://placehold.co/358x258?text=358x258{{exteriorDoorsImg}}"
+    garageDoorsImg="https://placehold.co/358x258?text=358x258{{garageDoorsImg}}"
+    closetDoorsImg="https://placehold.co/358x258?text=358x258{{closetDoorsImg}}"
+    windowsImg="https://placehold.co/358x258?text=358x258{{windowsImg}}"
+    AdditionalRscDivider="https://placehold.co/600x3?text=600x3{{AdditionalRscDivider}}"
+    AdditionalRscDividerM="https://placehold.co/288x3?text=288x3{{AdditionalRscDividerM}}" >
+</c:pvfc_AdditionalRscs_01>
+
+<c:pvfc_AddToCalendar_01
+    paymentCalc="***NOT USED***"
+    paymentCTA="***NOT USED***"
+    imageURL="***NOT USED***"
+    imageALT="***NOT USED***"
+    buttonImg="***NOT USED***"
+    buttonURL="***NOT USED***"
+    buttonCopy="***NOT USED***"
+    Copy="{{Copy}}"
+    OutlookURL="#OutlookURL"
+    Office365URL="#Office365URL"
+    GoogleURL="#GoogleURL"
+    YahooURL="#YahooURL"
+    hdmsGrandTotal="***NOT USED***" > 
+</c:pvfc_AddToCalendar_01>
+
+                        

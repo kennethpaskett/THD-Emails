@@ -1,0 +1,21 @@
+<c:pvfc_Appointment_CU_Info_01
+    PhoneNum="***NOT USED***"
+    jobDate="{{jobDate}}"
+    callBucket="MOR"
+    SectionTitle="{{SectionTitle}}"
+    NameString="***NOT USED***"
+    timeZone="***NOT USED***"
+    SPName="***NOT USED***"
+    SPemail="***NOT USED***"
+    YourScheduledApptDividerD="***NOT USED***"
+    YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+    ServiceProviderDivider="***NOT USED***"
+    ServiceProviderDividerM="***NOT USED***"
+    CUPhoneNum="{{CUPhoneNum}}"
+    productType="Carpet"
+    SPPhoneNum="{{SPPhoneNum}}"
+    SPPhoneNum2="{{SPPhoneNum2}}"
+    SectionTitle2="{{SectionTitle2}}"
+    CUName="CUNa{{me" >
+</c:pvfc_Appointment_CU_Info_01>
+                      
