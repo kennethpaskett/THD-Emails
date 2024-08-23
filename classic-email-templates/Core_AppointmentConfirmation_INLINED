@@ -61,11 +61,19 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                 <tr>
                     <td align="center">
                       <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
-<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
+<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->
 
                         <!--===============HEADER SECTION===================-->
-                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Your appointment is coming up soon!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StorePhone__c}" imgPathFull="{!$Label.CXLibraryCoreAppointmentHeroD}" imgPathMobile="{!$Label.CXLibraryCoreAppointmentHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09
+                            logoLink="https://www.homedepot.com/services/"
+                            imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}"
+                            titleCopy="Your appointment is coming up soon!"
+                            phoneNum1="{!relatedTo.RefPhone__c}"
+                            phoneNum2="{!relatedTo.StoreCity__c}"
+                            imgPathFull="{!$Label.CXLibrarySFICoreAppRemHeroD}"
+                            imgPathDivider="{!$Label.CX_LibraryCTQDivider}"
+                            phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" >
+                        </c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
@@ -78,11 +86,17 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================-->
                         <c:pvfc_ServiceDetails_03 ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.PhoneNumber__c}" SPNum2="{!relatedTo.StorePhone__c}" SPemail="{!relatedTo.BranchName__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.DocumentNo__c}"  custemail="{!relatedTo.ToEmail__c}"></c:pvfc_ServiceDetails_03>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                          
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 
-                        <c:pvfc_WhatNext_01 bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}" bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}" bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"  phoneNum1="{!relatedTo.StoreName__c}" phoneNum2="{!relatedTo.StoreCity__c}" bulletOneTxt1="Your service provider will call on the day of your appointment to let you know they're on the way. Remember, you will need to be present." bulletTwoTxt1="During your in-home consultation, our trusted service provider will take any necessary measurements or assessments, review options and provide a project quote." bulletThreeTxt1="When you’re ready to move forward," bulletOneTxt2="will call you for a consultation to help you design your dream shed." bulletTwoTxt2="Tuff Shed will provide a quote for your project." bulletThreeTxt2="you’ll purchase your new shed and sit back" bulletThreeTxt3="while our provider handles everything from delivery to install."></c:pvfc_WhatNext_01>
-                        <!--===============WHAT HAPPENS NEXT SECTION===================-->
+                        <c:pvfc_WhatNext_08
+                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                            BulletOneText="Your service provider will call on the day of your appointment to let you know they're on the way. Remember, you will need to be present."
+                            BulletTwoText="	During your in-home consultation, our trusted service provider will take any necessary measurements or assessments, review options and provide a project quote."
+                            BulletThreeText="When you are ready to move forward, our service provider will help you with the payment process and financing options." >
+                        </c:pvfc_WhatNext_08>
+                        <!--===============WHAT HAPPENS NEXT SECTION===================--> 
 
                     
                         <!--===============WHY HOME DEPOT SECTION===================--> 
