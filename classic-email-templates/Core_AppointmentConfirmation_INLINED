@@ -81,7 +81,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============SCHEDULE APPOINTMENT SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_06 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Please review your appointment details and your service provider's contact information." phoneNum1="{!relatedTo.StoreName__c}" phoneNum2="{!relatedTo.StorePhone__c}"></c:pvfc_Greeting_06>
+                        <c:pvfc_Greeting_06 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for scheduling your appointment with {!relatedTo.RefString__c}, Home Depot's trusted service provider. Please review your appointment details and your service provider's contact information." phoneNum1="{!relatedTo.StoreName__c}" phoneNum2="{!relatedTo.StorePhone__c}"></c:pvfc_Greeting_06>
                         <!--===============GREETING SECTION===================-->    
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================-->
