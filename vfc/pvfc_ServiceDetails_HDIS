@@ -39,90 +39,140 @@
                 <tr>
                 <td height="25"
                     style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
-            </tr>
-            <tr>
-                <td valign="top" width="27%" style="width: 27%;">
-                    <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
-                        <tr>
-                            <td class="mob_padL" valign="top" align="left" width="27%" style="width: 27%;">
+                </tr>
+                <tr>
+                    <td valign="top" width="27%" style="width: 27%;">
+                        <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+                            <tr>
+                                <td class="mob_padL" valign="top" align="left" width="27%" style="width: 27%;">
 
-                                <!--===========================HERE IS WHERE THE CUSTOMER LABEL (URL/LINK) SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (href="") TAG==========================-->
-                                <a href="{!logoLink}" target="_blank">
+                                    <!--===========================HERE IS WHERE THE CUSTOMER LABEL (URL/LINK) SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (href="") TAG==========================-->
+                                    <a href="{!logoLink}" target="_blank">
+                                        <!--======================================================-->
+
+                                        <!--===========================HERE IS WHERE THE IMAGE PATH SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (src="") TAG==========================-->
+                                        <img src="{!imgLogo}"
+                                            style="display:block;border:0;border:none; width: 130px; max-width: 130px; height: auto;"
+                                            width="130" alt="logo-top-desktop.png" />
+                                    </a>
                                     <!--======================================================-->
 
-                                    <!--===========================HERE IS WHERE THE IMAGE PATH SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (src="") TAG==========================-->
-                                    <img src="{!imgLogo}"
-                                        style="display:block;border:0;border:none; width: 130px; max-width: 130px; height: auto;"
-                                        width="130" alt="logo-top-desktop.png" />
-                                </a>
-                                <!--======================================================-->
+                                </td>
+                                <td class="mob_padR" valign="middle" width="73%" style="width: 73%;">
+                                    <table width="73%" align="right" border="0" cellpadding="0" cellspacing="0"
+                                        style="width:73%; float: right">
 
-                            </td>
-                            <td class="mob_padR" valign="middle" width="73%" style="width: 73%;">
-                                <table width="73%" align="right" border="0" cellpadding="0" cellspacing="0"
-                                    style="width:73%; float: right">
+                                        <tr>
+                                            <td class="mso_text" width="100%"
+                                                style="font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:1.2;text-align:right;color:#000000; font-weight: normal; float: right">
+                                                Need Help?
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" width="100%">
+                                                <table align="right" cellpadding="0" cellspacing="0" border="0"
+                                                    style="Margin: 0 auto; width: 170px; text-align:right; float: right" width="170">
+                                                    <tr>
+                                                        <!--===========================HERE IS WHERE THE CUSTOMER LABEL (URL/LINK) SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (href="") TAG==========================-->
+                                                        <th valign="top" align="right"
+                                                            style=" width: 165px; text-align: right" width="165">
+                                                        <span
+                                                                style="display: inline-block; width: 16px; text-align: right"><img
+                                                                    src="{!phoneIcon}" width="16"
+                                                                    style="width: 16px;" />
+                                                        </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        
+                                                        <span> 
+                                                        
+                                                        
+                                                        <apex:outputText rendered="{!phoneNum1 == ''}">
+                                                        <a href=" tel:{!phoneNum2}">{!phoneNum2}</a>
+                                                        </apex:outputText>
+                                                        
+                                                        <apex:outputText rendered="{!phoneNum1 != ''}">
+                                                        <a href=" tel:{!phoneNum1}">{!phoneNum1}</a> 
+                                                        </apex:outputText>
+                                                            
+                                                        </span>
+                                                        
+                                                        </th>
 
-                                    <tr>
-                                        <td class="mso_text" width="100%"
-                                            style="font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:1.2;text-align:right;color:#000000; font-weight: normal; float: right">
-                                            Need Help?
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td valign="top" width="100%">
-                                            <table align="right" cellpadding="0" cellspacing="0" border="0"
-                                                style="Margin: 0 auto; width: 170px; text-align:right; float: right" width="170">
-                                                <tr>
-                                                    <!--===========================HERE IS WHERE THE CUSTOMER LABEL (URL/LINK) SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (href="") TAG==========================-->
-                                                    <th valign="top" align="right"
-                                                        style=" width: 165px; text-align: right" width="165">
-                                                       <span
-                                                            style="display: inline-block; width: 16px; text-align: right"><img
-                                                                src="{!phoneIcon}" width="16"
-                                                                style="width: 16px;" />
-                                                       </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                       
-                                                       <span> 
-                                                       
-                                                       
-                                                       <apex:outputText rendered="{!phoneNum1 == ''}">
-                                                       <a href=" tel:{!phoneNum2}">{!phoneNum2}</a>
-                                                       </apex:outputText>
-                                                       
-                                                       <apex:outputText rendered="{!phoneNum1 != ''}">
-                                                       <a href=" tel:{!phoneNum1}">{!phoneNum1}</a> 
-                                                       </apex:outputText>
-                                                          
-                                                       </span>
-                                                       
-                                                    </th>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
 
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td height="20"
-                    style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">&nbsp;</td>
-            </tr>
-            
-            <tr>
-                <th valign="top" width="600" style="width: 600px; height: 3px;" height="3"><img src="{!imgPathDivider}" width="600" style="width: 600px; height: 3px;" height="3" 
-                        class="fluid" />
-                </th>
-            </tr>
+                <!----- HEADER DIVIDER ----->
+                <tr>
+                    <td height="20"
+                        style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">&nbsp;</td>
+                </tr>
+                
+                <tr>
+                    <th valign="top" width="600" style="width: 600px; height: 3px;" height="3"><img src="{!imgPathDivider}" width="600" style="width: 600px; height: 3px;" height="3" 
+                            class="fluid" />
+                    </th>
+                </tr>
                 <tr>
                     <td height="15"
                         style="height: 15px; mso-line-height-rule: exactly; line-height: 100%; font-size: 15px; border:0; margin: 0 auto; padding:0; border-collapse:collapse">&nbsp;
                         
                     </td>
                 </tr>
+                <!----- /HEADER DIVIDER ----->
+
+                <!----- TITLE ----->
+                <tr>
+                    <td valign="top">
+                        <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" width="600"
+                            style="Margin: 0 auto; width: 600px;">
+                            <tr>
+                                <td height="16"
+                                    style="height: 16px; mso-line-height-rule: exactly; line-height: 100%; font-size: 16px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mso_text"
+                                    style="font-family:Arial, Helvetica, sans-serif;font-size:24px;line-height:1.2;text-align:left;color:#000000; font-weight: bold;">
+                                    {!titleCopy}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="25"
+                                    style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!----- /TITLE ----->
+
+                <!----- HERO ----->
+                <tr>
+                    <td valign="top" align="center">
+                        <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
+                            style="Margin: 0 auto; width:600px;" width="600">
+                            <tr>
+                                <td valign="top" align="center"><img src="{!imgPathFull}"
+                                        style="display:block;border:0;border:none; width:600px;" width="600"
+                                        alt="" class="hide" /></td>
+                            </tr>
+                            <tr>
+                                <td height="28"
+                                    style="height: 28px; mso-line-height-rule: exactly; line-height: 100%; font-size: 28px;">&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!----- /HERO ----->
+
                 <tr>
                     <td valign="top">
                         <apex:outputText rendered="{!NameString == 'Raw Lead'}">
@@ -194,7 +244,7 @@
                                             </table>
                                         </td>
                                     </tr>
-                                     <tr>
+                                        <tr>
                                         <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
                                             
                                         </td>
@@ -281,7 +331,7 @@
                                                 
                                             </td>
                                         </tr>
-                                                  
+                                                    
                                         <tr>
                                             <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
                                                 <b>Consultant:</b> {!SPName}
@@ -402,6 +452,7 @@
                     </apex:outputText>
                     </td>
                 </tr>
+
                 <apex:outputText rendered="{!NameString != 'Raw Lead'}">
                 <tr>
                     <td height="15"
@@ -418,7 +469,7 @@
                         <apex:outputText rendered="{!SPNum1 == ''}">
                         <a href=" tel:{!SPNum2}" style="text-decoration: none; color: #000000;">{!SPNum2}.</a>
                         </apex:outputText>
-                                                           
+                                                            
                         <apex:outputText rendered="{!SPNum1 != ''}">
                         <a href=" tel:{!SPNum1}" style="text-decoration: none; color: #000000;">{!SPNum1}.</a> 
                         </apex:outputText>
@@ -426,43 +477,7 @@
                     </td>
                 </tr>
                 </apex:outputText>
-                
-                
-            <tr>
-                <td valign="top">
-                    <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" width="600"
-                        style="Margin: 0 auto; width: 600px;">
-                        <tr>
-                            <td height="25"
-                                style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="mso_text"
-                                style="font-family:Arial, Helvetica, sans-serif;font-size:24px;line-height:1.2;text-align:left;color:#000000; font-weight: bold;">
-                                {!titleCopy}
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="25"
-                                style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td valign="top" align="center">
-                    <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
-                        style="Margin: 0 auto; width:600px;" width="600">
-                        <tr>
-                            <td valign="top" align="center"><img src="{!imgPathFull}"
-                                    style="display:block;border:0;border:none; width:600px;" width="600"
-                                    alt="logo-top-desktop.png" class="hide" /></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+
             </table>
         </td>
     </tr>
