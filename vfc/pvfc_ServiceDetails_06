@@ -1,0 +1,59 @@
+<apex:component access="global">
+    <apex:attribute name="SignAndPayDivider" description="Service Provider Divider" type="String" />
+    <apex:attribute name="SignAndPayDividerM" description="Service Provider Mobile Divider" type="String" />
+    <apex:attribute name="CoreSignAndPayBodyD" description="Call Now Desktop" type="String" />
+    <apex:attribute name="CoreSignAndPayBodyM" description="Call Now Mobile" type="String" />
+    <apex:attribute name="SignAndPayButton" description="Button" type="String" />
+    <apex:attribute name="totalAmt" description="Total Amount" type="Decimal" />
+
+    <!--========================================= START SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** =======================================================================-->
+    <tr>
+        <td valign="top">
+            <table class="wrapper" align="left" border="0" cellpadding="0" cellspacing="0"
+                style="Margin: 0 auto; width:600px;" width="600">
+                <tr>
+                    <td>
+                        <table class="wrapper" width="600" border="0" align="center" cellpadding="0" cellspacing="0"
+                            style="margin:0 auto; width:600px;">
+                            <tr>
+                                <td align="left" valign="top"
+                                    style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:22px; line-height: 28px; color:#000000; font-weight:normal; white-space: nowrap; border-bottom: 3px solid #f96302; padding:0 0 5px 0;">
+                                    Action&nbsp;Requested
+                                </td>
+                                <td style="border-bottom: 1px solid #999999; width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td height="15" style="height: 15px; line-height: 15px; font-size: 15px;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 20px; font-weight: bolder">
+                        Balance:
+                        <apex:outputText value="{0,number, $###,##0.00}">
+                            <apex:param value="{!totalAmt}" />
+                        </apex:outputText>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20"
+                        style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">
+                        &nbsp;
+                    </td>
+                </tr>
+
+                <c:pvfc_buttonLink position="center" style="primary" ctaText="{!SignAndPayButton}" ctaURL="{!$Label.Customer_Community_URL}">
+                </c:pvfc_buttonLink>
+
+                <tr>
+                    <td height="25"
+                        style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!--================================== END SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** =================================================================-->
+</apex:component>
