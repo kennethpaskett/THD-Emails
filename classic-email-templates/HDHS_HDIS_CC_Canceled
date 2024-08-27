@@ -67,9 +67,17 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="We’re here to help whenever you’re ready." phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreCity__c}" imgPathFull="{!$Label.CX_Library_HDIS_CallCentertCancelledHeroD}" imgPathMobile="{!$Label.CX_Library_HDIS_CallCentertCancelledHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
+
+                        <tr>
+                            <td height="24" style="height: 24px; line-height: 24px; font-size: 24px;">&nbsp;</td>
+                        </tr>
+
+                        <!--=============== CANCELED APPOINTMENT SECTION===================--> 
+                        <c:pvfc_Appointment_Date_01 sectionHeading="Your Canceled Appointment" appointmentDate="{!relatedTo.RefDateTime__c}" appointmentTime="{!relatedTo.StoreName__c}"></c:pvfc_Appointment_Date_01>
+                        <!--=============== /CANCELED APPOINTMENT SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_11 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Whenever you’re ready to move forward with your {!relatedTo.ProductName__c} project, we’ll be here to help. Just give us a call and we’ll reschedule your free, in-home consultation for a time that works better for you." greetingsCopy3="Call to reschedule: {!relatedTo.RefPhone__c}"></c:pvfc_Greeting_11>
+                        <c:pvfc_Greeting_11 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're sorry to hear you've canceled your upcoming appointment. Whenever you’re ready to move forward with your {!relatedTo.ProductName__c} project, we’ll be here to help. Just give us a call and we’ll reschedule your free, in-home consultation for a time that works better for you." greetingsCopy3="Call to reschedule: {!relatedTo.RefPhone__c}"></c:pvfc_Greeting_11>
                         <!--===============GREETING SECTION===================--> 
                   
                         <!--===============WHY HOME DEPOT SECTION===================--> 

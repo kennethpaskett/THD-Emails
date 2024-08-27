@@ -67,6 +67,14 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="We’ll call you soon to reschedule your in-home consultation." phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreCity__c}" imgPathFull="{!$Label.CX_Library_HDIS_ConsulantCancelledHeroD}" imgPathMobile="{!$Label.CX_Library_HDIS_ConsulantCancelledHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
+
+                        <tr>
+                            <td height="24" style="height: 24px; line-height: 24px; font-size: 24px;">&nbsp;</td>
+                        </tr>
+
+                        <!--=============== CANCELED APPOINTMENT SECTION===================--> 
+                        <c:pvfc_Appointment_Date_01 sectionHeading="Your Canceled Appointment" appointmentDate="{!relatedTo.RefDateTime__c}" appointmentTime="{!relatedTo.StoreName__c}"></c:pvfc_Appointment_Date_01>
+                        <!--=============== /CANCELED APPOINTMENT SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_11 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We've canceled your {!relatedTo.ProductName__c} project appointment. A team member will call you within the next 72-hours to reschedule your free, in-home consultation." greetingsCopy2="If you have questions or would like to reach out to reschedule, please call {!relatedTo.RefPhone__c}."></c:pvfc_Greeting_11>
