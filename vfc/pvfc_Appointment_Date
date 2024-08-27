@@ -1,0 +1,28 @@
+<apex:component access="global">
+    <apex:attribute name="sectionHeading" description="Section Headline" type="String" />
+    <apex:attribute name="appointmentDate" description="Date of appointment" type="DateTime" />
+    <apex:attribute name="appointmentTime" description="Time of appointment" type="String" />
+
+    <c:pvfc_SectionHeader headline="{!sectionHeading}" />
+    <tr>
+        <td class="mso_text" align="left" valign="top"
+            style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:30px; line-height: 34px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+            <b>
+                <apex:outputText value="{0,date,EEEE, MMM' 'dd', 'yyyy}">
+                    <apex:Param value="{!appointmentDate - (4/24)}" />
+                </apex:OutputText>
+            </b>
+        </td>                                            
+    </tr>
+    <tr>
+        <td class="mso_text" align="left" valign="top"
+            style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:30px; line-height: 34px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+            <b>
+                <apex:outputText >
+                    {!appointmentTime}
+                </apex:outputText>
+            </b>
+        </td>
+    </tr>
+
+</apex:component>
