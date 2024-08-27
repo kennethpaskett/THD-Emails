@@ -1,463 +1,1383 @@
 <messaging:emailTemplate subject="INTERNAL TESTING" recipientType="Lead" relatedToType="hms_EmailData__c">
- <messaging:htmlEmailBody >
+    <messaging:htmlEmailBody >
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+        <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+            xmlns:o="urn:schemas-microsoft-com:office:office">
 
-    <meta charset="utf-8"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
-    <base target="_blank"></base>
+        <meta charset="utf-8">
+        </meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        </meta>
+        <base target="_blank">
+        </base>
 
-<head>
+        <head>
 
-<!--================================== START CSS SECTION **PLEASE DO NOT TOUCH** =================================================================-->
+            <!--================================== START CSS SECTION **PLEASE DO NOT TOUCH** =================================================================-->
 
-<c:evfc_CSSEmailTemplates ></c:evfc_CSSEmailTemplates> 
+            <c:evfc_CSSEmailTemplates ></c:evfc_CSSEmailTemplates>
 
-<!--================================== END CSS SECTION **PLEASE DO NOT TOUCH** =================================================================--> 
-  
-</head>
+            <!--================================== END CSS SECTION **PLEASE DO NOT TOUCH** =================================================================-->
 
-<body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+        </head>
 
-<!--[if mso]>
+        <body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0"
+            style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+
+            <!--[if mso]>
 <style type="text/css">
 body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
 </style>
 <![endif]-->
 
 
-<!-- @begin email body frame, DO NOT REMOVE -->
-    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
-        <!--[if !mso]><!-->
-        <tr>
-        <!--<![endif]-->
-      
-            <td class="hide-for-small">&zwnj;</td>
-            <td id="all" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width: 100% !important; border-top-style: none; Margin: 0; padding:0;">
-                
-                <table class="wrapper" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 640px; border: none;">   
-<!--==================================================================START PREHEADER SECTION============================================================================== -->
-    
-<div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
-    
-    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
-    
-    <c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01></div>
-    
-    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
-    
-<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
-<div style="display:none; max-height:0px; overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
-    
-<!--=====================================================================END PREHEADER SECTION============================================================================== -->
-    
-    
-
-<!-- ========================================^^^^^^^^^THE BELOW SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^======================================== -->    
-    
-    <tr>
-        <td bgcolor="#ffffff" valign="top">
-            <table class="mob_width94" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="Margin:0 auto; width:600px;">
+            <!-- @begin email body frame, DO NOT REMOVE -->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%"
+                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+                <!--[if !mso]><!-->
                 <tr>
-                    <td align="center">
-                      <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
-<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
+                    <!--<![endif]-->
 
-                        <tr>
-                            <td align="center" class="mso_text" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">If you would like to pay by phone or have questions, call your service provider {{relatedTo.SourceName__c}}: <a class="a2" href="tel:{!relatedTo.RefPhone__c}">{{relatedTo.RefPhone__c}}</a></td>
-                        </tr>
+                    <td class="hide-for-small">&zwnj;</td>
+                    <td id="all" align="center" valign="top"
+                        style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width: 100% !important; border-top-style: none; Margin: 0; padding:0;">
 
-                        <!--=============== VALUE PROP SECTION ===================-->
-                        <tr>
-                            <td><h1>pvfc_ValueProps_01</h1></td>
-                        </tr>
-                        <c:pvfc_ValueProps_01
-                            vpData="{{vpData}}"
-                            ApplyNowURL="{{ApplyNowURL}}" >
-                        </c:pvfc_ValueProps_01>
+                        <table class="wrapper" border="0" cellpadding="0" cellspacing="0" id="templateContainer"
+                            style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 640px; border: none;">
+                            <!--==================================================================START PREHEADER SECTION============================================================================== -->
 
-                        <tr>
-                            <td><h1>pvfc_ValueProps_02</h1></td>
-                        </tr>
-                        <c:pvfc_ValueProps_02
-                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
-                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
-                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
-                            iconOneHeader="{{iconOneHeader}}"
-                            iconTwoHeader="{{iconTwoHeader}}"
-                            iconThreeHeader="{{iconThreeHeader}}"
-                            iconOneDescription="{{iconOneDescription}}"
-                            iconTwoDescription="{{iconTwoDescription}}"
-                            iconThreeDescription="{{iconThreeDescription}}"
-                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
-                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
-                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
-                            ApplyNowURL="{{ApplyNowURL}}" >
-                        </c:pvfc_ValueProps_02>
+                            <div
+                                style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
 
-                        <tr>
-                            <td><h1>pvfc_ValueProps_03</h1></td>
-                        </tr>
-                        <c:pvfc_ValueProps_03
-                            vpData="{{vpData}}"
-                            phoneNum="{{phoneNum}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            affordableImg="https://placehold.co/52x48?text=52x48{{affordableImg}}"
-                            licensedImg="https://placehold.co/40x48?text=40x48{{licensedImg}}"
-                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
-                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
-                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
-                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
-                            ApplyNowURL="{{ApplyNowURL}}" >
-                        </c:pvfc_ValueProps_03>
+                                <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
 
-                        <tr>
-                            <td><h1>pvfc_ValueProps_04</h1></td>
-                        </tr>
-                        <c:pvfc_ValueProps_04
-                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
-                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
-                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
-                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
-                            iconOneHeader="{{iconOneHeader}}"
-                            iconTwoHeader="{{iconTwoHeader}}"
-                            iconThreeHeader="{{iconThreeHeader}}"
-                            iconFourHeader="{{iconFourHeader}}"
-                            iconOneDescription="{{iconOneDescription}}"
-                            iconTwoDescription="{{iconTwoDescription}}"
-                            iconThreeDescription="{{iconThreeDescription}}"
-                            iconFourDescription="{{iconFourDescription}}"
-                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
-                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
-                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
-                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
-                            ApplyNowURL="{{ApplyNowURL}}" >
-                        </c:pvfc_ValueProps_04>
+                                <c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01>
+                            </div>
 
-                        <tr>
-                            <td><h1>pvfc_ValueProps_05</h1></td>
-                        </tr>
-                        <c:pvfc_ValueProps_05
-                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
-                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
-                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
-                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
-                            iconOneHeader="{{iconOneHeader}}"
-                            iconTwoHeader="{{iconTwoHeader}}"
-                            iconThreeHeader="{{iconThreeHeader}}"
-                            iconFourHeader="{{iconFourHeader}}"
-                            iconOneDescription="{{iconOneDescription}}"
-                            iconTwoDescription="{{iconTwoDescription}}"
-                            iconThreeDescription="{{iconThreeDescription}}"
-                            iconFourDescription="{{iconFourDescription}}"
-                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
-                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
-                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
-                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
-                        </c:pvfc_ValueProps_05>
+                            <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
 
-                        <tr>
-                            <td><h1>pvfc_ValueProps_05_v2</h1></td>
-                        </tr>
-                        <c:pvfc_ValueProps_05_v2
-                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
-                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
-                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
-                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
-                            iconOneHeader="{{iconOneHeader}}"
-                            iconTwoHeader="{{iconTwoHeader}}"
-                            iconThreeHeader="{{iconThreeHeader}}"
-                            iconFourHeader="{{iconFourHeader}}"
-                            iconOneDescription="{{iconOneDescription}}"
-                            iconTwoDescription="{{iconTwoDescription}}"
-                            iconThreeDescription="{{iconThreeDescription}}"
-                            iconFourDescription="{{iconFourDescription}}"
-                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
-                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
-                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
-                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
-                        </c:pvfc_ValueProps_05_v2>
+                            <!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+                            <div style="display:none; max-height:0px; overflow:hidden;">
+                                &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+                            </div>
 
-                        <tr>
-                            <td><h1>pvfc_ValueProps_06</h1></td>
-                        </tr>
-                        <c:pvfc_ValueProps_06
-                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
-                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
-                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
-                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
-                            iconOneHeader="{{iconOneHeader}}"
-                            iconTwoHeader="{{iconTwoHeader}}"
-                            iconThreeHeader="{{iconThreeHeader}}"
-                            iconFourHeader="{{iconFourHeader}}"
-                            iconOneDescription="{{iconOneDescription}}"
-                            iconTwoDescription="{{iconTwoDescription}}"
-                            iconThreeDescription="{{iconThreeDescription}}"
-                            iconFourDescription="{{iconFourDescription}}"
-                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
-                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
-                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
-                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
-                        </c:pvfc_ValueProps_06>
+                            <!--=====================================================================END PREHEADER SECTION============================================================================== -->
 
-                        <tr>
-                            <td><h1>pvfc_ValueProps_07</h1></td>
-                        </tr>
-                        <c:pvfc_ValueProps_07
-                            iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
-                            iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
-                            iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
-                            iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
-                            iconOneHeader="{{iconOneHeader}}"
-                            iconTwoHeader="{{iconTwoHeader}}"
-                            iconThreeHeader="{{iconThreeHeader}}"
-                            iconFourHeader="{{iconFourHeader}}"
-                            iconOneDescription="{{iconOneDescription}}"
-                            iconTwoDescription="{{iconTwoDescription}}"
-                            iconThreeDescription="{{iconThreeDescription}}"
-                            iconFourDescription="{{iconFourDescription}}"
-                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
-                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
-                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
-                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
-                        </c:pvfc_ValueProps_07>
 
-                        <tr>
-                            <td><h1>pvfc_ValueProps_LAM</h1></td>
-                        </tr>
-                        <c:pvfc_ValueProps_LAM
-                            vpData="{{vpData}}"
-                            phoneNum="{{phoneNum}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            affordableImg="https://placehold.co/52x48?text=52x48{{affordableImg}}"
-                            licensedImg="https://placehold.co/40x48?text=40x48{{licensedImg}}"
-                            blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
-                            exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
-                            WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
-                            WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
-                            ApplyNowURL="{{ApplyNowURL}}" >
-                        </c:pvfc_ValueProps_LAM>
 
-                        <tr>
-                            <td><h1>pvfc_ValuePropsDynamic_01</h1></td>
-                        </tr>
-                        <c:pvfc_ValuePropsDynamic_01
-                            sectionHeader="{{Section header}}"
-                            area1icon="https://placehold.co/26x26?text=26x26{{area1icon}}"
-                            area1Header="{{1st area header}}"
-                            area1BodyCopy="{{1st area body copy}}"
-                            area1CTA="{{1st area Call to Action}}"
-                            area1URL="{{1st area Call to Action's URL}}"
-                            area2icon="https://placehold.co/26x26?text=26x26{{area2icon}}"
-                            area2Header="{{2nd area Headline}}"
-                            area2BodyCopy="{{2nd area body copy}}"
-                            area2CTA="{{2nd area Call to Action}}"
-                            area2URL="{{2nd area Call to Action's URL}}"
-                            area3icon="https://placehold.co/26x26?text=26x26{{area3icon}}"
-                            area3Header="{{3rd area Headline}}"
-                            area3BodyCopy="{{3rd area body copy}}"
-                            area3CTA="{{3rd area Call to Action}}"
-                            area3URL="{{3rd area Call to Action's URL}}"
-                            area4icon="https://placehold.co/26x26?text=26x26{{area4icon}}"
-                            area4Header="{{4th area Headline}}"
-                            area4BodyCopy="{{4th area body copy}}"
-                            area4CTA="{{4th area Call to Action}}"
-                            area4URL="{{4th area Call to Action's URL}}" >
-                        </c:pvfc_ValuePropsDynamic_01>
-                        <!--=============== /VALUE PROP SECTION ===================-->
+                            <!-- ========================================^^^^^^^^^THE BELOW SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^======================================== -->
 
-                        <!--=============== WHAT NEXT SECTION ===================-->
-                        <tr>
-                            <td><h1>pvfc_WhatNext_01</h1></td>
-                        </tr>
-                        <c:pvfc_WhatNext_01 vpData="{{vpData}}"
-                            phoneNum1="{{phoneNum1}}"
-                            phoneNum2="{{phoneNum2}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            bulletOneTxt1="{{bulletOneTxt1}}"
-                            bulletTwoTxt1="{{bulletTwoTxt1}}"
-                            bulletThreeTxt1="{{bulletThreeTxt1}}"
-                            bulletOneTxt2="{{bulletOneTxt2}}"
-                            bulletTwoTxt2="{{bulletTwoTxt2}}"
-                            bulletThreeTxt2="{{bulletThreeTxt2}}"
-                            bulletThreeTxt3="{{bulletThreeTxt3}}"
-                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
-                            licensedImg="{{licensedImg}}"
-                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
-                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
-                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
-                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" >
-                        </c:pvfc_WhatNext_01>
+                            <tr>
+                                <td bgcolor="#ffffff" valign="top">
+                                    <table class="wrapper" align="center" width="600" cellpadding="0" cellspacing="0"
+                                        border="0" style="margin:0 auto; width:600px;">
+                                        <tr>
+                                            <td align="center">
+                                                <table align="center" cellpadding="0" cellspacing="0" border="0"
+                                                    style="Margin: 0 auto; width: 100%">
+                                                    <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->
+                                                   
+                                                    <!--=============== APPOINTMENT SECTION ===================-->
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Appointment_CU_Info_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Appointment_CU_Info_01
+                                                        PhoneNum="***NOT USED***"
+                                                        callBucket="MOR"
+                                                        SectionTitle="{{SectionTitle}}"
+                                                        NameString="***NOT USED***"
+                                                        timeZone="***NOT USED***"
+                                                        SPName="***NOT USED***"
+                                                        SPemail="***NOT USED***"
+                                                        YourScheduledApptDividerD="***NOT USED***"
+                                                        YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+                                                        ServiceProviderDivider="***NOT USED***"
+                                                        ServiceProviderDividerM="***NOT USED***"
+                                                        CUPhoneNum="{{CUPhoneNum}}"
+                                                        productType="Carpet"
+                                                        SPPhoneNum="{{SPPhoneNum}}"
+                                                        SPPhoneNum2="{{SPPhoneNum2}}"
+                                                        SectionTitle2="{{SectionTitle2}}"
+                                                        CUName="{{CUName}}" >
+                                                    </c:pvfc_Appointment_CU_Info_01>
 
-                        <tr>
-                            <td><h1>pvfc_WhatNext_02</h1></td>
-                        </tr>
-                        <c:pvfc_WhatNext_02 vpData="{{vpData}}"
-                            phoneNum="{{phoneNum}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
-                            licensedImg="{{licensedImg}}"
-                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
-                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
-                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
-                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" >
-                        </c:pvfc_WhatNext_02>
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Appointment_CU_Info_02</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Appointment_CU_Info_02
+                                                        PhoneNum="{{PhoneNum}}"
+                                                        SectionTitle="{{SectionTitle}}"
+                                                        NameString="***NOT USED***"
+                                                        timeZone="{{timeZone}}"
+                                                        SPName="***NOT USED***"
+                                                        CUemail="{{CUemail}}"
+                                                        YourScheduledApptDividerD="***NOT USED***"
+                                                        YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+                                                        ServiceProviderDivider="***NOT USED***"
+                                                        ServiceProviderDividerM="***NOT USED***"
+                                                        CUPhoneNum="{{CUPhoneNum}}"
+                                                        SPPhoneNum="***NOT USED***"
+                                                        SectionTitle2="{{SectionTitle2}}"
+                                                        CUName="{{CUName}}"
+                                                        CUAddress="{{CUAddress}}" >
+                                                    </c:pvfc_Appointment_CU_Info_02>
 
-                        <tr>
-                            <td><h1>pvfc_WhatNext_03</h1></td>
-                        </tr>
-                        <c:pvfc_WhatNext_03 vpData="{{vpData}}"
-                            phoneNum="{{phoneNum}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
-                            licensedImg="{{licensedImg}}"
-                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
-                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
-                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
-                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
-                            QuestionNumber="{{QuestionNumber}}" >
-                        </c:pvfc_WhatNext_03>
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Appointment_CU_Info_03</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Appointment_CU_Info_03
+                                                        PhoneNum="***NOT USED***"
+                                                        SectionTitle="{{SectionTitle}}"
+                                                        NameString="***NOT USED***"
+                                                        SPName="***NOT USED***"
+                                                        CUemail="{{CUemail}}"
+                                                        YourScheduledApptDividerD="***NOT USED***"
+                                                        YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+                                                        ServiceProviderDivider="***NOT USED***"
+                                                        ServiceProviderDividerM="***NOT USED***"
+                                                        CUPhoneNum="{{CUPhoneNum}}"
+                                                        SPPhoneNum="***NOT USED***"
+                                                        SectionTitle2="{{SectionTitle2}}"
+                                                        CUName="{{CUName}}"
+                                                        CUAddress="{{CUAddress}}" >
+                                                    </c:pvfc_Appointment_CU_Info_03>
 
-                        <tr>
-                            <td><h1>pvfc_WhatNext_04</h1></td>
-                        </tr>
-                        <c:pvfc_WhatNext_04 vpData="{{vpData}}"
-                            phoneNum="{{phoneNum}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
-                            licensedImg="{{licensedImg}}"
-                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
-                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
-                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
-                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
-                            storeName="{{storeName}}"
-                            storeStreet="{{storeStreet}}"
-                            storeCity="{{storeCity}}"
-                            storeState="{{storeState}}"
-                            storeZip="{{storeZip}}"
-                            storePhoneNumber="{{storePhoneNumber}}" >
-                        </c:pvfc_WhatNext_04>
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Appointment_CU_Info_04</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Appointment_CU_Info_04
+                                                        PhoneNum="***NOT USED***"
+                                                        SectionTitle="{{SectionTitle}}"
+                                                        NameString="***NOT USED***"
+                                                        timeZone="{{timeZone}}"
+                                                        SPName="***NOT USED***"
+                                                        CUemail="{{CUemail}}"
+                                                        WhatNextDivider="https://placehold.co/600x3?text=600x3{{WhatNextDivider}}"
+                                                        WhatNextDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+                                                        ServiceProviderDivider="***NOT USED***"
+                                                        ServiceProviderDividerM="***NOT USED***"
+                                                        CUPhoneNum="{{CUPhoneNum}}"
+                                                        SPPhoneNum="***NOT USED***"
+                                                        SectionCopy="{{SectionCopy}}"
+                                                        CUName="{{CUName}}"
+                                                        CUAddress="{{CUAddress}}"
+                                                        thermoText="{{thermoText}}"
+                                                        thermoIcon="https://placehold.co/20x20?text=20x20{{thermoIcon}}" >
+                                                    </c:pvfc_Appointment_CU_Info_04>
 
-                        <tr>
-                            <td><h1>pvfc_WhatNext_05</h1></td>
-                        </tr>
-                        <c:pvfc_WhatNext_05 vpData="{{vpData}}"
-                            phoneNum="{{phoneNum}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
-                            licensedImg="{{licensedImg}}"
-                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
-                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
-                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
-                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" >
-                        </c:pvfc_WhatNext_05>
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Appointment_SP_Info_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Appointment_SP_Info_01
+                                                        PhoneNum="***NOT USED***"
+                                                        SectionTitle="{{SectionTitle}}"
+                                                        NameString="***NOT USED***"
+                                                        timeZone="{{timeZone}}"
+                                                        SPName="***NOT USED***"
+                                                        SPemail="{{SPemail}}"
+                                                        YourScheduledApptDividerD="***NOT USED***"
+                                                        YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+                                                        ServiceProviderDivider="***NOT USED***"
+                                                        ServiceProviderDividerM="***NOT USED***"
+                                                        CUPhoneNum="***NOT USED***"
+                                                        SPPhoneNum="***NOT USED***"
+                                                        SectionTitle2="{{SectionTitle2}}"
+                                                        CUName="{{CUName}}" >
+                                                    </c:pvfc_Appointment_SP_Info_01>
 
-                        <tr>
-                            <td><h1>pvfc_WhatNext_06</h1></td>
-                        </tr>
-                        <c:pvfc_WhatNext_06 imgLogo="{{imgLogo}}"
-                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
-                            licensedImg="{{licensedImg}}"
-                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
-                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
-                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
-                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" >
-                        </c:pvfc_WhatNext_06>
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Appointment_SP_Info_02</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Appointment_SP_Info_02
+                                                        PhoneNum="***NOT USED***"
+                                                        SectionTitle="{{SectionTitle}}"
+                                                        NameString="***NOT USED***"
+                                                        timeZone="{{timeZone}}"
+                                                        SPName="***NOT USED***"
+                                                        SPemail="{{SPemail}}"
+                                                        YourScheduledApptDividerD="***NOT USED***"
+                                                        YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+                                                        ServiceProviderDivider="***NOT USED***"
+                                                        ServiceProviderDividerM="***NOT USED***"
+                                                        CUPhoneNum="{{CUPhoneNum}}"
+                                                        SPPhoneNum="***NOT USED***"
+                                                        SectionTitle2="{{SectionTitle2}}"
+                                                        CUName="{{CUName}}"
+                                                        NumberOfRooms="***NOT USED***"
+                                                        MAddress="{{MAddress}}"
+                                                        MNumber="{{MNumber}}" >
+                                                    </c:pvfc_Appointment_SP_Info_02>
 
-                        <tr>
-                            <td><h1>pvfc_WhatNext_07</h1></td>
-                        </tr>
-                        <c:pvfc_WhatNext_07 vpData="{{vpData}}"
-                            phoneNum="{{phoneNum}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
-                            licensedImg="{{licensedImg}}"
-                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
-                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
-                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
-                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
-                            QuestionNumber="{{QuestionNumber}}"
-                            SPName="{{SPName}}"
-                            BulletOneText="{{BulletOneText}}"
-                            BulletTwoText="{{BulletTwoText}}"
-                            BulletThreeText="{{BulletThreeText}}" >
-                        </c:pvfc_WhatNext_07>
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Appointment_SP_Info_03</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Appointment_SP_Info_03
+                                                        ServiceProviderDividerD="https://placehold.co/287x3?text=287x3{{ServiceProviderDividerD}}"
+                                                        YourInformationDividerD="https://placehold.co/287x3?text=287x3{{YourInformationDividerD}}"
+                                                        YourInformationDivider2="https://placehold.co/287x3?text=287x3{{YourInformationDivider2}}"
+                                                        ServiceProviderDividerM="https://placehold.co/287x3?text=287x3{{ServiceProviderDividerM}}"
+                                                        YourInformationDividerM="https://placehold.co/287x3?text=287x3{{YourInformationDividerM}}"
+                                                        YourInformationDividerM2="https://placehold.co/287x3?text=287x3{{YourInformationDividerM2}}"
+                                                        NameString="{{NameString}}"
+                                                        SPName="***NOT USED***"
+                                                        SPemail="{{SPemail}}"
+                                                        SPAddress="***NOT USED***"
+                                                        SPPhoneNum="***NOT USED***"
+                                                        SPNum1="{{SPNum1}}"
+                                                        SPNum2="{{SPNum2}}"
+                                                        custName="{{custName}}"
+                                                        Address1="{{Address1}}"
+                                                        Address2="{{Address2}}"
+                                                        custPhone="{{custPhone}}"
+                                                        custemail="{{custemail}}"
+                                                        Title="{{Title}}"
+                                                        jobTime="{{jobTime}}" >
+                                                    </c:pvfc_Appointment_SP_Info_03>
+                                                    <!--=============== /APPOINTMENT SECTION ===================-->
+                                                                                                        
+                                                    <!--=============== SERVICE DETAILS SECTION ===================-->
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_01
+                                                        ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+                                                        ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+                                                        OrangeBannerD="https://placehold.co/564x50?text=564x50{{OrangeBannerD}}"
+                                                        OrangeBannerM="https://placehold.co/288x50?text=288x50{{OrangeBannerD}}"
+                                                        CoreCallLoggingCallNowD="https://placehold.co/542x542?text=542x542{{CoreCallLoggingCallNowD}}"
+                                                        CoreCallLoggingCallNowM=""
+                                                        SPName="{{SPName}}"
+                                                        SPemail="{{SPemail}}"
+                                                        SPAddress="{{SPAddress}}"
+                                                        SPNum1="{{SPNum1}}"
+                                                        SPNum2="***NOT USED***" 
+                                                        BannerNumber1="{{BannerNumber1}}"
+                                                        BannerNumber2="{{BannerNumber2}}"
+                                                        BannerText1="{{BannerText1}}"
+                                                        BannerText2="{{BannerText2}}" >
+                                                    </c:pvfc_ServiceDetails_01>
 
-                        <tr>
-                            <td><h1>pvfc_WhatNext_08</h1></td>
-                        </tr>
-                        <c:pvfc_WhatNext_08 vpData="{{vpData}}"
-                            phoneNum="{{phoneNum}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
-                            licensedImg="{{licensedImg}}"
-                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
-                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
-                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
-                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
-                            QuestionNumber="{{QuestionNumber}}"
-                            SPName="{{SPName}}"
-                            BulletOneText="{{BulletOneText}}"
-                            BulletTwoText="{{BulletTwoText}}"
-                            BulletThreeText="{{BulletThreeText}}" >
-                        </c:pvfc_WhatNext_08> 
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_02</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_02
+                                                        ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+                                                        ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+                                                        OrangeBannerD="https://placehold.co/564x50?text=564x50{{OrangeBannerD}}"
+                                                        OrangeBannerM="https://placehold.co/288x50?text=288x50{{OrangeBannerD}}"
+                                                        CoreCallLoggingCallNowD="https://placehold.co/542x542?text=542x542{{CoreCallLoggingCallNowD}}"
+                                                        CoreCallLoggingCallNowM="***NOT USED***"
+                                                        SPName="{{SPName}}"
+                                                        SPemail="{{SPemail}}"
+                                                        SPAddress="***NOT USED***"
+                                                        SPNum1="{{SPNum1}}"
+                                                        SPNum2="{{SPNum2}}" 
+                                                        BannerNumber1="{{BannerNumber1}}"
+                                                        BannerNumber2="{{BannerNumber2}}" >
+                                                    </c:pvfc_ServiceDetails_02>
 
-                        <tr>
-                            <td><h1>pvfc_WhatNext_09</h1></td>
-                        </tr>
-                        <c:pvfc_WhatNext_09 vpData="{{vpData}}"
-                            phoneNum="{{phoneNum}}"
-                            phoneIcon="{{phoneIcon}}"
-                            imgLogo="{{imgLogo}}"
-                            bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
-                            licensedImg="{{licensedImg}}"
-                            bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
-                            bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
-                            WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
-                            WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
-                            QuestionNumber="{{QuestionNumber}}"
-                            SPName="{{SPName}}"
-                            BulletOneText="{{BulletOneText}}"
-                            BulletTwoText="{{BulletTwoText}}"
-                            BulletThreeText="{{BulletThreeText}}" >
-                        </c:pvfc_WhatNext_09> 
-                        <!--===============/WHAT NEXT SECTION===================--> 
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_03</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_03
+                                                        ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+                                                        YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+                                                        ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+                                                        YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+                                                        SPName="{{SPName}}"
+                                                        SPemail="{{SPemail}}"
+                                                        SPAddress="***NOT USED***"
+                                                        SPNum1="{{SPNum1}}"
+                                                        SPNum2="{{SPNum2}}" 
+                                                        custName="{{custName}}"
+                                                        Address1="{{Address1}}"
+                                                        Address2="{{Address2}}"
+                                                        custPhone="{{custPhone}}"
+                                                        custemail="{{custemail}}" >
+                                                    </c:pvfc_ServiceDetails_03>
 
-                        <!--===============QUICK LINKS SECTION===================-->
-                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
-                        <!--===============QUICK LINKS SECTION===================-->
-                          
-                        <!--===============FOOTER SECTION===================--> 
-                        <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
-                        <!--===============FOOTER SECTION===================-->
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_04</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_04
+                                                        ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+                                                        YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+                                                        ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+                                                        YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+                                                        SPName="{{SPName}}"
+                                                        SPemail="{{SPemail}}"
+                                                        SPAddress="***NOT USED***"
+                                                        SPNum1="{{SPNum1}}"
+                                                        SPNum2="{{SPNum2}}" 
+                                                        custName="{{custName}}"
+                                                        custEmail="***NOT USED***"
+                                                        OrderNum="{{OrderNum}}" >
+                                                    </c:pvfc_ServiceDetails_04>
 
-                        <!--===============PIXEL TRACKING===================-->
-                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
-                        <!--===============PIXEL TRACKING===================-->
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_05</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_05
+                                                        imgCallNowHero="https://placehold.co/1136x400?text=1136x400{{imgCallNowHero}}"
+                                                        YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+                                                        YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}" 
+                                                        custName="{{custName}}"
+                                                        custAddress="{{custAddress}}"
+                                                        custPhone="{{custPhone}}"
+                                                        custEmail="{{custEmail}}"
+                                                        custJobNumber="***NOT USED***" >
+                                                    </c:pvfc_ServiceDetails_05>
 
-<!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_06</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_06
+                                                        SignAndPayDivider="***NOT USED***"
+                                                        SignAndPayDividerM="***NOT USED***"
+                                                        CoreSignAndPayBodyD="***NOT USED***" 
+                                                        CoreSignAndPayBodyM="***NOT USED***"
+                                                        SignAndPayButton="{{SignAndPayButton}}" >
+                                                    </c:pvfc_ServiceDetails_06>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_07</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_07
+                                                        ServiceAppointmentDivider="https://placehold.co/600x3?text=600x3{{ServiceAppointmentDivider}}"
+                                                        YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+                                                        ServiceAppointmentDividerM="https://placehold.co/300x3?text=300x3{{ServiceAppointmentDividerM}}"
+                                                        YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+                                                        Copy1="{{Copy1}}"
+                                                        Title1="{{Title1}}"
+                                                        Title2="{{Title2}}"
+                                                        Title3="{{Title3}}"
+                                                        custName="{{custName}}"
+                                                        Address1="{{Address1}}"
+                                                        Address2="{{Address2}}"
+                                                        custPhone="{{custPhone}}"
+                                                        custemail="{{custemail}}"
+                                                        orderNumber="{{orderNumber}}" >
+                                                    </c:pvfc_ServiceDetails_07>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_08</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_08
+                                                        imgCallNowHero="https://placehold.co/1136x400?text=1136x400{{imgCallNowHero}}"
+                                                        YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+                                                        YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}" 
+                                                        custName="{{custName}}"
+                                                        custAddress="{{custAddress}}"
+                                                        custPhone="{{custPhone}}"
+                                                        custEmail="***NOT USED***"
+                                                        custJobNumber="{{custJobNumber}}" >
+                                                    </c:pvfc_ServiceDetails_08>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_09</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_09
+                                                        ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+                                                        YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+                                                        YourInformationDivider2="https://placehold.co/600x3?text=600x3{{YourInformationDivider2}}"
+                                                        ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+                                                        YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+                                                        YourInformationDividerM2="https://placehold.co/300x3?text=300x3{{YourInformationDividerM2}}"
+                                                        NameString="{{NameString}}"
+                                                        SPName="{{SPName}}"
+                                                        SPemail="{{SPemail}}"
+                                                        SPAddress="***NOT USED***"
+                                                        SPNum1="{{SPNum1}}"
+                                                        SPNum2="{{SPNum2}}"
+                                                        custName="{{custName}}"
+                                                        Address1="{{Address1}}"
+                                                        Address2="{{Address2}}"
+                                                        custPhone="{{custPhone}}"
+                                                        custemail="{{custemail}}"
+                                                        Title="{{Title}}"
+                                                        jobTime="{{jobTime}}" >
+                                                    </c:pvfc_ServiceDetails_09>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_HDIS</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_HDIS
+                                                        ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+                                                        YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+                                                        YourInformationDivider2="https://placehold.co/600x3?text=600x3{{YourInformationDivider2}}"
+                                                        ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+                                                        YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+                                                        YourInformationDividerM2="https://placehold.co/300x3?text=300x3{{YourInformationDividerM2}}"
+                                                        NameString="{{NameString}}"
+                                                        SPName="{{SPName}}"
+                                                        SPemail="{{SPemail}}"
+                                                        SPAddress="***NOT USED***"
+                                                        SPNum1="{{SPNum1}}"
+                                                        SPNum2="{{SPNum2}}"
+                                                        custName="{{custName}}"
+                                                        Address1="{{Address1}}"
+                                                        Address2="{{Address2}}"
+                                                        custPhone="{{custPhone}}"
+                                                        custemail="{{custemail}}"
+                                                        Title="{{Title}}"
+                                                        jobTime="{{jobTime}}"
+                                                        phoneNum1="{{phoneNum1}}"
+                                                        phoneNum2="{{phoneNum2}}"  
+                                                        phoneIcon="https://placehold.co/16x16?text=16x16{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOT USED***"
+                                                        imgPathDivider="https://placehold.co/600x3?text=600x3{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOT USED***"
+                                                        logoLink="#logoLink"
+                                                        TestNum="***NOT USED***" >
+                                                    </c:pvfc_ServiceDetails_HDIS>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ServiceDetails_SAM</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ServiceDetails_SAM
+                                                        ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+                                                        YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+                                                        YourInformationDivider2="***NOT USED***"
+                                                        ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+                                                        YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+                                                        YourInformationDividerM2="***NOT USED***"
+                                                        NameString="***NOT USED***"
+                                                        SPName="***NOT USED***"
+                                                        Number="{{Number}}"
+                                                        SPAddress="{{SPAddress}}"
+                                                        Product="***NOT USED***"
+                                                        custName="{{custName}}"
+                                                        Address1="***NOT USED***"
+                                                        Address2="***NOT USED***"
+                                                        custPhone="{{custPhone}}"
+                                                        custemail="{{custemail}}"
+                                                        Title1="{{Title1}}"
+                                                        Title2="{{Title2}}" >
+                                                    </c:pvfc_ServiceDetails_SAM>
+                                                    <!--=============== /SERVICE DETAILS SECTION ===================-->
+                                                    
+                                                    
+                                                    <!--=============== MISC SECTION ===================-->
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_AdditionalRscs_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_AdditionalRscs_01 interiorDoorsImg="https://placehold.co/358x258?text=358x258{{interiorDoorsImg}}"
+                                                        stormScreenDoorsImg="https://placehold.co/358x258?text=358x258{{stormScreenDoorsImg}}"
+                                                        exteriorDoorsImg="https://placehold.co/358x258?text=358x258{{exteriorDoorsImg}}"
+                                                        garageDoorsImg="https://placehold.co/358x258?text=358x258{{garageDoorsImg}}"
+                                                        closetDoorsImg="https://placehold.co/358x258?text=358x258{{closetDoorsImg}}"
+                                                        windowsImg="https://placehold.co/358x258?text=358x258{{windowsImg}}"
+                                                        AdditionalRscDivider="https://placehold.co/600x3?text=600x3{{AdditionalRscDivider}}"
+                                                        AdditionalRscDividerM="https://placehold.co/288x3?text=288x3{{AdditionalRscDividerM}}" >
+                                                    </c:pvfc_AdditionalRscs_01>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_AddToCalendar_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_AddToCalendar_01 paymentCalc="***NOT USED***"
+                                                        paymentCTA="***NOT USED***"
+                                                        imageURL="***NOT USED***"
+                                                        imageALT="***NOT USED***"
+                                                        buttonImg="***NOT USED***"
+                                                        buttonURL="***NOT USED***"
+                                                        buttonCopy="***NOT USED***"
+                                                        Copy="{{Copy}}"
+                                                        OutlookURL="#OutlookURL"
+                                                        Office365URL="#Office365URL"
+                                                        GoogleURL="#GoogleURL"
+                                                        YahooURL="#YahooURL"
+                                                         >
+                                                    </c:pvfc_AddToCalendar_01>
+                                                    <!--=============== /MISC SECTION ===================-->
+
+                                                    <!--=============== HEADER SECTION ===================-->
+                                                    <!-- <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_01
+                                                        phoneNum="{{phoneNum}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="#heroLink"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_01> -->
+
+                                                    <!-- <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_02</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_02
+                                                        phoneNum="***NOTUSED***"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="https://placehold.co/640x300?text=640x300{{imgPathMobile}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="#heroLink"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_02> -->
+
+                                                    <!-- <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_03</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_03
+                                                        phoneNum="***NOTUSED***"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="https://placehold.co/640x300?text=640x300{{imgPathMobile}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="#heroLink"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_03>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_04</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_04
+                                                        phoneNum="***NOTUSED***"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="https://placehold.co/640x300?text=640x300{{imgPathMobile}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_04>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_05</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_05
+                                                        phoneNum="***NOTUSED***"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_05>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_06</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_06
+                                                        phoneNum="{{phoneNum}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_06>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_07</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_07
+                                                        phoneNum="{{phoneNum}}"
+                                                        phoneIcon="https://placehold.co/16x16?text=16x16{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_07> -->
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_08</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_08 phoneNum="{{phoneNum}}"
+                                                        phoneIcon="https://placehold.co/16x16?text=16x16{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_08>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_09</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_09 phoneNum1="{{phoneNum1}}"
+                                                        phoneNum2="{{phoneNum2}}"
+                                                        phoneIcon="https://placehold.co/16x16?text=16x16{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink"
+                                                        TestNum="***NOTUSED***" >
+                                                    </c:pvfc_Header_09>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_10</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_10 phoneNum="{{phoneNum}}"
+                                                        phoneIcon="https://placehold.co/16x16?text=16x16{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="***NOTUSED***"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_10>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_11</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_11 phoneNum="{{phoneNum}}"
+                                                        phoneIcon="***NOTUSED***"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_11>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_11_v2</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_11_v2 phoneNum="***NOTUSED***"
+                                                        phoneIcon="***NOTUSED***"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_11_v2>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_12</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_12 phoneNum="{{phoneNum}}"
+                                                        phoneIcon="***NOTUSED***"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_12>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_13</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_13 phoneNum="***NOTUSED***"
+                                                        phoneIcon="***NOTUSED***"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_13>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_No_Hero</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_No_Hero phoneNum="***NOTUSED***"
+                                                        phoneIcon="***NOTUSED***"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="***NOTUSED***"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_No_Hero>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_No_Hero_v2</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_No_Hero_v2 phoneNum="{{phoneNum}}"
+                                                        phoneIcon="https://placehold.co/16x16?text=16x16{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="***NOTUSED***"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_No_Hero_v2>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_No_Hero_v3</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_No_Hero_v3 phoneNum="***NOTUSED***"
+                                                        phoneIcon="***NOTUSED***"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="***NOTUSED***"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_No_Hero_v3>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_PGT</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_PGT phoneNum="{{phoneNum}}"
+                                                        phoneIcon="https://placehold.co/16x16?text=16x16{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgLogo2="https://placehold.co/252x120?text=252x120{{imgLogo2}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_PGT>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_Header_TFN</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_Header_TFN phoneNum="{{phoneNum}}"
+                                                        phoneIcon="https://placehold.co/16x16?text=16x16{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/252x120?text=252x120{{imgLogo}}"
+                                                        imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+                                                        imgPathMobile="***NOTUSED***"
+                                                        imgPathDivider="https://placehold.co/1200x6?text=1200x6{{imgPathDivider}}"
+                                                        titleCopy="{{titleCopy}}"
+                                                        heroLink="***NOTUSED***"
+                                                        logoLink="#logoLink" >
+                                                    </c:pvfc_Header_TFN>
+                                                    <!--=============== /VALUE PROP SECTION ===================-->
+
+                                                    <!--=============== VALUE PROP SECTION ===================-->
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValueProps_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValueProps_01 vpData="{{vpData}}"
+                                                        ApplyNowURL="{{ApplyNowURL}}">
+                                                    </c:pvfc_ValueProps_01>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValueProps_02</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValueProps_02 iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                                                        iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                                                        iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                                                        iconOneHeader="{{iconOneHeader}}"
+                                                        iconTwoHeader="{{iconTwoHeader}}"
+                                                        iconThreeHeader="{{iconThreeHeader}}"
+                                                        iconOneDescription="{{iconOneDescription}}"
+                                                        iconTwoDescription="{{iconTwoDescription}}"
+                                                        iconThreeDescription="{{iconThreeDescription}}"
+                                                        exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                                                        WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                                                        WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+                                                        ApplyNowURL="{{ApplyNowURL}}">
+                                                    </c:pvfc_ValueProps_02>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValueProps_03</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValueProps_03 vpData="{{vpData}}" phoneNum="{{phoneNum}}"
+                                                        phoneIcon="{{phoneIcon}}" imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        affordableImg="https://placehold.co/52x48?text=52x48{{affordableImg}}"
+                                                        licensedImg="https://placehold.co/40x48?text=40x48{{licensedImg}}"
+                                                        blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                                                        exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                                                        WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                                                        WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+                                                        ApplyNowURL="{{ApplyNowURL}}">
+                                                    </c:pvfc_ValueProps_03>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValueProps_04</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValueProps_04 iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                                                        iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                                                        iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                                                        iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                                                        iconOneHeader="{{iconOneHeader}}"
+                                                        iconTwoHeader="{{iconTwoHeader}}"
+                                                        iconThreeHeader="{{iconThreeHeader}}"
+                                                        iconFourHeader="{{iconFourHeader}}"
+                                                        iconOneDescription="{{iconOneDescription}}"
+                                                        iconTwoDescription="{{iconTwoDescription}}"
+                                                        iconThreeDescription="{{iconThreeDescription}}"
+                                                        iconFourDescription="{{iconFourDescription}}"
+                                                        blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                                                        exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                                                        WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                                                        WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+                                                        ApplyNowURL="{{ApplyNowURL}}">
+                                                    </c:pvfc_ValueProps_04>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValueProps_05</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValueProps_05 iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                                                        iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                                                        iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                                                        iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                                                        iconOneHeader="{{iconOneHeader}}"
+                                                        iconTwoHeader="{{iconTwoHeader}}"
+                                                        iconThreeHeader="{{iconThreeHeader}}"
+                                                        iconFourHeader="{{iconFourHeader}}"
+                                                        iconOneDescription="{{iconOneDescription}}"
+                                                        iconTwoDescription="{{iconTwoDescription}}"
+                                                        iconThreeDescription="{{iconThreeDescription}}"
+                                                        iconFourDescription="{{iconFourDescription}}"
+                                                        blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                                                        exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                                                        WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                                                        WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}">
+                                                    </c:pvfc_ValueProps_05>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValueProps_05_v2</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValueProps_05_v2 iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                                                        iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                                                        iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                                                        iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                                                        iconOneHeader="{{iconOneHeader}}"
+                                                        iconTwoHeader="{{iconTwoHeader}}"
+                                                        iconThreeHeader="{{iconThreeHeader}}"
+                                                        iconFourHeader="{{iconFourHeader}}"
+                                                        iconOneDescription="{{iconOneDescription}}"
+                                                        iconTwoDescription="{{iconTwoDescription}}"
+                                                        iconThreeDescription="{{iconThreeDescription}}"
+                                                        iconFourDescription="{{iconFourDescription}}"
+                                                        blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                                                        exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                                                        WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                                                        WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}">
+                                                    </c:pvfc_ValueProps_05_v2>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValueProps_06</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValueProps_06 iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                                                        iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                                                        iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                                                        iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                                                        iconOneHeader="{{iconOneHeader}}"
+                                                        iconTwoHeader="{{iconTwoHeader}}"
+                                                        iconThreeHeader="{{iconThreeHeader}}"
+                                                        iconFourHeader="{{iconFourHeader}}"
+                                                        iconOneDescription="{{iconOneDescription}}"
+                                                        iconTwoDescription="{{iconTwoDescription}}"
+                                                        iconThreeDescription="{{iconThreeDescription}}"
+                                                        iconFourDescription="{{iconFourDescription}}"
+                                                        blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                                                        exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                                                        WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                                                        WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}">
+                                                    </c:pvfc_ValueProps_06>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValueProps_07</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValueProps_07 iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+                                                        iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+                                                        iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+                                                        iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+                                                        iconOneHeader="{{iconOneHeader}}"
+                                                        iconTwoHeader="{{iconTwoHeader}}"
+                                                        iconThreeHeader="{{iconThreeHeader}}"
+                                                        iconFourHeader="{{iconFourHeader}}"
+                                                        iconOneDescription="{{iconOneDescription}}"
+                                                        iconTwoDescription="{{iconTwoDescription}}"
+                                                        iconThreeDescription="{{iconThreeDescription}}"
+                                                        iconFourDescription="{{iconFourDescription}}"
+                                                        blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                                                        exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                                                        WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                                                        WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}">
+                                                    </c:pvfc_ValueProps_07>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValueProps_LAM</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValueProps_LAM vpData="{{vpData}}" phoneNum="{{phoneNum}}"
+                                                        phoneIcon="{{phoneIcon}}" imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        affordableImg="https://placehold.co/52x48?text=52x48{{affordableImg}}"
+                                                        licensedImg="https://placehold.co/40x48?text=40x48{{licensedImg}}"
+                                                        blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+                                                        exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+                                                        WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+                                                        WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+                                                        ApplyNowURL="{{ApplyNowURL}}">
+                                                    </c:pvfc_ValueProps_LAM>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_ValuePropsDynamic_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_ValuePropsDynamic_01 sectionHeader="{{Section header}}"
+                                                        area1icon="https://placehold.co/26x26?text=26x26{{area1icon}}"
+                                                        area1Header="{{1st area header}}"
+                                                        area1BodyCopy="{{1st area body copy}}"
+                                                        area1CTA="{{1st area Call to Action}}"
+                                                        area1URL="{{1st area Call to Action's URL}}"
+                                                        area2icon="https://placehold.co/26x26?text=26x26{{area2icon}}"
+                                                        area2Header="{{2nd area Headline}}"
+                                                        area2BodyCopy="{{2nd area body copy}}"
+                                                        area2CTA="{{2nd area Call to Action}}"
+                                                        area2URL="{{2nd area Call to Action's URL}}"
+                                                        area3icon="https://placehold.co/26x26?text=26x26{{area3icon}}"
+                                                        area3Header="{{3rd area Headline}}"
+                                                        area3BodyCopy="{{3rd area body copy}}"
+                                                        area3CTA="{{3rd area Call to Action}}"
+                                                        area3URL="{{3rd area Call to Action's URL}}"
+                                                        area4icon="https://placehold.co/26x26?text=26x26{{area4icon}}"
+                                                        area4Header="{{4th area Headline}}"
+                                                        area4BodyCopy="{{4th area body copy}}"
+                                                        area4CTA="{{4th area Call to Action}}"
+                                                        area4URL="{{4th area Call to Action's URL}}">
+                                                    </c:pvfc_ValuePropsDynamic_01>
+                                                    <!--=============== /VALUE PROP SECTION ===================-->
+
+                                                    <!--=============== WHAT NEXT SECTION ===================-->
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatNext_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatNext_01 vpData="{{vpData}}" phoneNum1="{{phoneNum1}}"
+                                                        phoneNum2="{{phoneNum2}}" phoneIcon="{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}" bulletOneTxt1="{{bulletOneTxt1}}"
+                                                        bulletTwoTxt1="{{bulletTwoTxt1}}"
+                                                        bulletThreeTxt1="{{bulletThreeTxt1}}"
+                                                        bulletOneTxt2="{{bulletOneTxt2}}"
+                                                        bulletTwoTxt2="{{bulletTwoTxt2}}"
+                                                        bulletThreeTxt2="{{bulletThreeTxt2}}"
+                                                        bulletThreeTxt3="{{bulletThreeTxt3}}"
+                                                        bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                                                        licensedImg="{{licensedImg}}"
+                                                        bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                                                        bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                                                        WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                                                        WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}">
+                                                    </c:pvfc_WhatNext_01>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatNext_02</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatNext_02 vpData="{{vpData}}" phoneNum="{{phoneNum}}"
+                                                        phoneIcon="{{phoneIcon}}" imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                                                        licensedImg="{{licensedImg}}"
+                                                        bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                                                        bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                                                        WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                                                        WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}">
+                                                    </c:pvfc_WhatNext_02>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatNext_03</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatNext_03 vpData="{{vpData}}" phoneNum="{{phoneNum}}"
+                                                        phoneIcon="{{phoneIcon}}" imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                                                        licensedImg="{{licensedImg}}"
+                                                        bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                                                        bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                                                        WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                                                        WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                                                        QuestionNumber="{{QuestionNumber}}">
+                                                    </c:pvfc_WhatNext_03>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatNext_04</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatNext_04 vpData="{{vpData}}" phoneNum="{{phoneNum}}"
+                                                        phoneIcon="{{phoneIcon}}" imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                                                        licensedImg="{{licensedImg}}"
+                                                        bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                                                        bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                                                        WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                                                        WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                                                        storeName="{{storeName}}" storeStreet="{{storeStreet}}"
+                                                        storeCity="{{storeCity}}" storeState="{{storeState}}"
+                                                        storeZip="{{storeZip}}" storePhoneNumber="{{storePhoneNumber}}">
+                                                    </c:pvfc_WhatNext_04>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatNext_05</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatNext_05 vpData="{{vpData}}" phoneNum="{{phoneNum}}"
+                                                        phoneIcon="{{phoneIcon}}" imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                                                        licensedImg="{{licensedImg}}"
+                                                        bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                                                        bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                                                        WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                                                        WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}">
+                                                    </c:pvfc_WhatNext_05>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatNext_06</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatNext_06 imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                                                        licensedImg="{{licensedImg}}"
+                                                        bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                                                        bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                                                        WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                                                        WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}">
+                                                    </c:pvfc_WhatNext_06>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatNext_07</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatNext_07 vpData="{{vpData}}" phoneNum="{{phoneNum}}"
+                                                        phoneIcon="{{phoneIcon}}" imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                                                        licensedImg="{{licensedImg}}"
+                                                        bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                                                        bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                                                        WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                                                        WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                                                        QuestionNumber="{{QuestionNumber}}" SPName="{{SPName}}"
+                                                        BulletOneText="{{BulletOneText}}"
+                                                        BulletTwoText="{{BulletTwoText}}"
+                                                        BulletThreeText="{{BulletThreeText}}">
+                                                    </c:pvfc_WhatNext_07>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatNext_08</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatNext_08 vpData="{{vpData}}" phoneNum="{{phoneNum}}"
+                                                        phoneIcon="{{phoneIcon}}" imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                                                        licensedImg="{{licensedImg}}"
+                                                        bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                                                        bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                                                        WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                                                        WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                                                        QuestionNumber="{{QuestionNumber}}" SPName="{{SPName}}"
+                                                        BulletOneText="{{BulletOneText}}"
+                                                        BulletTwoText="{{BulletTwoText}}"
+                                                        BulletThreeText="{{BulletThreeText}}">
+                                                    </c:pvfc_WhatNext_08>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatNext_09</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatNext_09 vpData="{{vpData}}" phoneNum="{{phoneNum}}"
+                                                        phoneIcon="{{phoneIcon}}" imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}"
+                                                        licensedImg="{{licensedImg}}"
+                                                        bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}"
+                                                        bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}"
+                                                        WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
+                                                        WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
+                                                        QuestionNumber="{{QuestionNumber}}" SPName="{{SPName}}"
+                                                        BulletOneText="{{BulletOneText}}"
+                                                        BulletTwoText="{{BulletTwoText}}"
+                                                        BulletThreeText="{{BulletThreeText}}">
+                                                    </c:pvfc_WhatNext_09>
+                                                    <!--=============== /WHAT NEXT SECTION ===================-->
+
+
+                                                    <!--=============== WHAT TO EXPECT SECTION ===================-->
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatToExpect_01</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatToExpect_01 vpData="{{vpData}}"
+                                                        phoneNum="{{phoneNum}}"
+                                                        phoneIcon="https://placehold.co/26x26?text=26x26{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/26x26?text=26x26{{phoneIcon}}"
+                                                        bulletOneImg="https://placehold.co/26x26?text=26x26{{bulletOneImg}}"
+                                                        licensedImg="https://placehold.co/26x26?text=26x26{{licensedImg}}"
+                                                        bulletTwoImg="https://placehold.co/26x26?text=26x26{{bulletTwoImg}}"
+                                                        bulletThreeImg="https://placehold.co/26x26?text=26x26{{bulletThreeImg}}"
+                                                        WhatNextDivider="https://placehold.co/600x3?text=600x3{{WhatNextDivider}}"
+                                                        WhatNextDividerM="https://placehold.co/300x3?text=300x3{{WhatNextDividerM}}"
+                                                        QuestionNumber="{{QuestionNumber}}"
+                                                        SPName="{{SPName}}"
+                                                        BulletOneText="{{BulletOneText}}"
+                                                        BulletTwoText="{{BulletTwoText}}"
+                                                        BulletThreeText="{{BulletThreeText}}"
+                                                        GuideTitle="{{GuideTitle}}"
+                                                        GuideOneIcon="https://placehold.co/26x26?text=26x26{{GuideOneIcon}}"
+                                                        GuideTwoIcon="https://placehold.co/26x26?text=26x26{{GuideTwoIcon}}"
+                                                        GuideOneLink="{{GuideOneLink}}"
+                                                        GuideTwoLink="{{GuideTwoLink}}"
+                                                        GuideOneURL="#GuideOneLink"
+                                                        GuideTwoURL="#GuideTwoLink"
+                                                        conditionalString="Specialist" >
+                                                    </c:pvfc_WhatToExpect_01>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatToExpect_02</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatToExpect_02 WhatNextDivider="https://placehold.co/600x3?text=600x3{{WhatNextDivider}}"
+                                                        WhatNextDividerM="https://placehold.co/300x3?text=300x3{{WhatNextDividerM}}"
+                                                        QuestionNumber="{{QuestionNumber}}"
+                                                        BulletOneText="{{BulletOneText}}"
+                                                        BulletTwoText="{{BulletTwoText}}"
+                                                        BulletThreeText="{{BulletThreeText}}"
+                                                        conditionalString="{{conditionalString}}"
+                                                        HDISBannerD="https://placehold.co/600x150?text=600x150{{HDISBannerD}}"
+                                                        HDISBannerM="https://placehold.co/300x150?text=300x150{{HDISBannerM}}"
+                                                        BannerLink="#BannerLink" >
+                                                    </c:pvfc_WhatToExpect_02>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatToExpect_03</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatToExpect_03 vpData="{{vpData}}"
+                                                        phoneNum="{{phoneNum}}"
+                                                        phoneIcon="https://placehold.co/24x24?text=24x24{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="https://placehold.co/34x34?text=34x34{{bulletOneImg}}"
+                                                        licensedImg="https://placehold.co/34x34?text=34x34{{licensedImg}}"
+                                                        bulletTwoImg="https://placehold.co/34x34?text=34x34{{bulletTwoImg}}"
+                                                        bulletThreeImg="https://placehold.co/34x34?text=34x34{{bulletThreeImg}}"
+                                                        WhatNextDivider="https://placehold.co/600x3?text=600x3{{WhatNextDivider}}"
+                                                        WhatNextDividerM="https://placehold.co/300x3?text=300x3{{WhatNextDividerM}}"
+                                                        QuestionNumber="{{QuestionNumber}}"
+                                                        SPName="{{SPName}}"
+                                                        BulletOneText="{{BulletOneText}}"
+                                                        BulletOneAText="{{BulletOneAText}}"
+                                                        BulletOneBText="{{BulletOneBText}}"
+                                                        BulletOneBUrl="{{BulletOneBUrl}}"
+                                                        BulletTwoText="{{BulletTwoText}}"
+                                                        BulletThreeText="{{BulletThreeText}}"
+                                                        VirtualBannerD="https://placehold.co/600x150?text=600x150{{VirtualBannerD}}"
+                                                        VirtualBannerM="https://placehold.co/300x150?text=300x150{{VirtualBannerM}}"
+                                                        VirtualBannerUrl="#VirtualBannerUrl"
+                                                        conditionalString="{{conditionalString}}"
+                                                        NameString="{{NameString}}" >
+                                                    </c:pvfc_WhatToExpect_03>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatToExpect_04</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatToExpect_04 vpData="{{vpData}}"
+                                                        phoneNum="{{phoneNum}}"
+                                                        phoneIcon="https://placehold.co/24x24?text=24x24{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="https://placehold.co/26x26?text=26x26{{bulletOneImg}}"
+                                                        licensedImg="https://placehold.co/26x26?text=26x26{{licensedImg}}"
+                                                        bulletTwoImg="https://placehold.co/26x26?text=26x26{{bulletTwoImg}}"
+                                                        bulletThreeImg="https://placehold.co/26x26?text=26x26{{bulletThreeImg}}"
+                                                        WhatNextDivider="https://placehold.co/600x3?text=600x3{{WhatNextDivider}}"
+                                                        WhatNextDividerM="https://placehold.co/300x3?text=300x3{{WhatNextDividerM}}"
+                                                        QuestionNumber="{{QuestionNumber}}"
+                                                        SPName="{{SPName}}"
+                                                        BulletOneText="{{BulletOneText}}"
+                                                        BulletOneAText="{{BulletOneAText}}"
+                                                        BulletOneBText="{{BulletOneBText}}"
+                                                        BulletOneBUrl="{{BulletOneBUrl}}"
+                                                        BulletTwoText="{{BulletTwoText}}"
+                                                        BulletThreeText="{{BulletThreeText}}" >
+                                                    </c:pvfc_WhatToExpect_04>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatToExpect_HDMS</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatToExpect_HDMS vpData=""
+                                                        phoneNum=""
+                                                        phoneIcon="https://placehold.co/24x24?text=24x24{{phoneIcon}}"
+                                                        imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+                                                        bulletOneImg="https://placehold.co/26x26?text=26x26{{bulletOneImg}}"
+                                                        licensedImg="https://placehold.co/26x26?text=26x26{{licensedImg}}"
+                                                        bulletTwoImg="https://placehold.co/26x26?text=26x26{{bulletTwoImg}}"
+                                                        bulletThreeImg="https://placehold.co/26x26?text=26x26{{bulletThreeImg}}"
+                                                        WhatNextDivider="https://placehold.co/600x3?text=600x3{{WhatNextDivider}}"
+                                                        WhatNextDividerM="https://placehold.co/300x3?text=300x3{{WhatNextDividerM}}"
+                                                        QuestionNumber="{{QuestionNumber}}"
+                                                        SPName="{{SPName}}"
+                                                        Header="{{Header}}"
+                                                        BulletOneText="{{BulletOneText}}"
+                                                        BulletOneAText="{{BulletOneAText}}"
+                                                        BulletOneBText="{{BulletOneBText}}"
+                                                        BulletOneBUrl="{{BulletOneBUrl}}"
+                                                        BulletTwoText="{{BulletTwoText}}"
+                                                        BulletThreeText="{{BulletThreeText}}" >
+                                                    </c:pvfc_WhatToExpect_HDMS>
+
+                                                    <tr>
+                                                        <td>
+                                                            <h1>pvfc_WhatToExpect_Store_SAM</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <c:pvfc_WhatToExpect_Store_SAM WhatNextDivider="https://placehold.co/600x3?text=600x3{{WhatNextDivider}}"
+                                                        WhatNextDividerM="https://placehold.co/300x3?text=300x3{{WhatNextDividerM}}"
+                                                        QuestionNumber="{{QuestionNumber}}"
+                                                        BulletOneText="{{BulletOneText}}"
+                                                        BulletTwoText="{{BulletTwoText}}"
+                                                        BulletThreeText="{{BulletThreeText}}"
+                                                        conditionalString="{{conditionalString}}"
+                                                        HDISBannerD="https://placehold.co/600x150?text=600x150{{HDISBannerD}}"
+                                                        HDISBannerM="https://placehold.co/300x150?text=300x150{{HDISBannerM}}"
+                                                        BannerLink="{{BannerLink}}" >
+                                                    </c:pvfc_WhatToExpect_Store_SAM>
+
+                                                    <!--===============QUICK LINKS SECTION===================-->
+                                                    <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses"
+                                                        ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services"
+                                                        ql_03_URL="https://www.homedepot.com/services/"
+                                                        custEmail="{!relatedTo.ToEmail__c}">
+                                                    </c:pvfc_QuickLinks_Promotions>
+                                                    <!--===============QUICK LINKS SECTION===================-->
+
+                                                    <!--===============FOOTER SECTION===================-->
+                                                    <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
+                                                    <!--===============FOOTER SECTION===================-->
+
+                                                    <!--===============PIXEL TRACKING===================-->
+                                                    <tr><td>Start of Pixel</td></tr>
+                                                    <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}"
+                                                        emailApiUrl="{!$Label.EmailTrackingAPIURL}">
+                                                    </c:Email_Tracking_VFC>
+                                                    <!--===============PIXEL TRACKING===================-->
+
+                                                    <!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- =========================**********************NO CODING BELOW THIS LINE********************************=============================== -->
                         </table>
                     </td>
+                    <td class="hide-for-small">&zwnj;</td>
                 </tr>
             </table>
-        </td>
-    </tr>   
-<!-- =========================**********************NO CODING BELOW THIS LINE********************************=============================== -->                        
-</table>
-</td>
-<td class="hide-for-small">&zwnj;</td>
-</tr>
-</table>
-</body>
-</html>
-</messaging:htmlEmailBody>
+        </body>
+
+        </html>
+    </messaging:htmlEmailBody>
 </messaging:emailTemplate>
