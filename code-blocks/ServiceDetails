@@ -1,0 +1,197 @@
+<c:pvfc_ServiceDetails_01
+    ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+    ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+    OrangeBannerD="https://placehold.co/564x50?text=564x50{{OrangeBannerD}}"
+    OrangeBannerM="https://placehold.co/288x50?text=288x50{{OrangeBannerD}}"
+    CoreCallLoggingCallNowD="https://placehold.co/542x542?text=542x542{{CoreCallLoggingCallNowD}}"
+    CoreCallLoggingCallNowM=""
+    SPName="{{SPName}}"
+    SPemail="{{SPemail}}"
+    SPAddress="{{SPAddress}}"
+    SPNum1="{{SPNum1}}"
+    SPNum2="***NOT USED***" 
+    BannerNumber1="{{BannerNumber1}}"
+    BannerNumber2="{{BannerNumber2}}"
+    BannerText1="{{BannerText1}}"
+    BannerText2="{{BannerText2}}" >
+</c:pvfc_ServiceDetails_01>
+
+<c:pvfc_ServiceDetails_02
+    ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+    ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+    OrangeBannerD="https://placehold.co/564x50?text=564x50{{OrangeBannerD}}"
+    OrangeBannerM="https://placehold.co/288x50?text=288x50{{OrangeBannerD}}"
+    CoreCallLoggingCallNowD="https://placehold.co/542x542?text=542x542{{CoreCallLoggingCallNowD}}"
+    CoreCallLoggingCallNowM="***NOT USED***"
+    SPName="{{SPName}}"
+    SPemail="{{SPemail}}"
+    SPAddress="***NOT USED***"
+    SPNum1="{{SPNum1}}"
+    SPNum2="{{SPNum2}}" 
+    BannerNumber1="{{BannerNumber1}}"
+    BannerNumber2="{{BannerNumber2}}" >
+</c:pvfc_ServiceDetails_02>
+
+<c:pvfc_ServiceDetails_03
+    ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+    YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+    ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+    YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+    SPName="{{SPName}}"
+    SPemail="{{SPemail}}"
+    SPAddress="***NOT USED***"
+    SPNum1="{{SPNum1}}"
+    SPNum2="{{SPNum2}}" 
+    custName="{{custName}}"
+    Address1="{{Address1}}"
+    Address2="{{Address2}}"
+    custPhone="{{custPhone}}"
+    custemail="{{custemail}}" >
+</c:pvfc_ServiceDetails_03>
+
+<c:pvfc_ServiceDetails_04
+    ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+    YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+    ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+    YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+    SPName="{{SPName}}"
+    SPemail="{{SPemail}}"
+    SPAddress="***NOT USED***"
+    SPNum1="{{SPNum1}}"
+    SPNum2="{{SPNum2}}" 
+    custName="{{custName}}"
+    Balance="{{Balance}}"
+    custEmail="***NOT USED***"
+    OrderNum="{{OrderNum}}" >
+</c:pvfc_ServiceDetails_04>
+
+<c:pvfc_ServiceDetails_05
+    imgCallNowHero="https://placehold.co/1136x400?text=1136x400{{imgCallNowHero}}"
+    YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+    YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}" 
+    custName="{{custName}}"
+    custAddress="{{custAddress}}"
+    custPhone="{{custPhone}}"
+    custEmail="{{custEmail}}"
+    custJobNumber="***NOT USED***" >
+</c:pvfc_ServiceDetails_05>
+
+<c:pvfc_ServiceDetails_06
+    SignAndPayDivider="***NOT USED***"
+    SignAndPayDividerM="***NOT USED***"
+    CoreSignAndPayBodyD="***NOT USED***" 
+    CoreSignAndPayBodyM="***NOT USED***"
+    SignAndPayButton="{{SignAndPayButton}}"
+    totalAmt="{{totalAmt}}" >
+</c:pvfc_ServiceDetails_06>
+
+<c:pvfc_ServiceDetails_07
+    ServiceAppointmentDivider="https://placehold.co/600x3?text=600x3{{ServiceAppointmentDivider}}"
+    YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+    ServiceAppointmentDividerM="https://placehold.co/300x3?text=300x3{{ServiceAppointmentDividerM}}"
+    YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+    Copy1="{{Copy1}}"
+    Title1="{{Title1}}"
+    Title2="{{Title2}}"
+    Title3="{{Title3}}"
+    jobDate="{{jobDate}}"
+    jobStartTime="{{jobStartTime}}"
+    jobEndTime="***NOT USED***"
+    custName="{{custName}}"
+    Address1="{{Address1}}"
+    Address2="{{Address2}}"
+    custPhone="{{custPhone}}"
+    custemail="{{custemail}}"
+    orderNumber="{{orderNumber}}" >
+</c:pvfc_ServiceDetails_07>
+
+<c:pvfc_ServiceDetails_08
+    imgCallNowHero="https://placehold.co/1136x400?text=1136x400{{imgCallNowHero}}"
+    YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+    YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}" 
+    custName="{{custName}}"
+    custAddress="{{custAddress}}"
+    custPhone="{{custPhone}}"
+    custEmail="***NOT USED***"
+    custJobNumber="{{custJobNumber}}" >
+</c:pvfc_ServiceDetails_08>
+
+<c:pvfc_ServiceDetails_09
+    ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+    YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+    YourInformationDivider2="https://placehold.co/600x3?text=600x3{{YourInformationDivider2}}"
+    ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+    YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+    YourInformationDividerM2="https://placehold.co/300x3?text=300x3{{YourInformationDividerM2}}"
+    NameString="{{NameString}}"
+    SPName="{{SPName}}"
+    SPemail="{{SPemail}}"
+    SPAddress="***NOT USED***"
+    SPNum1="{{SPNum1}}"
+    SPNum2="{{SPNum2}}"
+    custName="{{custName}}"
+    Address1="{{Address1}}"
+    Address2="{{Address2}}"
+    custPhone="{{custPhone}}"
+    custemail="{{custemail}}"
+    Title="{{Title}}"
+    jobDate="{{jobDate}}"
+    jobTime="{{jobTime}}" >
+</c:pvfc_ServiceDetails_09>
+
+<c:pvfc_ServiceDetails_HDIS
+    ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+    YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+    YourInformationDivider2="https://placehold.co/600x3?text=600x3{{YourInformationDivider2}}"
+    ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+    YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+    YourInformationDividerM2="https://placehold.co/300x3?text=300x3{{YourInformationDividerM2}}"
+    NameString="{{NameString}}"
+    SPName="{{SPName}}"
+    SPemail="{{SPemail}}"
+    SPAddress="***NOT USED***"
+    SPNum1="{{SPNum1}}"
+    SPNum2="{{SPNum2}}"
+    custName="{{custName}}"
+    Address1="{{Address1}}"
+    Address2="{{Address2}}"
+    custPhone="{{custPhone}}"
+    custemail="{{custemail}}"
+    Title="{{Title}}"
+    jobDate="{{jobDate}}"
+    jobTime="{{jobTime}}"
+    phoneNum1="{{phoneNum1}}"
+    phoneNum2="{{phoneNum2}}"  
+    phoneIcon="https://placehold.co/16x16?text=16x16{{phoneIcon}}"
+    imgLogo="https://placehold.co/160x76?text=160x76{{imgLogo}}"
+    imgPathFull="https://placehold.co/1136x400?text=1136x400{{imgPathFull}}"
+    imgPathMobile="***NOT USED***"
+    imgPathDivider="https://placehold.co/600x3?text=600x3{{imgPathDivider}}"
+    titleCopy="{{titleCopy}}"
+    heroLink="***NOT USED***"
+    logoLink="#logoLink"
+    TestNum="***NOT USED***" >
+</c:pvfc_ServiceDetails_HDIS>
+
+<c:pvfc_ServiceDetails_SAM
+    ServiceProviderDivider="https://placehold.co/600x3?text=600x3{{ServiceProviderDivider}}"
+    YourInformationDivider="https://placehold.co/600x3?text=600x3{{YourInformationDivider}}"
+    YourInformationDivider2="***NOT USED***"
+    ServiceProviderDividerM="https://placehold.co/300x3?text=300x3{{ServiceProviderDividerM}}"
+    YourInformationDividerM="https://placehold.co/300x3?text=300x3{{YourInformationDividerM}}"
+    YourInformationDividerM2="***NOT USED***"
+    NameString="***NOT USED***"
+    SPName="***NOT USED***"
+    Number="{{Number}}"
+    SPAddress="{{SPAddress}}"
+    Amount="{{Amount}}"
+    Product="***NOT USED***"
+    custName="{{custName}}"
+    Address1="***NOT USED***"
+    Address2="***NOT USED***"
+    custPhone="{{custPhone}}"
+    custemail="{{custemail}}"
+    Title1="{{Title1}}"
+    Title2="{{Title2}}" >
+</c:pvfc_ServiceDetails_SAM>
+

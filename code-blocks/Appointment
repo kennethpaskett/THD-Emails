@@ -16,6 +16,130 @@
     SPPhoneNum="{{SPPhoneNum}}"
     SPPhoneNum2="{{SPPhoneNum2}}"
     SectionTitle2="{{SectionTitle2}}"
-    CUName="CUNa{{me" >
+    CUName="{{CUName}}" >
 </c:pvfc_Appointment_CU_Info_01>
-                      
+
+<c:pvfc_Appointment_CU_Info_02
+    PhoneNum="{{PhoneNum}}"
+    jobDate="{{jobDate}}"
+    jobStartTime="{{jobStartTime}}"
+    SectionTitle="{{SectionTitle}}"
+    NameString="***NOT USED***"
+    timeZone="{{timeZone}}"
+    SPName="***NOT USED***"
+    CUemail="{{CUemail}}"
+    YourScheduledApptDividerD="***NOT USED***"
+    YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+    ServiceProviderDivider="***NOT USED***"
+    ServiceProviderDividerM="***NOT USED***"
+    CUPhoneNum="{{CUPhoneNum}}"
+    SPPhoneNum="***NOT USED***"
+    SectionTitle2="{{SectionTitle2}}"
+    CUName="{{CUName}}"
+    CUAddress="{{CUAddress}}" >
+</c:pvfc_Appointment_CU_Info_02>
+
+<c:pvfc_Appointment_CU_Info_03
+    PhoneNum="***NOT USED***"
+    jobDate="{{jobDate}}"
+    SectionTitle="{{SectionTitle}}"
+    NameString="***NOT USED***"
+    SPName="***NOT USED***"
+    CUemail="{{CUemail}}"
+    YourScheduledApptDividerD="***NOT USED***"
+    YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+    ServiceProviderDivider="***NOT USED***"
+    ServiceProviderDividerM="***NOT USED***"
+    CUPhoneNum="{{CUPhoneNum}}"
+    SPPhoneNum="***NOT USED***"
+    SectionTitle2="{{SectionTitle2}}"
+    CUName="{{CUName}}"
+    CUAddress="{{CUAddress}}" >
+</c:pvfc_Appointment_CU_Info_03>
+
+<c:pvfc_Appointment_CU_Info_04
+    PhoneNum="***NOT USED***"
+    jobDate="{{jobDate}}"
+    jobStartTime="{{jobStartTime}}"
+    SectionTitle="{{SectionTitle}}"
+    NameString="***NOT USED***"
+    timeZone="{{timeZone}}"
+    SPName="***NOT USED***"
+    CUemail="{{CUemail}}"
+    WhatNextDivider="https://placehold.co/600x3?text=600x3{{WhatNextDivider}}"
+    WhatNextDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+    ServiceProviderDivider="***NOT USED***"
+    ServiceProviderDividerM="***NOT USED***"
+    CUPhoneNum="{{CUPhoneNum}}"
+    SPPhoneNum="***NOT USED***"
+    SectionCopy="{{SectionCopy}}"
+    CUName="{{CUName}}"
+    CUAddress="{{CUAddress}}"
+    thermoText="{{thermoText}}"
+    thermoIcon="https://placehold.co/20x20?text=20x20{{thermoIcon}}" >
+</c:pvfc_Appointment_CU_Info_04>
+
+<c:pvfc_Appointment_SP_Info_01
+    PhoneNum="***NOT USED***"
+    jobDate="{{jobDate}}"
+    jobStartTime="{{jobStartTime}}"
+    SectionTitle="{{SectionTitle}}"
+    NameString="***NOT USED***"
+    timeZone="{{timeZone}}"
+    SPName="***NOT USED***"
+    SPemail="{{SPemail}}"
+    YourScheduledApptDividerD="***NOT USED***"
+    YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+    ServiceProviderDivider="***NOT USED***"
+    ServiceProviderDividerM="***NOT USED***"
+    CUPhoneNum="***NOT USED***"
+    SPPhoneNum="***NOT USED***"
+    SectionTitle2="{{SectionTitle2}}"
+    CUName="{{CUName}}" >
+</c:pvfc_Appointment_SP_Info_01>
+
+<c:pvfc_Appointment_SP_Info_02
+    PhoneNum="***NOT USED***"
+    jobDate="{{jobDate}}"
+    jobStartTime="{{jobStartTime}}"
+    SectionTitle="{{SectionTitle}}"
+    NameString="***NOT USED***"
+    timeZone="{{timeZone}}"
+    SPName="***NOT USED***"
+    SPemail="{{SPemail}}"
+    YourScheduledApptDividerD="***NOT USED***"
+    YourScheduledApptDividerM="https://placehold.co/287x3?text=287x3{{YourScheduledApptDividerM}}"
+    ServiceProviderDivider="***NOT USED***"
+    ServiceProviderDividerM="***NOT USED***"
+    CUPhoneNum="{{CUPhoneNum}}"
+    SPPhoneNum="***NOT USED***"
+    SectionTitle2="{{SectionTitle2}}"
+    CUName="{{CUName}}"
+    NumberOfRooms="***NOT USED***"
+    MAddress="{{MAddress}}"
+    MNumber="{{MNumber}}" >
+</c:pvfc_Appointment_SP_Info_02>
+
+<c:pvfc_Appointment_SP_Info_03
+    ServiceProviderDividerD="https://placehold.co/287x3?text=287x3{{ServiceProviderDividerD}}"
+    YourInformationDividerD="https://placehold.co/287x3?text=287x3{{YourInformationDividerD}}"
+    YourInformationDivider2="https://placehold.co/287x3?text=287x3{{YourInformationDivider2}}"
+    ServiceProviderDividerM="https://placehold.co/287x3?text=287x3{{ServiceProviderDividerM}}"
+    YourInformationDividerM="https://placehold.co/287x3?text=287x3{{YourInformationDividerM}}"
+    YourInformationDividerM2="https://placehold.co/287x3?text=287x3{{YourInformationDividerM2}}"
+    NameString="{{NameString}}"
+    SPName="***NOT USED***"
+    SPemail="{{SPemail}}"
+    SPAddress="***NOT USED***"
+    SPPhoneNum="***NOT USED***"
+    SPNum1="{{SPNum1}}"
+    SPNum2="{{SPNum2}}"
+    custName="{{custName}}"
+    Address1="{{Address1}}"
+    Address2="{{Address2}}"
+    custPhone="{{custPhone}}"
+    custemail="{{custemail}}"
+    Title="{{Title}}"
+    jobDate="{{jobDate}}"
+    jobTime="{{jobTime}}" >
+</c:pvfc_Appointment_SP_Info_03>
