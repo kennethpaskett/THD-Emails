@@ -1,0 +1,198 @@
+<c:pvfc_ServiceDetails_01
+    ServiceProviderDivider=""
+    ServiceProviderDividerM=""
+    OrangeBannerD=""
+    OrangeBannerM=""
+    CoreCallLoggingCallNowD=""
+    CoreCallLoggingCallNowM=""
+    SPName=""
+    SPemail=""
+    SPAddress=""
+    SPNum1=""
+    SPNum2=""  
+    BannerNumber1=""
+    BannerNumber2=""
+    BannerText1=""
+    BannerText2="" >
+</c:pvfc_ServiceDetails_01>
+
+<c:pvfc_ServiceDetails_02
+    ServiceProviderDivider=""
+    ServiceProviderDividerM=""
+    OrangeBannerD=""
+    OrangeBannerM=""
+    CoreCallLoggingCallNowD=""
+    CoreCallLoggingCallNowM=""
+    SPName=""
+    SPemail=""
+    SPAddress=""
+    SPNum1=""
+    SPNum2=""  
+    BannerNumber1=""
+    BannerNumber2=""
+    BannerText1=""
+    BannerText2="" >
+</c:pvfc_ServiceDetails_02>
+
+<c:pvfc_ServiceDetails_03
+    ServiceProviderDivider=""
+    YourInformationDivider=""
+    ServiceProviderDividerM=""
+    YourInformationDividerM=""
+    SPName=""
+    SPemail=""
+    SPAddress=""
+    SPNum1=""
+    SPNum2=""  
+    custName=""
+    Address1=""
+    Address2=""
+    custPhone=""
+    custemail="" >
+</c:pvfc_ServiceDetails_03>
+
+<c:pvfc_ServiceDetails_04
+    ServiceProviderDivider=""
+    YourInformationDivider=""
+    ServiceProviderDividerM=""
+    YourInformationDividerM=""
+    SPName=""
+    SPemail=""
+    SPAddress=""
+    SPNum1=""
+    SPNum2=""  
+    custName=""
+    Balance=""
+    custEmail=""
+    OrderNum="" >
+</c:pvfc_ServiceDetails_04>
+
+<c:pvfc_ServiceDetails_05
+    imgCallNowHero=""
+    YourInformationDivider=""
+    YourInformationDividerM="" 
+    custName=""
+    custAddress=""
+    custPhone=""
+    custEmail=""
+    custJobNumber="" >
+</c:pvfc_ServiceDetails_05>
+
+<c:pvfc_ServiceDetails_06
+    SignAndPayDivider="{!$Label.CX_LibraryCoreSignAndPayDividerD}"
+    SignAndPayDividerM="{!$Label.CX_LibraryCoreSignAndPayDividerM}"
+    CoreSignAndPayBodyD="{!$Label.CX_LibraryCoreSignAndPayRequestD}" 
+    CoreSignAndPayBodyM="{!$Label.CX_LibraryCoreSignAndPayRequestM}"
+    SignAndPayButton="{!$Label.CX_LibraryCoreReviewPayButton}"
+    totalAmt="{!relatedTo.Amount__c}" >
+</c:pvfc_ServiceDetails_06>
+
+<c:pvfc_ServiceDetails_07
+    ServiceAppointmentDivider=""
+    YourInformationDivider=""
+    ServiceAppointmentDividerM=""
+    YourInformationDividerM=""
+    Copy1=""
+    Title1=""
+    Title2=""
+    Title3=""
+    jobDate=""
+    jobStartTime=""
+    jobEndTime=""
+    custName=""
+    Address1=""
+    Address2=""
+    custPhone=""
+    custemail=""
+    orderNumber="" >
+</c:pvfc_ServiceDetails_07>
+
+<c:pvfc_ServiceDetails_08
+    imgCallNowHero=""
+    YourInformationDivider=""
+    YourInformationDividerM="" 
+    custName=""
+    custAddress=""
+    custPhone=""
+    custEmail=""
+    custJobNumber="" >
+</c:pvfc_ServiceDetails_08>
+
+<c:pvfc_ServiceDetails_09
+    ServiceProviderDivider=""
+    YourInformationDivider=""
+    YourInformationDivider2=""
+    ServiceProviderDividerM=""
+    YourInformationDividerM=""
+    YourInformationDividerM2=""
+    NameString=""
+    SPName=""
+    SPemail=""
+    SPAddress=""
+    SPNum1=""
+    SPNum2=""
+    custName=""
+    Address1=""
+    Address2=""
+    custPhone=""
+    custemail=""
+    Title=""
+    jobDate=""
+    jobTime="" >
+</c:pvfc_ServiceDetails_09>
+
+<c:pvfc_ServiceDetails_HDIS
+    ServiceProviderDivider=""
+    YourInformationDivider=""
+    YourInformationDivider2=""
+    ServiceProviderDividerM=""
+    YourInformationDividerM=""
+    YourInformationDividerM2=""
+    NameString=""
+    SPName=""
+    SPemail=""
+    SPAddress=""
+    SPNum1=""
+    SPNum2=""
+    custName=""
+    Address1=""
+    Address2=""
+    custPhone=""
+    custemail=""
+    Title=""
+    jobDate=""
+    jobTime=""
+    phoneNum1=""
+    phoneNum2=""  
+    phoneIcon=""
+    imgLogo=""
+    imgPathFull=""
+    imgPathMobile=""
+    imgPathDivider=""
+    titleCopy=""
+    heroLink=""
+    logoLink=""
+    TestNum="" >
+</c:pvfc_ServiceDetails_HDIS>
+
+<c:pvfc_ServiceDetails_SAM
+    ServiceProviderDivider=""
+    YourInformationDivider=""
+    YourInformationDivider2=""
+    ServiceProviderDividerM=""
+    YourInformationDividerM=""
+    YourInformationDividerM2=""
+    NameString=""
+    SPName=""
+    Number=""
+    SPAddress=""
+    Amount=""
+    Product=""
+    custName=""
+    Address1=""
+    Address2=""
+    custPhone=""
+    custemail=""
+    Title1=""
+    Title2="" >
+</c:pvfc_ServiceDetails_SAM>
