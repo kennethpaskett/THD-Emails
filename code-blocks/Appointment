@@ -143,3 +143,9 @@
     jobDate="{{jobDate}}"
     jobTime="{{jobTime}}" >
 </c:pvfc_Appointment_SP_Info_03>
+
+<c:pvfc_Appointment_Date_01
+    sectionHeading="{{sectionHeading}}"
+    appointmentDate="{{appointmentDate}}"
+    appointmentTime="{{appointmentTime}}" >
+</c:pvfc_Appointment_Date_01>
