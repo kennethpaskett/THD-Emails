@@ -65,13 +65,13 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
                         <!--===============HEADER SECTION===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Summary'}"> 
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let us install your new floors!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryHDMSStoreSAMSummaryHeroD}" imgPathMobile="{!$Label.CXLibraryHDMSStoreSAMSummaryHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let us install your new floors!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryHDMSStoreSAMSummaryHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
                         </apex:outputText>
                         <!--===============HEADER SECTION===================--> 
                         
                         <!--===============HEADER SECTION===================--> 
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Nurturing'}">
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let's get your flooring project started!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryHDMSNurtureHeroD}" imgPathMobile="{!$Label.CXLibraryHDMSNurtureHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let's get your flooring project started!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryHDMSNurtureHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
                         </apex:outputText>
                         <!--===============HEADER SECTION===================-->  
                           
