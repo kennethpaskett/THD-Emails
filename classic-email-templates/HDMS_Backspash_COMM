@@ -95,7 +95,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         </apex:outputText>
                           
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}"> 
-                        <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your appointment time window is listed below along with some important information to help you plan for your measure. We’re looking forward to getting measurements for your new backsplash!"></c:pvfc_Greeting_04_v3>
+                        <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Please review your upcoming appointment along with some important information to help you plan for your measure. We’re looking forward to getting measurements for your new backsplash!"></c:pvfc_Greeting_04_v3>
                         </apex:outputText>
                         <!--=============== /GREETING SECTION ===================-->
 
