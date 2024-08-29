@@ -1,84 +1,56 @@
 <apex:component controller="AppointmentTimeController" access="global">
-  <apex:attribute name="PhoneNum" description="SP Name" type="String" />
   <apex:attribute name="jobDate" description="Job date" type="DateTime"/>
-  <apex:attribute name="jobStartTime" description="Job Time" type="DateTime" assignTo="{!apptStart}"/>
   <apex:attribute name="SectionTitle" description="Section Title" type="String"/>
-  <apex:attribute name="NameString" description="Name String" type="String"/>
-  <apex:attribute name="timeZone" description="Time Zone" type="String"/>
-  <apex:attribute name="SPName" description="SP Name" type="String" />
-  <apex:attribute name="CUemail" description="CU email" type="String" />
   <apex:attribute name="WhatNextDivider" description="Why Home Depot Divider" type="String" />
   <apex:attribute name="WhatNextDividerM" description="Why Home Depot Mobile Divider" type="String" />
-  <apex:attribute name="ServiceProviderDivider" description="Your Scheduled Appt Mobile Divider" type="String" />
-  <apex:attribute name="ServiceProviderDividerM" description="Your Scheduled Appt Mobile Divider" type="String" />
-  <apex:attribute name="CUPhoneNum" description="CU Phone Number" type="String" />
-  <apex:attribute name="SPPhoneNum" description="SP Name" type="String" />
   <apex:attribute name="SectionCopy" description="Section Title" type="String"/>
-  <apex:attribute name="CUName" description="SP Name" type="String" />
-  <apex:attribute name="CUAddress" description="CU Address" type="String" />
   
-  <!--================================== START SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** ==========================================================-->
-  <tr>
-    <td valign="top"><table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
-            style="Margin: 0 auto; width:600px;" width="600">
-        <tr>
-          <td valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:100%">
-              <tr>
-                <th class="mob_stack" valign="top"> 
-                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 100%;">
-                    <tr style="border:0; margin: 0 auto; padding:0; border-collapse:collapse">
-                      <td class="mso_text" align="center" valign="top" height="25" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; height: 25px; mso-line-height-rule: exactly; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:18px; line-height: 100%; color:#000000; font-weight:normal;"> {!SectionTitle}</td>
-                    </tr>
-                    <tr>
-                      <td height="5" style="height: 5px; mso-line-height-rule: exactly; line-height: 100%; font-size: 5px; border:0; margin: 0 auto; padding:0; border-collapse:collapse">&nbsp;</td>
-                    </tr>
-                    <tr height="4" valign="top" allign="left" width="600"
-                        style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly">
-                        <td class="hide" valign="top" allign="left" width="610"
-                            style="border:0; margin: 0 auto; border-collapse:collapse; mso-line-height-rule:exactly; width: 600px; height: 4px; line-height:100%; font-size: 4px; padding: 0"
-                            height="4"><img src="{!WhatNextDivider}" allign="left" width="600"
-                                class="fluid" />
-                        </td>
-                    </tr>
-                    <!--[if !mso]><!-- -->
-                    <tr style="overflow: hidden; display:none;float:left;border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; height: 3px; line-height:0%; font-size: 3px"
-                        class="show">
-                        <td valign="top" style=" height: 3px; width: 110%" height="3"><img src="{!WhatNextDividerM}" style=" height: 3px;" height="3"
-                                class="fluid" />
-                        </td>
-                    </tr>
-                    <!--<![endif]-->
-                    <tr>
-                      <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:26px; line-height: 34px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
-                          <b>
-                        <apex:outputtext value="{0,date,EEEE MM'/'dd'/'yyyy}">
-                          <apex:param value="{!jobDate}" />
-                        </apex:outputtext>
-                          </b>
-                        </td>
-                    </tr>
-                    <tr>
-                      <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td class="mso_text" align="center" valign="top" height="25" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; height: 25px; mso-line-height-rule: exactly; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 100%; color:#000000; font-weight:normal;"> {!SectionCopy}</td>
-                    </tr>
-                    <tr>
-                      <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
-                    </tr>
-                  </table>
-                </th>
-              </tr>
-            </table></td>
-        </tr>
-        <tr>
-          <td height="20" style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">&nbsp;</td>
-        </tr>
-      </table></td>
-  </tr>
-  <!--================================== END SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** =================================================================--> 
+    <!--================================== START SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** ==========================================================-->
+    <tr>
+        <td valign="top">
+            <table role="presentation" class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 600px;" width="600">
+                <tr>
+                    <td valign="top">
+                        <table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:100%">
+                            <tr>
+                                <th class="mob_stack" valign="top"> 
+                                    <table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 100%;">
+                                        <tr>
+                                            <c:pvfc_sectionHeader headline="{!SectionTitle}" />
+                                        </tr>
+                                        <tr>
+                                            <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:26px; line-height: 34px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                <b>
+                                                    <apex:outputtext value="{0,date,EEEE MM'/'dd'/'yyyy}">
+                                                        <apex:param value="{!jobDate}" />
+                                                    </apex:outputtext>
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mso_text" align="center" valign="top" height="25" style="border:0; margin: 0 auto; padding:0; border-collapse: collapse; height: 25px; mso-line-height-rule: exactly; font-family: Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 100%; color: #000000; font-weight: normal;">{!SectionCopy}</td>
+                                        </tr>
+                                        <tr>
+                                            <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!--================================== END SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** =================================================================--> 
   
 </apex:component>

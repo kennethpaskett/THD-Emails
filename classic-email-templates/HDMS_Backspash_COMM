@@ -113,7 +113,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--====================================================================SCHEDULE APPOINTMENT SECTION======================================================================================================================-->
                           
                         <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
-                        <c:pvfc_Appointment_CU_Info_04 SectionTitle="Your Scheduled Appointment" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" jobDate="{!relatedTo.AltDate__c}" thermoIcon="{!$Label.CX_Library_Thermostat}" SectionCopy="We’ll confirm your 2-hour arrival window the morning of your appointment." thermoText="If anyone in your home is not feeling well, please call {!relatedTo.AltPhone__c} to reschedule."></c:pvfc_Appointment_CU_Info_04>
+                        <c:pvfc_Appointment_CU_Info_04 SectionTitle="Your Scheduled Appointment" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" jobDate="{!relatedTo.AltDate__c}" SectionCopy="We’ll confirm your 2-hour arrival window the morning of your appointment." ></c:pvfc_Appointment_CU_Info_04>
                         <!--===============SCHEDULE APPOINTMENT SECTION===================-->
                         
                             
