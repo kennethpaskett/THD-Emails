@@ -1,0 +1,152 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<!--================================== START CSS SECTION **PLEASE DO NOT TOUCH** =================================================================-->
+
+<c:evfc_CSSEmailTemplates ></c:evfc_CSSEmailTemplates> 
+
+<!--================================== END CSS SECTION **PLEASE DO NOT TOUCH** =================================================================--> 
+  
+</head>
+
+<body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+        <!--[if !mso]><!-->
+        <tr>
+        <!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width: 100% !important; border-top-style: none; Margin: 0; padding:0;">
+                
+                <table class="wrapper" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 640px; border: none;">   
+<!--==================================================================START PREHEADER SECTION============================================================================== -->
+    
+<div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+    <c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01></div>
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+<div style="display:none; max-height:0px; overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+    
+<!--=====================================================================END PREHEADER SECTION============================================================================== -->
+    
+    
+
+<!-- ========================================^^^^^^^^^THE BELOW SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^======================================== -->    
+    
+    <tr>
+        <td bgcolor="#ffffff" valign="top">
+            <table class="mob_width94" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="Margin:0 auto; width:600px;">
+                <tr>
+                    <td align="center">
+                      <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
+<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
+
+                        <!--===============HEADER SECTION===================-->
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Summary'}"> 
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let us install your new floors!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryHDMSStoreSAMSummaryHeroD}" imgPathMobile="{!$Label.CXLibraryHDMSStoreSAMSummaryHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        </apex:outputText>
+                        <!--===============HEADER SECTION===================--> 
+                        
+                        <!--===============HEADER SECTION===================--> 
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Nurturing'}">
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let's get your flooring project started!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryHDMSNurtureHeroD}" imgPathMobile="{!$Label.CXLibraryHDMSNurtureHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        </apex:outputText>
+                        <!--===============HEADER SECTION===================-->  
+                          
+                        <!--===============GREETING SECTION===================--> 
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Summary'}"> 
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re glad you’re interested in allowing The Home Depot to help with your flooring installation project. Here is the flooring estimate you created. Please use this estimate as a guide. The final cost of your project is determined by the measure results, the conditions of your existing floors, and the final materials selected. "></c:pvfc_Greeting_04>
+                        </apex:outputText>
+                        <!--===============GREETING SECTION===================--> 
+                        
+                        <!--===============GREETING SECTION===================--> 
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Nurturing'}"> 
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Are you ready to move forward with your recent flooring estimate? Review your estimate below and take the next step in your project by scheduling an in-home measure appointment."></c:pvfc_Greeting_04>
+                        </apex:outputText>
+                        <!--===============GREETING SECTION===================-->   
+                        
+                        
+                        <!--===============BUTTON SECTION===================--> 
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Nurturing'}">
+                        <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.RefURL__c}store={!relatedTo.StoreName__c}&zipcode={!relatedTo.StoreState__c}&leadId={!relatedTo.StoreStreet__c}&customerIAId={!relatedTo.StorePhone__c}" buttonImg="{!$Label.CX_LibraryIPSScheduleButton}" ></c:pvfc_ReviewPayButton_01>
+                        </apex:outputText>
+                        <!--===============BUTTON SECTION===================-->  
+
+                        
+                        <apex:outputText rendered="{!relatedTo.LongText__c != ''}">  
+                        <!--===============APPOINTMENT SECTION===================-->  
+                        <c:pvfc_sam_quote_details_01 YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" SectionTitle="Your Estimate" SectionTitle2="Your Information" Json="{!relatedTo.LongText__c}" CUName="{!relatedTo.FirstName__c}" CUemail="{!relatedTo.ToEmail__c}"></c:pvfc_sam_quote_details_01>
+                        <!--===============APPOINTMENT SECTION===================-->   
+                                                  
+                        <!--===============APPOINTMENT SECTION===================-->  
+                        <c:pvfc_HDMSJsonParser YourInformationDivider="{!$Label.CX_LibraryGrayMiddleDividerD}" YourInformationDividerM="{!$Label.CX_LibraryGrayMiddleDividerM}" ServiceProviderDivider="{!$Label.CX_LibraryIPSYourAppointmentBarD}" ServiceProviderDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" Json="{!relatedTo.LongText__c}"></c:pvfc_HDMSJsonParser>
+                        <!--===============APPOINTMENT SECTION===================--> 
+                        </apex:outputText>                                                  
+                          
+                        <!--===============SALES MANAGER SECTION===================--> 
+                        <c:pvfc_sales_banner_03_v2 headline="Questions about your estimate or need help?" Copy1="Call to speak with a flooring expert: {!relatedTo.RefPhone__c}" image="{!$Label.CX_LibraryGrayQuestionMark}" ></c:pvfc_sales_banner_03_v2>
+                        <!--===============SALES MANAGER SECTION===================-->
+                          
+                         
+                        <!--===============WHAT TO EXPECT SECTION===================--> 
+                        <c:pvfc_WhatToExpect_Store_SAM WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="The final cost of your project is based on the results of your professional measure, final materials selected, and applicable sales tax. Additional charges may apply, including lead and asbestos testing for older homes built before 1978, furniture moving, unforeseeable conditions found when your existing floor is removed, such as damage or deterioration, etc." BulletTwoText="If you decide to proceed with a measure, you have until 6 p.m. the day you order the measure to pay the measuring fee, which will confirm your scheduled measure appointment." BulletThreeText="If you need to change your measure appointment, please call {!relatedTo.RefPhone__c}."></c:pvfc_WhatToExpect_Store_SAM>  
+                        <!--===============WHAT TO EXPECT SECTION===================-->  
+                          
+                    
+                        <!--===============WHY HOME DEPOT SECTION===================--> 
+                        <c:pvfc_ValueProps_04 iconOne="{!$Label.CX_LibraryCoreAffordableIcon}" iconOneHeader="Affordable" iconOneDescription="We offer a wide range of affordable financing options, including The Home Depot Consumer Credit Card and The Home Depot Project Loan." iconTwo="{!$Label.CX_LibraryCoreLicensedIcon}" iconTwoHeader="Licensed" iconTwoDescription="The Home Depot's flooring installation professionals and contractors are local, licensed, insured, and undergo a thorough background-screening process." iconThree="{!$Label.CX_LibraryCoreBlackHomeDepotIcon}" iconThreeHeader="Backed by The Home Depot" iconThreeDescription="All labor, products and installation for your project are 100% backed by The Home Depot." iconFour="{!$Label.CX_LibrarySubfloorIcon}" iconFourHeader="Subfloor Evaluation" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" iconFourDescription="We'll evaluate the structure and existing conditions under your floor to help ensure a smooth installation of your new floors." WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_04>
+                        <!--===============WHY HOME DEPOT SECTION===================--> 
+                    
+                       
+                        <!--===============QUICK LINKS SECTION===================-->
+                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
+                        <!--===============QUICK LINKS SECTION===================-->
+                          
+                          
+                        <!--===============FOOTER SECTION===================--> 
+                        <c:pvfc_Footer_06 legalCopyTitle1="What may cause additional charges?" legalCopy1="Furniture disassembly and moving: The Home Depot will move most basic furniture items such as couches, dining tables, end tables and dressers. We do require that you clear out and disassemble all bed frames, wall units, entertainment centers and dressers with detachable mirrors prior to your installation date if you want us to move them. An additional fee will apply if you choose to have our team disassemble and reassemble these items. Piece limits of 5 apply per room." legalCopy2="Additional charges may also apply to areas with excessive amounts of furniture of 6 or more pieces (i.e., file cabinets, heavy furniture which cannot be safely moved by 2 individuals, storage boxes, wall units, sleeper sofas, four-poster beds, armoires, etc.) to move. We do not remove antiques, grandfather clocks, gas stoves, refrigerators with front door dispensers, aquariums, waterbeds, pool tables, pianos, safes, computers, or electronic equipment. Many of these items need to be moved professionally." legalCopy3="Unforeseen conditions: Additional charges may apply if take-up and removal of existing flooring reveal the type of subfloor structurally required for installation is not present at the time of installation. Additional trip charges will apply if the installer must return to the project site to complete installation after their initial visit." legalCopy4="If the installer discovers water damage, infestation, urine-soaked carpets, floors with structural damage, asbestos, presence of mold, or any other physical/environmental hazardous condition, Home Depot reserves the right not to proceed with the installation until the customer has remedied the situation and signed a written Change Order. Please advise the measure technician or installer if you are aware of any of these conditions." legalCopyTitle2="What should I know about the measure appointment?" legalCopy5="If you decide to proceed with a measure, you have until 6 p.m. the day you order the measure to pay the measure fee, which will confirm your scheduled measure appointment. If you need to change your measure appointment, please contact Home Depot Measurement Services between 9 a.m. and 5:30 p.m. Monday – Friday or between 8 a.m. and 4 p.m. on Saturday at (800) 248-8982." legalCopy6="Our measure technician will contact you between 7 a.m. and 9 a.m. the day of the appointment to inform you of your 2-hour arrival window." legalCopy7="Please note that the measure technician may not be able to discuss seam placement, costs, or other installation details. However, your Home Depot sales associate will be able to address these topics once Home Depot receives the measure results, which is typically the day after your measure appointment." legalCopy8="It is necessary to ventilate your home for the measure appointment. Make sure that adequate power, light, ventilation, and heat or air conditioning at a temperature of 70 degrees will be available 48 hours before and during the measure." legalCopy9="Please have your pets secure for the measure and for the installation."></c:pvfc_Footer_06>
+                        <!--===============FOOTER SECTION===================-->
+
+                        <!--===============PIXEL TRACKING===================-->
+                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+                        <!--===============PIXEL TRACKING===================-->
+
+<!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>   
+<!-- =========================**********************NO CODING BELOW THIS LINE********************************=============================== -->                        
+</table>
+</td>
+<td class="hide-for-small">&zwnj;</td>
+</tr>
+</table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
