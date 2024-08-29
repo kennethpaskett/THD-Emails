@@ -65,7 +65,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
                         <!--===============HEADER SECTION===================-->
                         <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
-                        <c:pvfc_Header_08 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Your new floors are waiting!" phoneNum="{!relatedTo.AltPhone__c}" imgPathFull="{!$Label.CX_LibraryIPSLeadNurturingCarpetHeroD}" imgPathMobile="{!$Label.CX_LibraryIPSLeadNurturingCarpetHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_08>
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Your new floors are waiting!" phoneNum1="{!relatedTo.AltPhone__c}" imgPathFull="{!$Label.CX_LibraryIPSLeadNurturingCarpetHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================--> 
                           
                         <!--===============GREETING SECTION===================-->  
