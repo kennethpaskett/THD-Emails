@@ -62,82 +62,60 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                     <td align="center">
                       <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
-                        
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'No Product Selected'}"> 
-                        <!--===============HEADER SECTION===================-->
+                         
+                        <!--=============== HEADER SECTION ===================-->
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'No Product Selected'}">
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Thank you for scheduling your measure!" imgPathFull="{!$Label.CXLibraryBacksplash1HeroD}" imgPathMobile="{!$Label.CXLibraryBacksplashHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
-                        <!--===============HEADER SECTION===================-->
                         </apex:outputText>  
                           
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selected'}"> 
-                        <!--===============HEADER SECTION===================-->
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selected'}">
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Thank you for scheduling your measure!" imgPathFull="{!$Label.CXLibraryBacksplash1HeroD}" imgPathMobile="{!$Label.CXLibraryBacksplashHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
-                        <!--===============HEADER SECTION===================-->
-                        </apex:outputText>   
-                          
-                          
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}"> 
-                        <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Heads up — your backsplash measure appointment is soon!" imgPathFull="{!$Label.CXLibraryBacksplash2HeroD}" imgPathMobile="{!$Label.CXLibraryBacksplash2HeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
-                        <!--===============HEADER SECTION===================-->
-                        </apex:outputText> 
-                          
-                          
-                          
-     
-                        <!--====================================================================GREETING SECTION======================================================================================================================-->   
-                          
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'No Product Selected'}"> 
-                        <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re excited to help with your backsplash! Please review your scheduled appointment details and your information. If anything is incorrect, let us know before your appointment by calling: {!relatedTo.AltPhone__c}" ></c:pvfc_Greeting_04_v3>
-                        <!--===============GREETING SECTION===================-->
                         </apex:outputText>
+
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}">
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Heads up — your backsplash measure appointment is soon!" imgPathFull="{!$Label.CXLibraryBacksplash2HeroD}" imgPathMobile="{!$Label.CXLibraryBacksplash2HeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
+                        </apex:outputText>
+                        <!--=============== /HEADER SECTION===================-->
+
+                        <tr>
+                            <td height="24" style="height: 24px; mso-line-height-rule: exactly; line-height: 100%; font-size: 24px;">&nbsp;</td>
+                        </tr>
                           
+                        <!--=============== SCHEDULE APPOINTMENT SECTION ===================-->
+                        <c:pvfc_Appointment_CU_Info_04 SectionTitle="Your Scheduled Appointment" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" jobDate="{!relatedTo.AltDate__c}" SectionCopy="We’ll confirm your 2-hour arrival window the morning of your appointment." ></c:pvfc_Appointment_CU_Info_04>
+                        <!--=============== /SCHEDULE APPOINTMENT SECTION ===================-->
+
+                        <!--=============== GREETING SECTION ===================-->
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'No Product Selected'}">
+                        <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re excited to help with your backsplash! Please review your scheduled appointment details and your information. If anything is incorrect, let us know before your appointment by calling: {!relatedTo.AltPhone__c}" ></c:pvfc_Greeting_04_v3>
+                        </apex:outputText>
                         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selected'}"> 
-                        <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re excited to help with your backsplash! Please review your scheduled appointment details and your information. If anything is incorrect, let us know before your appointment by calling: {!relatedTo.AltPhone__c}"></c:pvfc_Greeting_04_v3>
-                        <!--===============GREETING SECTION===================-->
                         </apex:outputText>
-                          
                           
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}"> 
-                        <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your appointment time window is listed below along with some important information to help you plan for your measure. We’re looking forward to getting measurements for your new backsplash!"></c:pvfc_Greeting_04_v3>
-                        <!--===============GREETING SECTION===================-->
                         </apex:outputText>
-                          
-                        
-                        
-                          
-                        <!--====================================================================SCHEDULE APPOINTMENT SECTION======================================================================================================================-->
-                          
-                        <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
-                        <c:pvfc_Appointment_CU_Info_04 SectionTitle="Your Scheduled Appointment" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" jobDate="{!relatedTo.AltDate__c}" SectionCopy="We’ll confirm your 2-hour arrival window the morning of your appointment." ></c:pvfc_Appointment_CU_Info_04>
-                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
-                        
-                            
-                        <!--====================================================================WHATS NEXT SECTION=======================================================================================================================-->    
-                          
+                        <!--=============== /GREETING SECTION ===================-->
+
+                        <!--=============== APPOINTMENT DETAILS SECTION ===================-->
+                        <c:pvfc_MeasureCustInfo_2col_01 YourInformationDivider="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourInformationDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ScheduledApptDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ScheduledApptDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" headline1="Appoinment Details" headline2="Your Information" Title1="Measure Date" apptdate="{!relatedTo.RefDate__c}" Title2="Measure Address" measureAddress="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" Title3="Measure Number" mnumber="{!relatedTo.DocumentNo__c}" Title4="Order Number" onumber="{!relatedTo.RefNumber__c}" Title6="Paid" paid="{!relatedTo.Amount__c}" Title7="Material" material="{!relatedTo.Name}" Title8="Name" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Title9="Email" custemail="{!relatedTo.ToEmail__c}" Title10="Phone Number" custPhone="{!relatedTo.PhoneNumber__c}"></c:pvfc_MeasureCustInfo_2col_01>
+                        <!--=============== /APPOINTMENT DETAILS SECTION ===================-->
+
+                        <!--=============== WHATS NEXT SECTION ===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c != 'Reminder'}">  
                         <c:pvfc_WhatToExpect_HDMS Header="What Happens Next" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="Your measure technician will call between 7-9 am the morning of your appointment to confirm their arrival time. Remember, someone over 18 will need to be home during your appointment." BulletTwoText="Your measure should take around 45 minutes to complete but could take longer depending on your project needs. Please provide clear access to the area getting measured. If you have pets, we ask they are securely put away for their safety and the safety of our measure technician." BulletThreeText="We’ll reach out to you within 24-48 hours after your appointment with your quote. Keep in mind that without a product selection, we can’t offer you a quote. "></c:pvfc_WhatToExpect_HDMS>  
-                        </apex:outputText>  
-                          
+                        </apex:outputText>
                         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}">  
                         <c:pvfc_WhatToExpect_HDMS Header="What Happens Next" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="On the morning of your appointment, your measure technician will call between 7-9 am to confirm their arrival window. Remember, someone over 18 will need to be home during your appointment." BulletTwoText="Your measure should take around 45 minutes to complete but could take longer depending on your project needs. Please provide clear access to the area getting measured. If you have pets, we ask they are securely put away for their safety and the safety of our measure technician." BulletThreeText="We’ll reach out to you within 24-48 hours after your appointment with your quote. Keep in mind that without a product selection, we can’t offer you a quote. "></c:pvfc_WhatToExpect_HDMS>  
                         </apex:outputText>  
+                        <!--=============== /WHATS NEXT SECTION ===================-->
                         
-                        
-                        <!--====================================================================WHATS NEXT SECTION=======================================================================================================================--> 
-                          
-                          
-                        <c:pvfc_MeasureCustInfo_2col_01 YourInformationDivider="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourInformationDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ScheduledApptDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ScheduledApptDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" headline1="Appoinment Details" headline2="Your Information" Title1="Measure Date" apptdate="{!relatedTo.RefDate__c}" Title2="Measure Address" measureAddress="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" Title3="Measure Number" mnumber="{!relatedTo.DocumentNo__c}" Title4="Order Number" onumber="{!relatedTo.RefNumber__c}" Title6="Paid" paid="{!relatedTo.Amount__c}" Title7="Material" material="{!relatedTo.Name}" Title8="Name" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Title9="Email" custemail="{!relatedTo.ToEmail__c}" Title10="Phone Number" custPhone="{!relatedTo.PhoneNumber__c}"></c:pvfc_MeasureCustInfo_2col_01>
-                        
-                        <!--====================================================================PRODUCT SECTION======================================================================================================================-->
-                        <c:pvfc_NoProduct_02 iconURL="{!$Label.CX_LibraryShoppingCartIcon}" selectionPhoneNum="{!relatedTo.BranchName__c}" selectionPhoneCopy="{!relatedTo.StoreName__c}" buttonCopy="Browse&nbsp;Products&nbsp;Online" buttonURL="https://www.homedepot.com/b/Flooring-Tile/Backsplash/N-5yc1vZar0yZ1z1u4xb?cm_mmc=hd_email-_-cc_HDMS_BacksplashNPS_Browseproducts" buttonCopy2="Add&nbsp;us&nbsp;to&nbsp;your&nbsp;contacts" buttonURL2="https://www.homedepot.com/b/Flooring/N-5yc1vZaq7r" noProd1URL="{!$Label.CXLibraryBacksplash1ImgD}" noProd1ALT="Carpet" noProd2URL="{!$Label.CXLibraryBacksplash2ImgD}" noProd2ALT="Hardwood" noProd3URL="{!$Label.CXLibraryBacksplash3ImgD}" noProd3ALT="Tile" headline="{!relatedTo.FirstName__c}, you haven’t selected your backsplash yet!" copy="Choose your backsplash product before your measure to get a faster quote. You can browse online and order individual samples or visit your local store to view our large selection of flooring samples." copy2="Call {!relatedTo.RefPhone__c} to give us your selection or let your technician know during your appointment." copy3="Never miss a call or update from your Home Depot Service team. Adding us to your contacts ensures our number shows up when your phone rings." NameString="{!relatedTo.RefString__c}"></c:pvfc_NoProduct_02>
-                        <!--====================================================================PRODUCT SECTION======================================================================================================================--> 
-  
+                        <!--=============== PRODUCT SECTION ===================-->
+                        <c:pvfc_NoProduct_02 iconURL="{!$Label.CX_LibraryShoppingCartIcon}" buttonCopy="Browse&nbsp;Products&nbsp;Online" buttonURL="https://www.homedepot.com/b/Flooring-Tile/Backsplash/N-5yc1vZar0yZ1z1u4xb?cm_mmc=hd_email-_-cc_HDMS_BacksplashNPS_Browseproducts" noProd1URL="{!$Label.CXLibraryBacksplash1ImgD}" noProd1ALT="Carpet" noProd2URL="{!$Label.CXLibraryBacksplash2ImgD}" noProd2ALT="Hardwood" noProd3URL="{!$Label.CXLibraryBacksplash3ImgD}" noProd3ALT="Tile" headline="{!relatedTo.FirstName__c}, you haven’t selected your backsplash yet!" copy="Choose your backsplash product before your measure to get a faster quote. You can browse online and order individual samples or visit your local store to view our large selection of flooring samples." copy2="Call {!relatedTo.RefPhone__c} to give us your selection or let your technician know during your appointment." NameString="{!relatedTo.RefString__c}"></c:pvfc_NoProduct_02>
+                        <!--=============== /PRODUCT SECTION ===================-->
 
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
