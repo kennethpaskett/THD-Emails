@@ -1,8 +1,7 @@
 <apex:component controller="AppointmentTimeController" access="global">
   <apex:attribute name="jobDate" description="Job date" type="DateTime"/>
   <apex:attribute name="SectionTitle" description="Section Title" type="String"/>
-  <apex:attribute name="WhatNextDivider" description="Why Home Depot Divider" type="String" />
-  <apex:attribute name="WhatNextDividerM" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="SectionTitleWidth" description="Width of the letters in the Section Title, used for orange underline" type="String" />
   <apex:attribute name="SectionCopy" description="Section Title" type="String"/>
   
     <!--================================== START SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** ==========================================================-->
@@ -17,7 +16,7 @@
                                 <th class="mob_stack" valign="top"> 
                                     <table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 100%;">
                                         <tr>
-                                            <c:pvfc_sectionHeader headline="{!SectionTitle}" />
+                                            <c:pvfc_sectionHeader headline="{!SectionTitle}" underlineWidth="{!SectionTitleWidth}" />
                                         </tr>
                                         <tr>
                                             <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
