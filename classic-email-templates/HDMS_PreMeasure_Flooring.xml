@@ -62,96 +62,70 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                     <td align="center">
                       <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
-                        
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'No Product Selected'}"> 
-                        <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Thank you for scheduling your flooring measure!" imgPathFull="{!$Label.CX_Library_ApptConfirmNPSHeroD}" imgPathMobile="{!$Label.CX_Library_ApptConfirmNPSHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
-                        <!--===============HEADER SECTION===================-->
+                         
+                        <!--=============== HEADER SECTION ===================-->
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'No Product Selected'}">
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Thank you for scheduling your flooring measure!" imgPathFull="{!$Label.CX_Library_ApptConfirmNPSHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
                         </apex:outputText>  
                           
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selected'}"> 
-                        <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Thank you for scheduling your flooring measure!" imgPathFull="{!$Label.CX_Library_ApptConfirmNPSHeroD}" imgPathMobile="{!$Label.CX_Library_ApptConfirmNPSHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
-                        <!--===============HEADER SECTION===================-->
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Thank you for scheduling your flooring measure!" imgPathFull="{!$Label.CX_Library_ApptConfirmNPSHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
                         </apex:outputText>   
                           
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}">
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Heads up — your flooring measure appointment is soon!" imgPathFull="{!$Label.CX_Library_ApptConfirmNPSRHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
+                        </apex:outputText>
+                        <!--=============== /HEADER SECTION===================-->
+
+                        <tr>
+                            <td height="24" style="height: 24px; mso-line-height-rule: exactly; line-height: 100%; font-size: 24px;">&nbsp;</td>
+                        </tr>
                           
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}"> 
-                        <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Heads up — your flooring measure appointment is soon!" imgPathFull="{!$Label.CX_Library_ApptConfirmNPSRHeroD}" imgPathMobile="{!$Label.CX_Library_ApptConfirmNPSRHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
-                        <!--===============HEADER SECTION===================-->
-                        </apex:outputText> 
-                          
-                          
-                          
-     
-                        <!--====================================================================GREETING SECTION======================================================================================================================-->   
-                          
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'No Product Selected'}"> 
-                        <!--===============GREETING SECTION===================-->  
+                        <!--=============== SCHEDULED APPOINTMENT SECTION ===================--> 
+                        <c:pvfc_Appointment_CU_Info_04 SectionTitle="Your Scheduled Appointment:" SectionTitleWidth="290" jobDate="{!relatedTo.AltDate__c}" SectionCopy="We’ll confirm your 2-hour arrival window the morning of your appointment." ></c:pvfc_Appointment_CU_Info_04>
+                        <!--=============== /SCHEDULED APPOINTMENT SECTION ===================-->
+                        
+                        <!--=============== GREETING SECTION ===================-->  
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'No Product Selected'}">
                         <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re excited to help with your new floors! Please review your scheduled appointment details and your information. If anything is incorrect, let us know before your appointment by calling: {!relatedTo.AltPhone__c}" ></c:pvfc_Greeting_04_v3>
-                        <!--===============GREETING SECTION===================-->
                         </apex:outputText>
-                          
                         
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selected'}"> 
-                        <!--===============GREETING SECTION===================-->  
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selected'}">
                         <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re excited to help with your new floors! Please review your scheduled appointment details and your information. If anything is incorrect, let us know before your appointment by calling: {!relatedTo.AltPhone__c}"></c:pvfc_Greeting_04_v3>
-                        <!--===============GREETING SECTION===================-->
                         </apex:outputText>
                           
-                          
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}"> 
-                        <!--===============GREETING SECTION===================-->  
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}">
                         <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your appointment time window is listed below along with some important information to help you plan for your measure. We’re looking forward to getting measurements for your new floors!"></c:pvfc_Greeting_04_v3>
-                        <!--===============GREETING SECTION===================-->
                         </apex:outputText>
-                          
+                        <!--=============== /GREETING SECTION ===================-->
                         
-                        
-                          
-                        <!--====================================================================SCHEDULE APPOINTMENT SECTION======================================================================================================================-->
-                          
-                        <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
-                        <c:pvfc_Appointment_CU_Info_04 SectionTitle="Your Scheduled Appointment:" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" jobDate="{!relatedTo.AltDate__c}" thermoIcon="{!$Label.CX_Library_Thermostat}" SectionCopy="We’ll confirm your 2-hour arrival window the morning of your appointment." thermoText="If anyone in your home is not feeling well, please call {!relatedTo.AltPhone__c} to reschedule."></c:pvfc_Appointment_CU_Info_04>
-                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
-                        
-                            
-                        <!--====================================================================WHATS NEXT SECTION=======================================================================================================================-->    
-                          
+                        <!--=============== APPOINTMENT DETAILS SECTION ===================-->
+                        <c:pvfc_MeasureCustInfo_2col_01 YourInformationDivider="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourInformationDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ScheduledApptDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ScheduledApptDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" headline1="Appoinment Details" headline2="Your Information" Title1="Measure Date" apptdate="{!relatedTo.RefDate__c}" Title2="Measure Address" measureAddress="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" Title3="Measure Number" mnumber="{!relatedTo.DocumentNo__c}" Title4="Order Number" onumber="{!relatedTo.RefNumber__c}" Title6="Paid" paid="{!relatedTo.Amount__c}" tax="{!relatedTo.TotalAmount__c}" Title7="Material" material="{!relatedTo.Name}" Title8="Name" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Title9="Email" custemail="{!relatedTo.ToEmail__c}" Title10="Phone Number" custPhone="{!relatedTo.PhoneNumber__c}"></c:pvfc_MeasureCustInfo_2col_01>
+                        <!--=============== /APPOINTMENT DETAILS SECTION ===================-->
+
+                        <!--=============== WHATS NEXT SECTION ===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c != 'Reminder'}">  
                         <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="Your measure technician will call between 7-9 am the morning of your appointment to confirm their arrival time. Remember, someone over 18 will need to be home during your appointment." BulletTwoText="Your measure should take around 45 minutes to complete but could take longer depending on your project needs. Please provide clear access to the rooms getting measured. If you have pets, we ask they are securely put away for their safety and the safety of our measure technician." BulletThreeText="We’ll reach out to you within 24-48 hours after your appointment with your quote. Keep in mind that without a product selection, we can’t offer you a quote. "></c:pvfc_WhatToExpect_02>  
-                        </apex:outputText>  
-                          
+                        </apex:outputText>
                         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}">  
                         <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="On the morning of your appointment, your measure technician will call between 7-9 am to confirm their arrival window." BulletTwoText="Remember to select your new floors to get your quote. If you haven't selected a flooring product yet, please do so before your measure. You can order individual flooring samples online or visit your local store to see samples." BulletThreeText="We’ll reach out to you within 24-48 hours after your appointment with your quote. Keep in mind that without a product selection, we can’t offer you a quote. "></c:pvfc_WhatToExpect_02>  
-                        </apex:outputText>  
-                        
-                        
-                        <!--====================================================================WHATS NEXT SECTION=======================================================================================================================--> 
-                          
-                          
-                        <c:pvfc_MeasureCustInfo_2col_01 YourInformationDivider="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourInformationDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ScheduledApptDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ScheduledApptDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" headline1="Appoinment Details" headline2="Your Information" Title1="Measure Date" apptdate="{!relatedTo.RefDate__c}" Title2="Measure Address" measureAddress="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" Title3="Measure Number" mnumber="{!relatedTo.DocumentNo__c}" Title4="Order Number" onumber="{!relatedTo.RefNumber__c}" Title6="Paid" paid="{!relatedTo.Amount__c}" tax="{!relatedTo.TotalAmount__c}" Title7="Material" material="{!relatedTo.Name}" Title8="Name" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Title9="Email" custemail="{!relatedTo.ToEmail__c}" Title10="Phone Number" custPhone="{!relatedTo.PhoneNumber__c}"></c:pvfc_MeasureCustInfo_2col_01>
-                          
-                        
-                         
-                        <c:pvfc_ContactUs_01 YourInformationDivider="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourInformationDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ScheduledApptDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ScheduledApptDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" headline1="Get in Touch" headline2="Your Store" Title1="Home Depot Flooring Center" Title2="{!relatedTo.StoreName__c}" StoreIcon="{!$Label.CX_LibraryStoreIcon2}" measureAddress="{!relatedTo.StoreStreet__c}, {!relatedTo.StoreCity__c}, {!relatedTo.StoreState__c} {!relatedTo.StoreZipcode__c}"  Copy1="Call us to reschedule your appointment or confirm your product." HDPhone="{!relatedTo.RefPhone__c}" StorePhone="{!relatedTo.StorePhone__c}"></c:pvfc_ContactUs_01>  
+                        </apex:outputText>
+                        <!--=============== /WHATS NEXT SECTION ===================-->
 
-                          
-                         
+                        <tr>
+                            <td height="24" style="height: 24px; mso-line-height-rule: exactly; line-height: 100%; font-size: 24px;">&nbsp;</td>
+                        </tr>
 
-                        <!--====================================================================PRODUCT SECTION======================================================================================================================-->  
-                        <c:pvfc_NoProduct_01 iconURL="{!$Label.CX_LibraryShoppingCartIcon}" selectionPhoneNum="{!relatedTo.BranchName__c}" selectionPhoneCopy="{!relatedTo.StoreName__c}" buttonCopy="Browse&nbsp;Products&nbsp;Online" buttonURL="https://www.homedepot.com/b/Flooring/N-5yc1vZaq7r" buttonCopy2="Add&nbsp;us&nbsp;to&nbsp;your&nbsp;contacts" buttonURL2="https://www.homedepot.com/b/Flooring/N-5yc1vZaq7r" noProd1URL="{!$Label.CX_LibraryNoProd01Icon}" noProd1ALT="Carpet" noProd2URL="{!$Label.CX_LibraryNoProd02Icon}" noProd2ALT="Hardwood" noProd3URL="{!$Label.CX_LibraryNoProd03Icon}" noProd3ALT="Tile" headline="{!relatedTo.FirstName__c}, you haven’t selected your floors yet!" copy="Choose your flooring before your measure to get a faster quote. You can browse online and order individual samples or visit your local store to view our large selection of flooring samples." copy2="Call {!relatedTo.RefPhone__c} to give us your selection or let your technician know during your appointment." copy3="Never miss a call or update from your Home Depot Service team. Adding us to your contacts ensures our number shows up when your phone rings." NameString="{!relatedTo.RefString__c}"></c:pvfc_NoProduct_01>
-                        <!--====================================================================PRODUCT SECTION======================================================================================================================--> 
-  
-                        <!--===================================================================WHY HOME DEPOT SECTION================================================================================================================-->
+                        <!--=============== NO PRODUCT SECTION ===================--> 
+                        <c:pvfc_NoProduct_01 iconURL="{!$Label.CX_LibraryShoppingCartIcon}" buttonCopy="Browse&nbsp;Products&nbsp;Online" buttonURL="https://www.homedepot.com/b/Flooring/N-5yc1vZaq7r" noProd1URL="{!$Label.CX_LibraryNoProd01Icon}" noProd1ALT="Carpet" noProd2URL="{!$Label.CX_LibraryNoProd02Icon}" noProd2ALT="Hardwood" noProd3URL="{!$Label.CX_LibraryNoProd03Icon}" noProd3ALT="Tile" headline="{!relatedTo.FirstName__c}, you haven’t selected your floors yet!" copy="Choose your flooring before your measure to get a faster quote. You can browse online and order individual samples or visit your local store to view our large selection of flooring samples." copy2="Call {!relatedTo.RefPhone__c} to give us your selection or let your technician know during your appointment." NameString="{!relatedTo.RefString__c}"></c:pvfc_NoProduct_01>
+                        <!--=============== /NO PRODUCT SECTION ===================-->
                         
+                        <!--=============== WHY HOME DEPOT SECTION ===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}">  
                         <c:pvfc_ValueProps_06 iconOne="{!$Label.CX_LibraryBlackLicenseIcon}" iconOneHeader="Licensed" iconOneDescription="The Home Depot's flooring installation professionals and contractors are local, licensed, insured, and undergo a thorough background-screening process." iconTwo="{!$Label.CX_LibrarySubfloorIcon}" iconTwoHeader="Subfloor Evaluation" iconTwoDescription="We'll evaluate the structure and existing conditions under your floor to help ensure a smooth installation of your new floors." iconFour="{!$Label.CX_LibraryBackedIcon}" iconFourHeader="Backed by The Home Depot" iconThreeDescription="All labor, products and installation are 100% backed by The Home Depot. Rest easy knowing you have the world's largest home improvements store backing your project from start to finish." iconThree="{!$Label.CX_LibraryAffordableIcon}" iconThreeHeader="Affordable" iconFourDescription="We offer a wide range of affordable financing options, including The Home Depot Consumer Credit Card and The Home Depot Project Loan." WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_06>
-                        </apex:outputText>  
-                          
-                        <!--====================================================================WHY HOME DEPOT SECTION============================================================================================================-->  
+                        </apex:outputText>
+                        <!--=============== /WHY HOME DEPOT SECTION ===================--> 
 
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
@@ -161,8 +135,8 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
                         <!--===============FOOTER SECTION===================--> 
                         
-                        <!--===============PIXEL TRACKING===================-->                          
-                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>                          
+                        <!--===============PIXEL TRACKING===================-->
+                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
                         <!--===============PIXEL TRACKING===================--> 
 
 <!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
