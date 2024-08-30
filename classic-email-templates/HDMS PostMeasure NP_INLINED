@@ -1,0 +1,53 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}" recipientType="Contact" relatedToType="hms_EmailData__c">
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+    
+<head>
+
+<c:evfc_EmailStylesMin ></c:evfc_EmailStylesMin> 
+  
+</head>
+
+<body>
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+<c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01>
+
+<!-- @begin email body frame, DO NOT REMOVE 1-Commit2-->
+    <table style="width: 100%;" lang="en" role="presentation">
+        <!--[if !mso]><!--><tr><!--<![endif]-->
+    
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all">
+<!-- @begin email body interior -->
+
+<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="We have your measurements! Now we need your product." phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CXLibraryHDMSNoProdSelHeroD}" imgPathMobile="{!$Label.CXLibraryHDMSNoProdSelHeroM}" ></c:pvfc_Header_01>
+
+<c:evfc_NoProduct_01 iconURL="{!$Label.CX_LibraryShoppingCartIcon}" custFirstName="{!relatedTo.FirstName__c}" selectionPhoneNum="{!relatedTo.BranchName__c}" selectionPhoneCopy="{!relatedTo.StoreName__c}" buttonCopy="Browse&nbsp;Products&nbsp;Online" buttonURL="{!relatedTo.RefURL__c}" noProd1URL="{!$Label.CX_LibraryNoProd01Icon}" noProd1ALT="Carpet" noProd2URL="{!$Label.CX_LibraryNoProd02Icon}" noProd2ALT="Hardwood" noProd3URL="{!$Label.CX_LibraryNoProd03Icon}" noProd3ALT="Tile"></c:evfc_NoProduct_01>
+
+<c:evfc_CustomerInfo_01 custFirstName="{!relatedTo.FirstName__c}" custLastName="{!relatedTo.LastName__c}" custEmail="{!relatedTo.ToEmail__c}" custPhone="{!relatedTo.RefPhone__c}"></c:evfc_CustomerInfo_01>
+
+<c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
+<c:pvfc_Footer_01 ></c:pvfc_Footer_01>
+
+<!--===============PIXEL TRACKING===================-->
+<c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+<!--===============PIXEL TRACKING===================-->
+
+
+<!-- @end email body -->
+    </td><td class="hide-for-small">&zwnj;</td></tr></table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
