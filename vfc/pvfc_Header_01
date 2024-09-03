@@ -85,7 +85,7 @@
                         <tr>
                             <td class="wrapper" valign="middle">
                                 <!--      <a href="{!heroLink}"> -->
-                                <img src="{!imgPathFull}" style="display:block;border:0;border:none; width: 700px;" width="700" alt="{!titleCopy}"/>
+                                <img src="{!imgPathFull}" style="display:block;border:0;border:none; width: 700px;" width="700" alt="{!titleCopy}" class="hide-for-small"/>
                                 <!--      </a> -->
                             </td>
                         </tr>

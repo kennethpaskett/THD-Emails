@@ -31,11 +31,9 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
             <td id="all">
 <!-- @begin email body interior -->
 
-<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="We have your measurements! Now we need your product." phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CXLibraryHDMSNoProdSelHeroD}" imgPathMobile="{!$Label.CXLibraryHDMSNoProdSelHeroM}" ></c:pvfc_Header_01>
+<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="We have your measurements! Now we need your product." phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CXLibraryHDMSNoProdSelHeroD}"></c:pvfc_Header_01>
 
 <c:evfc_NoProduct_01 iconURL="{!$Label.CX_LibraryShoppingCartIcon}" custFirstName="{!relatedTo.FirstName__c}" selectionPhoneNum="{!relatedTo.BranchName__c}" selectionPhoneCopy="{!relatedTo.StoreName__c}" buttonCopy="Browse&nbsp;Products&nbsp;Online" buttonURL="{!relatedTo.RefURL__c}" noProd1URL="{!$Label.CX_LibraryNoProd01Icon}" noProd1ALT="Carpet" noProd2URL="{!$Label.CX_LibraryNoProd02Icon}" noProd2ALT="Hardwood" noProd3URL="{!$Label.CX_LibraryNoProd03Icon}" noProd3ALT="Tile"></c:evfc_NoProduct_01>
-
-<c:evfc_CustomerInfo_01 custFirstName="{!relatedTo.FirstName__c}" custLastName="{!relatedTo.LastName__c}" custEmail="{!relatedTo.ToEmail__c}" custPhone="{!relatedTo.RefPhone__c}"></c:evfc_CustomerInfo_01>
 
 <c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
 <c:pvfc_Footer_01 ></c:pvfc_Footer_01>
