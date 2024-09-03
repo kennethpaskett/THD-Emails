@@ -1,0 +1,42 @@
+<apex:component access="global">
+  <apex:attribute name="headlineCopy" description="Headline copy" type="String" />
+
+    <!-- Component Definition -->      
+    <div class="hues-1">
+        <table class="width-1" style="text-align: left;width:700px;max-width:700px" role="presentation">
+            <tr class="row-7">
+                <td class="column">
+
+                    <!-- sub component -->
+                    <table class="next-steps-title">
+                        <tr>
+                            <td class="border-title-left">What&nbsp;Happens&nbsp;Next</td>
+                            <td class="">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class=""><hr class="orange-border" /></td>
+                            <td class="" valign="center"><hr class="grey-border" /></td>
+                        </tr>
+                    </table>
+
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>
+                    <!-- end sub component -->
+
+                    <!-- sub component -->
+                    <c:evfc_NextStepsNumItem_01 displayNumURL="{!$Label.CX_LibrarySteps01Icon}" displayNum="1" instructionsCopy="On the morning of your appointment, your technician will call you between 7-9am to confirm the appointment window. Your measure should take around 45 minutes to complete."/>
+                    <!-- end sub component -->
+
+                    <!-- sub component -->
+                    <c:evfc_NextStepsNumItem_01 displayNumURL="{!$Label.CX_LibrarySteps02Icon}" displayNum="2" instructionsCopy="Your measure technician will collect precise measurements of your rooms and evaluate the conditions of your floors." />
+                    <!-- end sub component -->
+
+                    <!-- sub component -->
+                    <c:evfc_NextStepsNumItem_01 displayNumURL="{!$Label.CX_LibrarySteps03Icon}" displayNum="3" instructionsCopy="Once we have your exact measurements, our licensed installers will schedule your appointment for installation. If there is a price increase, we&rsquo;ll call you within 24 hours of your professional measure to confirm changes before finalizing payment." />
+                    <!-- end sub component -->
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="height-3" aria-hidden="true">&nbsp;</div>
+</apex:component>
