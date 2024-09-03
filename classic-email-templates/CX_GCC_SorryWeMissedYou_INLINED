@@ -1,0 +1,56 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<c:evfc_EmailStylesMin ></c:evfc_EmailStylesMin> 
+  
+</head>
+
+<body>
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+<c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01>
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 600px; border: none;" lang="en" role="presentation" width="600">
+        <!--[if !mso]><!--><tr><!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all">
+<!-- @begin email body interior -->
+
+<c:pvfc_Header_05 logoLink="https://www.homedepot.com/services/" titleCopy="Let&rsquo;s chat about your order for new carpet!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryGCCsorryheroD}" imgPathMobile="{!$Label.CX_LibraryGCCsorryheroM}" ></c:pvfc_Header_05>
+
+<c:pvfc_Greeting_01 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We couldn't reach you to discuss your new carpet order. You can give us a call back at {!$Label.GCCSupportPhoneNumber2}.  We need to hear from you before we can move forward with your carpet installation."></c:pvfc_Greeting_01>
+
+
+
+
+<c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
+
+<c:pvfc_Footer_01 ></c:pvfc_Footer_01>
+
+<!--===============PIXEL TRACKING===================-->
+<c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+<!--===============PIXEL TRACKING===================-->
+
+
+
+<!-- @end email body -->
+    </td><td class="hide-for-small">&zwnj;</td></tr></table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
