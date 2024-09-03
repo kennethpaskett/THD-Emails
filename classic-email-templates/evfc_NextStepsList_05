@@ -22,18 +22,11 @@
                     <div class="height-05" aria-hidden="true">&nbsp;</div>
                     <!-- end sub component -->
 
-                    <!-- sub component -->
-                    <c:evfc_NextStepsNumItem_01 displayNumURL="{!$Label.CX_LibrarySteps01Icon}" displayNum="1" instructionsCopy="We&rsquo;ll mail your free carpet sample, so keep an eye on the mail. Samples typically ship within 2 business days." />
-                    <!-- end sub component -->
-
-                    <!-- sub component -->
-                    <c:evfc_NextStepsNumItem_01 displayNumURL="{!$Label.CX_LibrarySteps02Icon}" displayNum="2" instructionsCopy="Your measure technician will inspect your floors and collect precise measurements. On the morning of your appointment, your technician will call you between 7-9am to confirm the appointment window." />
-                    <!-- end sub component -->
-
-                    <!-- sub component -->
-                    <c:evfc_NextStepsNumItem_01 displayNumURL="{!$Label.CX_LibrarySteps03Icon}" displayNum="3" instructionsCopy="Once we have your exact measurements, our licensed installers will schedule your appointment for installation. If there is a price increase, we&rsquo;ll call you within 24 hours of your professional measure to confirm changes before finalizing payment." />
-                    <!-- end sub component -->
-
+                    <ul>
+                        <li>We&rsquo;ll mail your free carpet sample, so keep an eye on the mail. Samples typically ship within 2 business days.</li>
+                        <li>Your measure technician will inspect your floors and collect precise measurements. On the morning of your appointment, your technician will call you between 7-9am to confirm the appointment window.</li>
+                        <li>Once we have your exact measurements, our licensed installers will schedule your appointment for installation. If there is a price increase, we&rsquo;ll call you within 24 hours of your professional measure to confirm changes before finalizing payment.</li>
+                    </ul>
                 </td>
             </tr>
         </table>

@@ -33,15 +33,15 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
 <c:pvfc_Header_03 logoLink="https://www.homedepot.com/services/" titleCopy="Thank you for ordering new carpet - now it&rsquo;s time for your professional measure!" phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CX_LibraryGCCPurchaseReceiptD}" imgPathMobile="{!$Label.CX_LibraryGCCPurchaseReceiptM}" ></c:pvfc_Header_03>
 
-<c:pvfc_Greeting_01 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for providing measurements for the areas where you want new carpet. We&rsquo;ll have a technician come to your home for a professional measure next. During your appointment, the service provider will make any adjustments needed for your final order. We&rsquo;ll call you to discuss any changes that could increase your price before processing payment."></c:pvfc_Greeting_01>
-
 <c:evfc_NextEventTimeDate_02 jobDate="{!relatedTo.RefDate__c}" phonenumber="{!$Label.GCCSupportPhoneNumber1}." ></c:evfc_NextEventTimeDate_02>
 
-<c:evfc_NextStepsList_05 ></c:evfc_NextStepsList_05>
+<c:pvfc_Greeting_01 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for providing measurements for the areas where you want new carpet. We&rsquo;ll have a technician come to your home for a professional measure next. During your appointment, the service provider will make any adjustments needed for your final order. We&rsquo;ll call you to discuss any changes that could increase your price before processing payment."></c:pvfc_Greeting_01>
+
+<c:evfc_MeasureCustInfo_2col_02 measureDate="{!relatedTo.RefDate__c}" measureAddress="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" measureNum="{!relatedTo.CustomerName__c}" orderNum="{!relatedTo.RefNumber__c}" measureCost="{!relatedTo.TotalAmount__c}" materialType="{!relatedTo.Name}" custfirstName="{!relatedTo.FirstName__c}" custlastName="{!relatedTo.LastName__c}" custemail="{!relatedTo.ToEmail__c}" custPhone="{!relatedTo.RefPhone__c}"></c:evfc_MeasureCustInfo_2col_02>
 
 <c:evfc_QuoteDetails_grid_02 quoteNbr="{!relatedTo.DocumentNo__c}"></c:evfc_QuoteDetails_grid_02>
 
-<c:evfc_MeasureCustInfo_2col_02 measureDate="{!relatedTo.RefDate__c}" measureAddress="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" measureNum="{!relatedTo.CustomerName__c}" orderNum="{!relatedTo.RefNumber__c}" measureCost="{!relatedTo.TotalAmount__c}" materialType="{!relatedTo.Name}" custfirstName="{!relatedTo.FirstName__c}" custlastName="{!relatedTo.LastName__c}" custemail="{!relatedTo.ToEmail__c}" custPhone="{!relatedTo.RefPhone__c}"></c:evfc_MeasureCustInfo_2col_02>
+<c:evfc_NextStepsList_05 ></c:evfc_NextStepsList_05>
 
 <c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
 
