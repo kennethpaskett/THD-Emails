@@ -31,16 +31,14 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
             <td id="all">
 <!-- @begin email body interior -->
 
-<c:pvfc_Header_02 logoLink="https://www.homedepot.com/services/" titleCopy="Heads up - your flooring measure appointment is soon!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryHDMSGCCAppRemD}" imgPathMobile="{!$Label.CXLibraryHDMSGCCAppRemM}" ></c:pvfc_Header_02>
-
-<c:pvfc_Greeting_01 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Here is everything you can expect during your professional flooring measure appointment."></c:pvfc_Greeting_01>
+<c:pvfc_Header_02 logoLink="https://www.homedepot.com/services/" titleCopy="Heads up - your flooring measure appointment is soon!" imgPathFull="{!$Label.CXLibraryHDMSGCCAppRemD}"></c:pvfc_Header_02>
 
 <c:evfc_NextEventTimeDate_02 jobDate="{!relatedTo.RefDate__c}" phonenumber="{!$Label.GCCSupportPhoneNumber}" ></c:evfc_NextEventTimeDate_02>
+
+<c:pvfc_Greeting_01 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Here is everything you can expect during your professional flooring measure appointment."></c:pvfc_Greeting_01>
 <!-- Appointment_Scheduled_Date__c -->
 
 <c:evfc_NextStepsList_03 ></c:evfc_NextStepsList_03>
-
-
 
 <c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
 
