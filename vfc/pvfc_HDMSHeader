@@ -128,7 +128,7 @@
                         <tr>
                             <td valign="top" align="center"><img src="{!imgPathFull}"
                                     style="display:block;border:0;border:none; width:600px;" width="600"
-                                    alt="logo-top-desktop.png" class="fluid" /></td>
+                                    alt="logo-top-desktop.png" class="hide" /></td>
                         </tr>
                     </table>
                 </td>
