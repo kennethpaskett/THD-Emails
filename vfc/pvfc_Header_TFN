@@ -89,7 +89,7 @@
                                             <td valign="top" align="center">
                                                 <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:600px;" width="600">
                                                     <tr>
-                                                        <td valign="top" align="center"><img src="{!imgPathFull}" style="display:block;border:0;border:none; width:600px;" width="600"  alt="hero-top-desktop.png" class="fluid"/></td>
+                                                        <td valign="top" align="center"><img src="{!imgPathFull}" style="display:block;border:0;border:none; width:600px;" width="600"  alt="hero-top-desktop.png" class="hide hide-for-small "/></td>
                                                     </tr>
                                                 </table>
                                             </td>
