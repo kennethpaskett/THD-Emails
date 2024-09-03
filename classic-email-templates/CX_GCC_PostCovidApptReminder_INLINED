@@ -1,0 +1,59 @@
+<messaging:emailTemplate renderUsingSystemContextWithoutSharing="True" subject="{!relatedTo.Title__c}" recipientType="Lead" relatedToType="hms_EmailData__c">
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+    
+<head>
+
+<c:evfc_EmailStylesMin ></c:evfc_EmailStylesMin> 
+  
+</head>
+
+<body>
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+<c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01>
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 600px; border: none;" lang="en" role="presentation" width="600">
+        <!--[if !mso]><!--><tr><!--<![endif]-->
+     
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all">
+<!-- @begin email body interior -->
+
+<c:pvfc_Header_02 logoLink="https://www.homedepot.com/services/" titleCopy="Heads up - your flooring measure appointment is soon!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryHDMSGCCAppRemD}" imgPathMobile="{!$Label.CXLibraryHDMSGCCAppRemM}" ></c:pvfc_Header_02>
+
+<c:pvfc_Greeting_01 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Here is everything you can expect during your professional flooring measure appointment."></c:pvfc_Greeting_01>
+
+<c:evfc_NextEventTimeDate_02 jobDate="{!relatedTo.RefDate__c}" phonenumber="{!$Label.GCCSupportPhoneNumber}" ></c:evfc_NextEventTimeDate_02>
+<!-- Appointment_Scheduled_Date__c -->
+
+<c:evfc_NextStepsList_03 ></c:evfc_NextStepsList_03>
+
+
+
+<c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
+
+<c:pvfc_Footer_01 ></c:pvfc_Footer_01>
+
+<!--===============PIXEL TRACKING===================-->
+<c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+<!--===============PIXEL TRACKING===================-->
+
+
+<!-- @end email body -->
+    </td><td class="hide-for-small">&zwnj;</td></tr></table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
