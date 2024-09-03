@@ -1,31 +1,13 @@
 <apex:component access="global">
-  <apex:attribute name="imgPathFull" description="Path for the hero image, full-size" type="String" />
-  <apex:attribute name="imgPathMobile" description="Path for the hero image, mobile-size" type="String" />
-  <apex:attribute name="titleCopy" description="Title headline" type="String" />
-  <apex:attribute name="greetingsCopy" description="Greetings text, HTML-format capable" type="String" />
     <apex:attribute name="storeRefNumber" description="Store Ref number" type="String" />
- 
-    <!-- Component Definition 1-Commit-->    
-   
 
-        <table class="width-1" role="presentation">
-            <tr>
-                <td class="" style="text-align: left;">
-                     <!--<span class="greeting-copy"><apex:outputText escape="false" value="{!greetingsCopy}" /></span> -->
-                    <!--<div class="height-0.1" aria-hidden="true">&nbsp;</div> -->
+    <table class="width-1" role="presentation">
+        <tr>
+            <td class="" style="text-align: left;">
 
-                    <span>If you need to make any adjustments to your order, please call your local Home Depot within 3 days at <a href="" class="a2" style="blue">{!storeRefNumber}</a></span>
-                    <div class="height-05" aria-hidden="true">&nbsp;</div>
-                    <br/><br/>
-                    <div class="img-wrap">
-                  <!--      <a href="{!heroLink}"> -->
-                            <img  class="swap-for-small" id="hero-image" src="{!imgPathFull}" height="auto" width="700" style="max-width: 700px;background-image: url({!imgPathMobile});" alt="{!titleCopy}" />
-                  <!--      </a> -->
-                    </div>
+                <span>If you need to make any adjustments to your order, please call your local Home Depot within 3 days at <a href="" class="a2" style="blue">{!storeRefNumber}</a></span>
 
-                    <div class="height-1" aria-hidden="true">&nbsp;</div>
-
-                </td>
-            </tr>
-        </table>
+            </td>
+        </tr>
+    </table>
 </apex:component>

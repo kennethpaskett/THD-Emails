@@ -31,15 +31,21 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
             <td id="all">
 <!-- @begin email body interior -->
 
-<c:pvfc_Header_04 logoLink="https://www.homedepot.com/services/" titleCopy="<strong>Congrats on purchasing new floors - now let&rsquo;s get ready for installation!</strong>" phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CXLibraryGCCFinalReceiptHeroD}" imgPathMobile="{!$Label.CXLibraryGCCFinalReceiptHeroM}" ></c:pvfc_Header_04>
+<c:pvfc_Header_04 logoLink="https://www.homedepot.com/services/" titleCopy="<strong>Congrats on purchasing new floors - now let&rsquo;s get ready for installation!</strong>" imgPathFull="{!$Label.CXLibraryGCCFinalReceiptHeroD}" ></c:pvfc_Header_04>
 
 <c:pvfc_Greeting_03 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Now that we&rsquo;ve processed your payment and completed your professional measure, our Authorized Service Provider will reach out to schedule your installation within 24-48 hours. You&rsquo;ll find your order details below along with a few tips to help prepare your home for new floors."></c:pvfc_Greeting_03>
 
-<c:pvfc_Greeting_02 storeRefNumber="{!relatedTo.RefNumber__c}" imgPathFull="{!$Label.CX_LibraryGCCPrepareFinalReceiptD}" imgPathMobile="{!$Label.CX_LibraryGCCPreapreFinalReceiptM}" ></c:pvfc_Greeting_02>
+<c:pvfc_Greeting_02 storeRefNumber="{!relatedTo.RefNumber__c}" ></c:pvfc_Greeting_02>
 
-<c:pvfc_PrepareInstallList_02 ></c:pvfc_PrepareInstallList_02>
+<table class="width-1" role="presentation">
+    <tr>
+        <td height="24" style="height: 24px; mso-line-height-rule: exactly; line-height: 100%; font-size: 24px;">&nbsp;</td>
+    </tr>
+</table>
 
 <c:evfc_QuoteDetails_grid_01 quoteNbr="{!relatedTo.DocumentNo__c}" savings="{!relatedTo.Discount__c}"></c:evfc_QuoteDetails_grid_01>
+
+<c:pvfc_PrepareInstallList_02 ></c:pvfc_PrepareInstallList_02>
 
 <c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
 <c:pvfc_Footer_01 ></c:pvfc_Footer_01>
