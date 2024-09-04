@@ -1,0 +1,93 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}" relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<c:evfc_EmailStylesMin ></c:evfc_EmailStylesMin> 
+  
+</head>
+
+<body>
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+<c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01>
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 700px; border: none; Margin: 0 auto;">
+        <!--[if !mso]><!--><tr><!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all">
+<!-- @begin email body interior -->
+
+<apex:outputText rendered="{!relatedTo.ProductName__c != 'Carpet'}">
+<!--===============HEADER SECTION===================================-->
+<c:pvfc_Header_06 logoLink="https://www.homedepot.com/services/" titleCopy="Your new floors are waiting - take advantage of a great deal!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryQuoteReminderD}" imgPathMobile="{!$Label.CX_LibraryQuoteReminderM}" ></c:pvfc_Header_06>
+<!--===============HEADER SECTION===================-->
+</apex:outputText>
+
+
+<apex:outputText rendered="{!relatedTo.ProductName__c == 'Carpet'}">
+<!--===============HEADER SECTION===================-->
+<c:pvfc_Header_06 logoLink="https://www.homedepot.com/services/" titleCopy="Your new floors are waiting - take advantage of a great deal!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryHDMS_EOQ_CarpetD}" imgPathMobile="{!$Label.CX_LibraryHDMS_EOQ_CarpetM}" ></c:pvfc_Header_06>
+<!--===============HEADER SECTION===================-->
+</apex:outputText>
+
+<c:pvfc_Greeting_01 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Take advantage of this special offer today. Call us at {!relatedTo.RefPhone__c} or visit your local Home Depot store to purchase your new floors."></c:pvfc_Greeting_01>
+<!--
+<c:pvfc_QuoteDetails_2col_01 quoteSource="{!relatedTo.SourceName__c}" quoteData="{!relatedTo.TotalAmount__c}" expDate="{!relatedTo.ExpirationDate__c}" timeZone="{!relatedTo.TimeZone__c}" floorPlanURL="{!relatedTo.AltRefUrl__c}" buttonCopy="Purchase&nbsp;Now" buttonURL="{!relatedTo.RefURL__c}" hdmsProductName="{!relatedTo.ProductName__c}" ></c:pvfc_QuoteDetails_2col_01> 
+
+<c:pvfc_QuoteDetails_grid quoteNbr="{!relatedTo.DocumentNo__c}"></c:pvfc_QuoteDetails_grid>
+-->
+
+<apex:outputText rendered="{!relatedTo.ProductName__c == 'Carpet' && relatedTo.StoreCity__c == 'High Value'}">
+<!--===============GREAT DEAL SECTION===================-->
+<c:pvfc_GreatDeal_02 hero1URL="{!$Label.CX_LibraryGreatDealHero2}" barCodeURL="{!IF(ISBLANK(relatedTo.RefURL__c), $Label.CX_LibraryHighValuebarcode, $Label.CX_LibraryCarpetHSbarecode)}" discounttext="{!relatedTo.RefString__c}" wording="{!$Label.CX_HighValueQuotedDealText}"></c:pvfc_GreatDeal_02>
+<!--===============GREAT DEAL SECTION===================-->
+</apex:outputText>
+
+<apex:outputText rendered="{!relatedTo.ProductName__c == 'Carpet' && relatedTo.StoreCity__c != 'High Value'}">
+<!--===============GREAT DEAL SECTION===================-->
+<c:pvfc_GreatDeal_02 hero1URL="{!$Label.CX_LibraryGreatDealHero2}" barCodeURL="{!IF(ISBLANK(relatedTo.RefURL__c), $Label.CX_LibraryHighValuebarcode, $Label.CX_LibraryCarpetHSbarecode)}" discounttext="{!relatedTo.RefString__c}" wording="{!$Label.CX_CarpetQuotedDealText}"></c:pvfc_GreatDeal_02>
+<!--===============GREAT DEAL SECTION===================-->
+</apex:outputText>
+
+<apex:outputText rendered="{!relatedTo.ProductName__c != 'Carpet'}">
+<!--===============GREAT DEAL SECTION===================-->
+<c:pvfc_GreatDeal_02 hero1URL="{!$Label.CX_LibraryHDMS_EOQ_HardSurfaceD}" barCodeURL="{!IF(ISBLANK(relatedTo.RefURL__c), $Label.CX_LibraryHighValuebarcode, $Label.CX_LibraryCarpetHSbarecode)}" discounttext="{!relatedTo.RefString__c}" wording="{!relatedTo.AltString__c}"></c:pvfc_GreatDeal_02>
+<!--===============GREAT DEAL SECTION===================-->
+</apex:outputText>
+
+<c:pvfc_ValueProps_01 ></c:pvfc_ValueProps_01>
+
+<c:pvfc_CreditOffer_01 hdmsGrandTotal="{!relatedTo.TotalAmount__c}" buttonCopy="Apply&nbsp;Now" buttonURL="{!relatedTo.AltRefUrl__c}" imageURL="{!$Label.CX_LibrarySpecialFinancingIcon}" imageALT="Credit Cards" ></c:pvfc_CreditOffer_01>
+
+<c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
+
+<!--===============FOOTER SECTION===================--> 
+<c:pvfc_Footer_01 legalCopy="{!$Label.HDMSEOQLegalTerms} Home Depot local Service Providers are background checked, insured, licensed and/or registered. License or registration numbers held by or on behalf of Home Depot U.S.A., Inc. are available at http://homedepot.com/licensenumbers  or at the Customer Notices Board in The Home Depot® store. State specific licensing information includes: AL 51289 1924, AK 25084, AZ ROC252435 ROC092581, AR 228160518, CA 602331, CT HIC.533772, DC 420214000109 410517000372, FL CRC046858 CGC1514813, GA RBCO005730 GCCO005540, HI CT-22120, ID RCE-19683, IA C091302, LA 43960 557308 883162, MD 85434 42144, MA 112785 CS-107774, MI 2101089942 2102119069, MN BC147263, MS 22222-MC, MT 37730, NE 26085, NV 38686, NJ 13VH09277500, NM 86302, NC 31521, ND 29073, OR 95843, The Home Depot U.S.A., Inc. is a Registered General Contractor in Rhode Island and its Registration Number is 9480, SC GLG110120, TN 47781, UT 286936-5501, VA 2705-068841, WA HOMED088RH, WV WV036104, WI 1046796. Visit http://homedepot.com or ask an Associate for details. ©2023 Home Depot Product Authority, LLC. All rights reserved." ></c:pvfc_Footer_01>
+<!--===============FOOTER SECTION===================-->
+
+<!--===============PIXEL TRACKING===================-->
+<c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+<!--===============PIXEL TRACKING===================-->
+
+
+
+<!-- @end email body -->
+    </td><td class="hide-for-small">&zwnj;</td></tr></table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
