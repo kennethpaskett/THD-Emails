@@ -31,7 +31,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
             <td id="all">
 <!-- @begin email body interior -->
 
-<c:pvfc_Header_03 logoLink="https://www.homedepot.com/services/" titleCopy="Thank you for ordering new carpet - now it&rsquo;s time for your professional measure!" phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CX_LibraryGCCPurchaseReceiptD}" imgPathMobile="{!$Label.CX_LibraryGCCPurchaseReceiptM}" ></c:pvfc_Header_03>
+<c:pvfc_Header_03 logoLink="https://www.homedepot.com/services/" titleCopy="Thank you for ordering new carpet - now it&rsquo;s time for your professional measure!" imgPathFull="{!$Label.CX_LibraryGCCPurchaseReceiptD}" ></c:pvfc_Header_03>
 
 <c:evfc_NextEventTimeDate_02 jobDate="{!relatedTo.RefDate__c}" phonenumber="{!$Label.GCCSupportPhoneNumber1}." ></c:evfc_NextEventTimeDate_02>
 
