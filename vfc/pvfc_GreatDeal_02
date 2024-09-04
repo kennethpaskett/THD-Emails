@@ -1,5 +1,4 @@
 <apex:component controller="HDMSQuoteDetailsEmailCtrl" access="global" >
-  <apex:attribute name="iconURL" description="Icon URL" type="String" />
   <apex:attribute name="barCodeURL" description="Bar code URL" type="String" />
   <apex:attribute name="wording" description="wording" type="String" />
   <apex:attribute name="discounttext" description="discounttext" type="String" />
@@ -35,13 +34,14 @@
            <!--     <div class="height-1" aria-hidden="true">&nbsp;</div> -->
             </th>
             
-            <th class="column-last coupon-right" style="vertical-align: top;" valign="top" width="51%">
+            <th class="column-last coupon-right hide-for-small" style="vertical-align: top;" valign="top" width="51%">
                 <table align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto;">
                     <tr>
-                        <td style="padding:15px 0px 0px 0px;" align="left"><img class="wrapper" src="{!hero1URL}" width="330" style="max-width: 100%;" alt="{!hero1ALT}" /></td>
+                        <td style="padding:15px 0px 0px 0px;" align="left">
+                            <img class="wrapper" src="{!hero1URL}" width="330" style="max-width: 100%;" alt="{!hero1ALT}" />
+                        </td>
                     </tr>
                 </table>
-                
             </th>
             
     <!-- start VP row CLOSE -->
@@ -49,8 +49,6 @@
         </table><!-- .stack-reverse -->
     </div>
     <!-- end VP row CLOSE -->
-
-
 
 <!-- </div> -->
 <!--[if !mso]><!--></div><!--<![endif]-->

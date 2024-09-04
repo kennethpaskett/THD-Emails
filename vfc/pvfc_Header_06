@@ -1,12 +1,8 @@
 <apex:component access="global">
-  <apex:attribute name="phoneNum" description="Phone number" type="String" />
-  <apex:attribute name="imgPathFull" description="Path for the hero image, full-size" type="String" />
-  <apex:attribute name="imgPathMobile" description="Path for the hero image, mobile-size" type="String" />
-  <apex:attribute name="titleCopy" description="Title headline" type="String" />
-  <apex:attribute name="heroLink" description="Hero image URL" type="String" />
-  <apex:attribute name="logoLink" description="Logo image URL" type="String" />
-  
-     
+    <apex:attribute name="phoneNum" description="Phone number" type="String" />
+    <apex:attribute name="imgPathFull" description="Path for the hero image, full-size" type="String" />
+    <apex:attribute name="titleCopy" description="Title headline" type="String" />
+    <apex:attribute name="logoLink" description="Logo image URL" type="String" />
 
     <!-- Component Definition -->    
     <div id="header" class="hues-1" >
@@ -71,7 +67,7 @@
 
         <hr class="orange-border" style="max-width:700px" align="center" />
 
-      <div class="height-05" aria-hidden="true">&nbsp;</div>
+        <div class="height-05" aria-hidden="true">&nbsp;</div>
 
         <table align="center" border="0" cellpadding="0" cellspacing="0" class="width-2" role="presentation" style="Margin: 0 auto;">
             <tr>
@@ -84,12 +80,9 @@
 
                         <tr>
                             <td class="hide-for-small" valign="middle">
-                                <!--      <a href="{!heroLink}"> -->
-                                <img src="{!imgPathFull}" style="display:block;border:0;border:none; width: 700px;" width="700" alt="{!titleCopy}"/>
-                                <!--      </a> -->
+                                <img src="{!imgPathFull}" class="hide-for-small" style="display:block;border:0;border:none; width: 700px;" width="700" alt=""/>
                             </td>
                         </tr>
-
 
                     </table>
 

@@ -33,14 +33,14 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
 <apex:outputText rendered="{!relatedTo.ProductName__c != 'Carpet'}">
 <!--===============HEADER SECTION===================================-->
-<c:pvfc_Header_06 logoLink="https://www.homedepot.com/services/" titleCopy="Your new floors are waiting - take advantage of a great deal!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryQuoteReminderD}" imgPathMobile="{!$Label.CX_LibraryQuoteReminderM}" ></c:pvfc_Header_06>
+<c:pvfc_Header_06 logoLink="https://www.homedepot.com/services/" titleCopy="Your new floors are waiting - take advantage of a great deal!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryQuoteReminderD}" ></c:pvfc_Header_06>
 <!--===============HEADER SECTION===================-->
 </apex:outputText>
 
 
 <apex:outputText rendered="{!relatedTo.ProductName__c == 'Carpet'}">
 <!--===============HEADER SECTION===================-->
-<c:pvfc_Header_06 logoLink="https://www.homedepot.com/services/" titleCopy="Your new floors are waiting - take advantage of a great deal!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryHDMS_EOQ_CarpetD}" imgPathMobile="{!$Label.CX_LibraryHDMS_EOQ_CarpetM}" ></c:pvfc_Header_06>
+<c:pvfc_Header_06 logoLink="https://www.homedepot.com/services/" titleCopy="Your new floors are waiting - take advantage of a great deal!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryHDMS_EOQ_CarpetD}" ></c:pvfc_Header_06>
 <!--===============HEADER SECTION===================-->
 </apex:outputText>
 
