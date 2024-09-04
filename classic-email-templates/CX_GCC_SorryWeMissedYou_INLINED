@@ -31,12 +31,9 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
             <td id="all">
 <!-- @begin email body interior -->
 
-<c:pvfc_Header_05 logoLink="https://www.homedepot.com/services/" titleCopy="Let&rsquo;s chat about your order for new carpet!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryGCCsorryheroD}" imgPathMobile="{!$Label.CX_LibraryGCCsorryheroM}" ></c:pvfc_Header_05>
+<c:pvfc_Header_05 logoLink="https://www.homedepot.com/services/" titleCopy="Let&rsquo;s chat about your order for new carpet!" imgPathFull="{!$Label.CX_LibraryGCCsorryheroD}" ></c:pvfc_Header_05>
 
 <c:pvfc_Greeting_01 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We couldn't reach you to discuss your new carpet order. You can give us a call back at {!$Label.GCCSupportPhoneNumber2}.  We need to hear from you before we can move forward with your carpet installation."></c:pvfc_Greeting_01>
-
-
-
 
 <c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
 
