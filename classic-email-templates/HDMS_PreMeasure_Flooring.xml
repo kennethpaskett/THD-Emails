@@ -105,21 +105,30 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
                         <!--=============== WHATS NEXT SECTION ===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c != 'Reminder'}">  
-                        <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="Your measure technician will call between 7-9 am the morning of your appointment to confirm their arrival time. Remember, someone over 18 will need to be home during your appointment." BulletTwoText="Your measure should take around 45 minutes to complete but could take longer depending on your project needs. Please provide clear access to the rooms getting measured. If you have pets, we ask they are securely put away for their safety and the safety of our measure technician." BulletThreeText="We’ll reach out to you within 24-48 hours after your appointment with your quote. Keep in mind that without a product selection, we can’t offer you a quote. "></c:pvfc_WhatToExpect_02>  
+                        <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="Your measure technician will call between 7-9 am the morning of your appointment to confirm their arrival time. Remember, someone over 18 will need to be home during your appointment." BulletTwoText="Your measure should take around 45 minutes to complete but could take longer depending on your project needs. Please provide clear access to the rooms getting measured. If you have pets, we ask they are securely put away for their safety and the safety of our measure technician." BulletThreeText="We’ll reach out to you within 24-48 hours after your appointment with your quote. Keep in mind that without a product selection, we can’t offer you a quote. "></c:pvfc_WhatToExpect_02>
+
+                        <tr>
+                            <td height="24" style="height: 24px; mso-line-height-rule: exactly; line-height: 100%; font-size: 24px;">&nbsp;</td>
+                        </tr> 
                         </apex:outputText>
                         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}">  
-                        <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="On the morning of your appointment, your measure technician will call between 7-9 am to confirm their arrival window." BulletTwoText="Remember to select your new floors to get your quote. If you haven't selected a flooring product yet, please do so before your measure. You can order individual flooring samples online or visit your local store to see samples." BulletThreeText="We’ll reach out to you within 24-48 hours after your appointment with your quote. Keep in mind that without a product selection, we can’t offer you a quote. "></c:pvfc_WhatToExpect_02>  
-                        </apex:outputText>
-                        <!--=============== /WHATS NEXT SECTION ===================-->
+                        <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="On the morning of your appointment, your measure technician will call between 7-9 am to confirm their arrival window." BulletTwoText="Remember to select your new floors to get your quote. If you haven't selected a flooring product yet, please do so before your measure. You can order individual flooring samples online or visit your local store to see samples." BulletThreeText="We’ll reach out to you within 24-48 hours after your appointment with your quote. Keep in mind that without a product selection, we can’t offer you a quote. "></c:pvfc_WhatToExpect_02>
 
                         <tr>
                             <td height="24" style="height: 24px; mso-line-height-rule: exactly; line-height: 100%; font-size: 24px;">&nbsp;</td>
                         </tr>
+                        </apex:outputText>
+                        <!--=============== /WHATS NEXT SECTION ===================-->
 
                         <!--=============== NO PRODUCT SECTION ===================--> 
                         <c:pvfc_NoProduct_01 iconURL="{!$Label.CX_LibraryShoppingCartIcon}" buttonCopy="Browse&nbsp;Products&nbsp;Online" buttonURL="https://www.homedepot.com/b/Flooring/N-5yc1vZaq7r" noProd1URL="{!$Label.CX_LibraryNoProd01Icon}" noProd1ALT="Carpet" noProd2URL="{!$Label.CX_LibraryNoProd02Icon}" noProd2ALT="Hardwood" noProd3URL="{!$Label.CX_LibraryNoProd03Icon}" noProd3ALT="Tile" headline="{!relatedTo.FirstName__c}, you haven’t selected your floors yet!" copy="Choose your flooring before your measure to get a faster quote. You can browse online and order individual samples or visit your local store to view our large selection of flooring samples." copy2="Call {!relatedTo.RefPhone__c} to give us your selection or let your technician know during your appointment." NameString="{!relatedTo.RefString__c}"></c:pvfc_NoProduct_01>
                         <!--=============== /NO PRODUCT SECTION ===================-->
+                        
+                        <tr>
+                            <td height="24"
+                                style="height: 24px; mso-line-height-rule: exactly; line-height: 100%; font-size: 24px;">&nbsp;</td>
+                        </tr>
                         
                         <!--=============== WHY HOME DEPOT SECTION ===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}">  
