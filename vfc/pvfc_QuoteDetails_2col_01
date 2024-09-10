@@ -1,0 +1,132 @@
+<apex:component controller="HDMSQuoteDetailsEmailCtrl" access="global" >
+  <apex:attribute name="quoteData" description="Imported quote data" type="Double" assignTo="{!grandTotal}"/>
+  <apex:attribute name="expDate" description="Quote expiration date" type="DateTime" assignTo="{!expiryDate}"/>
+  <apex:attribute name="timeZone" description="Quote expiration date" type="String" assignTo="{!timeZn}"/>
+  <apex:attribute name="floorPlanURL" description="Floor plan URL" type="String" />
+  <apex:attribute name="buttonCopy" description="Button copy" type="String" />
+  <apex:attribute name="buttonURL" description="Button URL" type="String" /> 
+  <apex:attribute name="selectNumber" description="Button URL" type="String" />
+  <apex:attribute name="selectLink" description="Button URL" type="String" />
+  <apex:attribute name="PhoneIcon" description="Button URL" type="String" />
+  <apex:attribute name="LaptopIcon" description="Button URL" type="String" />
+  <apex:attribute name="hdmsProductName" description="product name" type="String" assignTo="{!productName}" />
+  <apex:attribute name="quoteSource" description="Quote Source" type="String" />
+  <apex:attribute name="stage" description="stage" type="String" />   
+  <apex:attribute name="customerStoreNumber" description="product name" type="String" assignTo="{!storeNumber}" />
+  <apex:attribute name="recStage" description="stage" type="String"  assignTo="{!stage}" />
+  <apex:attribute name="recordTypeName" description="stage" type="String"  assignTo="{!recordType}" /> 
+  <apex:attribute name="recDisposition" description="stage" type="String"  assignTo="{!disposition}" />  
+
+  
+  
+    <!-- Component Definition 1.1-->    
+  <div class="hues-1">
+        <table class="width-1" style="text-align: left;width:700px;max-width:700px;" role="presentation">
+            <tr>
+                <td colspan="2">
+                    <table class="credit-title">
+                        <tr>
+                            
+                            <td class="border-title-left">
+                            Your&nbsp;Project&nbsp;Total</td>
+                            <td class="">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class=""><hr class="orange-border" /></td>
+                            <td class="" valign="center"><hr class="grey-border" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="row-7">
+                <th class="column" valign="top">
+
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>
+
+                    <table class="titles_2col">
+                        <tr>
+                            <td class="credit-copy" valign="top"><span class="next-event-copy"><apex:outputText value="{0, number, currency}" ><apex:param value="{!ABS(quoteData)}" /></apex:outputText></span><br/>
+                                This quote expires on<br/> <span class="bold-700">
+                                   <!--<apex:outputText value="{!expirationDate}" />-->
+                                <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                        <apex:Param value="{!expDate}" />
+                                    </apex:outputText></span><br/>
+                                <apex:outputPanel rendered="{! If(quoteSource=='QuoteRuleEngine' ,true,false) }">
+                                        <a href="{!floorPlanURL}" class="a2">Review Floor Plan</a></apex:outputPanel>
+                            </td>
+                        </tr>
+                    </table>
+
+                </th>
+                <th class="column" valign="top">
+
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>
+
+                    <table class="titles_2col">
+                        <tr>
+                            <td class="" valign="top">
+
+                                <!-- orange box button -->
+                                <div class="btn-1" style="margin: 0px 0px 20px">
+                                    <!--[if mso]><v:rect style="width: 260px; height: 80px; v-text-anchor: middle;" arcsize="200%" strokecolor="#c76929" fillcolor="#F96302" strokeweight="1pt">
+                                    <center><![endif]-->
+                                    <a href="{!buttonURL}">
+                                        <span class="btn" style="width: 260px; max-width: 260px; background-color: #F96302; border-bottom:2px solid #c76929;">
+                                           <span class="btn-text" style="height: 50px; line-height: 185%;"><apex:outputText escape="false" value="{!buttonCopy}" /></span> 
+                                       
+                                        <!--   <img src="https://homeservices--int--c.cs78.visual.force.com/resource/1613960173000/CX_PurchaseNow" width="260" style="max-width: 60px;" alt="Purchase Now" /> -->
+                                        </span> 
+                                    </a>
+                                    <!--[if mso]></center></v:rect><![endif]-->
+                                </div>             
+                                <table>
+                                 <tr>
+                                            <td valign="top">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin:0 auto;">
+                                                    <tr>
+                                                        <td width="20" align="center" valign="top"><img class= "mob_width20" src="{!PhoneIcon}" style="display:block;border:0;border:none; width: 20px; max-width: 20px; height: auto;" width="20" alt="Text_icon"/></td>
+                                                        <td class="mso_text" align="left" valign="top"
+                                                            style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                            &nbsp;Call our direct flooring line <br/>
+                                                            &nbsp;<a class="a2"  href="tel:{!selectNumber}">{!selectNumber}</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <apex:outputText rendered="{!IF(customerStoreNumber != null, TRUE, FALSE) && IF(pilotStatus, TRUE, FALSE)}">
+                                        <tr>
+                                            <td height="12"
+                                                style="height: 12px; mso-line-height-rule: exactly; line-height: 100%; font-size: 12px;">&nbsp;
+                                                
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin:0 auto;">
+                                                    <tr>
+                                                        <td width="20" align="center" valign="top"><img class= "mob_width20" src="{!LaptopIcon}" style="display:block;border:0;border:none; width: 20px; max-width: 20px; height: auto;" width="20" alt="Email_icon"/></td>
+                                                        <td class="mso_text" align="left" valign="top"
+                                                            style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                            &nbsp;Schedule a call from a <br/>
+                                                            &nbsp;<a class="a2" href="{!selectLink}">flooring specialist</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </apex:outputText>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="height-3" aria-hidden="true">&nbsp;</div>
+
+                </th>
+            </tr>
+        </table>
+    </div>
+
+</apex:component>
