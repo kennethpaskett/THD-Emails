@@ -66,34 +66,33 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============HEADER SECTION===================-->
                         <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
                         <c:pvfc_HDMSHeader logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="We’ll call you soon!" productType="{!relatedTo.ProductName__c}" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreCity__c}" imgPathFull="{!$Label.CX_Library_ScheduleApptHeroD}" imgPathMobile="{!$Label.CX_Library_ScheduleApptHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_HDMSHeader>
-                        <!--===============HEADER SECTION===================-->
+                        <!--=============== /HEADER SECTION===================-->
+                        
+                        <tr>
+                            <td height="32"
+                                style="height: 32px; mso-line-height-rule: exactly; line-height: 100%; font-size: 32px;">&nbsp;</td>
+                        </tr>
 
                         <!--===============APPOINTMENT SECTION===================-->  
                         <c:pvfc_Appointment_CU_Info_01 CUName="{!relatedTo.FirstName__c}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" CUPhoneNum="{!relatedTo.AltPhone__c}" productType="{!relatedTo.ProductName__c}" SPPhoneNum="{!relatedTo.RefPhone__c}" SPPhoneNum2="{!relatedTo.StoreCity__c}" SectionTitle="Your Scheduled Call" SectionTitle2="Your Information" jobDate="{!relatedTo.RefDate__c}" callBucket="{!relatedTo.CaseStatus__c}" ></c:pvfc_Appointment_CU_Info_01>
-                        <!--===============APPOINTMENT SECTION===================-->
+                        <!--=============== /APPOINTMENT SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_11 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for scheduling a call from one of our Flooring representatives. We'll call you at the time you selected. If you need help or want to change your scheduled call time, please call "></c:pvfc_Greeting_11>
-                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_11 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for scheduling a call from one of our Flooring representatives. We'll call you at the time you selected. If you need help or want to change your scheduled call time, please call {!IF(relatedTo.ProductName__c == 'Carpet', relatedTo.RefPhone__c, IF(relatedTo.ProductName__c == 'HARD SURFACE', relatedTo.StoreCity__c, ''))}."></c:pvfc_Greeting_11>
+                        <!--=============== /GREETING SECTION===================-->
                           
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
-                        <!--===============QUICK LINKS SECTION===================-->
+                        <!--=============== /QUICK LINKS SECTION===================-->
                           
                         <!--===============FOOTER SECTION===================--> 
                         <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
-                        <!--===============FOOTER SECTION===================-->
+                        <!--=============== /FOOTER SECTION===================-->
 
                         <!--===============PIXEL TRACKING===================-->
                         <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
-                        <!--===============PIXEL TRACKING===================-->
-
-
-
-
-
-
-
+                        <!--=============== /PIXEL TRACKING===================-->
+                        
 <!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
                         </table>
                     </td>
