@@ -56,9 +56,7 @@
                                     <center><![endif]-->
                                     <a href="{!buttonURL}">
                                         <span class="btn" style="width: 260px; max-width: 260px; background-color: #F96302; border-bottom:2px solid #c76929;">
-                                           <span class="btn-text" style="height: 50px; line-height: 185%;"><apex:outputText escape="false" value="{!buttonCopy}" /></span> 
-                                       
-                                        <!--   <img src="https://homeservices--int--c.cs78.visual.force.com/resource/1613960173000/CX_PurchaseNow" width="260" style="max-width: 60px;" alt="Purchase Now" /> -->
+                                           <span class="btn-text" style="height: 50px; line-height: 185%;"><apex:outputText escape="false" value="{!buttonCopy}" /></span>
                                         </span> 
                                     </a>
                                     <!--[if mso]></center></v:rect><![endif]-->
