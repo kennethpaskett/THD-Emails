@@ -1,6 +1,7 @@
 <apex:component access="global">
   <apex:attribute name="phoneNum1" description="Phone number" type="String" />
   <apex:attribute name="phoneNum2" description="Phone number" type="String" />  
+  <apex:attribute name="productType" description="Phone number" type="String" />  
   <apex:attribute name="phoneIcon" description="path to phone icon" type="String" />
   <apex:attribute name="imgLogo" description="Path for the home depot logo" type="String" />
   <apex:attribute name="imgPathFull" description="Path for the hero image, full-size" type="String" />
@@ -41,18 +42,18 @@
                             </td>
                             <td class="mob_padR" valign="middle" width="73%" style="width: 73%;">
                                 <table width="73%" align="right" border="0" cellpadding="0" cellspacing="0"
-                                    style="width:73%; float: right">
+                                    style="width:73%;">
 
                                     <tr>
                                         <td class="mso_text" width="100%"
-                                            style="font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:1.2;text-align:right;color:#000000; font-weight: normal; float: right">
+                                            style="font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:1.2;text-align:right;color:#000000; font-weight: normal;">
                                             Need Help?
                                         </td>
                                     </tr>
                                     <tr>
                                         <td valign="top" width="100%">
                                             <table align="right" cellpadding="0" cellspacing="0" border="0"
-                                                style="Margin: 0 auto; width: 170px; text-align:right; float: right" width="170">
+                                                style="Margin: 0 auto; width: 170px;" width="170">
                                                 <tr>
                                                     <!--===========================HERE IS WHERE THE CUSTOMER LABEL (URL/LINK) SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (href="") TAG==========================-->
                                                     <th valign="top" align="right"
@@ -66,11 +67,11 @@
                                                        <span> 
                                                        
                                                        
-                                                       <apex:outputText rendered="{!phoneNum1 == ''}">
+                                                       <apex:outputText rendered="{!productType == 'HARD SURFACE'}">
                                                        <a href=" tel:{!phoneNum2}">{!phoneNum2}</a>
                                                        </apex:outputText>
                                                        
-                                                       <apex:outputText rendered="{!phoneNum1 != ''}">
+                                                       <apex:outputText rendered="{!productType == 'Carpet'}">
                                                        <a href=" tel:{!phoneNum1}">{!phoneNum1}</a> 
                                                        </apex:outputText>
                                                           

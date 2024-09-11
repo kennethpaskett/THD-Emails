@@ -1,0 +1,96 @@
+<apex:component access="global">
+    <apex:attribute name="phoneNum" description="Phone number" type="String" />
+    <apex:attribute name="imgPathFull" description="Path for the hero image, full-size" type="String" />
+    <apex:attribute name="titleCopy" description="Title headline" type="String" />
+    <apex:attribute name="logoLink" description="Logo image URL" type="String" />
+
+    <!-- Component Definition -->    
+    <div id="header" class="hues-1" >
+        <table align="center" class="wrapper" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 700px; max-width:700px; Margin: 0 auto;">
+            <tr>
+                <td valign="top">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 100%;" width="100%">
+                        <tr><td height="15" style="height: 15px; font-size: 15px; line-height: 100%; mso-line-height-rule: exactly;"></td></tr>
+                        <tr>
+                            <td valign="top" width="18%">
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 100%" width="100%">
+                                    <tr>
+                                        <td valign="top">
+                                        <a href="{!logoLink}"><img src="{!$Label.CX_LibraryHSLogoIcon_v2}" width="126" style="max-width: 126px; width: 126px; display: block; border: 0;" alt="The Home Depot Home Services"/></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="small-2" valign="top" width="57%">
+                                <table align="right" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 100%;" width="100%">
+                                    <tr>
+                                        <td valign="top">&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="middle" width="25%">
+                                <table align="right" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+                                    <tr>
+                                        <td width="18%" valign="top">&nbsp;</td>
+                                        <td width="85%" valign="top" style="text-align: center; font-size: 16px; line-height: 20px;">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+                                                <tr>
+                                                    <td colspan="2" width="100%" valign="top" style="text-align: right; font-size: 16px; line-height: 20px;">Need Help?</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="15%" >
+                                            <table align="right" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+                                                <tr>
+                                                    <td width="100%" valign="top" style="text-align: right;"><img src="{!$Label.CX_LibraryPhoneIcon_v2}" width="20" style="width:20px; max-width:20px;"/></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td valign="top" width="85%">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+                                                <tr>
+                                                    <td colspan="2" width="100%" valign="top" style="text-align: right;"><a class="a2" style="font-weight:400;font-size:15px;" href="tel:{!phoneNum}">{!phoneNum}</a></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr><td height="15" style="height: 15px; font-size: 15px; line-height: 100%; mso-line-height-rule: exactly;"></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <hr class="orange-border" style="max-width:700px" align="center" />
+
+        <div class="height-05" aria-hidden="true">&nbsp;</div>
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="width-2" role="presentation" style="Margin: 0 auto;">
+            <tr>
+                <td class="" style="text-align: left;">
+                    <span class="main-title" style="font-weight: bold;"><apex:outputText escape="false" value="{!titleCopy}" /></span> 
+
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>
+
+                    <table class="img-wrap">
+
+                        <tr>
+                            <td class="hide-for-small" valign="middle">
+                                <img src="{!imgPathFull}" class="hide-for-small" style="display:block;border:0;border:none; width: 700px;" width="700" alt=""/>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <div class="height-1" aria-hidden="true">&nbsp;</div>
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</apex:component>

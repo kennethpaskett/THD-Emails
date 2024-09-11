@@ -1,0 +1,68 @@
+<apex:component access="global">
+  <apex:attribute name="image1URL" description="No Product Image URL 1" type="String" />
+  <apex:attribute name="image2URL" description="No Product Image URL 2" type="String" />
+  <apex:attribute name="image3URL" description="No Product Image URL 3" type="String" />
+  <apex:attribute name="image1ALT" description="No Product Image1 ALT text" type="String" />
+  <apex:attribute name="image2ALT" description="No Product Image2 ALT text" type="String" />
+  <apex:attribute name="image3ALT" description="No Product Image3 ALT text" type="String" />
+  
+  <style>
+  .install-list li{
+      padding-left: 16px;
+  }
+  </style>
+
+    <!-- Component Definition 1-Commit-->      
+       
+    
+    
+        <table class="wrapper" align="center" width="700" border="0" cellspacing="0" cellpadding="0" style="Margin: 0 auto; width: 700px;" >
+            <tr class="row-7">
+                <td class="column">
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" style="text-align: left; Margin: 0 auto;">
+                        <tr class="row-7">
+                            <td class="column"  style="padding:0px;">
+                                <div class="height-05" aria-hidden="true">&nbsp;</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- sub component -->
+                    <table class="next-steps-title" align="left" border="0" cellspacing="0" cellpadding="0" style="Margin: 0 auto;">
+                        <tr>
+                            <td valign="top" style="font-size: 22px; line-height: 26px;">How to Prepare For Your Installation:</td>
+                            <td class="hide-for-small">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class=""><hr class="orange-border" /></td>
+                            <td class="" valign="center"><hr class="grey-border" /></td>
+                        </tr>
+                        
+                        <tr>
+                            <td valign="top">
+                                <ul class="install-list">
+                                    <li>Disassemble beds, remove bed coverings and any items underneath.</li>
+                                    <li>Clear closets of low hanging clothes – clothes must be at least 4 Inches above the floor.</li>
+                                    <li>Clear all surfaces and floor spaces, remove pictures and mirror from walls.</li>
+                                    <li>Disconnect and move all electronics, such as TVs and computers.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td valign="top">
+                                  <span style="font-weight:bold;">We want your installation to be as smooth and easy as possible. You can find more detailed tips on our <a href="{!$Label.Flooring_Installation_and_Preparation_page}" class="a2" style="">Flooring Installation Preparation page</a>.</span>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>
+                    <!-- end sub component -->
+
+                    
+
+                    <div class="height-1" aria-hidden="true">&nbsp;</div>
+                    
+                </td>
+            </tr>
+        </table>
+</apex:component>
