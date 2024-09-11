@@ -1,0 +1,486 @@
+<apex:component access="global">
+    <apex:attribute name="ServiceProviderDivider" description="Service Provider Divider" type="String" />
+    <apex:attribute name="YourInformationDivider" description="Your Information Divider" type="String" />
+    <apex:attribute name="YourInformationDivider2" description="Your Information Divider" type="String" />
+    <apex:attribute name="ServiceProviderDividerM" description="Service Provider Mobile Divider" type="String" />
+    <apex:attribute name="YourInformationDividerM" description="Your Information Mobile Divider" type="String" />
+    <apex:attribute name="YourInformationDividerM2" description="Your Information Mobile Divider" type="String" />
+    <apex:attribute name="NameString" description="Name String" type="String" />
+    <apex:attribute name="SPName" description="SP Name" type="String" />
+    <apex:attribute name="SPemail" description="SP Email" type="String" />
+    <apex:attribute name="SPAddress" description="Service Provider Address" type="String" />
+    <apex:attribute name="SPNum1" description="Material type" type="String" />
+    <apex:attribute name="SPNum2" description="Material type" type="String" />
+    <apex:attribute name="custName" description="Customer first and last name" type="String" />
+    <apex:attribute name="Address1" description="Customeraddress" type="String" />
+    <apex:attribute name="Address2" description="Customeraddress" type="String" />
+    <apex:attribute name="custPhone" description="Customer phone number" type="String" />
+    <apex:attribute name="custemail" description="Cutomer Email" type="String" />
+    <apex:attribute name="Title" description="Title" type="String" />
+    <apex:attribute name="jobDate" description="Job date" type="DateTime"/>
+    <apex:attribute name="jobTime" description="Job time" type="String"/>
+    <apex:attribute name="phoneNum1" description="Phone number" type="String" />
+    <apex:attribute name="phoneNum2" description="Phone number" type="String" />  
+    <apex:attribute name="phoneIcon" description="path to phone icon" type="String" />
+    <apex:attribute name="imgLogo" description="Path for the home depot logo" type="String" />
+    <apex:attribute name="imgPathFull" description="Path for the hero image, full-size" type="String" />
+    <apex:attribute name="imgPathMobile" description="Path for the hero image, mobile-size" type="String" />
+    <apex:attribute name="imgPathDivider" description="Path for the divider image, desktop/mobile-size" type="String" />
+    <apex:attribute name="titleCopy" description="Title headline" type="String" />
+    <apex:attribute name="heroLink" description="Hero image URL" type="String" />
+    <apex:attribute name="logoLink" description="Logo image URL" type="String" />
+    <apex:attribute name="TestNum" description="Phone number" type="String" />
+    
+    <!--================================== START SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH*** ====================================================================-->
+
+    <tr>
+        <td valign="top">
+            <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:600px;" width="590">
+                <tr>
+                <td height="25"
+                    style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="27%" style="width: 27%;">
+                        <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+                            <tr>
+                                <td class="mob_padL" valign="top" align="left" width="27%" style="width: 27%;">
+
+                                    <!--===========================HERE IS WHERE THE CUSTOMER LABEL (URL/LINK) SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (href="") TAG==========================-->
+                                    <a href="{!logoLink}" target="_blank">
+                                        <!--======================================================-->
+
+                                        <!--===========================HERE IS WHERE THE IMAGE PATH SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (src="") TAG==========================-->
+                                        <img src="{!imgLogo}"
+                                            style="display:block;border:0;border:none; width: 130px; max-width: 130px; height: auto;"
+                                            width="130" alt="logo-top-desktop.png" />
+                                    </a>
+                                    <!--======================================================-->
+
+                                </td>
+                                <td class="mob_padR" valign="middle" width="73%" style="width: 73%;">
+                                    <table width="73%" align="right" border="0" cellpadding="0" cellspacing="0"
+                                        style="width:73%; float: right">
+
+                                        <tr>
+                                            <td class="mso_text" width="100%"
+                                                style="font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:1.2;text-align:right;color:#000000; font-weight: normal; float: right">
+                                                Need Help?
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" width="100%">
+                                                <table align="right" cellpadding="0" cellspacing="0" border="0"
+                                                    style="Margin: 0 auto; width: 170px; text-align:right; float: right" width="170">
+                                                    <tr>
+                                                        <!--===========================HERE IS WHERE THE CUSTOMER LABEL (URL/LINK) SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (href="") TAG==========================-->
+                                                        <th valign="top" align="right"
+                                                            style=" width: 165px; text-align: right" width="165">
+                                                        <span
+                                                                style="display: inline-block; width: 16px; text-align: right"><img
+                                                                    src="{!phoneIcon}" width="16"
+                                                                    style="width: 16px;" />
+                                                        </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        
+                                                        <span> 
+                                                        
+                                                        
+                                                        <apex:outputText rendered="{!phoneNum1 == ''}">
+                                                        <a href=" tel:{!phoneNum2}">{!phoneNum2}</a>
+                                                        </apex:outputText>
+                                                        
+                                                        <apex:outputText rendered="{!phoneNum1 != ''}">
+                                                        <a href=" tel:{!phoneNum1}">{!phoneNum1}</a> 
+                                                        </apex:outputText>
+                                                            
+                                                        </span>
+                                                        
+                                                        </th>
+
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!----- HEADER DIVIDER ----->
+                <tr>
+                    <td height="20"
+                        style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">&nbsp;</td>
+                </tr>
+                
+                <tr>
+                    <th valign="top" width="600" style="width: 600px; height: 3px;" height="3"><img src="{!imgPathDivider}" width="600" style="width: 600px; height: 3px;" height="3" 
+                            class="fluid" />
+                    </th>
+                </tr>
+                <tr>
+                    <td height="15"
+                        style="height: 15px; mso-line-height-rule: exactly; line-height: 100%; font-size: 15px; border:0; margin: 0 auto; padding:0; border-collapse:collapse">&nbsp;
+                        
+                    </td>
+                </tr>
+                <!----- /HEADER DIVIDER ----->
+
+                <!----- TITLE ----->
+                <tr>
+                    <td valign="top">
+                        <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" width="600"
+                            style="Margin: 0 auto; width: 600px;">
+                            <tr>
+                                <td height="16"
+                                    style="height: 16px; mso-line-height-rule: exactly; line-height: 100%; font-size: 16px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mso_text"
+                                    style="font-family:Arial, Helvetica, sans-serif;font-size:24px;line-height:1.2;text-align:left;color:#000000; font-weight: bold;">
+                                    {!titleCopy}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="25"
+                                    style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!----- /TITLE ----->
+
+                <!----- HERO ----->
+                <tr>
+                    <td valign="top" align="center">
+                        <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
+                            style="Margin: 0 auto; width:600px;" width="600">
+                            <tr>
+                                <td valign="top" align="center"><img src="{!imgPathFull}"
+                                        style="display:block;border:0;border:none; width:600px;" width="600"
+                                        alt="" class="hide" /></td>
+                            </tr>
+                            <tr>
+                                <td height="28"
+                                    style="height: 28px; mso-line-height-rule: exactly; line-height: 100%; font-size: 28px;">&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!----- /HERO ----->
+
+                <tr>
+                    <td valign="top">
+                        <apex:outputText rendered="{!NameString == 'Raw Lead'}">
+                        <table>
+                            <th class="mob_stack mob_padL0" valign="top" style="padding:0 0 0 20px; mso-padding-alt:0 0 0 17.5pt;">
+                                <table align="Center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 600px;">
+                                    <tr style="border:0; margin: 0 auto; padding:0; border-collapse:collapse">
+                                        <td class="mso_text" align="center" valign="top" height="25" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; height: 25px; mso-line-height-rule: exactly; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:22px; line-height: 100%; color:#000000; font-weight:normal;">
+                                            Your Information</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5" style="height: 5px; mso-line-height-rule: exactly; line-height: 100%; font-size: 5px; border:0; margin: 0 auto; padding:0; border-collapse:collapse">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr height="3" valign="top" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly">
+                                        <td class="hide" valign="top" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; width: 590px; height: 3px; line-height:100%; font-size: 3px"
+                                            height="3">
+                                            <img src="{!YourInformationDivider2}" allign="left" width="590" class="fluid" />
+                                        </td>
+                                    </tr>
+                                    <!--[if !mso]><!-- -->
+                                    <tr style="max-height: 0px; overflow: hidden;display:none;float:left;border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; height: 3px; line-height:100%; font-size: 3px"
+                                        class="show">
+                                        <th valign="top">
+                                            <img src="{!YourInformationDividerM2}" style=" height: 3px;" height="3" class="fluid" />
+                                        </th>
+                                    </tr>
+                                    <!--<![endif]-->
+                                    <tr>
+                                        <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table width="290" align="left" style="height:max-content; border-collapse:collapse;mso-padding-alt:0 0 0 0; padding:0 0 0 0; margin:0 auto">
+                                    <tr>
+                                        <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                            <b>Name:</b> {!custName}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="100%" width="auto" valign="TOP" style="vertical-align: top; margin:0 auto; border-collapse:collapse;mso-padding-alt:0 0 0 0; padding:0 0 0 0; margin:0 auto">
+                                            <table height="100%" valign="TOP" style="vertical-align: top; width:auto !important">
+                                                <tr height="100%" valign="TOP" style="vertical-align: top">
+                                                    <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; vertical-align:top;">
+                                                        <b>Address:</b>
+                                                    </td>
+                                                    <td height="100%" valign="top" align="left" style="vertical-align: top">
+                                                    <table height="100%" valign="top" align="left" style="vertical-align: top;">
+                                                        <tr height="100%" valign="TOP" style="vertical-align: top;">
+                                                            <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; vertical-align:top">
+                                                                {!Address1}
+                                                            </td>
+                                                        </tr>
+                                                        <tr height="100%" valign="TOP" style="vertical-align: top;">
+                                                            <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; vertical-align:top">
+                                                                {!Address2}
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                        <tr>
+                                        <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                            <b>Phone Number:</b>
+                                            <a href="tel:{!custPhone}" style="text-decoration: none; color: #000000;">{!custPhone}</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                            <b>Email:</b>
+                                            <a href="mailto:{!SPemail}" style="text-decoration: none; color: #000000;">{!custemail}</a>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </th>
+                        </table>
+                        </apex:outputText>
+                        <!--BREAK--------------------------------------------------------------------------------------------->
+                        <apex:outputText rendered="{!NameString != 'Raw Lead'}">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:100%">
+                            <tr>
+                                <th class="mob_stack" valign="top">
+                                    <table align="Center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 290px;">
+                                        <tr style="border:0; margin: 0 auto; padding:0; border-collapse:collapse">
+                                            <td class="mso_text" align="center" valign="top" height="25" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; height: 25px; mso-line-height-rule: exactly; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:22px; line-height: 100%; color:#000000; font-weight:normal;">
+                                                {!Title}</td>
+                                        </tr>
+                                        <tr>
+                                            <td height="5" style="height: 5px; mso-line-height-rule: exactly; line-height: 100%; font-size: 5px; border:0; margin: 0 auto; padding:0; border-collapse:collapse">&nbsp;
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr height="3" valign="top" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly">
+                                            <td class="hide" valign="top" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; width: 290px; height: 3px; line-height:100%; font-size: 3px"
+                                                height="3">
+                                                <img src="{!ServiceProviderDivider}" allign="left" width="290" class="fluid" />
+                                            </td>
+                                        </tr>
+                                        <!--[if !mso]><!-- -->
+                                        <tr style="max-height: 0px; overflow: hidden;display:none;float:left;border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; height: 3px; line-height:100%; font-size: 3px"
+                                            class="show">
+                                            <th valign="top">
+                                                <img src="{!ServiceProviderDividerM}" style=" height: 3px;" height="3" class="fluid" />
+                                            </th>
+                                        </tr>
+                                        <!--<![endif]-->
+                                        <tr style="border:0; margin: 0 auto; padding:0; border-collapse:collapse">
+                                            <td height="25" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mso_text" align="left" valign="top"
+                                                style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:30px; line-height: 34px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                <b>
+                                                    <apex:outputText value="{0,date,EEEE MMM' 'dd', 'yyyy}">
+                                                        <apex:Param value="{!jobDate - (4/24)}" />
+                                                    </apex:OutputText>
+                                                </b>
+                                            </td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="mso_text" align="left" valign="top"
+                                                style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:30px; line-height: 34px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                <b>
+                                                    <apex:outputText >
+                                                        {!jobTime}
+                                                    </apex:outputText>
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="25"
+                                                style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                                
+                                            </td>
+                                        </tr>
+                                                    
+                                        <tr>
+                                            <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                <b>Consultant:</b> {!SPName}
+                                            </td>
+                                        </tr>
+                                        
+                                    <tr>
+                                        <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    </table>
+                                </th>
+                                <th class="mob_stack mob_padL0" valign="top" style="padding:0 0 0 20px; mso-padding-alt:0 0 0 17.5pt;">
+                                    <table align="Center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 290px;">
+                                        <tr style="border:0; margin: 0 auto; padding:0; border-collapse:collapse">
+                                            <td class="mso_text" align="center" valign="top" height="25" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; height: 25px; mso-line-height-rule: exactly; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:22px; line-height: 100%; color:#000000; font-weight:normal;">
+                                                Your Information</td>
+                                        </tr>
+                                        <tr>
+                                            <td height="5" style="height: 5px; mso-line-height-rule: exactly; line-height: 100%; font-size: 5px; border:0; margin: 0 auto; padding:0; border-collapse:collapse">&nbsp;
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr height="3" valign="top" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly">
+                                            <td class="hide" valign="top" style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; width: 290px; height: 3px; line-height:100%; font-size: 3px"
+                                                height="3">
+                                                <img src="{!YourInformationDivider}" allign="left" width="290" class="fluid" />
+                                            </td>
+                                        </tr>
+                                        <!--[if !mso]><!-- -->
+                                        <tr style="max-height: 0px; overflow: hidden;display:none;float:left;border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; height: 3px; line-height:100%; font-size: 3px"
+                                            class="show">
+                                            <th valign="top">
+                                                <img src="{!YourInformationDividerM}" style=" height: 3px;" height="3" class="fluid" />
+                                            </th>
+                                        </tr>
+                                        <!--<![endif]-->
+                                        <tr>
+                                            <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                <b>Name:</b> {!custName}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table width="290" align="left" style="height:max-content; border-collapse:collapse;mso-padding-alt:0 0 0 0; padding:0 0 0 0; margin:0 auto">
+                                        <tr>
+                                            <td height="100%" width="auto" valign="TOP" style="vertical-align: top; margin:0 auto; border-collapse:collapse;mso-padding-alt:0 0 0 0; padding:0 0 0 0; margin:0 auto">
+                                                <table height="100%" valign="TOP" style="vertical-align: top; width:auto !important">
+                                                    <tr height="100%" valign="TOP" style="vertical-align: top">
+                                                        <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; vertical-align:top;">
+                                                            <b>Address:</b>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td height="100%" width="100%" valign="top" align="left" style="vertical-align: top; margin:0 auto; border-collapse:collapse;mso-padding-alt:0 0 0 0; padding:0 0 0 0; margin:0 auto; text-align:left; max-width:120px !important">
+                                                <table height="100%" valign="top" align="left" style="vertical-align: top">
+                                                    <td height="100%" valign="top" align="left" style="vertical-align: top">
+                                                        <table height="100%" valign="top" align="left" style="vertical-align: top;">
+                                                            <tr height="100%" valign="TOP" style="vertical-align: top;">
+                                                                <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; vertical-align:top">
+                                                                    {!Address1}
+                                                                </td>
+                                                            </tr>
+                                                            <tr height="100%" valign="TOP" style="vertical-align: top;">
+                                                                <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; vertical-align:top">
+                                                                    {!Address2}
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                <b>Phone Number:</b>
+                                                <a href="tel:{!custPhone}" style="text-decoration: none; color: #000000;">{!custPhone}</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td class="mso_text" align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                <b>Email:</b>
+                                                <a href="mailto:{!SPemail}" style="text-decoration: none; color: #000000;">{!custemail}</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                        </table>
+                    </apex:outputText>
+                    </td>
+                </tr>
+
+                <apex:outputText rendered="{!NameString != 'Raw Lead'}">
+                <tr>
+                    <td height="15"
+                        style="height: 15px; mso-line-height-rule: exactly; line-height: 100%; font-size: 15px; border:0; margin: 0 auto; padding:0; border-collapse:collapse">&nbsp;
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mso_text mob_padB20" align="left" valign="top"
+                        style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                        Have questions or need to reschedule? Call 
+                        
+                        
+                        <apex:outputText rendered="{!SPNum1 == ''}">
+                        <a href=" tel:{!SPNum2}" style="text-decoration: none; color: #000000;">{!SPNum2}.</a>
+                        </apex:outputText>
+                                                            
+                        <apex:outputText rendered="{!SPNum1 != ''}">
+                        <a href=" tel:{!SPNum1}" style="text-decoration: none; color: #000000;">{!SPNum1}.</a> 
+                        </apex:outputText>
+                        
+                    </td>
+                </tr>
+                </apex:outputText>
+
+            </table>
+        </td>
+    </tr>
+
+    <!--================================== END SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** =================================================================-->
+</apex:component>

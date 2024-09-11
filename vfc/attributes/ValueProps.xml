@@ -1,0 +1,168 @@
+<c:pvfc_ValueProps_01
+    vpData="{{vpData}}"
+    ApplyNowURL="{{ApplyNowURL}}" >
+</c:pvfc_ValueProps_01>
+
+<c:pvfc_ValueProps_02
+    iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+    iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+    iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+    iconOneHeader="{{iconOneHeader}}"
+    iconTwoHeader="{{iconTwoHeader}}"
+    iconThreeHeader="{{iconThreeHeader}}"
+    iconOneDescription="{{iconOneDescription}}"
+    iconTwoDescription="{{iconTwoDescription}}"
+    iconThreeDescription="{{iconThreeDescription}}"
+    exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+    WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+    WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+    ApplyNowURL="{{ApplyNowURL}}" >
+</c:pvfc_ValueProps_02>
+
+<c:pvfc_ValueProps_03
+    vpData="{{vpData}}"
+    phoneNum="{{phoneNum}}"
+    phoneIcon="{{phoneIcon}}"
+    imgLogo="{{imgLogo}}"
+    affordableImg="https://placehold.co/52x48?text=52x48{{affordableImg}}"
+    licensedImg="https://placehold.co/40x48?text=40x48{{licensedImg}}"
+    blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+    exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+    WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+    WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+    ApplyNowURL="{{ApplyNowURL}}" >
+</c:pvfc_ValueProps_03>
+
+<c:pvfc_ValueProps_04
+    iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+    iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+    iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+    iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+    iconOneHeader="{{iconOneHeader}}"
+    iconTwoHeader="{{iconTwoHeader}}"
+    iconThreeHeader="{{iconThreeHeader}}"
+    iconFourHeader="{{iconFourHeader}}"
+    iconOneDescription="{{iconOneDescription}}"
+    iconTwoDescription="{{iconTwoDescription}}"
+    iconThreeDescription="{{iconThreeDescription}}"
+    iconFourDescription="{{iconFourDescription}}"
+    blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+    exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+    WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+    WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+    ApplyNowURL="{{ApplyNowURL}}" >
+</c:pvfc_ValueProps_04>
+
+<c:pvfc_ValueProps_05
+    iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+    iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+    iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+    iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+    iconOneHeader="{{iconOneHeader}}"
+    iconTwoHeader="{{iconTwoHeader}}"
+    iconThreeHeader="{{iconThreeHeader}}"
+    iconFourHeader="{{iconFourHeader}}"
+    iconOneDescription="{{iconOneDescription}}"
+    iconTwoDescription="{{iconTwoDescription}}"
+    iconThreeDescription="{{iconThreeDescription}}"
+    iconFourDescription="{{iconFourDescription}}"
+    blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+    exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+    WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+    WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
+</c:pvfc_ValueProps_05>
+
+<c:pvfc_ValueProps_05_v2
+    iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+    iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+    iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+    iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+    iconOneHeader="{{iconOneHeader}}"
+    iconTwoHeader="{{iconTwoHeader}}"
+    iconThreeHeader="{{iconThreeHeader}}"
+    iconFourHeader="{{iconFourHeader}}"
+    iconOneDescription="{{iconOneDescription}}"
+    iconTwoDescription="{{iconTwoDescription}}"
+    iconThreeDescription="{{iconThreeDescription}}"
+    iconFourDescription="{{iconFourDescription}}"
+    blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+    exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+    WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+    WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
+</c:pvfc_ValueProps_05_v2>
+
+<c:pvfc_ValueProps_06
+    iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+    iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+    iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+    iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+    iconOneHeader="{{iconOneHeader}}"
+    iconTwoHeader="{{iconTwoHeader}}"
+    iconThreeHeader="{{iconThreeHeader}}"
+    iconFourHeader="{{iconFourHeader}}"
+    iconOneDescription="{{iconOneDescription}}"
+    iconTwoDescription="{{iconTwoDescription}}"
+    iconThreeDescription="{{iconThreeDescription}}"
+    iconFourDescription="{{iconFourDescription}}"
+    blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+    exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+    WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+    WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
+</c:pvfc_ValueProps_06>
+
+<c:pvfc_ValueProps_07
+    iconOne="https://placehold.co/26x26?text=26x26{{iconOne}}"
+    iconTwo="https://placehold.co/26x26?text=26x26{{iconTwo}}"
+    iconThree="https://placehold.co/26x26?text=26x26{{iconThree}}"
+    iconFour="https://placehold.co/26x26?text=26x26{{iconFour}}"
+    iconOneHeader="{{iconOneHeader}}"
+    iconTwoHeader="{{iconTwoHeader}}"
+    iconThreeHeader="{{iconThreeHeader}}"
+    iconFourHeader="{{iconFourHeader}}"
+    iconOneDescription="{{iconOneDescription}}"
+    iconTwoDescription="{{iconTwoDescription}}"
+    iconThreeDescription="{{iconThreeDescription}}"
+    iconFourDescription="{{iconFourDescription}}"
+    blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+    exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+    WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+    WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" >
+</c:pvfc_ValueProps_07>
+
+<c:pvfc_ValueProps_LAM
+    vpData="{{vpData}}"
+    phoneNum="{{phoneNum}}"
+    phoneIcon="{{phoneIcon}}"
+    imgLogo="{{imgLogo}}"
+    affordableImg="https://placehold.co/52x48?text=52x48{{affordableImg}}"
+    licensedImg="https://placehold.co/40x48?text=40x48{{licensedImg}}"
+    blackhomedepotImg="https://placehold.co/24x24?text=24x24{{blackhomedepotImg}}"
+    exteriorstoreImgFull="https://placehold.co/546x322?text=546x322{{exteriorstoreImgFull}}"
+    WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}"
+    WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"
+    ApplyNowURL="{{ApplyNowURL}}" >
+</c:pvfc_ValueProps_LAM>
+
+<c:pvfc_ValuePropsDynamic_01
+    sectionHeader="{{Section header}}"
+    area1icon="https://placehold.co/26x26?text=26x26{{area1icon}}"
+    area1Header="{{1st area header}}"
+    area1BodyCopy="{{1st area body copy}}"
+    area1CTA="{{1st area Call to Action}}"
+    area1URL="{{1st area Call to Action's URL}}"
+    area2icon="https://placehold.co/26x26?text=26x26{{area2icon}}"
+    area2Header="{{2nd area Headline}}"
+    area2BodyCopy="{{2nd area body copy}}"
+    area2CTA="{{2nd area Call to Action}}"
+    area2URL="{{2nd area Call to Action's URL}}"
+    area3icon="https://placehold.co/26x26?text=26x26{{area3icon}}"
+    area3Header="{{3rd area Headline}}"
+    area3BodyCopy="{{3rd area body copy}}"
+    area3CTA="{{3rd area Call to Action}}"
+    area3URL="{{3rd area Call to Action's URL}}"
+    area4icon="https://placehold.co/26x26?text=26x26{{area4icon}}"
+    area4Header="{{4th area Headline}}"
+    area4BodyCopy="{{4th area body copy}}"
+    area4CTA="{{4th area Call to Action}}"
+    area4URL="{{4th area Call to Action's URL}}" >
+</c:pvfc_ValuePropsDynamic_01>
