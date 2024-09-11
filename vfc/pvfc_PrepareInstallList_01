@@ -1,0 +1,88 @@
+<apex:component access="global">
+  <apex:attribute name="image1URL" description="No Product Image URL 1" type="String" />
+  <apex:attribute name="image2URL" description="No Product Image URL 2" type="String" />
+  <apex:attribute name="image3URL" description="No Product Image URL 3" type="String" />
+  <apex:attribute name="image1ALT" description="No Product Image1 ALT text" type="String" />
+  <apex:attribute name="image2ALT" description="No Product Image2 ALT text" type="String" />
+  <apex:attribute name="image3ALT" description="No Product Image3 ALT text" type="String" />
+  <apex:attribute name="CopyURL" description="Copy URL" type="String" />
+  
+  <style>
+  .install-list li{
+      padding-left: 16px;
+  }
+  </style>
+
+    <!-- Component Definition 1-Commit-->      
+    <div class="hues-1">
+    <table class="wrapper" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 700px; max-width:700px; Margin: 0 auto;">
+        <tr>
+            <td valign="top">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 96%" width="96%">
+                    <tr>
+                        <td class="small-4" valign="top" style="padding:0px 0px 0px 0px;">
+                            <div class="height-05" aria-hidden="true">&nbsp;</div>
+                            <img class="" src="{!image1URL}" width="215" style="max-width: 215px;" alt="{!image1ALT}" />
+
+                        </td>
+                        <td class="small-4" valign="top" align="center">
+                            <div class="height-05" aria-hidden="true">&nbsp;</div>
+                            <img class="" src="{!image2URL}" width="215" style="max-width: 215px;" alt="{!image2ALT}" />
+    
+                        </td>
+                        <td class="hide-for-small" valign="top" align="right" style="padding:0px 0px 0px 0px;">
+                            <div class="height-05" aria-hidden="true">&nbsp;</div>
+                            <img class="" src="{!image3URL}" width="215" style="max-width: 215px;" alt="{!image3ALT}" />
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+    <table class="width-1 wrapper" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 700px; max-width:700px; Margin: 0 auto;">
+        <tr class="row-7">
+            <td class="column"  style="padding:0px;">
+                <div class="height-05" aria-hidden="true">&nbsp;</div>
+            </td>
+        </tr>
+    </table>
+    
+        <table class="width-1 wrapper" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 700px; max-width:700px; Margin: 0 auto;">
+            <tr class="row-7">
+                <td class="column">
+
+                    <!-- sub component -->
+                    <table class="width-1 wrapper" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 700px; max-width:700px; Margin: 0 auto;">
+                        <tr>
+                            <td class="border-title-left" width="100%">How to Prepare For Your Installation</td>
+                            <td class="">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class=""><hr class="orange-border" /></td>
+                            <td class="" valign="center"><hr class="grey-border" /></td>
+                        </tr>
+                    </table>
+
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>
+                    <!-- end sub component -->
+
+                    <ul class="install-list">
+                        <li><span style="font-weight:bold;">Disassemble beds,</span> remove bed coverings and any items underneath.</li>
+                        <li><span style="font-weight:bold;">Clear all surfaces and floor spaces,</span> remove pictures and mirrors from walls, and put away small items such as china, knick-knacks and books.</li>
+                        <li><span style="font-weight:bold;">Clear closets of low hanging clothes</span> - clothes must be at least 4&#8220; above the floor.</li>
+                        <li><span style="font-weight:bold;">Disconnect and move all electronics,</span> such as TVs and computers.</li>
+                    </ul>
+
+                    <div class="height-1" aria-hidden="true">&nbsp;</div>
+
+                    <span style="font-weight:bold;">For more detailed information on preparing your home for installation see our <a href="{!CopyURL}" class="a2" style="">Flooring Installation Preparation service page</a>.</span>
+
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="height-3" aria-hidden="true">&nbsp;</div>
+</apex:component>
