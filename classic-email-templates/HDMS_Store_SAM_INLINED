@@ -120,7 +120,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============WHY HOME DEPOT SECTION===================-->
 
                         <!-- PROGRESS BAR SECTION -->
-                        <c:pvfc_ImageResponsive imageDesktopURL="https://homeservices--oneqa.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015760000005mEE&oid=00D760000004f8o&lastMod=1726076289000" imageMobileURL="" imageAlt="Your Flooring Journey - You're on Step 1. Getting started: pick your product, get an estimate, and schedule a measure." linkURL="" />
+                        <c:pvfc_ImageResponsive imageDesktopURL="https://homeservices--oneqa.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015760000005mEE&oid=00D760000004f8o&lastMod=1726076289000" imageMobileURL="https://homeservices--oneqa.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015760000005mEJ&oid=00D760000004f8o&lastMod=1726076348000" imageAlt="Your Flooring Journey - You're on Step 1. Getting started: pick your product, get an estimate, and schedule a measure." linkURL="" />
                         <!-- /PROGRESS BAR SECTION -->
                     
                         <!--===============QUICK LINKS SECTION===================-->
