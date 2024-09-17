@@ -76,11 +76,15 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         <c:pvfc_HDIS_Call_Now_02 YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  OrangeBannerD="{!$Label.CX_LibraryCoreOrangePaintBanner2}" OrangeBannerM="{!$Label.CX_LibraryCoreOrangePaintBanner2}" PhoneIcon="{!$Label.CX_LibraryWhitePhoneIcon}" BannerNumber1="{!relatedTo.RefPhone__c}"></c:pvfc_HDIS_Call_Now_02>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Desktop}" imageMobileURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Mobile}" imageAlt="Your Flooring Journey - You're on Step 3. Finalize & Purchase: Review quote, Finalize products, and Purchase." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                         
                         <!--===============TAKE ADVANTAGE SECTION===================--> 
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_Promotions>
-                        <!--===============TAKE ADVANTAGE SECTION===================--> 
+                        <!--===============TAKE ADVANTAGE SECTION===================-->
                         
                         <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
                         <!--===============PIXEL TRACKING===================-->

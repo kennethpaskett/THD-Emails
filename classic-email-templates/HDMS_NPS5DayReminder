@@ -75,6 +75,15 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============REVIEW PAY BUTTON SECTION===================--> 
                         <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.RefURL__c}" buttonImg="{!$Label.CXLibraryBrowseProductsOnlineCTA}" ></c:pvfc_ReviewPayButton_01>
                         <!--===============REVIEW PAY BUTTON SECTION===================-->
+                        
+                        <tr>
+                            <td height="32" style="height: 32px; mso-line-height-rule: exactly; line-height: 100%; font-size: 32px;">&nbsp;
+                            </td>
+                        </tr>
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Desktop}" imageMobileURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Mobile}" imageAlt="Your Flooring Journey - You're on Step 3. Finalize & Purchase: Review quote, Finalize products, and Purchase." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
 
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>

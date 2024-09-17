@@ -13,7 +13,7 @@
                 <tr>
                     <!-- DESKTOP IMAGE IF MOBILE IMAGE IS NOT BLANK -->
                     <apex:outputText rendered="{!NOT(ISBLANK(imageMobileURL))}">
-                    <td class="hide" valign="top">
+                    <td class="hide hide-for-small" valign="top">
                         
                         <!-- LINK URL IS NOT BLANK -->
                         <apex:outputText rendered="{!NOT(ISBLANK(linkURL))}">
@@ -59,20 +59,20 @@
                 <!-- MOBILE IMAGE ROW (only displayed if imageMObileURL is NOT BLANK) -->
                 <apex:outputText rendered="{!NOT(ISBLANK(imageMobileURL))}">
                 <!--[if !mso]><!-- -->
-                <tr class="show" style="max-height: 0px; overflow: hidden; display: none; float: left; border: 0; margin: 0 auto; padding: 0; border-collapse: collapse; mso-line-height-rule: exactly; line-height: 100%;">
-                    <td valign="top">
+                <tr class="show" style="max-height: 0px; overflow: hidden; display: none; float: left; border: 0; margin: 0 auto; padding: 0; border-collapse: collapse; mso-line-height-rule: exactly; line-height: 100%; width: 100%;">
+                    <td valign="top" style="width: 100%">
 
                         <!-- LINK URL IS NOT BLANK -->
                         <apex:outputText rendered="{!NOT(ISBLANK(linkURL))}">
                             <a href="{!linkURL}" target="_blank">
-                                <img src="{!imageMobileURL}" class="fluid" alt="{!imageAlt}"/>
+                                <img src="{!imageMobileURL}" class="fluid" style="display: block; border: 0; border: none; width: 100%; max-width: 580px; height: auto;" alt="{!imageAlt}"/>
                             </a>
                         </apex:outputText>
                         <!-- /LINK URL IS NOT BLANK -->
 
                         <!-- LINK URL IS BLANK -->
                         <apex:outputText rendered="{!ISBLANK(linkURL)}">
-                            <img src="{!imageMobileURL}" class="fluid" alt="{!imageAlt}"/>
+                            <img src="{!imageMobileURL}" class="fluid" style="display: block; border: 0; border: none; width: 100%; max-width: 580px; height: auto;" alt="{!imageAlt}"/>
                         </apex:outputText>
                         <!-- /LINK URL IS BLANK -->
 
