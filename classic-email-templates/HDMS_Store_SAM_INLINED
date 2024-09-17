@@ -114,12 +114,20 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <c:pvfc_WhatToExpect_Store_SAM WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="The final cost of your project is based on the results of your professional measure, final materials selected, and applicable sales tax. Additional charges may apply, including lead and asbestos testing for older homes built before 1978, furniture moving, unforeseeable conditions found when your existing floor is removed, such as damage or deterioration, etc." BulletTwoText="If you decide to proceed with a measure, you have until 6 p.m. the day you order the measure to pay the measuring fee, which will confirm your scheduled measure appointment." BulletThreeText="If you need to change your measure appointment, please call {!relatedTo.RefPhone__c}."></c:pvfc_WhatToExpect_Store_SAM>  
                         <!--===============WHAT TO EXPECT SECTION===================-->  
                           
-                    
+
                         <!--===============WHY HOME DEPOT SECTION===================--> 
                         <c:pvfc_ValueProps_04 iconOne="{!$Label.CX_LibraryCoreAffordableIcon}" iconOneHeader="Affordable" iconOneDescription="We offer a wide range of affordable financing options, including The Home Depot Consumer Credit Card and The Home Depot Project Loan." iconTwo="{!$Label.CX_LibraryCoreLicensedIcon}" iconTwoHeader="Licensed" iconTwoDescription="The Home Depot's flooring installation professionals and contractors are local, licensed, insured, and undergo a thorough background-screening process." iconThree="{!$Label.CX_LibraryCoreBlackHomeDepotIcon}" iconThreeHeader="Backed by The Home Depot" iconThreeDescription="All labor, products and installation for your project are 100% backed by The Home Depot." iconFour="{!$Label.CX_LibrarySubfloorIcon}" iconFourHeader="Subfloor Evaluation" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" iconFourDescription="We'll evaluate the structure and existing conditions under your floor to help ensure a smooth installation of your new floors." WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_04>
-                        <!--===============WHY HOME DEPOT SECTION===================--> 
+                        <!--===============WHY HOME DEPOT SECTION===================-->
+
+                        <tr>
+                            <td height="32" style="height: 32px; mso-line-height-rule: exactly; line-height: 100%; font-size: 32px;">&nbsp;
+                            </td>
+                        </tr>
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar1_Desktop}" imageMobileURL="{!$Label.CX_LibraryHDMSFlooringProgressBar1_Mobile}" imageAlt="Your Flooring Journey - You're on Step 1. Getting started: pick your product, get an estimate, and schedule a measure." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                     
-                       
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
                         <!--===============QUICK LINKS SECTION===================-->

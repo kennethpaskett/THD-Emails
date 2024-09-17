@@ -64,12 +64,12 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
                         
                         <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryHomeServicesLogo}" titleCopy="We need your flooring product to provide your quote!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryNPS5DayHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>  
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryHomeServicesLogo}" titleCopy="Select your flooring product to get your quote!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryHDMS2DayHeroD}" imgPathMobile="{!$Label.CXLibraryHDMS2DayHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>  
                           
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_11 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We can’t create your project quote without your flooring product. You can browse online and order samples or visit your local store to view our large selection of flooring samples. " greetingsCopy2="Please make your selection and call 844-416-0210 to let us know. We can also answer questions or help you decide on the best product. Ready to schedule your consultation now? Give us a call."></c:pvfc_Greeting_11>
+                        <c:pvfc_Greeting_11 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We have your measurements, but we need your flooring product selection. In order to move forward with your flooring order, we need your product selection. You can browse online and order samples or visit your local store to view our large selection of flooring samples." greetingsCopy2="Call 844-416-0210 to let us know your choice or for help selecting a product."></c:pvfc_Greeting_11>
                         <!--===============GREETING SECTION===================--> 
                           
                         <!--===============REVIEW PAY BUTTON SECTION===================--> 

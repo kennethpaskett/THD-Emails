@@ -85,6 +85,15 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============WHY HOME DEPOT SECTION===================--> 
                         <c:pvfc_ValueProps_04 ApplyNowURL="{!relatedTo.AltRefUrl__c}" iconOne="{!$Label.CX_LibraryAffordableIcon}" iconOneHeader="Affordable Financing" iconOneDescription="We offer a wide range of affordable financing options, including The Home Depot Consumer Credit Card and The Home Depot Project Loan." iconTwo="{!$Label.CX_LibraryBlackHomeDepotIcon}" iconTwoHeader="Lifetime Labor Warranty" iconTwoDescription="Our carpet installation service is backed by a lifetime warranty on labor, including seams, restretches and stairwork. Rest easy knowing we've got you covered." iconThree="{!$Label.CX_LibraryBlackLicenseIcon}" iconThreeHeader="Licensed Installers" iconThreeDescription="The Home Depot's flooring installation professionals and contractors are local, licensed, insured, and undergo a thorough background-screening process." iconFour="{!$Label.CX_LibraryIPSLeadNurturingCarpetIcon}" iconFourHeader="Free Carpet Samples" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" iconFourDescription="Get a curated selection of carpet samples based on your preferences delivered to your home FREE when you schedule an in-home measure." WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_04>
                         <!--===============WHY HOME DEPOT SECTION===================--> 
+
+                        <tr>
+                            <td height="32" style="height: 32px; mso-line-height-rule: exactly; line-height: 100%; font-size: 32px;">&nbsp;
+                            </td>
+                        </tr>
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar1_Desktop}" imageMobileURL="{!$Label.CX_LibraryHDMSFlooringProgressBar1_Mobile}" imageAlt="Your Flooring Journey - You're on Step 1. Getting started: pick your product, get an estimate, and schedule a measure." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                     
                        
                         <!--===============QUICK LINKS SECTION===================-->

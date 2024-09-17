@@ -1,4 +1,4 @@
-<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
  <messaging:htmlEmailBody >
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -62,40 +62,35 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                     <td align="center">
                       <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
-                        
+
                         <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryHomeServicesLogo}" titleCopy="We need your flooring product to provide your quote!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryNPS5DayHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>  
-                          
+                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
+                        <c:pvfc_Header_TFN logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Time to get your flooring installation quote!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryQuoteReadyD}" imgPathMobile="{!$Label.CX_LibraryQuoteReadyM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_TFN>
+
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_11 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We can’t create your project quote without your flooring product. You can browse online and order samples or visit your local store to view our large selection of flooring samples. " greetingsCopy2="Please make your selection and call 844-416-0210 to let us know. We can also answer questions or help you decide on the best product. Ready to schedule your consultation now? Give us a call."></c:pvfc_Greeting_11>
-                        <!--===============GREETING SECTION===================--> 
-                          
-                        <!--===============REVIEW PAY BUTTON SECTION===================--> 
-                        <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.RefURL__c}" buttonImg="{!$Label.CXLibraryBrowseProductsOnlineCTA}" ></c:pvfc_ReviewPayButton_01>
-                        <!--===============REVIEW PAY BUTTON SECTION===================-->
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're excited to provide a quote for your flooring project. Give us a call at the number below to get your quote!"></c:pvfc_Greeting_04>
+
+                        <!--===============GREETING SECTION===================-->
                         
-                        <tr>
-                            <td height="32" style="height: 32px; mso-line-height-rule: exactly; line-height: 100%; font-size: 32px;">&nbsp;
-                            </td>
-                        </tr>
+                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <c:pvfc_HDIS_Call_Now_02 YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  OrangeBannerD="{!$Label.CX_LibraryCoreOrangePaintBanner2}" OrangeBannerM="{!$Label.CX_LibraryCoreOrangePaintBanner2}" PhoneIcon="{!$Label.CX_LibraryWhitePhoneIcon}" BannerNumber1="{!relatedTo.RefPhone__c}"></c:pvfc_HDIS_Call_Now_02>
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
 
                         <!--===============PROGRESS BAR SECTION===================-->
                         <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Desktop}" imageMobileURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Mobile}" imageAlt="Your Flooring Journey - You're on Step 3. Finalize & Purchase: Review quote, Finalize products, and Purchase." />
                         <!--===============/PROGRESS BAR SECTION===================-->
-
-                        <!--===============QUICK LINKS SECTION===================-->
-                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
-                        <!--===============QUICK LINKS SECTION===================-->
-                          
-                        <!--===============FOOTER SECTION===================--> 
+                        
+                        <!--===============TAKE ADVANTAGE SECTION===================--> 
+                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_Promotions>
+                        <!--===============TAKE ADVANTAGE SECTION===================-->
+                        
                         <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
-                        <!--===============FOOTER SECTION===================-->
-
                         <!--===============PIXEL TRACKING===================-->
                         <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
                         <!--===============PIXEL TRACKING===================-->
+
 
 <!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
                         </table>

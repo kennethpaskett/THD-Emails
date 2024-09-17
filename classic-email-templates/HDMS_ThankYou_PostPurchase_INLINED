@@ -43,6 +43,20 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
 <c:pvfc_Store_JobDetails_2Col_01 iconImagePath="{!$Label.CX_LibraryStoreIcon}" orderNumber="{!relatedTo.ProductName__c}" measureNumber="{!relatedTo.DocumentNo__c}"  storeName="{!relatedTo.StoreName__c}" storeStreet="{!relatedTo.Street__c}" storeCity="{!relatedTo.City__c}" storeState="{!relatedTo.State__c}" storezip="{!relatedTo.Zipcode__c}" storephone="{!relatedTo.RefPhone__c}"></c:pvfc_Store_JobDetails_2Col_01>
 
+    <div class="hues-1">
+        <table class="width-1" style="text-align: left;width: 700px; max-width: 700px" role="presentation">
+            <tr class="row-2">
+                <td class="column">
+                    <table>
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar4_Desktop}" imageAlt="Your Flooring Journey - You're on Step 4. Prep & Install: Schedule & prep your home, Installation." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
 <c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
 
 <c:pvfc_Footer_01 ></c:pvfc_Footer_01>

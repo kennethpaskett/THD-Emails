@@ -134,7 +134,16 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Reminder'}">  
                         <c:pvfc_ValueProps_06 iconOne="{!$Label.CX_LibraryBlackLicenseIcon}" iconOneHeader="Licensed" iconOneDescription="The Home Depot's flooring installation professionals and contractors are local, licensed, insured, and undergo a thorough background-screening process." iconTwo="{!$Label.CX_LibrarySubfloorIcon}" iconTwoHeader="Subfloor Evaluation" iconTwoDescription="We'll evaluate the structure and existing conditions under your floor to help ensure a smooth installation of your new floors." iconFour="{!$Label.CX_LibraryBackedIcon}" iconFourHeader="Backed by The Home Depot" iconThreeDescription="All labor, products and installation are 100% backed by The Home Depot. Rest easy knowing you have the world's largest home improvements store backing your project from start to finish." iconThree="{!$Label.CX_LibraryAffordableIcon}" iconThreeHeader="Affordable" iconFourDescription="We offer a wide range of affordable financing options, including The Home Depot Consumer Credit Card and The Home Depot Project Loan." WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_06>
                         </apex:outputText>
-                        <!--=============== /WHY HOME DEPOT SECTION ===================--> 
+                        <!--=============== /WHY HOME DEPOT SECTION ===================-->
+                        
+                        <tr>
+                            <td height="32" style="height: 32px; mso-line-height-rule: exactly; line-height: 100%; font-size: 32px;">&nbsp;
+                            </td>
+                        </tr>
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar2_Desktop}" imageMobileURL="{!$Label.CX_LibraryHDMSFlooringProgressBar2_Mobile}" imageAlt="Your Flooring Journey - You're on Step 2. Collect Measurements: In-home measure." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
 
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
