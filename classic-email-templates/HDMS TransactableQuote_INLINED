@@ -30,7 +30,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
             <td id="all" style="max-width: 700px !important;">
 <!-- @begin email body interior -->
 
-<c:pvfc_Header_TFN logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get excited - your flooring quote is ready!" phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CX_LibraryTransactionalQuoteHeroM}" imgPathMobile="{!$Label.CX_LibraryTransactionalQuoteHeroM}" ></c:pvfc_Header_TFN>
+<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="Get excited - your flooring quote is ready!" phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CX_LibraryTransactionalQuoteHeroM}" imgPathMobile="{!$Label.CX_LibraryTransactionalQuoteHeroM}" ></c:pvfc_Header_01>
 
 <c:pvfc_Greeting_01 custFirstName="{!relatedTo.CustomerName__c}" greetingsCopy="Your itemized flooring quote below includes the cost of labor and materials. After your purchase, we'll call to schedule your installation."></c:pvfc_Greeting_01>
 <apex:outputPanel rendered="{!Not(ISBLANK(relatedTo.AltRefUrl2__c))}">
@@ -58,6 +58,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 <!--===============/PROGRESS BAR SECTION===================-->
 
 </table>
+
 <!--Sandhya End Sandhya -->
 <!--
 <c:pvfc_CreditOffer_01 hdmsGrandTotal="{!relatedTo.TotalAmount__c}" buttonCopy="Apply&nbsp;Now" buttonURL="https://www.homedepot.com/c/Credit_Center" imageURL="{!$Label.CX_LibrarySpecialFinancingIcon}" imageALT="Credit Cards" ></c:pvfc_CreditOffer_01>
