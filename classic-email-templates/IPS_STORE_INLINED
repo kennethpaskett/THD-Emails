@@ -1,0 +1,223 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<!--============ START CSS SECTION **PLEASE DO NOT TOUCH** ========================================-->
+
+<c:evfc_CSSEmailTemplates ></c:evfc_CSSEmailTemplates> 
+
+<!--================================== END CSS SECTION **PLEASE DO NOT TOUCH** ==============================================================--> 
+  
+</head>
+
+<body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+        <!--[if !mso]><!-->
+        <tr>
+        <!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width: 100% !important; border-top-style: none; Margin: 0; padding:0;">
+                
+                <table class="wrapper" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 640px; border: none;">   
+<!--==================================================================START PREHEADER SECTION============================================================================== -->
+    
+<div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+    <c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01></div>
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+<div style="display:none; max-height:0px; overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+    
+<!--========================================================================END PREHEADER SECTION================================================================================= -->
+    
+    
+
+<!-- ========================================^^^^^^^^^THE BELOW SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^======================================== -->    
+    
+    <tr>
+        <td bgcolor="#ffffff" valign="top">
+            <table class="mob_width94" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="Margin:0 auto; width:600px;">
+                <tr>
+                    <td align="center">
+                      <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
+<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
+ 
+            <!--====================================================================Header SECTION======================================================================================================================-->   
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Confirmation'}">
+                        <!--===============HEADER SECTION===================-->
+                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="You have an in-store appointment for your kitchen project coming up!" imgPathFull="{!$Label.CX_LibraryIPSStoreApptConfirmationD}" imgPathMobile="{!$Label.CX_LibraryIPSStoreApptConfirmationM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_11>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText> 
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Rescheduled'}">
+                        <!--===============HEADER SECTION===================-->
+                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Good news — we’ve rescheduled your in-store appointment!" imgPathFull="{!$Label.CX_LibraryIPSStoreApptReconfirmationD}" imgPathMobile="{!$Label.CX_LibraryIPSStoreApptReconfirmationM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_11>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText> 
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'TwoDay'}">
+                        <!--===============HEADER SECTION===================-->
+                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Reminder — Your appointment is soon!" imgPathFull="{!$Label.CX_LibraryIPSStoreReminderD}" imgPathMobile="{!$Label.CX_LibraryIPSStoreReminderM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_11>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText> 
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'SameDay'}">
+                        <!--===============HEADER SECTION===================-->
+                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get excited — Your kitchen project appointment is today!" imgPathFull="{!$Label.CX_LibraryIPSSameDayReminderHeroD}" imgPathMobile="{!$Label.CX_LibraryIPSSameDayReminderHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_11>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText> 
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Cancel'}">
+                        <!--===============HEADER SECTION===================-->
+                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="We’re here to help whenever you’re ready!" imgPathFull="{!$Label.CX_LibraryIPSStoreApptCancelledD}" imgPathMobile="{!$Label.CX_LibraryIPSStoreApptCancelledM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_11>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText>  
+                        
+                         <apex:outputText rendered="{!relatedTo.RefString__c =='Design Review Confirmation'}">
+                        <!--===============HEADER SECTION===================-->
+                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="You have an appointment coming up for your kitchen project!" imgPathFull="{!$Label.CX_LibraryIPSScheduledDesignPhoneD}" imgPathMobile="{!$Label.CX_LibraryIPSScheduledDesignPhoneM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}"></c:pvfc_Header_11>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText>
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c =='Design Review Rescheduled'}">
+                        <!--===============HEADER SECTION===================-->
+                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="You've rescheduled your appointment!" imgPathFull="{!$Label.CX_LibraryIPSRescheduledDesignPhoneD}" imgPathMobile="{!$Label.CX_LibraryIPSRescheduledDesignPhoneM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}"></c:pvfc_Header_11>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText>
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c =='Closing Confirmation'}">
+                        <!--===============HEADER SECTION===================-->
+                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get excited! It's finally time to purchase your new kitchen!" imgPathFull="{!$Label.CX_LibraryIPSClosingDesignPhoneD}" imgPathMobile="{!$Label.CX_LibraryIPSClosingDesignPhoneM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}"></c:pvfc_Header_11>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText>
+               
+     
+            <!--====================================================================GREETING SECTION======================================================================================================================-->   
+            
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Confirmation'}">                       
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your appointment details are listed below along with your designer’s information. When you get to the store, your designer will be waiting for you in the kitchen area. We’re glad you chose The Home Depot to help with your kitchen remodel."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>                 
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Rescheduled'}">                       
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your new appointment details are listed below. When you get to the store, you will find your designer waiting for you in the kitchen area."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>                 
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'TwoDay'}">                       
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Here’s a quick reminder about your upcoming kitchen appointment. Your appointment details are listed below."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>                 
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'SameDay'}">                       
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re looking forward to your appointment today! Find your appointment details listed below."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>                 
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Cancel'}">                       
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We noticed you canceled your kitchen appointment without scheduling a new one. When you’re ready to move forward with your kitchen project, we’ll be here to help! Just email your designer or text 470-885-8999, and we'll get your project back on track."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>  
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c=='Design Review Confirmation'}">
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're looking forward to making more progress on your kitchen project. You'll find details for your design review appointment listed below."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c=='Design Review Rescheduled'}">
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your new design review appointment details are listed below."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c=='Closing Confirmation'}">
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your designs are finalized, and you've selected all your new products. Now it is time to purchase your new kitchen! Please be prepared to complete your payment during your next appointment. You'll find your appointment details below, along with what to expect and our available financing options."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>               
+                        
+               <!--====================================================================SCHEDULE APPOINTMENT SECTION======================================================================================================================-->  
+                        <apex:outputText rendered="{!relatedTo.RefString__c != 'Design Review Confirmation' && relatedTo.RefString__c != 'Design Review Rescheduled' && relatedTo.RefString__c != 'Closing Confirmation'}">          
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
+                        <c:pvfc_ScheduledStoreAppt_03 SectionTitle="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.AltDateTime__c}" StoreIcon="{!$Label.CX_LibraryStoreIcon2}" StoreInfo="{!relatedTo.StoreName__c} ({!relatedTo.StoreState__c}) #{!relatedTo.DocumentNo__c}" custTimeZone="{!relatedTo.TimeZone__c}"  SPName="{!relatedTo.SourceName__c}" SPemail="{!relatedTo.BranchName__c}" TextIcon="{!$Label.CX_LibraryIPSTexxtIcon}" EmailIcon="{!$Label.CX_LibraryIPSEmail_Icon}" NameString="{!relatedTo.RefString__c}"></c:pvfc_ScheduledStoreAppt_03>
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
+                        </apex:outputText> 
+                        
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Design Review Confirmation' || relatedTo.RefString__c == 'Design Review Rescheduled' || relatedTo.RefString__c == 'Closing Confirmation'}">
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
+                        <c:pvfc_ScheduledStoreAppt_02 SectionTitle="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.AltDateTime__c}" PhoneIcon2="{!$Label.CX_LibraryIPSPhoneIcon}" TextIcon="{!$Label.CX_LibraryIPSTexxtIcon}" EmailIcon="{!$Label.CX_LibraryIPSEmail_Icon}" StoreIcon="{!$Label.CX_LibraryStoreIcon2}" StoreInfo="{!relatedTo.StoreName__c} ({!relatedTo.StoreState__c}) #{!relatedTo.DocumentNo__c}" custTimeZone="{!relatedTo.TimeZone__c}"  SPName="{!relatedTo.SourceName__c}" SPemail="{!relatedTo.BranchName__c}" NameString="{!relatedTo.RefString__c}"></c:pvfc_ScheduledStoreAppt_02>
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
+                        </apex:outputText>
+                        
+                        <!--====================================================================WHAT TO EXPECT SECTION======================================================================================================================--> 
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Confirmation'}">
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        <c:pvfc_WhatToExpect_01 conditionalString="{!relatedTo.StoreCity__c}" bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}" bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}" bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" SPName="{!relatedTo.SourceName__c}" QuestionNumber="{!relatedTo.RefPhone__c}" BulletOneText="During your next appointment, you will purchase your new kitchen and complete your product orders. Remember, you can take advantage of one of our available financing options, such as our credit card or project loan." BulletTwoText="Your designer will go over the ordering process, production and shipping times, and your installation. Your designer will answer your questions and walk you through the process." BulletThreeText="Once we have a delivery date for your products, we will reach out to schedule the installation of your new kitchen." GuideTitle="Resources to Help Prepare for Your Consultation:" GuideOneIcon="{!$Label.CX_LibraryIPSClipboardIcon}" GuideTwoIcon="{!$Label.CX_LibraryIPSDollarSignIcon}" GuideOneLink="Kitchen Planning Guide" GuideTwoLink="Kitchen Estimator" GuideOneURL="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Kitchen-Remodeling-Guide.pdf" GuideTwoURL="https://custom.homedepot.com/estimator/kitchen/" ></c:pvfc_WhatToExpect_01>  
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        </apex:outputText>
+                        
+                        <!--====================================================================CREDIT OFFER======================================================================================================================--> 
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Confirmation'}">
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        <c:pvfc_CreditOffer_02 buttonCopy="Apply&nbsp;Now" buttonURL="https://www.homedepot.com/c/Credit_Center" buttonImg="{!$Label.CX_LibraryApplyNowButton}" imageURL="{!$Label.CX_LibrarySpecialFinancingIcon}" imageALT="Credit Cards" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"></c:pvfc_CreditOffer_02>
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        </apex:outputText>           
+           
+                        <!--===============QUICK LINKS SECTION===================-->
+                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
+                        <!--===============QUICK LINKS SECTION===================-->
+                          
+                        <!--===============FOOTER SECTION===================--> 
+                        <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
+                        <!--===============FOOTER SECTION===================--> 
+                        
+                        <!--===============PIXEL TRACKING===================-->                          
+                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>                          
+                        <!--===============PIXEL TRACKING===================-->
+
+<!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>   
+<!-- =========================**********************NO CODING BELOW THIS LINE********************************=============================== -->                        
+</table>
+</td>
+<td class="hide-for-small">&zwnj;</td>
+</tr>
+</table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
