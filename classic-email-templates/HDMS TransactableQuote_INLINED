@@ -42,6 +42,14 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 <c:pvfc_QuoteDetails_grid quoteNbr="{!relatedTo.DocumentNo__c}"></c:pvfc_QuoteDetails_grid>
 
 <table class="width-1" role="presentation">
+
+<!--===============PROGRESS BAR SECTION===================-->
+<c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Desktop}" imageMobileURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Mobile}" imageAlt="Your Flooring Journey - You're on Step 3. Finalize & Purchase: Review quote, Finalize products, and Purchase." />
+<!--===============/PROGRESS BAR SECTION===================-->
+
+</table>
+
+<table class="width-1" role="presentation">
     <tr>
         <td>
 
@@ -51,13 +59,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
     </tr>
 </table>
 
-<table class="width-1" role="presentation">
 
-<!--===============PROGRESS BAR SECTION===================-->
-<c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar4_Desktop}" imageMobileURL="{!$Label.CX_LibraryHDMSFlooringProgressBar4_Mobile}" imageAlt="Your Flooring Journey - You're on Step 4. Prep & Install: Schedule & prep your home, Installation." />
-<!--===============/PROGRESS BAR SECTION===================-->
-
-</table>
 
 <!--Sandhya End Sandhya -->
 <!--
