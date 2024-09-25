@@ -1,0 +1,213 @@
+<apex:component access="global">
+  <apex:attribute name="vpData" description="Value prop data" type="String" />
+  <apex:attribute name="phoneNum" description="Phone number" type="String" />
+  <apex:attribute name="phoneIcon" description="path to phone icon" type="String" />
+  <apex:attribute name="imgLogo" description="Path for the home depot logo" type="String" />
+  <apex:attribute name="bulletOneImg" description="Bullet One Image Icon" type="String" />
+  <apex:attribute name="licensedImg" description="Licensed Icon" type="String" />
+  <apex:attribute name="bulletTwoImg" description="Bullet Two Image Icon" type="String" />
+  <apex:attribute name="bulletThreeImg" description="Bullet Three Image Icon" type="String" />
+  <apex:attribute name="WhatNextDivider" description="Why Home Depot Divider" type="String" />
+  <apex:attribute name="WhatNextDividerM" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="QuestionNumber" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="SPName" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="BulletOneText" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="BulletOneAText" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="BulletOneBText" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="BulletOneBUrl" description="Url Value" type="String" />
+  <apex:attribute name="BulletTwoText" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="BulletThreeText" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="VirtualBannerD" description="Guide One Icon" type="String" />
+  <apex:attribute name="VirtualBannerM" description="Guide Two Icon" type="String" />
+  <apex:attribute name="VirtualBannerUrl" description="Virtual Banner URL" type="String" />
+  <apex:attribute name="conditionalString" description="Conditional String" type="String" />
+  <apex:attribute name="NameString" description="Name String" type="String"/> 
+  
+
+
+
+
+<!--================================== START INSTALLERS DETAILS **PLEASE DO NOT TOUCH** ====================================================================-->
+<tr>
+    <td valign="top">
+        <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
+            style="Margin: 0 auto; width:600px;" width="600">
+            <!--================================== START NEXT STEPS DETAILS **PLEASE DO NOT TOUCH** =================================================================-->
+            <tr>
+                <td height="40"
+                    style="height: 40px; mso-line-height-rule: exactly; line-height: 100%; font-size: 40px;"></td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <table class="wrapper" align="left" border="0" cellpadding="0" cellspacing="0"
+                        style="Margin: 0 auto; width:100%">
+                        <tr>
+                            <th class="mob_stack" valign="top" width="100%">
+                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                    style="Margin: 0 auto; width: 100%;" width="100%">
+
+                                    <tr>
+                                        <td valign="top">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto;">
+                                                <tr>
+                                                    <th class="hide" valign="top">
+                                                        <a href="{!VirtualBannerUrl}" target="_blank"><img src="{!VirtualBannerD}" style="display:block;border:0;border:none; width: 600px; max-width: 600px; height: auto;" width="600" alt="clipboard_icon"/></a>
+                                                    </th>
+                                                </tr>
+                                                <!--[if !mso]><!-- -->
+                                                <tr style="max-height: 0px; overflow: hidden;display:none;float:left;border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; line-height:100%;"
+                                                    class="show">
+                                                    <th valign="top"><img src="{!VirtualBannerM}" 
+                                                            class="fluid" />
+                                                    </th>
+                                                </tr>
+                                                <!--<![endif]-->
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    
+                                    <apex:outputText rendered="{!conditionalString != 'Design Review Confirmation' && conditionalString != 'Design Review Rescheduled'}">                       
+                                    <tr>
+                                        <td height="25"
+                                            style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr style="border:0; margin: 0 auto; padding:0; border-collapse:collapse">
+                                        <td class="mso_text" align="left" valign="top" height="25"
+                                            style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; height: 25px; mso-line-height-rule: exactly; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:22px; line-height: 100%; color:#000000; font-weight:normal;">
+                                            What to Expect:</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5"
+                                            style="height: 5px; mso-line-height-rule: exactly; line-height: 100%; font-size: 5px; border:0; margin: 0 auto; padding:0; border-collapse:collapse">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr height="3" valighn="top"
+                                        style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly">
+                                        <td class="hide" valign="top"
+                                            style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; width: 600px; height: 3px; line-height:100%; font-size: 3px"
+                                            height="3"><img src="{!WhatNextDivider}" allign="left" width="600"
+                                                class="fluid" />
+                                        </td>
+                                    </tr>
+                                    <!--[if !mso]><!-- -->
+                                    <tr style="max-height: 0px; overflow: hidden;display:none;float:left;border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; height: 3px; line-height:100%; font-size: 3px"
+                                        class="show">
+                                        <th valign="top"><img src="{!WhatNextDividerM}" style=" height: 3px;" height="3"
+                                                class="fluid" />
+                                        </th>
+                                    </tr>
+                                    <!--<![endif]-->
+                                    <tr>
+                                        <td height="25"
+                                            style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="100%">
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                style="Margin: 0 auto;">
+                                                <tr>
+                                                    <td class="mso_text" align="left" valign="top"
+                                                        style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; width: 25px; max-width: 25px;"
+                                                        width="25">
+                                                                    &bull;                                                                
+                                                    </td>
+                                                    <td valign="middle">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td class="mso_text" align="center" valign="top"
+                                                                    style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                                    {!BulletOneText} <b>{!BulletOneAText} <a href="{!BulletOneBUrl}" class="a2" target="_blank">{!BulletOneBText}</a></b>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25"
+                                            style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                style="Margin: 0 auto;">
+                                                <tr>
+                                                    <td class="mso_text" align="left" valign="top"
+                                                        style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; width: 25px; max-width: 25px;"
+                                                        width="25">
+                                                                    &bull;                                                                
+                                                    </td>
+                                                    <td valign="middle">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td class="mso_text" align="center" valign="top"
+                                                                    style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                                    {!BulletTwoText}
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25"
+                                            style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                style="Margin: 0 auto;">
+                                                <tr>
+                                                    <td class="mso_text" align="left" valign="top"
+                                                        style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0; width: 25px; max-width: 25px;"
+                                                        width="25">
+                                                                    &bull;                                                                
+                                                    </td>
+                                                    <td valign="middle">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td class="mso_text" align="center" valign="top"
+                                                                    style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                                                    {!BulletThreeText}
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    </apex:outputText>
+                                    
+                                </table>
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!--================================== END NEXT STEPS DETAILS **PLEASE DO NOT TOUCH** =================================================================-->
+
+            <!--================================== START STORE CONTACT DETAILS **PLEASE DO NOT TOUCH** =================================================================-->
+            <tr>
+                <td height="40"
+                    style="height: 40px; mso-line-height-rule: exactly; line-height: 100%; font-size: 40px;">&nbsp;</td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<!--================================== END STORE CONTACT DETAILS **PLEASE DO NOT TOUCH** =================================================================-->
+</apex:component>

@@ -122,6 +122,10 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <c:pvfc_Header_11_v2 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get excited! It's finally time to purchase your new kitchen!" imgPathFull="{!$Label.CX_LibraryIPSClosingDesignPhoneD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}"></c:pvfc_Header_11_v2>
                         <!--===============HEADER SECTION===================-->
                         </apex:outputText>
+
+                        <tr>
+                            <td height="24" style="height: 24px; line-height: 24px; font-size: 24px;">&nbsp;</td>
+                        </tr>
                         
                <!--====================================================================SCHEDULE APPOINTMENT SECTION======================================================================================================================-->         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Phone' && relatedTo.StoreCity__c == 'Specialist'}">  
@@ -169,7 +173,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Product Selection Confirmation' && relatedTo.StoreStreet__c==''}">
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04_v2 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your designer is looking forward to meeting with you and helping you design and plan your dream kitchen. Your design appointment details are listed below, along with your designer's information and what you can expect throughout this process." greetingsCopy2="We've created a page with detailed information to " greetingsCopyLink="help you prepare for your appointment" greetingsCopyURL="{!relatedTo.AltRefUrl__c}"></c:pvfc_Greeting_04_v2>
+                        <c:pvfc_Greeting_04_v2 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your designer is looking forward to meeting with you and helping you design and plan your dream kitchen. Please review your design appointment details, along with your designer's information and what you can expect throughout this process." greetingsCopy2="We've created a page with detailed information to " greetingsCopyLink="help you prepare for your appointment" greetingsCopyURL="{!relatedTo.AltRefUrl__c}"></c:pvfc_Greeting_04_v2>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
                         
@@ -181,13 +185,13 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Product Selection Rescheduled' && relatedTo.StoreStreet__c==''}">
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04_v2 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your designer is looking forward to meeting with you and helping you design and plan your dream kitchen. Your rescheduled appointment details are listed below, along with your designer's information and what you can expect throughout this process." greetingsCopy2="We've created a page with detailed information to " greetingsCopyLink="help you prepare for your appointment" greetingsCopyURL="{!relatedTo.AltRefUrl__c}"></c:pvfc_Greeting_04_v2>
+                        <c:pvfc_Greeting_04_v2 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your designer is looking forward to meeting with you and helping you design and plan your dream kitchen. Please review your rescheduled design appointment details, along with your designer's information and what you can expect throughout this process." greetingsCopy2="We've created a page with detailed information to " greetingsCopyLink="help you prepare for your appointment" greetingsCopyURL="{!relatedTo.AltRefUrl__c}"></c:pvfc_Greeting_04_v2>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
                         
                         <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Specialist' && relatedTo.StoreStreet__c=='TwoDay'}">
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Here’s a quick reminder about your upcoming kitchen appointment. Your appointment details are listed below."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Here’s a quick reminder about your upcoming kitchen appointment. Please review your appointment details."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
                         
@@ -199,13 +203,13 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Specialist' && relatedTo.StoreStreet__c=='SameDay'}">
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're looking forward to your appointment today! Find your appointment details listed below."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're looking forward to your appointment today!"></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
                         
                         <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Designer' && relatedTo.StoreStreet__c=='SameDay'}">
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're looking forward to your appointment today! Find your appointment details listed below along with your kitchen designer’s information."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're looking forward to your appointment today! Please review your appointment details along with your kitchen designer’s information."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
                         
@@ -223,13 +227,13 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.StoreCity__c=='Design Review Rescheduled'}">
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your new design review appointment details are listed below."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Please review the details of your rescheduled design review appointment."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
                         
                         <apex:outputText rendered="{!relatedTo.StoreCity__c=='Closing Confirmation'}">
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your designs are finalized, and you've selected all your new products. Now it is time to purchase your new kitchen! Please be prepared to complete your payment during your next appointment. You'll find your appointment details below, along with what to expect and our available financing options."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your designs are finalized, and you've selected all your new products. Now it is time to purchase your new kitchen! Please be prepared to complete your payment during your next appointment. We've included your appointment details, along with what to expect and our available financing options."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
               <!--====================================================================WHAT TO EXPECT SECTION======================================================================================================================-->                   
