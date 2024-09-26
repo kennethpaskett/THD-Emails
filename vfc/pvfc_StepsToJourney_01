@@ -1,23 +1,10 @@
 <apex:component access="global">
-  <apex:attribute name="vpData" description="Value prop data" type="String" />
-  <apex:attribute name="phoneNum" description="Phone number" type="String" />
-  <apex:attribute name="phoneIcon" description="path to phone icon" type="String" />
-  <apex:attribute name="imgLogo" description="Path for the home depot logo" type="String" />
   <apex:attribute name="WhatNextDivider" description="Why Home Depot Divider" type="String" />
   <apex:attribute name="WhatNextDividerM" description="Why Home Depot Mobile Divider" type="String" />
-  <apex:attribute name="QuestionNumber" description="Why Home Depot Mobile Divider" type="String" />
-  <apex:attribute name="HeadlineName1" description="Headline over Divider" type="String" />
   <apex:attribute name="HeadlineName2" description="Headline 1 over Divider" type="String" />
-  <apex:attribute name="TextCopy1" description="Text Copy" type="String" />
   <apex:attribute name="VirtualBannerD" description="Guide One Icon" type="String" />
   <apex:attribute name="VirtualBannerM" description="Guide Two Icon" type="String" />
   <apex:attribute name="VirtualBannerUrl" description="Virtual Banner URL" type="String" />
-  <apex:attribute name="conditionalString" description="Conditional String" type="String" />
-  <apex:attribute name="NameString" description="Name String" type="String"/> 
-  
-
-
-
 
 <!--================================== START INSTALLERS DETAILS **PLEASE DO NOT TOUCH** ====================================================================-->
 <tr>
