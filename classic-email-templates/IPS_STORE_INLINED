@@ -84,7 +84,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'SameDay'}">
                         <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get excited — Your kitchen project appointment is today!" imgPathFull="{!$Label.CX_LibraryIPSSameDayReminderHeroD}" imgPathMobile="{!$Label.CX_LibraryIPSSameDayReminderHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_11>
+                        <c:pvfc_Header_11_v2 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get excited — Your kitchen project appointment is today!" imgPathFull="{!$Label.CX_LibraryIPSSameDayReminderHeroD}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_11_v2>
                         <!--===============HEADER SECTION===================-->
                         </apex:outputText> 
                         
@@ -111,6 +111,30 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get excited! It's finally time to purchase your new kitchen!" imgPathFull="{!$Label.CX_LibraryIPSClosingDesignPhoneD}" imgPathMobile="{!$Label.CX_LibraryIPSClosingDesignPhoneM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}"></c:pvfc_Header_11>
                         <!--===============HEADER SECTION===================-->
                         </apex:outputText>
+
+                        <tr>
+                            <td height="24" style="height: 24px; line-height: 24px; font-size: 24px;">&nbsp;</td>
+                        </tr>
+
+               <!--====================================================================SCHEDULE APPOINTMENT SECTION======================================================================================================================-->  
+                        <apex:outputText rendered="{!relatedTo.RefString__c != 'Design Review Confirmation' && relatedTo.RefString__c != 'Design Review Rescheduled' && relatedTo.RefString__c != 'Closing Confirmation' && relatedTo.RefString__c != 'Cancel'}">          
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
+                        <c:pvfc_ScheduledStoreAppt_03 SectionTitle="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.AltDateTime__c}" StoreIcon="{!$Label.CX_LibraryStoreIcon2}" StoreInfo="{!relatedTo.StoreName__c} ({!relatedTo.StoreState__c}) #{!relatedTo.DocumentNo__c}" custTimeZone="{!relatedTo.TimeZone__c}"  SPName="{!relatedTo.SourceName__c}" SPemail="{!relatedTo.BranchName__c}" TextIcon="{!$Label.CX_LibraryIPSTexxtIcon}" EmailIcon="{!$Label.CX_LibraryIPSEmail_Icon}" NameString="{!relatedTo.RefString__c}"></c:pvfc_ScheduledStoreAppt_03>
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
+                        </apex:outputText> 
+                        
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Design Review Confirmation' || relatedTo.RefString__c == 'Design Review Rescheduled' || relatedTo.RefString__c == 'Closing Confirmation'}">
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
+                        <c:pvfc_ScheduledStoreAppt_02 SectionTitle="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.AltDateTime__c}" PhoneIcon2="{!$Label.CX_LibraryIPSPhoneIcon}" TextIcon="{!$Label.CX_LibraryIPSTexxtIcon}" EmailIcon="{!$Label.CX_LibraryIPSEmail_Icon}" StoreIcon="{!$Label.CX_LibraryStoreIcon2}" StoreInfo="{!relatedTo.StoreName__c} ({!relatedTo.StoreState__c}) #{!relatedTo.DocumentNo__c}" custTimeZone="{!relatedTo.TimeZone__c}"  SPName="{!relatedTo.SourceName__c}" SPemail="{!relatedTo.BranchName__c}" NameString="{!relatedTo.RefString__c}"></c:pvfc_ScheduledStoreAppt_02>
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
+                        </apex:outputText>
+
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Cancel'}">          
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
+                        <c:pvfc_ScheduledStoreAppt_03 SectionTitle="Your Canceled Appointment" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.AltDateTime__c}" StoreIcon="{!$Label.CX_LibraryStoreIcon2}" StoreInfo="{!relatedTo.StoreName__c} ({!relatedTo.StoreState__c}) #{!relatedTo.DocumentNo__c}" custTimeZone="{!relatedTo.TimeZone__c}"  SPName="{!relatedTo.SourceName__c}" SPemail="{!relatedTo.BranchName__c}" TextIcon="{!$Label.CX_LibraryIPSTexxtIcon}" EmailIcon="{!$Label.CX_LibraryIPSEmail_Icon}" NameString="{!relatedTo.RefString__c}"></c:pvfc_ScheduledStoreAppt_03>
+                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
+                        </apex:outputText> 
                
      
             <!--====================================================================GREETING SECTION======================================================================================================================-->   
@@ -135,7 +159,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'SameDay'}">                       
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re looking forward to your appointment today! Find your appointment details listed below."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re looking forward to your appointment today! Please review your appointment details."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>                 
                         
@@ -161,20 +185,6 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your designs are finalized, and you've selected all your new products. Now it is time to purchase your new kitchen! Please be prepared to complete your payment during your next appointment. You'll find your appointment details below, along with what to expect and our available financing options."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
-                        </apex:outputText>               
-                        
-               <!--====================================================================SCHEDULE APPOINTMENT SECTION======================================================================================================================-->  
-                        <apex:outputText rendered="{!relatedTo.RefString__c != 'Design Review Confirmation' && relatedTo.RefString__c != 'Design Review Rescheduled' && relatedTo.RefString__c != 'Closing Confirmation'}">          
-                        <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
-                        <c:pvfc_ScheduledStoreAppt_03 SectionTitle="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.AltDateTime__c}" StoreIcon="{!$Label.CX_LibraryStoreIcon2}" StoreInfo="{!relatedTo.StoreName__c} ({!relatedTo.StoreState__c}) #{!relatedTo.DocumentNo__c}" custTimeZone="{!relatedTo.TimeZone__c}"  SPName="{!relatedTo.SourceName__c}" SPemail="{!relatedTo.BranchName__c}" TextIcon="{!$Label.CX_LibraryIPSTexxtIcon}" EmailIcon="{!$Label.CX_LibraryIPSEmail_Icon}" NameString="{!relatedTo.RefString__c}"></c:pvfc_ScheduledStoreAppt_03>
-                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
-                        </apex:outputText> 
-                        
-                        
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Design Review Confirmation' || relatedTo.RefString__c == 'Design Review Rescheduled' || relatedTo.RefString__c == 'Closing Confirmation'}">
-                        <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
-                        <c:pvfc_ScheduledStoreAppt_02 SectionTitle="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.AltDateTime__c}" PhoneIcon2="{!$Label.CX_LibraryIPSPhoneIcon}" TextIcon="{!$Label.CX_LibraryIPSTexxtIcon}" EmailIcon="{!$Label.CX_LibraryIPSEmail_Icon}" StoreIcon="{!$Label.CX_LibraryStoreIcon2}" StoreInfo="{!relatedTo.StoreName__c} ({!relatedTo.StoreState__c}) #{!relatedTo.DocumentNo__c}" custTimeZone="{!relatedTo.TimeZone__c}"  SPName="{!relatedTo.SourceName__c}" SPemail="{!relatedTo.BranchName__c}" NameString="{!relatedTo.RefString__c}"></c:pvfc_ScheduledStoreAppt_02>
-                        <!--===============SCHEDULE APPOINTMENT SECTION===================-->
                         </apex:outputText>
                         
                         <!--====================================================================WHAT TO EXPECT SECTION======================================================================================================================--> 
@@ -190,7 +200,14 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============WHATS NEXT SECTION===================--> 
                         <c:pvfc_CreditOffer_02 buttonCopy="Apply&nbsp;Now" buttonURL="https://www.homedepot.com/c/Credit_Center" buttonImg="{!$Label.CX_LibraryApplyNowButton}" imageURL="{!$Label.CX_LibrarySpecialFinancingIcon}" imageALT="Credit Cards" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"></c:pvfc_CreditOffer_02>
                         <!--===============WHATS NEXT SECTION===================--> 
-                        </apex:outputText>           
+                        </apex:outputText>
+                        
+
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Cancel'}">
+                        <!--===============WHY HOME DEPOT SECTION===================--> 
+                        <c:pvfc_ValueProps_LAM ApplyNowURL="{!relatedTo.AltRefUrl__c}" affordableImg="{!$Label.CX_LibraryCoreAffordableIconOrange}" licensedImg="{!$Label.CX_LibraryCoreLicensedIconOrange}" blackhomedepotImg="{!$Label.CX_LibraryOrangeHomeDepotIcon}" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_LAM>
+                        <!--===============WHY HOME DEPOT SECTION===================-->
+                        </apex:outputText>
            
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
