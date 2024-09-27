@@ -180,9 +180,8 @@
                                           <table cellpadding="0" cellspacing="0" border="0">
                                              <apex:outputPanel rendered="{!!relatedTo.RefFlag__c}">
                                                 <tr>
-                                                   <td  class="outlookFix">
-                                                      <!--<a href="https://homeservices--oneqa.lightning.force.com/lightning/r/Remote_Transaction__c/{!relatedTo.Name}/view" style="color: #2B3134;text-decoration: none !important;" rel="noopener">-->
-                                                      <a href="https://homeservices--oneqa.sandbox.lightning.force.com/lightning/r/Remote_Transaction__c/{!relatedTo.Name}/view" style="color: #2B3134;text-decoration: none !important;" rel="noopener">
+                                                   <td  class="outlookFix">                                                      
+                                                      <a href="{!$Label.CX_Salesforce_URL}/lightning/r/Remote_Transaction__c/{!relatedTo.Name}/view" style="color: #2B3134;text-decoration: none !important;" rel="noopener">
                                                          <center><img src="{!$Label.RemoteTrxViewRequest}" width="170" height="auto" border="0" style="display:block; border:0;"/>
                                                          </center>
                                                       </a>

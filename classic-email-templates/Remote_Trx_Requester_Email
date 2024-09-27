@@ -181,7 +181,7 @@
                                              <apex:outputPanel rendered="{!!relatedTo.Is_Partner_User_Request__c}">
                                                 <tr>
                                                    <td  class="outlookFix">
-                                                      <a href="https://homeservices.lightning.force.com/lightning/r/Remote_Transaction__c/{!relatedTo.Id}/view" style="color: #2B3134;text-decoration: none !important;" rel="noopener">
+                                                      <a href="{!$Label.CX_Salesforce_URL}/lightning/r/Remote_Transaction__c/{!relatedTo.Id}/view" style="color: #2B3134;text-decoration: none !important;" rel="noopener">
                                                          <center><img src="{!$Label.RemoteTrxViewRequest}" width="170" height="auto" border="0" style="display:block; border:0;"/>
                                                          </center>
                                                       </a>
