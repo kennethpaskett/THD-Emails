@@ -7,6 +7,9 @@
   <apex:attribute name="BulletOneBUrl" description="Url Value" type="String" />
   <apex:attribute name="BulletTwoText" description="Why Home Depot Mobile Divider" type="String" />
   <apex:attribute name="BulletThreeText" description="Why Home Depot Mobile Divider" type="String" />
+  <apex:attribute name="VirtualBannerD" description="Guide One Icon" type="String" />
+  <apex:attribute name="VirtualBannerM" description="Guide Two Icon" type="String" />
+  <apex:attribute name="VirtualBannerUrl" description="Virtual Banner URL" type="String" />
   <apex:attribute name="conditionalString" description="Conditional String" type="String" />
 
 <!--================================== START INSTALLERS DETAILS **PLEASE DO NOT TOUCH** ====================================================================-->
@@ -27,6 +30,26 @@
                             <th class="mob_stack" valign="top" width="100%">
                                 <table align="left" border="0" cellpadding="0" cellspacing="0"
                                     style="Margin: 0 auto; width: 100%;" width="100%">
+
+                                    <tr>
+                                        <td valign="top">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto;">
+                                                <tr>
+                                                    <th class="hide" valign="top">
+                                                        <a href="{!VirtualBannerUrl}" target="_blank"><img src="{!VirtualBannerD}" style="display:block;border:0;border:none; width: 600px; max-width: 600px; height: auto;" width="600" alt="clipboard_icon"/></a>
+                                                    </th>
+                                                </tr>
+                                                <!--[if !mso]><!-- -->
+                                                <tr style="max-height: 0px; overflow: hidden;display:none;float:left;border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; line-height:100%;"
+                                                    class="show">
+                                                    <th valign="top"><img src="{!VirtualBannerM}" 
+                                                            class="fluid" />
+                                                    </th>
+                                                </tr>
+                                                <!--<![endif]-->
+                                            </table>
+                                        </td>
+                                    </tr>
                                     
                                     <apex:outputText rendered="{!conditionalString != 'Design Review Confirmation' && conditionalString != 'Design Review Rescheduled'}">                       
                                     <tr>
