@@ -197,7 +197,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Designer' && relatedTo.StoreStreet__c=='TwoDay'}">
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Here’s a quick reminder about your upcoming kitchen appointment. Your appointment details are listed below along with your kitchen designer’s information."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Here’s a quick reminder about your upcoming kitchen appointment. Please review your appointment details, along with your designers information."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
                         
@@ -221,7 +221,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.StoreCity__c=='Design Review Confirmation'}">
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're looking forward to making more progress on your kitchen project. You'll find details for your design review appointment listed below."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're looking forward to making more progress on your kitchen project. Please review your appointment details."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
                         
