@@ -1,0 +1,218 @@
+<messaging:emailTemplate subject="New Credit Card" renderUsingSystemContextWithoutSharing="True"  recipientType="Contact" relatedToType="hms_EmailData__c" >
+<messaging:htmlEmailBody >
+      <head>
+         <title>Citi Credit Card Customer Email</title>
+         <style type="text/css">
+            .bodyContent{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: normal;
+            font-family: 'Open Sans', arial, sans-serif;
+            font-weight:400;
+            font: Helvetica, sans-serif;
+            color: #000000;
+            }
+            * {
+            padding: 0px;
+            margin: 0px;
+            }
+            html {
+            -webkit-text-size-adjust: none;
+            -webkit-font-smoothing: antialiased;
+            }
+            a {
+            outline: 0;
+            }
+            img {
+            display: block;
+            }
+            td {
+            mso-line-height-rule: exactly;
+            }
+            .outlookFix a {
+            text-decoration: none !important;
+            }
+            /* Base Media Queries */
+            #emailService {
+            display: none;
+            }
+            @media (max-width: 480px) {
+            * {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -webkit-font-smoothing: antialiased;
+            }
+            /*Stop iproducts from auto-resizing text*/
+            .container {
+            width: 320px !important;
+            }
+            .mob-center {
+            margin: 0 auto !important;
+            }
+            .height {
+            height: auto !important;
+            }
+            .hide {
+            display: none !important;
+            }
+            .w100P {
+            width: 100% !important;
+            height: auto !important;
+            }
+            .width {
+            width: 320px !important;
+            }
+            /*cell width adjust*/
+            .W300 {
+            width: 300px !important;
+            }
+            }
+         </style>
+      </head>
+      <body class="bodyContent" bgcolor="#ffffff" style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-font-smoothing: antialiased; ">
+         <!--[if t]><![endif]-->
+         <!--[if t]><![endif]-->
+         <!--[if t]><![endif]-->
+         <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" bgcolor="#ffffff" style="table-layout:fixed;">
+            <tr>
+               <td>
+                  <table cellpadding="0" cellspacing="0" border="0" align="center" width="636" bgcolor="#ffffff" class="container" style="margin:0 auto;">
+                     <tr>
+                        <td>
+                           <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                              <tr>
+                                 <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                    <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                 </td>
+                              </tr>
+                              <!-- PREHEADER -->
+                              <tr>
+                                 <td align="center" valign="top">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                       <tr>
+                                          <td align="left" valign="top">
+                                             <a href="http://www.homedepot.com/services/" target="_blank">
+                                             <img src="{!$Label.RemoteTrxHomeServicelogo}" width="117" height="56" border="0" style="border:none;"/>
+                                             </a>
+                                          </td>
+                                          <td align="right" valign="bottom">
+                                             <span>Need help? </span>
+                                             <br/>
+                                             <a href="tel:{!relatedTo.PhoneNumber__c}" style="text-decoration: none;">
+                                             <span> &#128222;{!relatedTo.PhoneNumber__c}</span>
+                                             </a>
+                                          </td> <br/>
+                                       </tr> 
+                                    </table>
+                                 </td>
+                              </tr>
+                              <!-- PREHEADER -->
+                              <br/>
+                              <tr>                              
+                                 <td style="padding:5px;">
+                                  <!--hr style="border: 2px solid orange;" /--> 
+                                   <hr style="border: 2px solid orange;"/> <br/>
+                                 </td>
+                              </tr>
+                              
+                               <tr> 
+                               <td style="padding:4px;">
+                               <font size="5"> The Home Depot Sent You a Credit Card Application Request. </font> <br/> <br/>
+                               </td>
+                               </tr>
+
+                            <!-- START black section -->
+                                <tr>
+                                 <table class="white-table" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="background-color:#D9D6D5;table-layout: fixed;width: 100%;height: 163px;">
+                                    <tr>
+                                       <td align="left" valign="center" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                        <b><font size="4">&nbsp;&nbsp;&nbsp;THD CONSUMER CREDIT CARD</font></b> <br/><br/>
+                                        <a href="{!$Label.CX_Salesforce_URL}/CustomerCommunity/s/external-site?id={!relatedTo.RefURL__c}" target="_blank" style="color:#D9D6D5;">                                                                                 
+                                            <img src="https://homeservices--coredev1--c.documentforce.com/servlet/servlet.ImageServer?id=0150q000000OGxP&oid=00D0q000000Dcch&lastMod=1646746670000" alt="logo" style="height:43px;width:143.641;padding-left: 20px;" /> 
+                                        </a>                     
+                                        </td>
+                                        <td align="right" valign="center" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                        <img src="https://homeservices--coredev1--c.documentforce.com/servlet/servlet.ImageServer?id=0150q000000OGxe&oid=00D0q000000Dcch&lastMod=1646747533000" alt="logo3" style="height: 117px;padding-right:35px; width: 196.078;"/> </td>
+                                    </tr>                                            <!--[if gte mso 15]>&nbsp;<![endif]-->
+
+                                    </table>
+                              </tr>                              
+                            <!-- END black section -->
+                              
+                              <!--Body Starts here--->
+                              <tr>
+                                 <td align="left">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="width:90%">
+                                       <tr>
+                                        <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 10px;">
+                                            <br/> <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             <br/>
+                                             <font size ="4">Hi {!relatedTo.CustomerName__c},</font>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             <div style="line-height: 1.0; color:#494848">Thank you for choosing the Home Depot! Please apply for your Home Depot credit card using the 'Apply Now' link above. Filling out the application will take approximately 3 minutes.</div>
+                                          &nbsp;
+                                          </td>
+                                       </tr>
+                                                     
+                                          <tr>
+                                             <td align="left" valign="top" width="100%" height="0" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 15px; color:#494848">
+                                                The link will expire after 3 days and will be invalid after 3 clicks. Please do not click it until you are ready to apply.
+                                             </td>
+                                          </tr>
+
+
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                    <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                    <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                 </td>
+                              </tr>
+                              <!-- FOOTER -->
+                             <tr>
+                                <td>
+                                <table class="white-table" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="background-color:#D9D6D5;table-layout: fixed;width: 100%;height: 43px; center">
+                                    <tr>
+                                       <td align="left" valign="center" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">                
+                                       
+                                       <font size="2">&nbsp;&nbsp;&nbsp; &copy; 2020 Home Depot Product Authority, LLC. All rights reserved</font>
+                                       
+                                    </td>
+                                   </tr>                                              <!--[if gte mso 15]>&nbsp;<![endif]-->
+                            
+                                   </table>
+                                   </td>
+                             </tr>
+
+                                
+                           </table>
+                           
+                        </td>
+                        </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+      </body>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
