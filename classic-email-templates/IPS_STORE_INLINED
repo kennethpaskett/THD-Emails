@@ -90,7 +90,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Cancel'}">
                         <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_11 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="We’re here to help whenever you’re ready!" imgPathFull="{!$Label.CX_LibraryIPSStoreApptCancelledD}" imgPathMobile="{!$Label.CX_LibraryIPSStoreApptCancelledM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_11>
+                        <c:pvfc_Header_11_v2 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="We’re here to help whenever you’re ready!" imgPathFull="{!$Label.CX_LibraryIPSStoreApptCancelledD}" imgPathMobile="{!$Label.CX_LibraryIPSStoreApptCancelledM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" ></c:pvfc_Header_11_v2>
                         <!--===============HEADER SECTION===================-->
                         </apex:outputText>  
                         
@@ -202,11 +202,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============WHATS NEXT SECTION===================--> 
                         </apex:outputText>
                         
-
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Cancel'}">
                         <!--===============WHY HOME DEPOT SECTION===================--> 
-                        <c:pvfc_ValueProps_LAM ApplyNowURL="{!relatedTo.AltRefUrl__c}" affordableImg="{!$Label.CX_LibraryCoreAffordableIconOrange}" licensedImg="{!$Label.CX_LibraryCoreLicensedIconOrange}" blackhomedepotImg="{!$Label.CX_LibraryOrangeHomeDepotIcon}" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_LAM>
-                        <!--===============WHY HOME DEPOT SECTION===================-->
+                        <!--===============WHY HOME DEPOT SECTION===================--> 
+                        <c:pvfc_ValueProps_03 ApplyNowURL="{!relatedTo.AltRefUrl__c}" affordableImg="{!$Label.CX_LibraryCoreAffordableIconOrange}" licensedImg="{!$Label.CX_LibraryCoreLicensedIconOrange}" blackhomedepotImg="{!$Label.CX_LibraryOrangeHomeDepotIcon}" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_03>
+                        <!--===============WHY HOME DEPOT SECTION===================--> 
                         </apex:outputText>
            
                         <!--===============QUICK LINKS SECTION===================-->
