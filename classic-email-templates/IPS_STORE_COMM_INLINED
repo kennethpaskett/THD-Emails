@@ -49,7 +49,8 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 <!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
 <div style="display:none; max-height:0px; overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
     
-<!--========================================================================END PREHEADER SECTION================================================================================= -->
+<!--=================================================================================================
+    ====END PREHEADER SECTION================================================================================= -->
     
     
 
@@ -61,8 +62,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                 <tr>
                     <td align="center">
                       <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
-<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
-                        
+<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->
+
+                        <!--=================================================================================================
+                            HEADER SECTION 
+                        ==================================================================================================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Initial Consultation'}"> 
                         <!--===============HEADER SECTION===================-->
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Your kitchen consultation is coming up!" imgPathFull="{!$Label.CX_Library_ApptConfInitialConsultD}" imgPathMobile="{!$Label.CX_Library_ApptConfInitialConsultM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
@@ -73,16 +77,14 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============HEADER SECTION===================-->
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="You’ve rescheduled your kitchen consultation!" imgPathFull="{!$Label.CX_Library_ResApptInitialConsultD}" imgPathMobile="{!$Label.CX_Library_ResApptInitialConsultM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
-                        </apex:outputText>   
-                          
-                          
+                        </apex:outputText>
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selection'}"> 
                         <!--===============HEADER SECTION===================-->
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get ready — your next kitchen appointment is coming up!" imgPathFull="{!$Label.CX_Library_ApptConfProdSelectD}" imgPathMobile="{!$Label.CX_Library_ApptConfProdSelectM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
-                        </apex:outputText> 
-                          
-                          
+                        </apex:outputText>
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selection Rescheduled'}"> 
                         <!--===============HEADER SECTION===================-->
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Thank you for rescheduling your kitchen appointment!" imgPathFull="{!$Label.CX_Library_RescApptProdSelectD}" imgPathMobile="{!$Label.CX_Library_RescApptProdSelectM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
@@ -99,57 +101,58 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============HEADER SECTION===================-->
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Good news — we've rescheduled your appointment with your kitchen designer!" imgPathFull="{!$Label.CX_Library_RescApptDesignReviewD}" imgPathMobile="{!$Label.CX_Library_RescApptDesignReviewM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
-                        </apex:outputText>   
-                          
-                          
+                        </apex:outputText>
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Appt'}"> 
                         <!--===============HEADER SECTION===================--> 
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get excited — it's time to purchase your new kitchen!" imgPathFull="{!$Label.CX_Library_ApptClosingD}" imgPathMobile="{!$Label.CX_Library_ApptClosingM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
-                        </apex:outputText> 
-                          
-                          
+                        </apex:outputText>
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Appt Rescheduled'}"> 
                         <!--===============HEADER SECTION===================-->
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="You rescheduled your final kitchen appointment." imgPathFull="{!$Label.CX_Library_RescApptClosingD}" imgPathMobile="{!$Label.CX_Library_RescApptClosingM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
                         </apex:outputText>
+                        <!--=================================================================================================
+                            /HEADER SECTION 
+                        ==================================================================================================-->
 
                         <tr>
                             <td height="24" style="height: 24px; line-height: 24px; font-size: 24px;">&nbsp;</td>
                         </tr>
                         
-                        <!--====================================================================SCHEDULE APPOINTMENT SECTION======================================================================================================================-->
-                          
+                        <!--=================================================================================================
+                            SCHEDULE APPOINTMENT SECTION 
+                        ==================================================================================================-->
                         <!--===============SCHEDULE APPOINTMENT SECTION===================--> 
                         <c:pvfc_ScheduledStoreAppt_01 SectionTitle="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.AltDateTime__c}" StoreIcon="{!$Label.CX_LibraryStoreIcon2}" StoreInfo="{!relatedTo.StoreName__c} ({!relatedTo.StoreState__c}) #{!relatedTo.DocumentNo__c}" custTimeZone="{!relatedTo.TimeZone__c}" SPName="{!relatedTo.SourceName__c}" SPemail="{!relatedTo.BranchName__c}" NameString="{!relatedTo.RefString__c}"></c:pvfc_ScheduledStoreAppt_01>
                         <!--===============SCHEDULE APPOINTMENT SECTION===================-->
-                          
-                          
+                        <!--=================================================================================================
+                            /SCHEDULE APPOINTMENT SECTION 
+                        ==================================================================================================-->
      
-                        <!--====================================================================GREETING SECTION======================================================================================================================-->   
-                          
+                        <!--=================================================================================================
+                            GREETING SECTION 
+                        ==================================================================================================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Initial Consultation'}"> 
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're glad you chose The Home Depot to help with your kitchen remodel. Please review your appointment details and designer's information. When you get to the store, you'll find your designer waiting for you in the kitchen showroom. Your kitchen designer looks forward to helping you plan your dream kitchen!" clipboardIcon="{!$Label.CX_Library_OrangeCheckList}" clipboardText="Prepare for your kitchen appointment" clipboardURL="{!relatedTo.RefURL__c}" ></c:pvfc_Greeting_04_v3>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
-                          
                         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Initial Consultation Rescheduled'}"> 
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Here are your new appointment details. Remember to head to the kitchen showroom in your store to find your designer." clipboardIcon="{!$Label.CX_Library_OrangeCheckList}" clipboardText="Prepare for your kitchen appointment" clipboardURL="{!relatedTo.RefURL__c}"></c:pvfc_Greeting_04_v3>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
-                          
-                          
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selection'}"> 
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're looking forward to making more progress on your kitchen project. You will meet your kitchen designer in the kitchen showroom at your store to begin selecting your new products." clipboardIcon="{!$Label.CX_Library_OrangeCheckList}" clipboardText="Prepare for your kitchen appointment" clipboardURL="{!relatedTo.RefURL__c}"></c:pvfc_Greeting_04_v3>
                         <!--===============GREETING SECTION===================-->
                         </apex:outputText>
-                          
-                          
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selection Rescheduled'}"> 
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04_v3 conditionalString="{!relatedTo.RefString__c}" custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your kitchen designer will be waiting for you in the kitchen showroom of your store at your new appointment time to begin selecting your new kitchen products!" clipboardIcon="{!$Label.CX_Library_OrangeCheckList}" clipboardText="Prepare for your kitchen appointment" clipboardURL="{!relatedTo.RefURL__c}"></c:pvfc_Greeting_04_v3>
@@ -178,111 +181,119 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04_v3 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for rescheduling your in-store appointment. It is now time to purchase your new kitchen! Please be prepared to complete your payment during your next appointment. We've included our available financing options and what you can expect during the next part of the process."></c:pvfc_Greeting_04_v3>
                         <!--===============GREETING SECTION===================-->
-                        </apex:outputText>
-                        
-                            
-                        <!--====================================================================WHAT TO EXPECT SECTION======================================================================================================================-->    
-                          
-                          
-                        
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Initial Consultation' || relatedTo.RefString__c == 'Initial Consultation Rescheduled'}"> 
-                        <!--===============WHATS NEXT SECTION===================--> 
-                        <c:pvfc_WhatToExpect_03 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" BulletOneText="Your first consultation will last between 1-1.5 hours. You can tell us all about your dream kitchen, and we can answer any questions you have about your project." BulletTwoText="We'll also ask you some questions to help us better understand your project needs, timeline and estimated budget. Having photos of your current kitchen ready to share helps us better understand your unique needs." BulletThreeText="At the end of your consultation, we'll schedule a site analysis and discuss a project starter fee, which will go toward your overall project cost."></c:pvfc_WhatToExpect_03>  
-                        <!--===============WHATS NEXT SECTION===================--> 
-                        </apex:outputText>
-                        
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selection' || relatedTo.RefString__c == 'Product Selection Rescheduled'}">
-                        <!--===============WHATS NEXT SECTION===================--> 
-                        <c:pvfc_WhatToExpect_03 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" BulletOneText="You can expect to have around 4-8 meetings with your designer over the course of your kitchen project. Of course, there are always exceptions that could require additional meetings." BulletTwoText="With your designer, you will discuss style, budget and product options. You will also finalize your designs, order products and purchase your new kitchen." BulletThreeText="Be sure to check your email for messages from your designer. They will send action items and additional information separately."></c:pvfc_WhatToExpect_03>  
-                        <!--===============WHATS NEXT SECTION===================--> 
-                        </apex:outputText>
-                        
-                   
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Appt' || relatedTo.RefString__c == 'Closing Appt Rescheduled'}">
-                        <!--===============WHATS NEXT SECTION===================--> 
-                        <c:pvfc_WhatToExpect_03 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" BulletOneText="During your next appointment, you will purchase your new kitchen and complete product orders. Remember, you can take advantage of one of our available financing options, such as our credit card or project loan." BulletTwoText="Your designer will go over the ordering process, your installation, and answer your questions." BulletThreeText="Once we have a delivery date for your products, we will reach out to schedule the installation of your new kitchen."></c:pvfc_WhatToExpect_03>  
-                        <!--===============WHATS NEXT SECTION===================--> 
-                        </apex:outputText>
-                        
-                        <!--====================================================================WHAT TO EXPECT SECTION======================================================================================================================--> 
-                          
-                        
-                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Appt' || relatedTo.RefString__c == 'Closing Appt Rescheduled'}">
-                        <!--===============WHATS NEXT SECTION===================--> 
-                        <c:pvfc_CreditOffer_02 buttonCopy="Apply&nbsp;Now" buttonURL="https://www.homedepot.com/c/Credit_Center" buttonImg="{!$Label.CX_LibraryApplyNowButton}" imageURL="{!$Label.CX_LibrarySpecialFinancingIcon}" imageALT="Credit Cards" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"></c:pvfc_CreditOffer_02>
-                        <!--===============WHATS NEXT SECTION===================--> 
-                        </apex:outputText>  
-                        
+                        </apex:outputText>                        <!--=================================================================================================
+                            /GREETING SECTION 
+                        ==================================================================================================-->
 
-
-                        <!--====================================================================IPS GEN AI PILOT SECTION======================================================================================================================-->  
-                        <apex:outputText rendered="{!relatedTo.AltRefUrl2__c != '' && relatedTo.AltRefUrl2__c != null}">
-                        <c:pvfc_IPSGenAIPilot heroLink="{!relatedTo.AltRefUrl2__c}" imgPathFull="{!$Label.CXLibraryIPSKitchenGenAIPILOT}" imgPathMobile="{!$Label.CXLibraryIPSKitchenGenAIPILOT}" ></c:pvfc_IPSGenAIPilot>
-                        </apex:outputText>
-                        
-                        <!--====================================================================IPS GEN AI PILOT SECTION======================================================================================================================-->  
-                          
-                          
-                        <!--====================================================================JOURNEY STEPS SECTION======================================================================================================================-->  
-                          
+                        <!--=================================================================================================
+                            JOURNEY STEPS SECTION 
+                        ==================================================================================================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Initial Consultation'}">
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         <c:pvfc_StepsToJourney_01 WhatNextDivider="{!$Label.CX_LibraryYourScheduledApptDividerD}" WhatNextDividerM="{!$Label.CX_LibraryYourScheduledApptDividerM}" HeadlineName2="Your Kitchen Journey" VirtualBannerD="{!$Label.CX_Library_IPS_KitchenStep1D}" VirtualBannerM="{!$Label.CX_Library_IPS_KitchenStep1M}" VirtualBannerUrl="https://www.homedepot.com/services/h/kitchen-remodel-preparation"></c:pvfc_StepsToJourney_01>  
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         </apex:outputText>
-                          
-                          
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Initial Consultation Rescheduled'}">
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         <c:pvfc_StepsToJourney_01 WhatNextDivider="{!$Label.CX_LibraryYourScheduledApptDividerD}" WhatNextDividerM="{!$Label.CX_LibraryYourScheduledApptDividerM}" HeadlineName2="Your Kitchen Journey" VirtualBannerD="{!$Label.CX_Library_IPS_KitchenStep1D}" VirtualBannerM="{!$Label.CX_Library_IPS_KitchenStep1M}" VirtualBannerUrl="https://www.homedepot.com/services/h/kitchen-remodel-preparation"></c:pvfc_StepsToJourney_01>  
                         <!--===============JOURNEY STEPS SECTION===================--> 
-                        </apex:outputText>  
-                          
-                         
+                        </apex:outputText>
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selection'}">
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         <c:pvfc_StepsToJourney_01 WhatNextDivider="{!$Label.CX_LibraryYourScheduledApptDividerD}" WhatNextDividerM="{!$Label.CX_LibraryYourScheduledApptDividerM}" HeadlineName2="Your Kitchen Journey" VirtualBannerD="{!$Label.CX_Library_IPS_KitchenStep2D}" VirtualBannerM="{!$Label.CX_Library_IPS_KitchenStep2M}" VirtualBannerUrl="https://www.homedepot.com/services/h/kitchen-remodel-preparation"></c:pvfc_StepsToJourney_01>  
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         </apex:outputText>
-                          
                         
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selection Rescheduled'}">
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         <c:pvfc_StepsToJourney_01 WhatNextDivider="{!$Label.CX_LibraryYourScheduledApptDividerD}" WhatNextDividerM="{!$Label.CX_LibraryYourScheduledApptDividerM}" HeadlineName2="Your Kitchen Journey" VirtualBannerD="{!$Label.CX_Library_IPS_KitchenStep2D}" VirtualBannerM="{!$Label.CX_Library_IPS_KitchenStep2M}" VirtualBannerUrl="https://www.homedepot.com/services/h/kitchen-remodel-preparation"></c:pvfc_StepsToJourney_01>  
                         <!--===============JOURNEY STEPS SECTION===================--> 
-                        </apex:outputText>  
-                          
-                          
+                        </apex:outputText>
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Design Review'}">
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         <c:pvfc_StepsToJourney_01 WhatNextDivider="{!$Label.CX_LibraryYourScheduledApptDividerD}" WhatNextDividerM="{!$Label.CX_LibraryYourScheduledApptDividerM}" HeadlineName2="Your Kitchen Journey" VirtualBannerD="{!$Label.CX_Library_IPS_KitchenStep3D}" VirtualBannerM="{!$Label.CX_Library_IPS_KitchenStep3M}" VirtualBannerUrl="https://www.homedepot.com/services/h/kitchen-remodel-preparation"></c:pvfc_StepsToJourney_01>  
                         <!--===============JOURNEY STEPS SECTION===================--> 
-                        </apex:outputText>  
-                          
-                          
+                        </apex:outputText>
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Design Review Rescheduled'}">
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         <c:pvfc_StepsToJourney_01 WhatNextDivider="{!$Label.CX_LibraryYourScheduledApptDividerD}" WhatNextDividerM="{!$Label.CX_LibraryYourScheduledApptDividerM}" HeadlineName2="Your Kitchen Journey" VirtualBannerD="{!$Label.CX_Library_IPS_KitchenStep3D}" VirtualBannerM="{!$Label.CX_Library_IPS_KitchenStep3M}" VirtualBannerUrl="https://www.homedepot.com/services/h/kitchen-remodel-preparation"></c:pvfc_StepsToJourney_01>  
                         <!--===============JOURNEY STEPS SECTION===================--> 
-                        </apex:outputText>   
-                          
-                          
+                        </apex:outputText>
+                        
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Appt'}">
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         <c:pvfc_StepsToJourney_01 WhatNextDivider="{!$Label.CX_LibraryYourScheduledApptDividerD}" WhatNextDividerM="{!$Label.CX_LibraryYourScheduledApptDividerM}" HeadlineName2="Your Kitchen Journey" VirtualBannerD="{!$Label.CX_Library_IPS_KitchenStep4D}" VirtualBannerM="{!$Label.CX_Library_IPS_KitchenStep4M}" VirtualBannerUrl="https://www.homedepot.com/services/h/kitchen-remodel-preparation"></c:pvfc_StepsToJourney_01>  
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         </apex:outputText>  
                           
-                          
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Appt Rescheduled'}">
                         <!--===============JOURNEY STEPS SECTION===================--> 
                         <c:pvfc_StepsToJourney_01 WhatNextDivider="{!$Label.CX_LibraryYourScheduledApptDividerD}" WhatNextDividerM="{!$Label.CX_LibraryYourScheduledApptDividerM}" HeadlineName2="Your Kitchen Journey" VirtualBannerD="{!$Label.CX_Library_IPS_KitchenStep4D}" VirtualBannerM="{!$Label.CX_Library_IPS_KitchenStep4M}" VirtualBannerUrl="https://www.homedepot.com/services/h/kitchen-remodel-preparation"></c:pvfc_StepsToJourney_01>  
                         <!--===============JOURNEY STEPS SECTION===================--> 
-                        </apex:outputText>   
+                        </apex:outputText>
+                        <!--=================================================================================================
+                            /JOURNEY STEPS SECTION 
+                        ==================================================================================================-->
+                        
+                            
+                        <!--=================================================================================================
+                            WHAT TO EXPECT SECTION 
+                        ==================================================================================================-->
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Initial Consultation' || relatedTo.RefString__c == 'Initial Consultation Rescheduled'}"> 
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" BulletOneText="Your first consultation will last between 1-1.5 hours. You can tell us all about your dream kitchen, and we can answer any questions you have about your project." BulletTwoText="We'll also ask you some questions to help us better understand your project needs, timeline and estimated budget. Having photos of your current kitchen ready to share helps us better understand your unique needs." BulletThreeText="At the end of your consultation, we'll schedule a site analysis and discuss a project starter fee, which will go toward your overall project cost."></c:pvfc_WhatToExpect_02>  
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        </apex:outputText>
+                        
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Product Selection' || relatedTo.RefString__c == 'Product Selection Rescheduled'}">
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" BulletOneText="You can expect to have around 4-8 meetings with your designer over the course of your kitchen project. Of course, there are always exceptions that could require additional meetings." BulletTwoText="With your designer, you will discuss style, budget and product options. You will also finalize your designs, order products and purchase your new kitchen." BulletThreeText="Be sure to check your email for messages from your designer. They will send action items and additional information separately."></c:pvfc_WhatToExpect_02>  
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        </apex:outputText>
+                   
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Appt' || relatedTo.RefString__c == 'Closing Appt Rescheduled'}">
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" BulletOneText="During your next appointment, you will purchase your new kitchen and complete product orders. Remember, you can take advantage of one of our available financing options, such as our credit card or project loan." BulletTwoText="Your designer will go over the ordering process, your installation, and answer your questions." BulletThreeText="Once we have a delivery date for your products, we will reach out to schedule the installation of your new kitchen."></c:pvfc_WhatToExpect_02>  
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        </apex:outputText>
+                        <!--=================================================================================================
+                            /WHAT TO EXPECT SECTION 
+                        ==================================================================================================-->
                           
-                          
-                        <!--====================================================================JOURNEY STEPS SECTION======================================================================================================================-->   
+                        <!--=================================================================================================
+                            CREDIT OFFER SECTION SECTION 
+                        ==================================================================================================-->
+                        <apex:outputText rendered="{!relatedTo.RefString__c == 'Closing Appt' || relatedTo.RefString__c == 'Closing Appt Rescheduled'}">
 
+                        <tr>
+                            <td height="24" style="height: 24px; line-height: 24px; font-size: 24px;">&nbsp;</td>
+                        </tr>
+                        
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        <c:pvfc_CreditOffer_02 buttonCopy="Apply&nbsp;Now" buttonURL="https://www.homedepot.com/c/Credit_Center" buttonImg="{!$Label.CX_LibraryApplyNowButton}" imageURL="{!$Label.CX_LibrarySpecialFinancingIcon}" imageALT="Credit Cards" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}"></c:pvfc_CreditOffer_02>
+                        <!--===============WHATS NEXT SECTION===================--> 
+                        </apex:outputText>  
+                        <!--=================================================================================================
+                            /CREDIT OFFER SECTION SECTION 
+                        ==================================================================================================-->
+
+                        <tr>
+                            <td height="24" style="height: 24px; line-height: 24px; font-size: 24px;">&nbsp;</td>
+                        </tr>
+
+                        <!--=================================================================================================
+                            IPS GEN AI PILOT SECTION 
+                        ==================================================================================================-->
+                        <apex:outputText rendered="{!relatedTo.AltRefUrl2__c != '' && relatedTo.AltRefUrl2__c != null}">
+                        <c:pvfc_IPSGenAIPilot heroLink="{!relatedTo.AltRefUrl2__c}" imgPathFull="{!$Label.CXLibraryIPSKitchenGenAIPILOT}" imgPathMobile="{!$Label.CXLibraryIPSKitchenGenAIPILOT}" ></c:pvfc_IPSGenAIPilot>
+                        </apex:outputText>
+                        <!--=================================================================================================
+                            /IPS GEN AI PILOT SECTION 
+                        ==================================================================================================-->
 
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
@@ -292,8 +303,8 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
                         <!--===============FOOTER SECTION===================--> 
                         
-                        <!--===============PIXEL TRACKING===================-->                          
-                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>                          
+                        <!--===============PIXEL TRACKING===================-->
+                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
                         <!--===============PIXEL TRACKING===================-->
 
 <!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
