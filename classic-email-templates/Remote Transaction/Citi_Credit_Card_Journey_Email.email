@@ -128,11 +128,11 @@
                                        <td align="left" valign="center" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
                                         <b><font size="4">&nbsp;&nbsp;&nbsp;THD CONSUMER CREDIT CARD</font></b> <br/><br/>
                                         <a href="{!$Label.CX_Salesforce_URL}/CustomerCommunity/s/external-site?id={!relatedTo.RefURL__c}" target="_blank" style="color:#D9D6D5;">                                                                                 
-                                            <img src="https://homeservices--coredev1--c.documentforce.com/servlet/servlet.ImageServer?id=0150q000000OGxP&oid=00D0q000000Dcch&lastMod=1646746670000" alt="logo" style="height:43px;width:143.641;padding-left: 20px;" /> 
+                                            <img src="{!$Label.CX_Library_ApplyNow}" alt="logo" style="height:43px;width:143.641;padding-left: 20px;" /> 
                                         </a>                     
                                         </td>
                                         <td align="right" valign="center" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
-                                        <img src="https://homeservices--coredev1--c.documentforce.com/servlet/servlet.ImageServer?id=0150q000000OGxe&oid=00D0q000000Dcch&lastMod=1646747533000" alt="logo3" style="height: 117px;padding-right:35px; width: 196.078;"/> </td>
+                                        <img src="{!$Label.CX_Library_orangeCreditCard}" alt="logo3" style="height: 117px;padding-right:35px; width: 196.078;"/> </td>
                                     </tr>                                            <!--[if gte mso 15]>&nbsp;<![endif]-->
 
                                     </table>
