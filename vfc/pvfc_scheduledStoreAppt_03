@@ -72,7 +72,7 @@
                                                 <b>
                                                     <apex:outputText rendered="{!jobDate != null}"
                                                         value="{0,date,MMM' 'dd', 'yyyy}">
-                                                        <apex:Param value="{!jobDate -(4/24)}" />
+                                                        <apex:Param value="{!jobDate -(10/24)}" />
                                                     </apex:OutputText>
 
                                                     &#8212;
