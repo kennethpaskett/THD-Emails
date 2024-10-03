@@ -1,0 +1,13 @@
+<apex:component access="global">
+    <apex:attribute name="storeRefNumber" description="Store Ref number" type="String" />
+
+    <table class="width-1" role="presentation">
+        <tr>
+            <td class="" style="text-align: left;">
+
+                <span>If you need to make any adjustments to your order, please call your local Home Depot within 3 days at <a href="" class="a2" style="blue">{!storeRefNumber}</a></span>
+
+            </td>
+        </tr>
+    </table>
+</apex:component>

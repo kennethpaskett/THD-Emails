@@ -1,9 +1,11 @@
 <apex:component access="global">
     <apex:attribute name="sectionHeading" description="Section Headline" type="String" />
+    <apex:attribute name="sectionHeadingWidth" description="Width of Orange Line under the Section Heading" type="String" />
     <apex:attribute name="appointmentDate" description="Date of appointment" type="DateTime" />
     <apex:attribute name="appointmentTime" description="Time of appointment" type="String" />
 
-    <c:pvfc_SectionHeader headline="{!sectionHeading}" />
+    <c:pvfc_SectionHeader headline="{!sectionHeading}" underlineWidth="{!sectionHeadingWidth}" />
+
     <tr>
         <td height="8" style="height: 8px; line-height: 8px; font-size: 8px;">&nbsp;</td>
     </tr>
