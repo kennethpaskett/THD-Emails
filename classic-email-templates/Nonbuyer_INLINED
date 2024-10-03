@@ -68,7 +68,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're checking in to see how it’s going with your {!relatedTo.RefString__c} project. If you decide you do not want to continue your project with us, would you tell us why in a short survey? Your feedback can help us improve our service."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're checking in to see how it’s going with your {!relatedTo.RefString__c} project. If you decide you do not want to continue your project with us, would you tell us why in a short survey? It only takes about 10 minutes to complete, but your survey link will expire in 7 days. Your feedback can help us improve our service."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================--> 
                           
                         <!--===============BUTTON SECTION===================--> 
@@ -76,7 +76,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============BUTTON SECTION===================--> 
                         
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_08 greetingsCopy="If you've already purchased or scheduled installation, please disregard this message. Have questions or need more help with your {!relatedTo.RefString__c} project? Just give us a call!" phoneNum="{!relatedTo.AltPhone__c}"></c:pvfc_Greeting_08>
+                        <c:pvfc_Greeting_08 greetingsCopy="If you've already purchased or scheduled installation, please disregard this message. Have questions or need more help with your {!relatedTo.RefString__c} project? Just give us a call!" phoneNum="{!relatedTo.AltPhone__c}"></c:pvfc_Greeting_08>
                         <!--===============GREETING SECTION===================-->
 
                         <!--===============QUICK LINKS SECTION===================-->
