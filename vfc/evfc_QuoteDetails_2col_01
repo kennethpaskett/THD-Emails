@@ -1,0 +1,79 @@
+<apex:component controller="HDMSQuoteDetailsEmailCtrl" access="global" >
+  <apex:attribute name="quoteData" description="Imported quote data" type="Double" assignTo="{!grandTotal}"/>
+  <apex:attribute name="expirationDate" description="Quote expiration date" type="String" />
+  <apex:attribute name="floorPlanURL" description="Floor plan URL" type="String" />
+  <apex:attribute name="buttonCopy" description="Button copy" type="String" />
+  <apex:attribute name="buttonURL" description="Button URL" type="String" />
+  <apex:attribute name="hdmsProductName" description="product name" type="String" assignTo="{!productName}" />
+  <apex:attribute name="quoteSource" description="Quote Source" type="String" />
+  
+  
+    <!-- Component Definition -->    
+  <div class="hues-1">
+        <table class="width-1" style="text-align: left;" role="presentation">
+            <tr>
+                <td colspan="2">
+                    <table class="credit-title">
+                        <tr>
+                            <td class="border-title-left">Your&nbsp;Project&nbsp;Total</td>
+                            <td class="">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class=""><hr class="orange-border" /></td>
+                            <td class="" valign="center"><hr class="grey-border" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="row-7">
+                <th class="column" valign="top">
+
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>
+
+                    <table class="titles_2col">
+                        <tr>
+                            <td class="credit-copy" valign="top"><span class="next-event-copy"><apex:outputText value="{0, number, currency}" ><apex:param value="{!ABS(quoteData)}" /></apex:outputText></span><br/>
+                                This quote expires on<br/> <span class="bold-700">
+                                   <apex:outputText value="{!expirationDate}" /></span><br/>
+                                <apex:outputPanel rendered="{! If(quoteSource=='QuoteRuleEngine' ,true,false) }">
+                                        <a href="{!floorPlanURL}" class="a2">Review Floor Plan</a></apex:outputPanel>
+                            </td>
+                        </tr>
+                    </table>
+
+                </th>
+                <th class="column" valign="top">
+
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>
+
+                    <table class="titles_2col">
+                        <tr>
+                            <td class="" valign="top">
+
+                                <!-- orange box button -->
+                                <div class="btn-1" style="margin: 0px 0 20px">
+                                    <!--[if mso]><v:rect style="width: 260px; height: 30px; v-text-anchor: middle;" arcsize="200%" strokecolor="#c76929" fillcolor="#F96302" strokeweight="1pt">
+                                    <center><![endif]-->
+                                    <a href="{!buttonURL}">
+                                        <span class="btn" style="width: 260px; max-width: 260px; background-color: #F96302; border-bottom:2px solid #c76929;">
+                                           <span class="btn-text" style="height: 50px; line-height: 185%;"><apex:outputText escape="false" value="{!buttonCopy}" /></span>
+                                        </span> 
+                                    </a>
+                                    <!--[if mso]></center></v:rect><![endif]-->
+                                </div>
+
+                                Or call our Home Depot Flooring Center:<br/>
+                                <a href="tel:{!phoneNumber}" class="a2">{!phoneNumber}</a>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="height-3" aria-hidden="true">&nbsp;</div>
+
+                </th>
+            </tr>
+        </table>
+    </div>
+
+</apex:component>
