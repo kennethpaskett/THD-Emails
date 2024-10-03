@@ -1,0 +1,87 @@
+<apex:component access="global">
+    <!-- Define attributes for the component -->
+    <apex:attribute name="imageDesktopURL" description="Desktop image's URL" type="String" />
+    <apex:attribute name="imageMobileURL" description="Mobile image's URL" type="String" />
+    <apex:attribute name="imageAlt" description="Alt text to display for the image." type="String" />
+    <apex:attribute name="linkURL" description="OPTIONAL: surrounds image in a link" type="String" />
+
+    <tr>
+        <td valign="top">
+            <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+
+                <!-- DESKTOP IMAGE ROW -->
+                <tr>
+                    <!-- DESKTOP IMAGE IF MOBILE IMAGE IS NOT BLANK -->
+                    <apex:outputText rendered="{!NOT(ISBLANK(imageMobileURL))}">
+                    <td class="hide hide-for-small" valign="top">
+                        
+                        <!-- LINK URL IS NOT BLANK -->
+                        <apex:outputText rendered="{!NOT(ISBLANK(linkURL))}">
+                            <a href="{!linkURL}" target="_blank">
+                                <img src="{!imageDesktopURL}" style="display: block; border: 0; border: none; width: 600px; max-width: 600px; height: auto;" width="600" alt="{!imageAlt}"/>
+                            </a>
+                        </apex:outputText>
+                        <!-- /LINK URL IS NOT BLANK -->
+
+                        <!-- LINK URL IS BLANK -->
+                        <apex:outputText rendered="{!ISBLANK(linkURL)}">
+                            <img src="{!imageDesktopURL}" style="display: block; border: 0; border: none; width: 600px; max-width: 600px; height: auto;" width="600" alt="{!imageAlt}"/>
+                        </apex:outputText>
+                        <!-- /LINK URL IS BLANK -->
+
+                    </td>
+                    </apex:outputText>
+                    <!-- /DESKTOP IMAGE IF MOBILE IMAGE IS NOT BLANK -->
+
+                    <!-- DESKTOP IMAGE IF MOBILE IMAGE IS BLANK -->
+                    <apex:outputText rendered="{!ISBLANK(imageMobileURL)}">
+                    <td valign="top">
+                        
+                        <!-- LINK URL IS NOT BLANK -->
+                        <apex:outputText rendered="{!NOT(ISBLANK(linkURL))}">
+                            <a href="{!linkURL}" target="_blank">
+                                <img src="{!imageDesktopURL}" style="display: block; border: 0; border: none; width: 600px; max-width: 600px; height: auto;" width="600" alt="{!imageAlt}"/>
+                            </a>
+                        </apex:outputText>
+                        <!-- /LINK URL IS NOT BLANK -->
+
+                        <!-- LINK URL IS BLANK -->
+                        <apex:outputText rendered="{!ISBLANK(linkURL)}">
+                            <img src="{!imageDesktopURL}" style="display: block; border: 0; border: none; width: 600px; max-width: 600px; height: auto;" width="600" alt="{!imageAlt}"/>
+                        </apex:outputText>
+                        <!-- /LINK URL IS BLANK -->
+                    </td>
+                    </apex:outputText>
+                    <!-- /DESKTOP IMAGE IF MOBILE IMAGE IS BLANK -->
+                </tr>
+                <!-- /DESKTOP IMAGE ROW -->
+
+                <!-- MOBILE IMAGE ROW (only displayed if imageMObileURL is NOT BLANK) -->
+                <apex:outputText rendered="{!NOT(ISBLANK(imageMobileURL))}">
+                <!--[if !mso]><!-- -->
+                <tr class="show" style="max-height: 0px; overflow: hidden; display: none; float: left; border: 0; margin: 0 auto; padding: 0; border-collapse: collapse; mso-line-height-rule: exactly; line-height: 100%; width: 100%;">
+                    <td valign="top" style="width: 100%">
+
+                        <!-- LINK URL IS NOT BLANK -->
+                        <apex:outputText rendered="{!NOT(ISBLANK(linkURL))}">
+                            <a href="{!linkURL}" target="_blank">
+                                <img src="{!imageMobileURL}" class="fluid" style="display: block; border: 0; border: none; width: 100%; max-width: 580px; height: auto;" alt="{!imageAlt}"/>
+                            </a>
+                        </apex:outputText>
+                        <!-- /LINK URL IS NOT BLANK -->
+
+                        <!-- LINK URL IS BLANK -->
+                        <apex:outputText rendered="{!ISBLANK(linkURL)}">
+                            <img src="{!imageMobileURL}" class="fluid" style="display: block; border: 0; border: none; width: 100%; max-width: 580px; height: auto;" alt="{!imageAlt}"/>
+                        </apex:outputText>
+                        <!-- /LINK URL IS BLANK -->
+
+                    </td>
+                </tr>
+                <!--<![endif]-->
+                </apex:outputText>
+                 <!-- /MOBILE IMAGE ROW -->
+            </table>
+        </td>
+    </tr>
+</apex:component>

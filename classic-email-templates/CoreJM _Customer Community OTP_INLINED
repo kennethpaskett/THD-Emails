@@ -1,0 +1,351 @@
+<html>
+
+<head>
+    <style>
+        @media only screen and (max-width: 640px) {
+
+            .container,
+            .wrapper {
+                width: 100% !important;
+            }
+
+            .mob_padR {
+                padding-right: 15px !important;
+            }
+
+            .mob_padL {
+                padding-left: 15px !important;
+            }
+        }
+    </style>
+    <style>
+        @media only screen and (max-width: 580px) {
+            .show {
+                overflow: visible !important;
+                float: none !important;
+                display: block !important;
+                line-height: 100% !important;
+                max-height: none !important;
+            }
+
+            .show-for-small {
+                display: block !important;
+            }
+
+            span.show-for-small,
+            br.show-for-small {
+                display: inline !important;
+            }
+
+            .show-for-small table,
+            table.show-for-small {
+                display: table !important;
+            }
+
+            .hide-for-small {
+                display: none !important;
+            }
+
+            .border {
+                border-bottom: 1px solid #e3e3e3 !important;
+            }
+
+            .nav-last {
+                border-bottom: 1px solid #e3e3e3 !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        .keep a {
+            color: #000000 !important;
+            text-decoration: none !important;
+        }
+    </style>
+    <style>
+        table,
+        tr,
+        td{
+            font-family:Arial, Helvetica, sans-serif
+        }
+        .quick-links {
+            font-size: 16px !important;
+            line-height: 125% !important;
+        }
+
+        .ql-item {
+            text-align: center;
+        }
+
+        .ql-row {
+            line-height: 110%;
+        }
+        .grey-border {
+                  height: 1px;
+                  border-width: 0;
+                  color: #e3e3e3;
+                  background-color: #e3e3e3;
+        }
+    </style>
+</head>
+<div style="font-size:0; line-height:0;">
+    <custom name="opencounter" type="tracking" />
+</div>
+<table align="center" width="600">
+    <tr>
+        <td>
+            <!--Start Header-->
+            <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" width="600"
+                style="Margin: 0 auto; width: 600px;">
+                <tr>
+                    <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;"></td>
+                </tr>
+                <tr>
+                    <td valign="top" width="27%" style="width: 27%;">
+                        <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+                            <tr>
+                                <td class="mob_padL" valign="top" align="left" width="27%" style="width: 27%;">
+            
+                                    <!--===========================HERE IS WHERE THE CUSTOMER LABEL (URL/LINK) SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (href="") TAG==========================-->
+                                    <a href="https://www.homedepot.com/services/" target="_blank">
+                                        <!--======================================================-->
+            
+                                        <!--===========================HERE IS WHERE THE IMAGE PATH SHOULD BE PLACED. IN BETWEEN THE "QUOTATIONS" IN THE (src="") TAG==========================-->
+                                        <img src="{!$Label.CX_LibraryCTQ_HDLogo}"
+                                            style="display:block;border:0;border:none; width: 130px; max-width: 130px; height: auto;"
+                                            width="130" alt="" />
+                                    </a>
+                                    <!--======================================================-->
+            
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <th valign="top"><img src="{!$Label.CX_LibraryCTQDivider}" width="600" style="width: 600px; height: 3px;" height="3"
+                            class="fluid" />
+                    </th>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" width="600"
+                            style="Margin: 0 auto; width: 600px;">
+                            <tr>
+                                <td height="25"
+                                    style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mso_text"
+                                    style="font-family:Arial, Helvetica, sans-serif;font-size:24px;line-height:1.2;text-align:left;color:#000000; font-weight: bold;">
+                                    Here is your unique verification code!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="25"
+                                    style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center">
+                        <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
+                            style="Margin: 0 auto; width:600px;" width="600">
+                            <tr>
+                                <td valign="top" align="center"><img src="{!$Label.CX_LibraryCoreSignAndPayHeroD}"
+                                        style="display:block;border:0;border:none; width:600px;" width="600"
+                                        alt="hero-top-desktop.png" class="fluid" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--End Header-->
+            <tr>
+                <td height="20" style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">&nbsp;
+                </td>
+            </tr>
+            <!--Start Greeting-->
+            <table class="wrapper" width="600" border="0" align="center" cellpadding="0" cellspacing="0"
+                style="Margin:0 auto; width:600px;">
+                <tr>
+                    <th class="mso_text" align="center" valign="top"
+                        style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:24px; line-height: 28px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                        Hi, {!Receiving_User.FirstName}!
+                    </th>
+                </tr>
+                <tr>
+                    <td height="20" style="height: 20px; mso-line-height-rule: exactly; line-height: 100%; font-size: 20px;">&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <th align="center" valign="top" class="mso_text"
+                        style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                        Thank you for verifying your identity. Enter the verification code below into the project portal so that you can review
+                        important documents and make payments.
+                    </th>
+                </tr>
+                <tr>
+                    <td height="50" style="height: 50px; mso-line-height-rule: exactly; line-height: 100%; font-size: 50px;">&nbsp;
+                    </td>
+                </tr>
+            </table>
+            <!--End Greeting-->
+            <!--Start Verification Code-->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:600px;" width="600">
+                <tr>
+                    <td valign="middle">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0"
+                            style="Margin: 0 auto; background-color:#999999" width="595" height="80">
+                            <tr>
+                                <td height="15" style="mso-line-height-rule: exactly; line-height: 100%; font-size: 15px;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15" align="center"
+                                    style="mso-line-height-rule: exactly; line-height: 100%; font-size: 15px; color:#000000">
+                                    Verification Code:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" height="50">
+                                    <table>
+                                        <tr>
+                                            <td height="5"
+                                                style="mso-line-height-rule: exactly; line-height: 100%; font-size: 10px;">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="keep" align="center" height="30"
+                                                style="mso-line-height-rule: exactly; line-height: 100%; font-size: 30px; color:#000000 !important; text-align: center">
+                                                <b> {!Verification_Code} </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="15"
+                                                style="mso-line-height-rule: exactly; line-height: 100%; font-size: 10px;">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;
+                    </td>
+                </tr>
+            </table>
+            <!--End Verification Code-->
+            <!--Start Quick Links-->
+            <table class="wrapper" width="600" border="0" align="center" cellpadding="0" cellspacing="0"
+                style="Margin:0 auto; width:600px;">
+            
+                <tr>
+                    <td class="">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="credit-copy">&#8212; Your Home Depot Home Services Team<br /><br />
+            
+                        <div class="height-05" aria-hidden="true">&nbsp;</div>
+            
+                        <hr class="grey-border" />
+            
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quick-links" align="left" style="text-align: left;">
+            
+                        <div class="hide-for-small" style="line-height: 20px;">&nbsp;</div>
+            
+                        <div class="" align="left" style="margin: 0 0px 5px;">
+                            <table role="presentation" style="max-width: 100%;">
+                                <tr>
+                                    <th class="ql-item" colspan="5" style="text-align: left; padding: 0 15px 15px 0px;">
+                                        <span class="" style="color: #191919;font-weight:700;">QUICK LINKS</span>
+                                    </th>
+                                </tr>
+                                <tr class="ql-row" align="left" style="">
+                                    <th class="border ql-item" style="border-right: 1px solid #464646; padding: 0 10px 0px 0px;">
+                                        <a href="https://www.homedepot.com/c/SV_HS_Contractor_License_Numbers" class="a2">Licenses</a>
+                                    </th>
+                                    <th class="border ql-item" style="border-right: 1px solid #464646; padding: 0 10px;">
+                                        <a href="https://www.homedepot.com/privacy/myPreferenceCenter" class="a2">Unsubscribe</a>
+                                    </th>
+                                    <th class="nav-last ql-item" style="padding: 0 10px;">
+                                        <a href="https://www.homedepot.com/services/" class="a2">Home Depot Home Services</a>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+            
+                        <div class="" style="line-height: 20px;">&nbsp;</div>
+            
+                    </td>
+                </tr>
+            </table>
+            <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 600px;"
+                width="600">
+                <tr>
+                    <td align="center" valign="top">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:100%">
+                            <tr>
+                                <th align="center" valign="top" class="mso_text"
+                                    style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:11px; line-height: 15px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                    You may request to be removed from the list by calling <a href="tel:800-553-3199"
+                                        style="text-decoration: none;  color:#000000;">1-800-553-3199</a> or mailing your request to
+                                    Customer Care&nbsp;at:<br />
+                                    <br /> The Home Depot, Attn: Privacy Official
+                                    <br /> 2455 Paces Ferry Road, N.W.
+                                    <br /> Atlanta, GA 30339-4024, USA
+                                </th>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="40" style="height: 40px; mso-line-height-rule: exactly; line-height: 100%; font-size: 40px;"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#c4c4c4" align="center" valign="top">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:100%">
+                            <tr>
+                                <td height="10"
+                                    style="height: 10px; mso-line-height-rule: exactly; line-height: 100%; font-size: 10px;"></td>
+                            </tr>
+                            <tr>
+                                <th width="7%" style="width: 7%;"></th>
+                                <th align="center" valign="top" class="mso_text"
+                                    style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:14px; line-height: 18px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                    &copy; 2022 Home Depot Product Authority, LLC. All rights reserved.
+                                </th>
+                            </tr>
+                            <tr>
+                                <td height="10"
+                                    style="height: 10px; mso-line-height-rule: exactly; line-height: 100%; font-size: 10px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" style="height: 30px; mso-line-height-rule: exactly; line-height: 100%; font-size: 30px;"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!--===============PIXEL TRACKING===================-->
+<c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+<!--===============PIXEL TRACKING===================-->
+
+</html>

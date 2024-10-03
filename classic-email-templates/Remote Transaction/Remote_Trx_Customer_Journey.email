@@ -1,0 +1,330 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}" renderUsingSystemContextWithoutSharing="True" recipientType="Contact" relatedToType="hms_EmailData__c">
+   <messaging:htmlEmailBody >
+      <head>
+         <title>THD Remote Document C2A</title>
+         <style type="text/css">
+            .bodyContent{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: normal;
+            font-family: 'Open Sans', arial, sans-serif;
+            font-weight:400;
+            font: Helvetica, sans-serif;
+            color: #000000;
+            }
+            * {
+            padding: 0px;
+            margin: 0px;
+            }
+            html {
+            -webkit-text-size-adjust: none;
+            -webkit-font-smoothing: antialiased;
+            }
+            a {
+            outline: 0;
+            }
+            img {
+            display: block;
+            }
+            td {
+            mso-line-height-rule: exactly;
+            }
+            .outlookFix a {
+            text-decoration: none !important;
+            }
+            /* Base Media Queries */
+            #emailService {
+            display: none;
+            }
+            @media (max-width: 480px) {
+            * {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -webkit-font-smoothing: antialiased;
+            }
+            /*Stop iproducts from auto-resizing text*/
+            .container {
+            width: 320px !important;
+            }
+            .mob-center {
+            margin: 0 auto !important;
+            }
+            .height {
+            height: auto !important;
+            }
+            .hide {
+            display: none !important;
+            }
+            .w100P {
+            width: 100% !important;
+            height: auto !important;
+            }
+            .width {
+            width: 320px !important;
+            }
+            /*cell width adjust*/
+            .W300 {
+            width: 300px !important;
+            }
+            }
+         </style>
+      </head>
+      <body class="bodyContent" bgcolor="#ffffff" style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-font-smoothing: antialiased; ">
+         <!--[if t]><![endif]-->
+         <!--[if t]><![endif]-->
+         <!--[if t]><![endif]-->
+         <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" bgcolor="#ffffff" style="table-layout:fixed;">
+            <tr>
+               <td>
+                  <table cellpadding="0" cellspacing="0" border="0" align="center" width="636" bgcolor="#ffffff" class="container" style="margin:0 auto;">
+                     <tr>
+                        <td>
+                           <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                              <tr>
+                                 <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                    <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                 </td>
+                              </tr>
+                              <!-- PREHEADER -->
+                              <tr>
+                                 <td align="center" valign="top">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                       <tr>
+                                          <td align="left" valign="top">
+                                             <a href="http://www.homedepot.com/services/" target="_blank">
+                                             <img src="{!$Label.RemoteTrxHomeServicelogo}" width="117" height="56" border="0" style="border:none;"/>
+                                             </a>
+                                          </td>
+                                          <td align="right" valign="bottom">
+                                             <span>Questions? Call us at</span>
+                                             <br/>
+                                             <a href="tel:{!relatedTo.PhoneNumber__c}" style="text-decoration: none;">
+                                             <span style="color:#F96302;font-weight:600; font-size:20px;">{!relatedTo.PhoneNumber__c}</span>
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <!-- PREHEADER -->
+                              <tr>
+                                 <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                    <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                 </td>
+                              </tr>
+                              <!-- START black section -->
+                              <tr>
+                                 <table class="white-table" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="background-color:#2B3134;table-layout: fixed;width: 100%;">
+                                    <tr>
+                                       <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                          <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                          <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                       </td>
+                                    </tr>
+                                    <apex:outputPanel rendered="{!IF((relatedTo.AltString__c = 'Document for Signing' || relatedTo.AltString__c = 'Both Document and Payment'), true, false)}">
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px; line-height: 30px;color: white;text-align: center;">
+                                             <img src="{!$Label.RemoteTrxViewDocIcon}" width="70" style="height:auto; display:inline-block; border:0;" border="0"/>
+                                          </td>
+                                       </tr>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!IF(relatedTo.AltString__c = 'Payment', true, false)}">
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px; line-height: 30px;color: white;text-align: center;">
+                                             <img src="{!$Label.RemoteTrxCard}" width="70" style="height:auto; display:inline-block; border:0;" border="0"/>
+                                          </td>
+                                       </tr>
+                                    </apex:outputPanel>
+                                    <tr>
+                                       <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                          <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                       </td>
+                                    </tr>
+                                    <apex:outputPanel rendered="{!IF(relatedTo.AltString__c = 'Document for Signing', true, false)}">
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px; line-height: 30px;color: white;text-align: center;font-size: 16px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             The Home Depot sent you a document to review and sign.
+                                          </td>
+                                       </tr>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!IF(relatedTo.AltString__c = 'Both Document and Payment', true, false)}">
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px; line-height: 30px;color: white;text-align: center;font-size: 16px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             The Home Depot sent you a document to review and sign.
+                                          </td>
+                                       </tr>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!IF(relatedTo.AltString__c = 'Payment', true, false)}">
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px; line-height: 30px;color: white;text-align: center;font-size: 16px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             The Home Depot sent you a request for payment.
+                                          </td>
+                                       </tr>
+                                    </apex:outputPanel>
+                                    <tr>
+                                       <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                          <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td align="center">
+                                          <table cellpadding="0" cellspacing="0" border="0">
+                                             <apex:outputPanel rendered="{!IF((relatedTo.AltString__c = 'Document for Signing' || relatedTo.AltString__c = 'Both Document and Payment'), true, false)}">
+                                                <tr>
+                                                   <td align="center" class="outlookFix">
+                                                   <a href="{!$Label.CX_Salesforce_URL}CustomerCommunity/s/acceptdocument?txid={!relatedTo.RefURL__c}" style="color: #2B3134;text-decoration: none; font-family: 'Open Sans', arial, sans-serif;" target="_blank" rel="noopener">
+                                                  
+                                                         <center><img src="{!$Label.RemoteTrxReviewDocument}" width="170" height="auto" style="display:block; border:0;" border="0"  /></center>
+                                                      </a>
+                                                   </td>
+                                                </tr>
+                                             </apex:outputPanel>
+                                             <apex:outputPanel rendered="{!IF(relatedTo.AltString__c = 'Payment', true, false)}">
+                                                <tr>
+                                                   <td align="center" class="outlookFix">
+                                                      <a href="{!$Label.CX_Salesforce_URL}CustomerCommunity/s/pay?txid={!relatedTo.RefURL__c}" style="color: #2B3134;text-decoration: none; font-family: 'Open Sans', arial, sans-serif;" target="_blank" rel="noopener">
+                                                         <center><img src="{!$Label.RemoteTrxPayNow}" width="170" height="auto" style="display:block; border:0;" border="0"  /></center>
+                                                      </a>
+                                                   </td>
+                                                </tr>
+                                             </apex:outputPanel>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                          <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                          <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </tr>
+                              <!-- END black section -->
+                              <tr>
+                                 <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                    <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="width:90%">
+                                       <tr>
+                                          <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 10px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             Hi {!relatedTo.CustomerName__c},
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             <div style="line-height: 1.0;">Thank you for choosing the Home Depot!</div>
+                                          </td>
+                                       </tr>
+                                       <apex:outputPanel rendered="{!IF(relatedTo.AltString__c = 'Document for Signing', true, false)}">
+                                          <tr>
+                                             <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 15px;">
+                                                Please review and either sign or reject the document at your earliest convenience.
+                                             </td>
+                                          </tr>
+                                       </apex:outputPanel>
+                                       <apex:outputPanel rendered="{!IF(relatedTo.AltString__c = 'Both Document and Payment', true, false)}">
+                                          <tr>
+                                             <td align="left" valign="top" width="100%" height="0" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 15px;">
+                                                Please review and either sign or reject the document at your earliest convenience. Once signed, you will be able to proceed to payment. 
+                                             </td>
+                                          </tr>
+                                       </apex:outputPanel>
+                                       <apex:outputPanel rendered="{!IF(relatedTo.AltString__c = 'Payment', true, false)}">
+                                          <tr>
+                                             <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 15px;">
+                                                Please submit your payment at your earlist convenience... 
+                                             </td>
+                                          </tr>
+                                       </apex:outputPanel>
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 15px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                          </td>
+                                       </tr>
+                                       <apex:outputPanel rendered="{!IF((relatedTo.AltString__c = 'Document for Signing' || relatedTo.AltString__c = 'Both Document and Payment'), true, false)}">
+                                       <tr>
+                                          <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 16px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             <b>We do not support Internet Explorer, so you will need to use an alternate web browser to open the document</b>. The link to access this document will
+                                             <b>
+                                                expire in the next {!ROUND(relatedTo.Total__c,0)} days 
+                                                <apex:outputText value="{0, date, MM-dd-yyyy}">
+                                                   <apex:Param value="{!relatedTo.AltDateTime__c}" />
+                                                </apex:OutputText>
+                                             </b>
+                                             .   
+                                          </td>
+                                       </tr>
+                                        </apex:outputPanel>
+                                         <apex:outputPanel rendered="{!IF(relatedTo.AltString__c = 'Payment', true, false)}">
+                                         <tr>
+                                          <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 16px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             <b>We do not support Internet Explorer, so you will</b> need to use an alternate web browser to submit your payment. The link wil
+                                             <b>
+                                                expire in the next {!ROUND(relatedTo.Total__c,0)} days 
+                                                
+                                                <apex:outputText value="{0, date, MM-dd-yyyy}">
+                                                   <apex:Param value="{!relatedTo.AltDateTime__c}" />
+                                                </apex:OutputText>
+                                             </b>
+                                             .   
+                                          </td>
+                                          </tr>
+                                       </apex:outputPanel>
+                                       <tr>
+                                          <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 16px;">
+                                             <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                             If you have any questions or concerns, please call us at <a href="tel:{!relatedTo.PhoneNumber__c}" style="text-decoration: none;"> <span style="color:#000000;">{!relatedTo.PhoneNumber__c}</span></a>. Our team is here to help.
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                    <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                                    <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                 </td>
+                              </tr>
+                              <!-- FOOTER -->
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+      </body>
+   </messaging:htmlEmailBody>
+</messaging:emailTemplate>
