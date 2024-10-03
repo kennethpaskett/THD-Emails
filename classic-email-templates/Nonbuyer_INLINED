@@ -68,7 +68,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're checking in to see how it's going with your {!relatedTo.RefString__c} project. If you decide you do not want to continue your project with us, would you tell us why in a short survey? It only takes about 10 minutes to complete, but your survey link will expire in 7 days. Your feedback can help us improve our service."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We're checking in to see how it's going with your {!relatedTo.RefString__c} project. If you decide you do not want to continue your project with us, would you tell us why in a short survey? It only takes about 10 minutes to complete, and your feedback can help us improve our service. The survey link will expire in 7 days."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================--> 
                           
                         <!--===============BUTTON SECTION===================--> 
