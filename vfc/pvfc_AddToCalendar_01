@@ -37,23 +37,30 @@
                                         <td align="center" style="Margin:0 auto;padding:0px 0px;text-align:left;text-align:left;font-family:Arial, Helvetica, sans-serif;font-size: 12px; line-height: 14px; color:#000000; font-weight: normal;">
 
                                             <!--========OUTLOOK.COM href=""================-->
-                                            <span style="text-decoration: underline; color: #000000;"><a href="{!OutlookURL}" target="_blank" style="text-decoration: underline; color: #000000;">Outlook.com</a></span> | 
+                                            <span style="text-decoration: underline; color: #000000;">
+                                                <a href="{!OutlookURL}" target="_blank" style="text-decoration: underline; color: #000000;">Outlook.com</a>
+                                            </span> | 
                                             <span style="text-decoration: underline; color: #000000;">
                                                 <apex:outputLink value="" target="_blank" id="Outlookcom">Outlook.com</apex:outputLink>
                                             </span>
 
                                             <!--========OFFICE 365 href=""================-->
-                                            <span style="text-decoration: underline; color: #000000;"><a href="{!Office365URL}" target="_blank" style="text-decoration: underline; color: #000000;">Office 365</a></span> |
+                                            <span style="text-decoration: underline; color: #000000;">
+                                                <a href="{!Office365URL}" target="_blank" style="text-decoration: underline; color: #000000;">Office 365</a>
+                                            </span> |
 
                                             <!--========GOOGLE href=""================-->
-                                            <span style="text-decoration: underline; color: #000000;"><a href="{!GoogleURL}" target="_blank" style="text-decoration: underline; color: #000000;">Google</a></span> | 
+                                            <span style="text-decoration: underline; color: #000000;">
+                                                <a href="{!GoogleURL}" target="_blank" style="text-decoration: underline; color: #000000;">Google</a>
+                                            </span> | 
                                             <span style="text-decoration: underline; color: #000000;">
                                                 <apex:outputLink value="{!getGoogleCalendarLink()}" target="_blank" id="GoogleCalendar">Google</apex:outputLink>
                                             </span>
-"
 
                                             <!--========YAHOO href=""================-->
-                                            <span style="text-decoration: underline; color: #000000;"><a href="{!YahooURL}" target="_blank" style="text-decoration: underline; color: #000000;">Yahoo</a></span>
+                                            <span style="text-decoration: underline; color: #000000;">
+                                                <a href="{!YahooURL}" target="_blank" style="text-decoration: underline; color: #000000;">Yahoo</a>
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
