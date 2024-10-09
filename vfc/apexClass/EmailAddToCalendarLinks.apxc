@@ -1,0 +1,52 @@
+public with sharing class EmailAddToCalendarLinks {
+	@AuraEnabled
+    public String eventTitle { get; set; }
+    @AuraEnabled
+    public Datetime eventStartDateTime { get; set; }
+    @AuraEnabled
+    public Datetime eventEndDateTime { get; set; }
+    @AuraEnabled
+    public String eventLocation { get; set; }
+    @AuraEnabled
+    public String eventDescription { get; set; }
+
+    public String getGoogleCalendarLink() {
+        String base = 'https://www.google.com/calendar/render?action=TEMPLATE';
+        String title = '&text=' + EncodingUtil.urlEncode(eventTitle, 'UTF-8');
+        String start = '&dates=' + eventStartDateTime.formatGMT('yyyyMMddTHHmmssZ') + '/' + eventEndDateTime.formatGMT('yyyyMMddTHHmmssZ');
+        String loc = eventLocation != null ? '&location=' + EncodingUtil.urlEncode(eventLocation, 'UTF-8') : '';
+        String apptDesc = eventDescription != null ? '&details=' + EncodingUtil.urlEncode(eventDescription, 'UTF-8') : '';
+
+        return base + title + start + loc + apptDesc;
+    }
+
+    public String getOutlookComLink() {
+        String base = 'https://outlook.live.com/calendar/0/action/compose?allday=false';
+        String title = '&subject=' + EncodingUtil.urlEncode(eventTitle, 'UTF-8');
+        String start = '&startdt=' + eventStartDateTime.formatGMT('yyyy-MM-dd\'T\'HH:mm:ss') + '&enddt=' + eventEndDateTime.formatGMT('yyyy-MM-dd\'T\'HH:mm:ss');
+        String loc = eventLocation != null ? '&location=' + EncodingUtil.urlEncode(eventLocation, 'UTF-8') : '';
+        String apptDesc = eventDescription != null ? '&body=' + EncodingUtil.urlEncode(eventDescription, 'UTF-8') : '';
+
+        return base + title + start + loc + apptDesc;
+    }
+
+    public String getOutlook365Link() {
+        String base = 'https://outlook.office.com/calendar/0/deeplink/compose?allday=false';
+        String title = '&subject=' + EncodingUtil.urlEncode(eventTitle, 'UTF-8');
+        String start = '&startdt=' + eventStartDateTime.formatGMT('yyyy-MM-dd\'T\'HH:mm:ss') + '&enddt=' + eventEndDateTime.formatGMT('yyyy-MM-dd\'T\'HH:mm:ss');
+        String loc = eventLocation != null ? '&location=' + EncodingUtil.urlEncode(eventLocation, 'UTF-8') : '';
+        String apptDesc = eventDescription != null ? '&body=' + EncodingUtil.urlEncode(eventDescription, 'UTF-8') : '';
+
+        return base + title + start + loc + apptDesc;
+    }
+
+    public String getYahooLink() {
+        String base = 'https://calendar.yahoo.com/?v=60&view=d&type=20';
+        String title = '&title=' + EncodingUtil.urlEncode(eventTitle, 'UTF-8');
+        String start = '&st=' + eventStartDateTime.formatGMT('yyyyMMddTHHmmss') + '&et=' + eventEndDateTime.formatGMT('yyyyMMddTHHmmss');
+        String loc = eventLocation != null ? '&in_loc=' + EncodingUtil.urlEncode(eventLocation, 'UTF-8') : '';
+        String apptDesc = eventDescription != null ? '&desc=' + EncodingUtil.urlEncode(eventDescription, 'UTF-8') : '';
+
+        return base + title + start + loc + apptDesc;
+    }
+}
