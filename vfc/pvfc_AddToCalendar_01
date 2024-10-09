@@ -1,70 +1,74 @@
-<apex:component controller="HDMSQuoteDetailsEmailCtrl" access="global">
-  <apex:attribute name="paymentCalc" description="Payment caluculation" type="String" />
-  <apex:attribute name="paymentCTA" description="Payment call to action" type="String" />
-  <apex:attribute name="imageURL" description="Image URL" type="String" />
-  <apex:attribute name="imageALT" description="Image Alt tag" type="String" />
-  <apex:attribute name="buttonImg" description="Button image" type="String" />
-  <apex:attribute name="buttonURL" description="Button URL" type="String" />
-  <apex:attribute name="buttonCopy" description="Button text" type="String" />
+<apex:component controller="EmailAddToCalendarLinks" access="global">
   <apex:attribute name="Copy" description="text" type="String" />
+  <apex:attribute name="eventTitle" description="Title to be used on Calendar Event" type="String" />
+  <apex:attribute name="eventDescription" description="Text to be used in the body of the Calendar Event" type="String" />
+  <apex:attribute name="eventStartDateTime" description="Start Time of the Event" type="Datetime" />
+  <apex:attribute name="eventEndDateTime" description="End Time of the Event" type="Datetime" />
+  <apex:attribute name="eventLocation" description="Location of the Event" type="String" />
+  <apex:attribute name="eventTimeZone" description="Time Zone for the Event" type="String" /> <!-- TODO: Add to Controller Class -->
   <apex:attribute name="OutlookURL" description="Outlook URL" type="String" />
   <apex:attribute name="Office365URL" description="Office 365 URL" type="String" />
   <apex:attribute name="GoogleURL" description="Google URL" type="String" />
   <apex:attribute name="YahooURL" description="Yahoo URL" type="String" />
-  <apex:attribute name="hdmsGrandTotal" description="grand total" type="Double" assignTo="{!grandTotal}"/> 
 
   <!--================================== START REVIEW AND PAY BUTTON **PLEASE DO NOT TOUCH*** =================================================================-->
 
-                                        <tr>
-                                            <td align="center" valign="top">
-                                                <table class="mob_width94" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="Margin:0 auto; width:600px;">
-                                                    <tr>
-                                                        <td align="center" valign="top">
-                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 100%;" width="100%">
-                                                                <tr>
-                                                                    <td align="center" valign="top">
-                                                                        <table class="mob_width90p" border="0" align="center" cellpadding="0" cellspacing="0" style="Margin:0 auto; width: 90%;" width="90%">
-                                                                           <tr>
-                                                                               <td align="center" style="width: 100%;text-align:left;font-family:Arial, Helvetica, sans-serif;font-size: 18px; line-height: 22px; color:#000000; font-weight: normal;" width="100%">
-                                                                                {!Copy}
-                                                                               </td>
-                                                                          </tr>
-                                                                          <tr>
-                                                                            <td height="10" style="height: 10px; line-height: 100%; mso-line-height-rule: exactly; font-size: 10px;">&nbsp;
-                                                                            </td>
-                                                                          </tr>     
-                                                                          <tr>
-                                                                            <td align="center" style="Margin:0 auto;padding:0px 0px;text-align:left;text-align:left;font-family:Arial, Helvetica, sans-serif;font-size: 12px; line-height: 14px; color:#000000; font-weight: normal;">
+<tr>
+    <td align="center" valign="top">
+        <table class="mob_width94" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 600px;">
+            <tr>
+                <td align="center" valign="top">
 
-                                                                                <!--========OUTLOOK.COM href=""================-->
-                                                                                <span style="text-decoration: underline; color: #000000;"><a href="{!OutlookURL}" target="_blank" style="text-decoration: underline; color: #000000;">Outlook.com</a></span> |
+                </td>
+                <td align="center" valign="top">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 100%;" width="100%">
+                        <tr>
+                            <td align="center" valign="top">
+                                <table class="mob_width90p" border="0" align="center" cellpadding="0" cellspacing="0" style="Margin:0 auto; width: 90%;" width="90%">
+                                    <tr>
+                                        <td align="center" style="width: 100%; text-align:left;font-family: Arial, Helvetica, sans-serif;font-size: 18px; line-height: 22px; color: #000000; font-weight: normal;" width="100%">
+                                        {!Copy}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" style="height: 10px; line-height: 100%; mso-line-height-rule: exactly; font-size: 10px;">&nbsp;</td>
+                                    </tr>     
+                                    <tr>
+                                        <td align="center" style="Margin:0 auto;padding:0px 0px;text-align:left;text-align:left;font-family:Arial, Helvetica, sans-serif;font-size: 12px; line-height: 14px; color:#000000; font-weight: normal;">
 
-                                                                                <!--========OFFICE 365 href=""================-->
-                                                                                <span style="text-decoration: underline; color: #000000;"><a href="{!Office365URL}" target="_blank" style="text-decoration: underline; color: #000000;">Office 365</a></span> |
+                                            <!--========OUTLOOK.COM href=""================-->
+                                            <span style="text-decoration: underline; color: #000000;"><a href="{!OutlookURL}" target="_blank" style="text-decoration: underline; color: #000000;">Outlook.com</a></span> | 
+                                            <span style="text-decoration: underline; color: #000000;">
+                                                <apex:outputLink value="" target="_blank" id="Outlookcom">Outlook.com</apex:outputLink>
+                                            </span>
 
-                                                                                <!--========GOOGLE href=""================-->
-                                                                                <span style="text-decoration: underline; color: #000000;"><a href="{!GoogleURL}" target="_blank" style="text-decoration: underline; color: #000000;">Google</a></span> |
+                                            <!--========OFFICE 365 href=""================-->
+                                            <span style="text-decoration: underline; color: #000000;"><a href="{!Office365URL}" target="_blank" style="text-decoration: underline; color: #000000;">Office 365</a></span> |
 
-                                                                                <!--========YAHOO href=""================-->
-                                                                                <span style="text-decoration: underline; color: #000000;"><a href="{!YahooURL}" target="_blank" style="text-decoration: underline; color: #000000;">Yahoo</a></span>
-                                                                            </td>
-                                                                          </tr>
-                                                                          <tr>
-                                                                            <td height="4" style="height: 4px; line-height: 100%; mso-line-height-rule: exactly; font-size: 4px;">&nbsp;
-                                                                            </td>
-                                                                          </tr>                                                        
-                                                                          <tr>                                                              
-                                                                          </tr>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr><td height="40" style="height: 40px; mso-line-height-rule: exactly; line-height: 100%; font-size: 40px;"></td></tr>
+                                            <!--========GOOGLE href=""================-->
+                                            <span style="text-decoration: underline; color: #000000;"><a href="{!GoogleURL}" target="_blank" style="text-decoration: underline; color: #000000;">Google</a></span> | 
+                                            <span style="text-decoration: underline; color: #000000;">
+                                                <apex:outputLink value="{!getGoogleCalendarLink()}" target="_blank" id="GoogleCalendar">Google</apex:outputLink>
+                                            </span>
+"
+
+                                            <!--========YAHOO href=""================-->
+                                            <span style="text-decoration: underline; color: #000000;"><a href="{!YahooURL}" target="_blank" style="text-decoration: underline; color: #000000;">Yahoo</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="4" style="height: 4px; line-height: 100%; mso-line-height-rule: exactly; font-size: 4px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr><td height="40" style="height: 40px; mso-line-height-rule: exactly; line-height: 100%; font-size: 40px;"></td></tr>
 
 <!--================================== END REVIEW AND PAY BUTTON **PLEASE DO NOT TOUCH** =================================================================-->
 
