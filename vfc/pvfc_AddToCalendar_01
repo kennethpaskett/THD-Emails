@@ -1,15 +1,16 @@
 <apex:component controller="EmailAddToCalendarLinks" access="global">
   <apex:attribute name="Copy" description="text" type="String" />
-  <apex:attribute name="eventTitle" description="Title to be used on Calendar Event" type="String" />
-  <apex:attribute name="eventDescription" description="Text to be used in the body of the Calendar Event" type="String" />
-  <apex:attribute name="eventStartDateTime" description="Start Time of the Event" type="Datetime" />
-  <apex:attribute name="eventEndDateTime" description="End Time of the Event" type="Datetime" />
-  <apex:attribute name="eventLocation" description="Location of the Event" type="String" />
+  <apex:attribute name="eventTitle" description="Title to be used on Calendar Event" type="String" assignTo="{!evtTitle}"/>
+  <apex:attribute name="eventDescription" description="Text to be used in the body of the Calendar Event" type="String" assignTo="{!evtDescription}"/>
+  <apex:attribute name="eventStartDateTime" description="Start Time of the Event" type="Datetime" assignTo="{!evtStartDateTime}"/>
+  <apex:attribute name="eventEndDateTime" description="End Time of the Event" type="Datetime" assignTo="{!evtEndDateTime}"/>
+  <apex:attribute name="eventLocation" description="Location of the Event" type="String" assignTo="{!evtLocation}"/>
   <apex:attribute name="eventTimeZone" description="Time Zone for the Event" type="String" /> <!-- TODO: Add to Controller Class -->
   <apex:attribute name="OutlookURL" description="Outlook URL" type="String" />
   <apex:attribute name="Office365URL" description="Office 365 URL" type="String" />
   <apex:attribute name="GoogleURL" description="Google URL" type="String" />
   <apex:attribute name="YahooURL" description="Yahoo URL" type="String" />
+  <apex:attribute name="finalBaseURL" description="finalBaseURL" type="String" default="www.google.com"/>
 
   <!--================================== START REVIEW AND PAY BUTTON **PLEASE DO NOT TOUCH*** =================================================================-->
 
@@ -52,9 +53,12 @@
                                             <!--========GOOGLE href=""================-->
                                             <span style="text-decoration: underline; color: #000000;">
                                                 <a href="{!GoogleURL}" target="_blank" style="text-decoration: underline; color: #000000;">Google</a>
+                                            </span> |
+                                            <span>
+                                                URL IS : {!finalBaseURL}
                                             </span> | 
-                                            <span style="text-decoration: underline; color: #000000;">
-                                                <apex:outputLink value="{!getGoogleCalendarLink()}" target="_blank" id="GoogleCalendar">Google</apex:outputLink>
+                                            <span style="text-decoration: underline; color: #000000;">                                            
+                                               <a href="{!finalBaseURL}" target="_blank" id="GoogleCalendar">Google</a>
                                             </span>
 
                                             <!--========YAHOO href=""================-->

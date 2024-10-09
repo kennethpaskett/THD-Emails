@@ -78,7 +78,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
                         <!--===============HEADER SECTION===================-->
                         <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
-                        <c:pvfc_Header_13 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="There is a new service provider pairing" imgPathFull="{!$Label.CX_Library_ServiceTitan_HeroD}" imgPathMobile="{!$Label.CX_Library_ServiceTitan_HeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}"></c:pvfc_Header_13>
+                        <c:pvfc_Header_13 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="There is a new service provider pairing" imgPathFull="https://placehold.co/600x300" imgPathMobile="{!$Label.CX_Library_ServiceTitan_HeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}"></c:pvfc_Header_13>
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
@@ -86,8 +86,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================--> 
                           
                         <!--===============ADD TO CALENDAR===================--> 
-                            <c:pvfc_AddToCalendar_01
-                                Copy="Save the date to your calendar by choosing your email client below!" 
+                            <c:pvfc_AddToCalendar_01 Copy="Save the date to your calendar by choosing your email client below!" 
                                 eventTitle="Test Appointment"
                                 eventDescription="This is the description of the test event."
                                 eventStartDateTime="{!relatedTo.RefDateTime__c}"
