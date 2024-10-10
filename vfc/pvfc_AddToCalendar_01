@@ -54,12 +54,9 @@
                                             <span style="text-decoration: underline; color: #000000;">
                                                 <a href="{!GoogleURL}" target="_blank" style="text-decoration: underline; color: #000000;">Google</a>
                                             </span> |
-                                            <span>
-                                                URL IS : {!finalBaseURL}
-                                            </span> | 
                                             <span style="text-decoration: underline; color: #000000;">                                            
-                                               <a href="{!finalBaseURL}" target="_blank" id="GoogleCalendar">Google</a>
-                                            </span>
+                                               <a href="{!finalBaseURL}" target="_blank" id="GoogleCalendar">{!finalBaseURL}</a>
+                                            </span> | 
 
                                             <!--========YAHOO href=""================-->
                                             <span style="text-decoration: underline; color: #000000;">
@@ -69,6 +66,16 @@
                                     </tr>
                                     <tr>
                                         <td height="4" style="height: 4px; line-height: 100%; mso-line-height-rule: exactly; font-size: 4px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span style="font-weight: 700;">eventTitle:</span> {!eventTitle} <br/>
+                                            <span style="font-weight: 700;">eventDescription:</span> {!eventDescription} <br/>
+                                            <span style="font-weight: 700;">eventStartDateTime:</span> {!eventStartDateTime} <br/>
+                                            <span style="font-weight: 700;">eventEndDateTime:</span> {!eventEndDateTime} <br/>
+                                            <span style="font-weight: 700;">eventLocation:</span> {!eventLocation} <br/>
+                                            <span style="font-weight: 700;">eventTimeZone:</span> {!eventTimeZone} <br/>
+                                        </td>
                                     </tr>
                                 </table>
                             </td>

@@ -10,7 +10,8 @@ public with sharing class EmailAddToCalendarLinks {
     @AuraEnabled
     public String evtDescription { get; set; }
     @AuraEnabled
-    public String finalBaseURL {get;set;}
+    public String finalBaseURL { get; set; }
+
     public EmailAddToCalendarLinks(){
         this.finalBaseURL = 'www.yahoo.com';
         this.evtTitle = evtTitle ?? 'Test TItle';
@@ -26,7 +27,7 @@ public with sharing class EmailAddToCalendarLinks {
         String start = '&dates=' + evtStartDateTime.formatGMT('yyyyMMdd') + '/' + evtEndDateTime.formatGMT('yyyyMMdd');
         String loc = evtLocation != null ? '&location=' + EncodingUtil.urlEncode(evtLocation, 'UTF-8') : '';
         String apptDesc = evtDescription != null ? '&details=' + EncodingUtil.urlEncode(evtDescription, 'UTF-8') : '';		
-        finalBaseURL = base + title + start + loc + apptDesc;
+        // finalBaseURL = base + title + start + loc + apptDesc;
         // System.debug(finalBaseURL);
     }
 
