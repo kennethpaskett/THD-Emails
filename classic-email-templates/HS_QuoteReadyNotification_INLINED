@@ -64,7 +64,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
 
                         <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_07 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCTQ_HDLogo}" titleCopy="Great news - your project quote is ready!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryKitchenIslandD}" imgPathMobile="{!$Label.CX_LibraryKitchenIslandM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_07>
+                        <c:pvfc_Header_07 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_emailImages, 'images/logos/HDLogo.png')}" titleCopy="Great news - your project quote is ready!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_emailImages, 'images/heros/kitchenIslandD.png')}" imgPathMobile="{!URLFOR($Resource.CX_emailImages, 'images/heros/kitchenIslandM.png')}" imgPathDivider="{!URLFOR($Resource.CX_emailImages, 'images/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_emailImages, 'images/icons/CTQPhone.png')}" ></c:pvfc_Header_07>
                         <!--===============HEADER SECTION===================-->
                           
                         <!--===============GREETING SECTION===================-->  
@@ -72,18 +72,18 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================--> 
                           
                         <!--===============CALL NOW SECTION===================--> 
-                        <c:pvfc_ReceiveQuote_03 iconCallNowBanner="{!$Label.CX_LibraryCallNowBannerD}" phoneNumber="{!relatedTo.RefPhone__c}" ></c:pvfc_ReceiveQuote_03>
+                        <c:pvfc_ReceiveQuote_03 iconCallNowBanner="{!URLFOR($Resource.CX_emailImages, 'images/buttons/CallNowBannerD.png')}" phoneNumber="{!relatedTo.RefPhone__c}" ></c:pvfc_ReceiveQuote_03>
                         <!--===============CALL NOW SECTION===================--> 
                         
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         <apex:outputText rendered="{!relatedTo.Street__c != ''}">
-                        <c:pvfc_ServiceDetails_08 imgCallNowHero="{!$Label.CX_LibraryCallNowHeroD}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" custAddress="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.PhoneNumber__c}" custemail="{!relatedTo.ToEmail__c}"  custJobNumber="{!relatedTo.DocumentNo__c}"></c:pvfc_ServiceDetails_08>
+                        <c:pvfc_ServiceDetails_08 imgCallNowHero="{!URLFOR($Resource.CX_emailImages, 'images/heros/CallNowHeroD.png')}" YourInformationDivider="{!URLFOR($Resource.CX_emailImages, 'images/divider/YourInformationDivider')}" YourInformationDividerM="{!URLFOR($Resource.CX_emailImages, 'images/divider/YourInformationDividerM')}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" custAddress="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.PhoneNumber__c}" custemail="{!relatedTo.ToEmail__c}"  custJobNumber="{!relatedTo.DocumentNo__c}"></c:pvfc_ServiceDetails_08>
                         </apex:outputText>
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         <apex:outputText rendered="{!relatedTo.Street__c == ''}">
-                        <c:pvfc_ServiceDetails_08 imgCallNowHero="{!$Label.CX_LibraryCallNowHeroD}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" custPhone="{!relatedTo.PhoneNumber__c}" custemail="{!relatedTo.ToEmail__c}"  custJobNumber="{!relatedTo.DocumentNo__c}"></c:pvfc_ServiceDetails_08>
+                        <c:pvfc_ServiceDetails_08 imgCallNowHero="{!URLFOR($Resource.CX_emailImages, 'images/heros/CallNowHeroD.png')}" YourInformationDivider="{!URLFOR($Resource.CX_emailImages, 'images/divider/YourInformationDivider')}" YourInformationDividerM="{!URLFOR($Resource.CX_emailImages, 'images/divider/YourInformationDividerM')}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" custPhone="{!relatedTo.PhoneNumber__c}" custemail="{!relatedTo.ToEmail__c}"  custJobNumber="{!relatedTo.DocumentNo__c}"></c:pvfc_ServiceDetails_08>
                         </apex:outputText>
                         <!--===============SERVICE AND CUSTOMER SECTION===================-->
 
