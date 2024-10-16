@@ -2,62 +2,142 @@ public with sharing class EmailAddToCalendarLinks {
     @AuraEnabled
     public String evtTitle { get; set; }
     @AuraEnabled
-    public Datetime evtStartDateTime { get; set; }
+    public Date evtDate { get; set; }
     @AuraEnabled
-    public Datetime evtEndDateTime { get; set; }
+    public Time evtStartTime { get; set; }
+    @AuraEnabled
+    public Time evtEndTime { get; set; }
+    @AuraEnabled
+    public String evtTimeZone { get; set; }
     @AuraEnabled
     public String evtLocation { get; set; }
     @AuraEnabled
     public String evtDescription { get; set; }
-    @AuraEnabled
-    public String finalBaseURL { get; set; }
 
-    public EmailAddToCalendarLinks(){
-        this.finalBaseURL = 'www.yahoo.com';
-        this.evtTitle = evtTitle ?? 'Test TItle';
-        this.evtDescription = evtDescription ?? 'Test Description';
-        this.evtStartDateTime = evtStartDateTime ?? System.now();
-        this.evtEndDateTime = evtEndDateTime ?? System.now() + 1;
-        this.evtLocation = evtLocation ?? 'Test Location'; 
-        getGoogleCalendarLink();
+    public String googleCalendarLink;
+    public String outlookComCalendarLink;
+    public String office365CalendarLink;
+    public String yahooCalendarLink;
+
+    public String getTimeZone(String evtTimeZone) {
+        String evtTimeZoneText;
+        
+        if(evtTimeZone != ''){
+            if (evtTimeZone == 'EST'){
+                evtTimeZoneText = 'America/New_York';
+            }
+            else if(evtTimeZone == 'CST'){
+                evtTimeZoneText = 'America/Chicago';
+            }
+            else if(evtTimeZone == 'MST'){
+                evtTimeZoneText = 'America/Denver';
+            }
+            else if(evtTimeZone == 'MDT'){
+                evtTimeZoneText = 'America/Phoenix';
+            }
+            else if(evtTimeZone == 'PST'){
+                evtTimeZoneText = 'America/Los_Angeles';
+            }
+            else if(evtTimeZone == 'Pacific/Honolulu'){
+                evtTimeZoneText = 'Pacific/Honolulu';
+            }
+            else if(evtTimeZone == 'AKST'){
+                evtTimeZoneText = 'America/Anchorage';
+            }
+            else if(evtTimeZone == 'AST'){
+                evtTimeZoneText = 'America/Puerto_Rico';
+            }
+        }
+        return evtTimeZoneText;
     }
-    public void getGoogleCalendarLink() {
+
+    public String getGoogleCalendarLink() {
         String base = 'https://www.google.com/calendar/render?action=TEMPLATE';
         String title = '&text=' + EncodingUtil.urlEncode(evtTitle, 'UTF-8');
-        String start = '&dates=' + evtStartDateTime.formatGMT('yyyyMMdd') + '/' + evtEndDateTime.formatGMT('yyyyMMdd');
+        
+        // Combine Date and Time into DateTime objects
+        DateTime startDateTime = DateTime.newInstance(evtDate, evtStartTime);
+        DateTime endDateTime = DateTime.newInstance(evtDate, evtEndTime);
+        
+        // Format the DateTime for Google Calendar's required format
+        String formattedStartDateTime = startDateTime.format('yyyyMMdd\'T\'HHmmss');
+        String formattedEndDateTime = endDateTime.format('yyyyMMdd\'T\'HHmmss');
+        
+        // Create the dates section for Google Calendar link
+        String evtDateTime = '&dates=' + formattedStartDateTime + '/' + formattedEndDateTime;
+        
+        // Grab correct Time Zone if available
+        String timeZone = evtTimeZone != null ? '&ctz=' + getTimeZone(evtTimeZone) : '';
+        
+        // Optional fields: location and description
         String loc = evtLocation != null ? '&location=' + EncodingUtil.urlEncode(evtLocation, 'UTF-8') : '';
-        String apptDesc = evtDescription != null ? '&details=' + EncodingUtil.urlEncode(evtDescription, 'UTF-8') : '';		
-        // finalBaseURL = base + title + start + loc + apptDesc;
-        // System.debug(finalBaseURL);
+        String apptDesc = evtDescription != null ? '&details=' + EncodingUtil.urlEncode(evtDescription, 'UTF-8') : '';
+        
+        // Final Google Calendar Link
+        googleCalendarLink = base + title + evtDateTime + timeZone + loc + apptDesc;
+        return googleCalendarLink;
     }
+    
 
-    public String getOutlookComLink() {
-        String base = 'https://outlook.live.com/calendar/0/action/compose?allday=false';
+    public String getOutlookComCalendarLink() {
+        String base = 'https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&allday=false';
         String title = '&subject=' + EncodingUtil.urlEncode(evtTitle, 'UTF-8');
-        String start = '&startdt=' + evtStartDateTime.formatGMT('yyyy-MM-dd\'T\'HH:mm:ss') + '&enddt=' + evtEndDateTime.formatGMT('yyyy-MM-dd\'T\'HH:mm:ss');
+
+        // Combine Date and Time into DateTime objects
+        DateTime startDateTime = DateTime.newInstance(evtDate, evtStartTime);
+        DateTime endDateTime = DateTime.newInstance(evtDate, evtEndTime);
+        
+        // Format the DateTime for Outlook.com Calendar's required format
+        String formattedStartDateTime = startDateTime.format('yyyy-MM-dd\'T\'HH:mm:ss');
+        String formattedEndDateTime = endDateTime.format('yyyy-MM-dd\'T\'HH:mm:ss');
+
+        String evtDateTime = '&startdt=' + formattedStartDateTime + '&enddt=' + formattedEndDateTime;
         String loc = evtLocation != null ? '&location=' + EncodingUtil.urlEncode(evtLocation, 'UTF-8') : '';
         String apptDesc = evtDescription != null ? '&body=' + EncodingUtil.urlEncode(evtDescription, 'UTF-8') : '';
 
-        return base + title + start + loc + apptDesc;
+        outlookComCalendarLink = base + title + evtDateTime + loc + apptDesc;
+        return outlookComCalendarLink;
     }
 
-    public String getOutlook365Link() {
-        String base = 'https://outlook.office.com/calendar/0/deeplink/compose?allday=false';
+    public String getOffice365CalendarLink() {
+        String base = 'https://outlook.office.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&allday=false';
         String title = '&subject=' + EncodingUtil.urlEncode(evtTitle, 'UTF-8');
-        String start = '&startdt=' + evtStartDateTime.formatGMT('yyyy-MM-dd\'T\'HH:mm:ss') + '&enddt=' + evtEndDateTime.formatGMT('yyyy-MM-dd\'T\'HH:mm:ss');
+
+        // Combine Date and Time into DateTime objects
+        DateTime startDateTime = DateTime.newInstance(evtDate, evtStartTime);
+        DateTime endDateTime = DateTime.newInstance(evtDate, evtEndTime);
+        
+        // Format the DateTime for Office 365 Calendar's required format
+        String formattedStartDateTime = startDateTime.format('yyyy-MM-dd\'T\'HH:mm:ss');
+        String formattedEndDateTime = endDateTime.format('yyyy-MM-dd\'T\'HH:mm:ss');
+
+        String evtDateTime = '&startdt=' + formattedStartDateTime + '&enddt=' + formattedEndDateTime;
+
         String loc = evtLocation != null ? '&location=' + EncodingUtil.urlEncode(evtLocation, 'UTF-8') : '';
         String apptDesc = evtDescription != null ? '&body=' + EncodingUtil.urlEncode(evtDescription, 'UTF-8') : '';
 
-        return base + title + start + loc + apptDesc;
+        office365CalendarLink = base + title + evtDateTime + loc + apptDesc;
+        return office365CalendarLink;
     }
 
-    public String getYahooLink() {
+    public String getYahooCalendarLink() {
         String base = 'https://calendar.yahoo.com/?v=60&view=d&type=20';
         String title = '&title=' + EncodingUtil.urlEncode(evtTitle, 'UTF-8');
-        String start = '&st=' + evtStartDateTime.formatGMT('yyyyMMddTHHmmss') + '&et=' + evtEndDateTime.formatGMT('yyyyMMddTHHmmss');
+
+        // Combine Date and Time into DateTime objects
+        DateTime startDateTime = DateTime.newInstance(evtDate, evtStartTime);
+        DateTime endDateTime = DateTime.newInstance(evtDate, evtEndTime);
+        
+        // Format the DateTime for Yahoo Calendar's required format
+        String formattedStartDateTime = startDateTime.format('yyyyMMdd\'T\'HHmmss');
+        String formattedEndDateTime = endDateTime.format('yyyyMMdd\'T\'HHmmss');
+
+        String evtDateTime = '&st=' + formattedStartDateTime + '&et=' + formattedEndDateTime;
+
         String loc = evtLocation != null ? '&in_loc=' + EncodingUtil.urlEncode(evtLocation, 'UTF-8') : '';
         String apptDesc = evtDescription != null ? '&desc=' + EncodingUtil.urlEncode(evtDescription, 'UTF-8') : '';
 
-        return base + title + start + loc + apptDesc;
+        yahooCalendarLink = base + title + evtDateTime + loc + apptDesc;
+        return yahooCalendarLink;
     }
 }

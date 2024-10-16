@@ -89,14 +89,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                             <c:pvfc_AddToCalendar_01 Copy="Save the date to your calendar by choosing your email client below!" 
                                 eventTitle="Test Appointment"
                                 eventDescription="This is the description of the test event."
-                                eventStartDateTime="{!relatedTo.RefDateTime__c}"
-                                eventEndDateTime="{!relatedTo.AltDateTime__c}"
-                                eventLocation="{!relatedTo.RefURL__c}"
+                                eventDate="{!relatedTo.RefDate__c}"
+                                eventStartTime="{!relatedTo.RefTime__c}"
+                                eventEndTime="{!relatedTo.AltTime__c}"
                                 eventTimeZone="{!relatedTo.TimeZone__c}"
-                                OutlookURL="https://outlook.live.com/calendar/0/deeplink/compose?allday=false&body=This%20is%20only%20a%20test%20for%20implementing%20the%20Add%20To%20Calendar%20email%20enhancement&enddt=2023-05-16T20%3A15%3A00%2B00%3A00&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2023-05-16T18%3A15%3A00%2B00%3A00&subject=Add%20To%20Calendar%20Test"
-                                Office365URL="https://outlook.office.com/calendar/0/deeplink/compose?allday=false&body=This%20is%20only%20a%20test%20for%20implementing%20the%20Add%20To%20Calendar%20email%20enhancement&enddt=2023-05-16T20%3A15%3A00%2B00%3A00&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2023-05-16T18%3A15%3A00%2B00%3A00&subject=Add%20To%20Calendar%20Test"
-                                GoogleURL="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230516T181500Z%2F20230516T201500Z&details=This%20is%20only%20a%20test%20for%20implementing%20the%20Add%20To%20Calendar%20email%20enhancement&text=Add%20To%20Calendar%20Test"
-                                YahooURL="https://calendar.yahoo.com/?desc=This%20is%20only%20a%20test%20for%20implementing%20the%20Add%20To%20Calendar%20email%20enhancement&dur=&et=20230516T201500Z&st=20230516T181500Z&title=Add%20To%20Calendar%20Test&v=60">
+                                eventLocation="{!relatedTo.RefURL__c}, {!relatedTo.StoreStreet__c}, {!relatedTo.StoreCity__c}, {!relatedTo.StoreState__c} {!relatedTo.StoreZipcode__c}">
                             </c:pvfc_AddToCalendar_01>
                         <!--===============ADD TO CALENDAR===================-->  
 

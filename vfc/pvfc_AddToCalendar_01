@@ -2,15 +2,12 @@
   <apex:attribute name="Copy" description="text" type="String" />
   <apex:attribute name="eventTitle" description="Title to be used on Calendar Event" type="String" assignTo="{!evtTitle}"/>
   <apex:attribute name="eventDescription" description="Text to be used in the body of the Calendar Event" type="String" assignTo="{!evtDescription}"/>
-  <apex:attribute name="eventStartDateTime" description="Start Time of the Event" type="Datetime" assignTo="{!evtStartDateTime}"/>
-  <apex:attribute name="eventEndDateTime" description="End Time of the Event" type="Datetime" assignTo="{!evtEndDateTime}"/>
+  <apex:attribute name="eventDate" description="Date of the Event" type="Date" assignTo="{!evtDate}"/>
+  <apex:attribute name="eventStartTime" description="Start Time of the Event" type="Time" assignTo="{!evtStartTime}"/>
+  <apex:attribute name="eventEndTime" description="End Time of the Event" type="Time" assignTo="{!evtEndTime}"/>
+  <apex:attribute name="eventTimeZone" description="Time Zone of the Event" type="String" assignTo="{!evtTimeZone}"/>
   <apex:attribute name="eventLocation" description="Location of the Event" type="String" assignTo="{!evtLocation}"/>
-  <apex:attribute name="eventTimeZone" description="Time Zone for the Event" type="String" /> <!-- TODO: Add to Controller Class -->
-  <apex:attribute name="OutlookURL" description="Outlook URL" type="String" />
-  <apex:attribute name="Office365URL" description="Office 365 URL" type="String" />
-  <apex:attribute name="GoogleURL" description="Google URL" type="String" />
-  <apex:attribute name="YahooURL" description="Yahoo URL" type="String" />
-  <apex:attribute name="finalBaseURL" description="finalBaseURL" type="String" default="www.google.com"/>
+
 
   <!--================================== START REVIEW AND PAY BUTTON **PLEASE DO NOT TOUCH*** =================================================================-->
 
@@ -37,30 +34,24 @@
                                     <tr>
                                         <td align="center" style="Margin:0 auto;padding:0px 0px;text-align:left;text-align:left;font-family:Arial, Helvetica, sans-serif;font-size: 12px; line-height: 14px; color:#000000; font-weight: normal;">
 
-                                            <!--========OUTLOOK.COM href=""================-->
+                                            <!--======== OUTLOOK.COM ========-->
                                             <span style="text-decoration: underline; color: #000000;">
-                                                <a href="{!OutlookURL}" target="_blank" style="text-decoration: underline; color: #000000;">Outlook.com</a>
+                                                <a href="{!outlookComCalendarLink}" target="_blank" id="Outlookcom" style="text-decoration: underline; color: #000000;">Outlook.com</a>
                                             </span> | 
-                                            <span style="text-decoration: underline; color: #000000;">
-                                                <apex:outputLink value="" target="_blank" id="Outlookcom">Outlook.com</apex:outputLink>
-                                            </span>
 
-                                            <!--========OFFICE 365 href=""================-->
+                                            <!--======== OFFICE 365 ========-->
                                             <span style="text-decoration: underline; color: #000000;">
-                                                <a href="{!Office365URL}" target="_blank" style="text-decoration: underline; color: #000000;">Office 365</a>
+                                                <a href="{!office365CalendarLink}" target="_blank" id="Office365Calendar" style="text-decoration: underline; color: #000000;">Office 365</a>
                                             </span> |
 
-                                            <!--========GOOGLE href=""================-->
-                                            <span style="text-decoration: underline; color: #000000;">
-                                                <a href="{!GoogleURL}" target="_blank" style="text-decoration: underline; color: #000000;">Google</a>
-                                            </span> |
+                                            <!--======== GOOGLE ========-->
                                             <span style="text-decoration: underline; color: #000000;">                                            
-                                               <a href="{!finalBaseURL}" target="_blank" id="GoogleCalendar">{!finalBaseURL}</a>
+                                               <a href="{!googleCalendarLink}" target="_blank" id="GoogleCalendar" style="text-decoration: underline; color: #000000;">Google</a>
                                             </span> | 
 
-                                            <!--========YAHOO href=""================-->
+                                            <!--======== YAHOO ========-->
                                             <span style="text-decoration: underline; color: #000000;">
-                                                <a href="{!YahooURL}" target="_blank" style="text-decoration: underline; color: #000000;">Yahoo</a>
+                                                <a href="{!yahooCalendarLink}" target="_blank" id="YahooCalendar" style="text-decoration: underline; color: #000000;">Yahoo</a>
                                             </span>
                                         </td>
                                     </tr>
@@ -71,8 +62,9 @@
                                         <td>
                                             <span style="font-weight: 700;">eventTitle:</span> {!eventTitle} <br/>
                                             <span style="font-weight: 700;">eventDescription:</span> {!eventDescription} <br/>
-                                            <span style="font-weight: 700;">eventStartDateTime:</span> {!eventStartDateTime} <br/>
-                                            <span style="font-weight: 700;">eventEndDateTime:</span> {!eventEndDateTime} <br/>
+                                            <span style="font-weight: 700;">eventDate:</span> {!eventDate} <br/>
+                                            <span style="font-weight: 700;">eventStartDateTime:</span> {!eventStartTime} <br/>
+                                            <span style="font-weight: 700;">eventEndDateTime:</span> {!eventEndTime} <br/>
                                             <span style="font-weight: 700;">eventLocation:</span> {!eventLocation} <br/>
                                             <span style="font-weight: 700;">eventTimeZone:</span> {!eventTimeZone} <br/>
                                         </td>
