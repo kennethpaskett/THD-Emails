@@ -1,0 +1,106 @@
+public class AppointmentTimeController {
+    public Date apptDate {get; set;}
+    public Time apptStartTime {get; set;}
+    public Time apptEndTime {get; set;}
+    public DateTime apptStart {get; set;}
+    public DateTime apptEnd {get; set;}
+    public DateTime dateTime1 {get; set;}
+    public DateTime dateTime2 {get; set;}
+    public DateTime dateTime3 {get; set;}
+    public DateTime dateTime4 {get; set;}
+    public String timeZone {get; set;}
+    public DateTime apptStartDateTime;
+    public DateTime apptEndDateTime;
+    public String apptStartTimeString;
+    public String apptEndTimeString;
+    public String apptStartDateTimeString;
+    public String apptEndDateTimeString;
+    public String timeZoneApptTimeString;
+    List<appointmentString> apptStringList = new List<appointmentString>();
+
+    
+    
+    public String getApptStartTimeString(){
+        apptStartDateTime = DateTime.newInstance(apptDate, apptStartTime);
+        apptStartTimeString = apptStartDateTime.format('h:mm a','America/New_York');
+        return apptStartTimeString;
+   }
+    
+    public String getApptEndTimeString(){
+        apptEndDateTime = DateTime.newInstance(apptDate, apptEndTime);
+        apptEndTimeString = apptEndDateTime.format('h:mm a','America/New_York');
+        return apptEndTimeString;
+    }
+   
+    public String getApptStartDateTimeString(){
+        apptStartDateTimeString = apptStart.format('h:mm a','America/New_York');
+        return apptStartDateTimeString;
+    }
+    
+    public String getApptEndDateTimeString(){
+        apptEndDateTimeString = apptEnd.format('h:mm a','America/New_York');
+        return apptEndDateTimeString;
+    }
+    
+    public String getTimeZoneApptTimeString(){
+        timeZoneApptTimeString = getApptDateTimeString(apptStart, timeZone);
+        return timeZoneApptTimeString;
+    }
+
+    public List<appointmentString> getapptStringList(){
+        List<DateTime> dateTimeList = new List<DateTime>();
+        if(dateTime1 != null){
+            dateTimeList.add(dateTime1);
+        }
+        if(dateTime2 != null){
+            dateTimeList.add(dateTime2);
+        }
+        if(dateTime3 != null){
+            dateTimeList.add(dateTime3);
+        }
+        if(dateTime4 != null){
+            dateTimeList.add(dateTime4);
+        }
+
+        for(dateTime dt : dateTimeList){
+            appointmentString apptString= new appointmentString();
+            apptString.appointmentDateTimeString = getApptDateTimeString(dt, timeZone);
+            apptStringList.add(apptString);
+        }
+
+        return apptStringList;
+    }
+
+    public String getApptDateTimeString(DateTime apptDateTime, String timeZoneString){
+        String apptDateTimeString;
+        apptDateTimeString = apptDateTime.format('MMM dd, yyyy — h:mm a','America/New_York');
+        if(timeZoneString != ''){
+            if(timeZoneString == 'CST'){
+                apptDateTimeString = apptDateTime.format('MMM dd, yyyy — h:mm a','America/Chicago');
+            }
+            else if(timeZoneString == 'MST'){
+                apptDateTimeString = apptDateTime.format('MMM dd, yyyy — h:mm a','America/Denver');
+            }
+            else if(timeZoneString == 'MDT'){
+                apptDateTimeString = apptDateTime.format('MMM dd, yyyy — h:mm a','America/Phoenix');
+            }
+            else if(timeZoneString == 'PST'){
+                apptDateTimeString = apptDateTime.format('MMM dd, yyyy —  h:mm a','America/Los_Angeles');
+            }
+            else if(timeZoneString == 'Pacific/Honolulu'){
+                apptDateTimeString = apptDateTime.format('MMM dd, yyyy — h:mm a','Pacific/Honolulu');
+            }
+            else if(timeZoneString == 'AKST'){
+                apptDateTimeString = apptDateTime.format('MMM dd, yyyy — h:mm a','America/Anchorage');
+            }
+            else if(timeZoneString == 'AST'){
+                apptDateTimeString = apptDateTime.format('MMM dd, yyyy — h:mm a','America/Puerto_Rico');
+            }
+        }
+        return apptDateTimeString;
+    }
+
+    public class appointmentString{
+        public String appointmentDateTimeString {get; set;}
+    }
+}
