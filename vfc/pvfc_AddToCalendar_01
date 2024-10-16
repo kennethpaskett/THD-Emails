@@ -1,22 +1,19 @@
 <apex:component controller="EmailAddToCalendarLinks" access="global">
-  <apex:attribute name="Copy" description="text" type="String" />
-  <apex:attribute name="eventTitle" description="Title to be used on Calendar Event" type="String" assignTo="{!evtTitle}"/>
-  <apex:attribute name="eventDescription" description="Text to be used in the body of the Calendar Event" type="String" assignTo="{!evtDescription}"/>
-  <apex:attribute name="eventDate" description="Date of the Event" type="Date" assignTo="{!evtDate}"/>
-  <apex:attribute name="eventStartTime" description="Start Time of the Event" type="Time" assignTo="{!evtStartTime}"/>
-  <apex:attribute name="eventEndTime" description="End Time of the Event" type="Time" assignTo="{!evtEndTime}"/>
-  <apex:attribute name="eventTimeZone" description="Time Zone of the Event" type="String" assignTo="{!evtTimeZone}"/>
-  <apex:attribute name="eventLocation" description="Location of the Event" type="String" assignTo="{!evtLocation}"/>
-
-
-  <!--================================== START REVIEW AND PAY BUTTON **PLEASE DO NOT TOUCH*** =================================================================-->
+    <apex:attribute name="Copy" description="text" type="String" />
+    <apex:attribute name="eventTitle" description="Title to be used on Calendar Event" type="String" required="true" assignTo="{!evtTitle}"/>
+    <apex:attribute name="eventDescription" description="Text to be used in the body of the Calendar Event" type="String" assignTo="{!evtDescription}"/>
+    <apex:attribute name="eventDate" description="Date of the Event" type="Date" required="true" assignTo="{!evtDate}"/>
+    <apex:attribute name="eventStartTime" description="Start Time of the Event" type="Time" required="true" assignTo="{!evtStartTime}"/>
+    <apex:attribute name="eventEndTime" description="End Time of the Event" type="Time" required="true" assignTo="{!evtEndTime}"/>
+    <apex:attribute name="eventTimeZone" description="Time Zone of the Event" type="String" assignTo="{!evtTimeZone}"/>
+    <apex:attribute name="eventLocation" description="Location of the Event" type="String" assignTo="{!evtLocation}"/>
 
 <tr>
     <td align="center" valign="top">
         <table class="mob_width94" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 600px;">
             <tr>
-                <td align="center" valign="top">
-
+                <td align="center" valign="top" width="84" style="" >
+                    // TODO: Add in Calendar Icon
                 </td>
                 <td align="center" valign="top">
                     <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 100%;" width="100%">
@@ -55,20 +52,6 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td height="4" style="height: 4px; line-height: 100%; mso-line-height-rule: exactly; font-size: 4px;">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span style="font-weight: 700;">eventTitle:</span> {!eventTitle} <br/>
-                                            <span style="font-weight: 700;">eventDescription:</span> {!eventDescription} <br/>
-                                            <span style="font-weight: 700;">eventDate:</span> {!eventDate} <br/>
-                                            <span style="font-weight: 700;">eventStartDateTime:</span> {!eventStartTime} <br/>
-                                            <span style="font-weight: 700;">eventEndDateTime:</span> {!eventEndTime} <br/>
-                                            <span style="font-weight: 700;">eventLocation:</span> {!eventLocation} <br/>
-                                            <span style="font-weight: 700;">eventTimeZone:</span> {!eventTimeZone} <br/>
-                                        </td>
-                                    </tr>
                                 </table>
                             </td>
                         </tr>
@@ -78,8 +61,5 @@
         </table>
     </td>
 </tr>
-<tr><td height="40" style="height: 40px; mso-line-height-rule: exactly; line-height: 100%; font-size: 40px;"></td></tr>
-
-<!--================================== END REVIEW AND PAY BUTTON **PLEASE DO NOT TOUCH** =================================================================-->
 
 </apex:component>

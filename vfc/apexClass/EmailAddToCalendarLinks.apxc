@@ -19,6 +19,19 @@ public with sharing class EmailAddToCalendarLinks {
     public String office365CalendarLink;
     public String yahooCalendarLink;
 
+    public String ICSFileContent;
+    public String ICSFileName;
+
+    // Constructor to set default values
+    public EmailAddToCalendarLinks() {
+        evtTitle = evtTitle != null ? evtTitle : 'Event';
+        evtDescription = evtDescription != null ? evtDescription : '';
+        evtDate = evtDate != null ? evtDate : Date.today();
+        evtStartTime = evtStartTime != null ? evtStartTime : Time.newInstance(12, 0, 0, 0);
+        evtEndTime = evtEndTime != null ? evtEndTime : Time.newInstance(13, 0, 0, 0);
+        evtLocation = evtLocation != null ? evtLocation : '';
+    }
+
     public String getTimeZone(String evtTimeZone) {
         String evtTimeZoneText;
         
@@ -140,4 +153,38 @@ public with sharing class EmailAddToCalendarLinks {
         yahooCalendarLink = base + title + evtDateTime + loc + apptDesc;
         return yahooCalendarLink;
     }
+
+    // Method to generate ICS content
+    public String getICSFileContent() {
+        String icsContent = 'BEGIN:VCALENDAR\n' +
+                            'VERSION:2.0\n' +
+                            'PRODID:-//The Home Depot//Home Services//EN\n' +
+                            'BEGIN:VEVENT\n' +
+                            'UID:' + generateUID() + '\n' +
+                            'DTSTAMP:' + DateTime.now().format('yyyyMMdd\'T\'HHmmss') + '\n' +
+                            'DTSTART:' + formatDateTimeForICS(DateTime.newInstance(evtDate, evtStartTime)) + '\n' +
+                            'DTEND:' + formatDateTimeForICS(DateTime.newInstance(evtDate, evtEndTime)) + '\n' +
+                            'SUMMARY:' + evtTitle + '\n' +
+                            'DESCRIPTION:' + evtDescription + '\n' +
+                            'LOCATION:' + evtLocation + '\n' +
+                            'END:VEVENT\n' +
+                            'END:VCALENDAR';
+
+        return icsContent;
+    }
+    
+    // Helper method to format DateTime in ICS format
+    public String formatDateTimeForICS(DateTime dt) {
+        return dt.format('yyyyMMdd\'T\'HHmmss');
+    }
+
+    // Method to generate a unique ID for the event
+    public String generateUID() {
+        return EncodingUtil.urlEncode(String.valueOf(DateTime.now().getTime()) + '@homedepot.com', 'UTF-8');
+    }
+
+    public String getICSFileName() {
+        return EncodingUtil.urlEncode(evtTitle, 'UTF-8');
+    }
+    
 }

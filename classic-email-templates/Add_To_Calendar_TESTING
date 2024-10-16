@@ -1,18 +1,17 @@
 <messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
+
+<!--=============== .ICS CALENDAR ATTACHMENT ===============--> 
+<c:pvfc_ICSAttachmentBuilder 
+    eventTitle="Test Event"
+    eventDescription="This is the description of the test event."
+    eventDate="{!relatedTo.RefDate__c}"
+    eventStartTime="{!relatedTo.RefTime__c}"
+    eventEndTime="{!relatedTo.AltTime__c}"
+    eventLocation="{!relatedTo.RefURL__c}, {!relatedTo.StoreStreet__c}, {!relatedTo.StoreCity__c}, {!relatedTo.StoreState__c} {!relatedTo.StoreZipcode__c}">
+</c:pvfc_ICSAttachmentBuilder>
+<!--=============== /.ICS CALENDAR ATTACHMENT ===============--> 
  
- <messaging:attachment filename="Add To Calendar.ics">
-BEGIN:VCALENDAR
-VERSION:2.0
-BEGIN:VEVENT
-DTSTART:20230516T181500Z
-DTEND:20230516T201500Z
-SUMMARY:Add To Calendar Test
-DESCRIPTION:This is only a test for implementing the Add To Calendar email enhancement
-END:VEVENT
-END:VCALENDAR 
-</messaging:attachment>
- 
- <messaging:htmlEmailBody >
+<messaging:htmlEmailBody >
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
@@ -86,16 +85,16 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================--> 
                           
                         <!--===============ADD TO CALENDAR===================--> 
-                            <c:pvfc_AddToCalendar_01 Copy="Save the date to your calendar by choosing your email client below!" 
-                                eventTitle="Test Appointment"
-                                eventDescription="This is the description of the test event."
-                                eventDate="{!relatedTo.RefDate__c}"
-                                eventStartTime="{!relatedTo.RefTime__c}"
-                                eventEndTime="{!relatedTo.AltTime__c}"
-                                eventTimeZone="{!relatedTo.TimeZone__c}"
-                                eventLocation="{!relatedTo.RefURL__c}, {!relatedTo.StoreStreet__c}, {!relatedTo.StoreCity__c}, {!relatedTo.StoreState__c} {!relatedTo.StoreZipcode__c}">
-                            </c:pvfc_AddToCalendar_01>
-                        <!--===============ADD TO CALENDAR===================-->  
+                        <c:pvfc_AddToCalendar_01 Copy="Save the date to your calendar by choosing your email client below!" 
+                            eventTitle="Test Event"
+                            eventDescription="This is the description of the test event."
+                            eventDate="{!relatedTo.RefDate__c}"
+                            eventStartTime="{!relatedTo.RefTime__c}"
+                            eventEndTime="{!relatedTo.AltTime__c}"
+                            eventTimeZone="{!relatedTo.TimeZone__c}"
+                            eventLocation="{!relatedTo.RefURL__c}, {!relatedTo.StoreStreet__c}, {!relatedTo.StoreCity__c}, {!relatedTo.StoreState__c} {!relatedTo.StoreZipcode__c}">
+                        </c:pvfc_AddToCalendar_01>
+                        <!--=============== /ADD TO CALENDAR===================-->
 
                         <!--===============APPOINTMENT SECTION===================-->  
                         <c:pvfc_PVendor_Name_Number YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" PVNum="{!relatedTo.CaseStatus__c}" PVName="{!relatedTo.SourceName__c}" SectionTitle="Vendor Details" SectionTitle2="Your Information" jobDate="{!relatedTo.RefDate__c}" callBucket="{!relatedTo.CaseStatus__c}" ></c:pvfc_PVendor_Name_Number>
