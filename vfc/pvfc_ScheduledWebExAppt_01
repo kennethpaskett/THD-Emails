@@ -316,7 +316,8 @@
                                                                                         src="{!ComputerIcon}"
                                                                                         style="width: 22px; max-width: 22px; display: inline-block;"
                                                                                         width="22" />&nbsp;&nbsp;Join
-                                                                                    your consultation on Virtual</td>
+                                                                                    your virtual consultation
+                                                                                </td>
                                                                             </tr>
                                                                         </table>
                                                                     </td>
@@ -338,7 +339,8 @@
                                                                                     <img class="mob_width26"
                                                                                         src="{!OrangeDivider}"
                                                                                         style="width: 65px; display: inline-block;"
-                                                                                        width="65" /></td>
+                                                                                        width="65" />
+                                                                                </td>
                                                                             </tr>
                                                                         </table>
                                                                     </td>
@@ -512,8 +514,6 @@
                                         <tr>
                                             <td height="5"
                                                 style="height: 5px; mso-line-height-rule: exactly; line-height: 100%; font-size: 5px;">&nbsp;
-                                                
-
                                             </td>
                                         </tr>
                                         <tr>
