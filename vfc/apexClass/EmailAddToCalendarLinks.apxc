@@ -23,9 +23,9 @@ public with sharing class EmailAddToCalendarLinks {
     public String ICSFileName;
 
     // Constructor to set default values
-    public EmailAddToCalendarLinks() {
-        evtTitle = evtTitle != null ? evtTitle : 'Event';
-        evtDescription = evtDescription != null ? evtDescription : '';
+    public void EmailAddToCalendarLinks() {
+        evtTitle = evtTitle != null ? evtTitle : 'The Home Depot';
+        evtDescription = evtDescription != null ? evtDescription : 'Your meeting time with The Home Depot.';
         evtDate = evtDate != null ? evtDate : Date.today();
         evtStartTime = evtStartTime != null ? evtStartTime : Time.newInstance(12, 0, 0, 0);
         evtEndTime = evtEndTime != null ? evtEndTime : Time.newInstance(13, 0, 0, 0);
@@ -65,6 +65,7 @@ public with sharing class EmailAddToCalendarLinks {
     }
 
     public String getGoogleCalendarLink() {
+        EmailAddToCalendarLinks(); // Populate null dates to prevent errors
         String base = 'https://www.google.com/calendar/render?action=TEMPLATE';
         String title = '&text=' + EncodingUtil.urlEncode(evtTitle, 'UTF-8');
         
@@ -93,6 +94,7 @@ public with sharing class EmailAddToCalendarLinks {
     
 
     public String getOutlookComCalendarLink() {
+        EmailAddToCalendarLinks(); // Populate null dates to prevent errors
         String base = 'https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&allday=false';
         String title = '&subject=' + EncodingUtil.urlEncode(evtTitle, 'UTF-8');
 
@@ -113,6 +115,7 @@ public with sharing class EmailAddToCalendarLinks {
     }
 
     public String getOffice365CalendarLink() {
+        EmailAddToCalendarLinks(); // Populate null dates to prevent errors
         String base = 'https://outlook.office.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&allday=false';
         String title = '&subject=' + EncodingUtil.urlEncode(evtTitle, 'UTF-8');
 
@@ -134,6 +137,7 @@ public with sharing class EmailAddToCalendarLinks {
     }
 
     public String getYahooCalendarLink() {
+        EmailAddToCalendarLinks(); // Populate null dates to prevent errors
         String base = 'https://calendar.yahoo.com/?v=60&view=d&type=20';
         String title = '&title=' + EncodingUtil.urlEncode(evtTitle, 'UTF-8');
 
@@ -156,6 +160,7 @@ public with sharing class EmailAddToCalendarLinks {
 
     // Method to generate ICS content
     public String getICSFileContent() {
+        EmailAddToCalendarLinks(); // Populate null dates to prevent errors
         String icsContent = 'BEGIN:VCALENDAR\n' +
                             'VERSION:2.0\n' +
                             'PRODID:-//The Home Depot//Home Services//EN\n' +

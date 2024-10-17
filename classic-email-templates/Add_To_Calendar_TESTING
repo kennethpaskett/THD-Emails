@@ -96,6 +96,10 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         </c:pvfc_AddToCalendar_01>
                         <!--=============== /ADD TO CALENDAR===================-->
 
+                        <tr>
+                            <td height="24" style="height: 24px; line-height: 100%; mso-line-height-rule: exactly; font-size: 24px;">&nbsp;</td>
+                        </tr>  
+
                         <!--===============APPOINTMENT SECTION===================-->  
                         <c:pvfc_PVendor_Name_Number YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" PVNum="{!relatedTo.CaseStatus__c}" PVName="{!relatedTo.SourceName__c}" SectionTitle="Vendor Details" SectionTitle2="Your Information" jobDate="{!relatedTo.RefDate__c}" callBucket="{!relatedTo.CaseStatus__c}" ></c:pvfc_PVendor_Name_Number>
                         <!--===============APPOINTMENT SECTION===================-->   
