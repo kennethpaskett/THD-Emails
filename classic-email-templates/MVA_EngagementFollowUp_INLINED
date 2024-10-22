@@ -65,28 +65,28 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
                         <!--===============HEADER SECTION===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Day 2' && relatedTo.ProductName__c != 'SFI STAIR PART INSTALLATION'}"> 
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="We look forward to helping with your project!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryMVAFollowUpDay2HeroD}" imgPathMobile="{!$Label.CXLibraryMVAFollowUpDay2HeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_img_global, 'global/logos/HD-HomeServicesLogo.png')}" titleCopy="We look forward to helping with your project!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_img_mva, 'mva/header/followUpDay2-D.jpeg')}" imgPathMobile="{!URLFOR($Resource.CX_img_mva, 'mva/header/followUpDay2-M.jpeg')}" imgPathDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icons/black/phone.png')}" ></c:pvfc_Header_09>
                         </apex:outputText>
                         <!--===============HEADER SECTION===================-->
                           
                           
                         <!--===============HEADER SECTION===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Day 2' && relatedTo.ProductName__c == 'SFI STAIR PART INSTALLATION'}"> 
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="We look forward to helping with your project!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryMVAFUDay2HeroD}" imgPathMobile="{!$Label.CXLibraryMVAFUDay2HeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_img_global, 'global/logos/HD-HomeServicesLogo.png')}" titleCopy="We look forward to helping with your project!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_img_mva, 'mva/header/folUpDay2-D.jpeg')}" imgPathMobile="{!URLFOR($Resource.CX_img_mva, 'mva/header/folUpDay2-M.jpeg')}" imgPathDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icons/black/phone.png')}" ></c:pvfc_Header_09>
                         </apex:outputText>
                         <!--===============HEADER SECTION===================-->  
                           
                           
                         <!--===============HEADER SECTION===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Day 3' && relatedTo.ProductName__c != 'SFI STAIR PART INSTALLATION'}">
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let us help with your project when you’re ready!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryMVAFollowUpDay3HeroD}" imgPathMobile="{!$Label.CXLibraryMVAFollowUpDay3HeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_img_global, 'global/logos/HD-HomeServicesLogo.png')}" titleCopy="Let us help with your project when you’re ready!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_img_mva, 'mva/header/followUpDay3-D.jpeg')}" imgPathMobile="{!URLFOR($Resource.CX_img_mva, 'mva/header/followUpDay3-M.jpeg')}" imgPathDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icons/black/phone.png')}" ></c:pvfc_Header_09>
                         </apex:outputText>
                         <!--===============HEADER SECTION===================-->  
                           
                           
                         <!--===============HEADER SECTION===================-->
                         <apex:outputText rendered="{!relatedTo.RefString__c == 'Day 3' && relatedTo.ProductName__c == 'SFI STAIR PART INSTALLATION'}">
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let us help with your project when you’re ready!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryMVAFUDay3HeroD}" imgPathMobile="{!$Label.CXLibraryMVAFUDay3HeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_img_global, 'global/logos/HD-HomeServicesLogo.png')}" titleCopy="Let us help with your project when you’re ready!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_img_mva, 'mva/header/folUpDay3-D.jpeg')}" imgPathMobile="{!URLFOR($Resource.CX_img_mva, 'mva/header/folUpDay3-M.jpeg')}" imgPathDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icons/black/phone.png')}" ></c:pvfc_Header_09>
                         </apex:outputText>
                         <!--===============HEADER SECTION===================-->    
                           
@@ -145,7 +145,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         </apex:outputText>  
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                        <c:pvfc_HDIS_Call_Now_02 YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  OrangeBannerD="{!$Label.CX_LibraryCoreOrangePaintBanner2}" OrangeBannerM="{!$Label.CX_LibraryCoreOrangePaintBanner2}" PhoneIcon="{!$Label.CX_LibraryWhitePhoneIcon}" BannerNumber1="{!relatedTo.RefPhone__c}"></c:pvfc_HDIS_Call_Now_02>
+                        <c:pvfc_HDIS_Call_Now_02 YourInformationDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/YourInformationDivider-D.png')}" YourInformationDividerM="{!URLFOR($Resource.CX_img_global, 'global/dividers/YourInformationDivider-M.png')}"  OrangeBannerD="{!URLFOR($Resource.CX_img_global, 'global/backgrounds/orangePaint.png')}" OrangeBannerM="{!URLFOR($Resource.CX_img_global, 'global/backgrounds/orangePaint.png')}" PhoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icon/white/phone.png')}" BannerNumber1="{!relatedTo.RefPhone__c}"></c:pvfc_HDIS_Call_Now_02>
                         <!--===============SERVICE AND CUSTOMER SECTION===================-->
                     
 
