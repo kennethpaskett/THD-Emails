@@ -66,13 +66,13 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <apex:outputText rendered="{!relatedTo.ProductName__c != 'SFI STAIR PART INSTALLATION'}"> 
                         <!--===============HEADER SECTION===================-->
                         <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let’s get your project started!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibrary_MVA_Lead_Confirm1878D}" imgPathMobile="{!$Label.CXLibrary_MVA_Lead_Confirm1878M}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_img_global, 'global/logos/HD-HomeServicesLogo.png')}" titleCopy="Let’s get your project started!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_img_mva, 'mva/header/leadConfirm1878-D.jpeg')}" imgPathMobile="{!URLFOR($Resource.CX_img_mva, 'mva/header/leadConfirm1878-M.jpeg')}" imgPathDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icons/black/phone.png')}" ></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
                         </apex:outputText>
                         
                         <apex:outputText rendered="{!relatedTo.ProductName__c == 'SFI STAIR PART INSTALLATION'}">   
                         <!--===============HEADER SECTION===================-->  
-                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Let’s get your project started!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CXLibraryMVAStairsDTHero}" imgPathMobile="{!$Label.CXLibraryMVAStairsMBHero}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_img_global, 'global/logos/HD-HomeServicesLogo.png')}" titleCopy="Let’s get your project started!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_img_mva, 'mva/header/stairs-D.jpeg')}" imgPathMobile="{!URLFOR($Resource.CX_img_mva, 'mva/header/stairs-M.jpeg')}" imgPathDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icons/black/phone.png')}" ></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
                         </apex:outputText>  
                           
@@ -99,54 +99,54 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         
                         <apex:outputText rendered="{!relatedTo.RefPhone__c == '800-394-1878'}">
                         <!--===============CALL NOW SECTION===================--> 
-                        <c:pvfc_ReceiveQuote_04 iconCallNowBanner="{!$Label.CXLibrary_MVA_Lead_Banner1878}" iconCallNowButton="{!$Label.CXLibrary_MVA_Lead_Button1878}" phoneNumber="{!relatedTo.RefPhone__c}" ></c:pvfc_ReceiveQuote_04>
+                        <c:pvfc_ReceiveQuote_04 iconCallNowBanner="{!URLFOR($Resource.CX_img_mva, 'mva/callNow/callNowBanner1878.png')}" iconCallNowButton="{!URLFOR($Resource.CX_img_mva, 'mva/callNow/callNowButton1878.png')}" phoneNumber="{!relatedTo.RefPhone__c}" ></c:pvfc_ReceiveQuote_04>
                         <!--===============CALL NOW SECTION===================--> 
                         </apex:outputText>
                           
                         <apex:outputText rendered="{!relatedTo.RefPhone__c == '877-618-2618'}">
                         <!--===============CALL NOW SECTION===================--> 
-                        <c:pvfc_ReceiveQuote_04 iconCallNowBanner="{!$Label.CXLibrary_MVA_Lead_Banner2618}" iconCallNowButton="{!$Label.CXLibrary_MVA_Lead_Button2618}" phoneNumber="{!relatedTo.RefPhone__c}" ></c:pvfc_ReceiveQuote_04>
+                        <c:pvfc_ReceiveQuote_04 iconCallNowBanner="{!URLFOR($Resource.CX_img_mva, 'mva/callNow/callNowBanner2618.png')}" iconCallNowButton="{!URLFOR($Resource.CX_img_mva, 'mva/callNow/callNowButton2618.png')}" phoneNumber="{!relatedTo.RefPhone__c}" ></c:pvfc_ReceiveQuote_04>
                         <!--===============CALL NOW SECTION===================--> 
                         </apex:outputText>
                           
                           
                         <apex:outputText rendered="{!relatedTo.RefPhone__c == '833-432-7766'}">
                         <!--===============CALL NOW SECTION===================--> 
-                        <c:pvfc_ReceiveQuote_05 OrangeBannerD="{!$Label.CX_LibraryCoreOrangePaintBanner}" OrangeBannerM="{!$Label.CX_LibraryCoreOrangePaintBannerM}" CoreCallLoggingCallNowD="{!$Label.CX_LibraryCoreCallLoggingCallNowD}" CoreCallLoggingCallNowM="{!$Label.CX_LibraryCoreCallLoggingCallNowM}" BannerNumber1="{!relatedTo.RefPhone__c}" BannerNumber2="{!relatedTo.StoreCity__c}" ></c:pvfc_ReceiveQuote_05>
+                        <c:pvfc_ReceiveQuote_05 OrangeBannerD="{!URLFOR($Resource.CX_img_global, 'global/backgrounds/orangePaintBanner.png')}" OrangeBannerM="{!URLFOR($Resource.CX_img_mva, 'mva/callNow/orangePaintBanner-M.png')}" CoreCallLoggingCallNowD="{!URLFOR($Resource.CX_img_mva, 'mva/callNow/callLogging-D.png')}" CoreCallLoggingCallNowM="{!URLFOR($Resource.CX_img_mva, 'mva/callNow/callLogging-M.jpeg')}" BannerNumber1="{!relatedTo.RefPhone__c}" BannerNumber2="{!relatedTo.StoreCity__c}" ></c:pvfc_ReceiveQuote_05>
                         <!--===============CALL NOW SECTION===================--> 
                         </apex:outputText>
                           
                         
                         <apex:outputText rendered="{!relatedTo.ProductName__c != 'SFI STAIR PART INSTALLATION'}">   
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                        <c:pvfc_ServiceDetails_05 imgCallNowHero="{!$Label.CXLibrary_MVA_Lead_Confirm1878D2}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" custPhone="{!relatedTo.PhoneNumber__c}" custemail="{!relatedTo.ToEmail__c}"  custAddress="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}"></c:pvfc_ServiceDetails_05>
+                        <c:pvfc_ServiceDetails_05 imgCallNowHero="{!URLFOR($Resource.CX_img_mva, 'mva/serviceCustomer/manMeasuringDoor.jpeg')}" YourInformationDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/YourInformationDivider-D.png')}" YourInformationDividerM="{!URLFOR($Resource.CX_img_global, 'global/dividers/YourInformationDivider-M.png')}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" custPhone="{!relatedTo.PhoneNumber__c}" custemail="{!relatedTo.ToEmail__c}"  custAddress="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}"></c:pvfc_ServiceDetails_05>
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         </apex:outputText>  
                           
                           
                         <apex:outputText rendered="{!relatedTo.ProductName__c == 'SFI STAIR PART INSTALLATION'}">   
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                        <c:pvfc_ServiceDetails_05 imgCallNowHero="{!$Label.CXLibrary_MVA_Lead_ConfirmStairsD}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" custPhone="{!relatedTo.PhoneNumber__c}" custemail="{!relatedTo.ToEmail__c}"  custAddress="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}"></c:pvfc_ServiceDetails_05>
+                        <c:pvfc_ServiceDetails_05 imgCallNowHero="{!URLFOR($Resource.CX_img_mva, 'mva/serviceCustomer/stairs.jpeg')}" YourInformationDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/YourInformationDivider-D.png')}" YourInformationDividerM="{!URLFOR($Resource.CX_img_global, 'global/dividers/YourInformationDivider-M.png')}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" custPhone="{!relatedTo.PhoneNumber__c}" custemail="{!relatedTo.ToEmail__c}"  custAddress="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}"></c:pvfc_ServiceDetails_05>
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         </apex:outputText>  
                           
                           
                         <apex:outputText rendered="{!relatedTo.ProductName__c == 'Exterior Doors'}">   
                         <!--===============WHY HOME DEPOT SECTION===================--> 
-                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our door specialists can help you select the best door for your home and schedule your installation." WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>  
+                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our door specialists can help you select the best door for your home and schedule your installation." WhatNextDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-D.png')}" WhatNextDividerM="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-M.png')}" ></c:pvfc_WhatNext_08>  
                         <!--===============WHY HOME DEPOT SECTION===================--> 
                         </apex:outputText>
                           
                         <apex:outputText rendered="{!relatedTo.ProductName__c == 'Window Film'}">   
                         <!--===============WHY HOME DEPOT SECTION===================--> 
-                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our windows specialists can help you select the best windows for your home and schedule your installation." WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>  
+                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our windows specialists can help you select the best windows for your home and schedule your installation." WhatNextDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-D.png')}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>  
                         <!--===============WHY HOME DEPOT SECTION===================--> 
                         </apex:outputText>
                           
                           
                         <apex:outputText rendered="{!relatedTo.ProductName__c == 'SFI STAIR PART INSTALLATION'}">   
                         <!--===============WHY HOME DEPOT SECTION===================--> 
-                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our stair specialists can help you select the best stair parts for your home and schedule your installation." WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>  
+                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our stair specialists can help you select the best stair parts for your home and schedule your installation." WhatNextDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-D.png')}" WhatNextDividerM="{!$Label.{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-M.png')}CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>  
                         <!--===============WHY HOME DEPOT SECTION===================--> 
                         </apex:outputText>  
                           
