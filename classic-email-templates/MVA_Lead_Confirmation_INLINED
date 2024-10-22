@@ -65,7 +65,6 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 
                         <apex:outputText rendered="{!relatedTo.ProductName__c != 'SFI STAIR PART INSTALLATION'}"> 
                         <!--===============HEADER SECTION===================-->
-                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
                         <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_img_global, 'global/logos/HD-HomeServicesLogo.png')}" titleCopy="Let’s get your project started!" phoneNum1="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_img_mva, 'mva/header/leadConfirm1878-D.jpeg')}" imgPathMobile="{!URLFOR($Resource.CX_img_mva, 'mva/header/leadConfirm1878-M.jpeg')}" imgPathDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icons/black/phone.png')}" ></c:pvfc_Header_09>
                         <!--===============HEADER SECTION===================-->
                         </apex:outputText>
@@ -139,20 +138,20 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                           
                         <apex:outputText rendered="{!relatedTo.ProductName__c == 'Window Film'}">   
                         <!--===============WHY HOME DEPOT SECTION===================--> 
-                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our windows specialists can help you select the best windows for your home and schedule your installation." WhatNextDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-D.png')}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>  
+                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our windows specialists can help you select the best windows for your home and schedule your installation." WhatNextDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-D.png')}" WhatNextDividerM="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-M.png')}" ></c:pvfc_WhatNext_08>  
                         <!--===============WHY HOME DEPOT SECTION===================--> 
                         </apex:outputText>
                           
                           
                         <apex:outputText rendered="{!relatedTo.ProductName__c == 'SFI STAIR PART INSTALLATION'}">   
                         <!--===============WHY HOME DEPOT SECTION===================--> 
-                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our stair specialists can help you select the best stair parts for your home and schedule your installation." WhatNextDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-D.png')}" WhatNextDividerM="{!$Label.{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-M.png')}CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_08>  
+                        <c:pvfc_WhatNext_08 BulletOneText="First, we’ll need to collect a non-refundable measure fee which will go toward the final installation cost. " BulletTwoText="After you've paid, our licensed, local installer will call to schedule a time to come to your home, collect precise measurements, and inspect the installation area." BulletThreeText="Following your measure, our stair specialists can help you select the best stair parts for your home and schedule your installation." WhatNextDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-D.png')}" WhatNextDividerM="{!URLFOR($Resource.CX_img_global, 'global/dividers/WhatHappensNext-M.png')}" ></c:pvfc_WhatNext_08>  
                         <!--===============WHY HOME DEPOT SECTION===================--> 
                         </apex:outputText>  
                           
                     
                         <!--===============WHY HOME DEPOT SECTION===================--> 
-                        <c:pvfc_ValueProps_03 ApplyNowURL="{!relatedTo.RefURL__c}" affordableImg="{!$Label.CX_LibraryCoreAffordableIcon}" licensedImg="{!$Label.CX_LibraryCoreLicensedIcon}" blackhomedepotImg="{!$Label.CX_LibraryCoreBlackHomeDepotIcon}" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_03>
+                        <c:pvfc_ValueProps_03 ApplyNowURL="{!relatedTo.RefURL__c}" affordableImg="{!URLFOR($Resource.CX_img_global, 'global/icon/black/piggyBank.png')}" licensedImg="{!URLFOR($Resource.CX_img_global, 'global/icon/black/sheild.png')}}" blackhomedepotImg="{!URLFOR($Resource.CX_img_global, 'global/icon/black/homeDepotLogo.png')}" exteriorstoreImgFull="{!URLFOR($Resource.CX_img_global, 'global/misc/homeDepotExterior.jpeg')}" WhyHomeDepotDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/whyHomeDepot-D.png')}" WhyHomeDepotDividerM="{!URLFOR($Resource.CX_img_global, 'global/dividers/whyHomeDepot-M.png')}" ></c:pvfc_ValueProps_03>
                         <!--===============WHY HOME DEPOT SECTION===================-->
                     
 
