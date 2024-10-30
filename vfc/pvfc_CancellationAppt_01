@@ -1,0 +1,172 @@
+<apex:component controller="AppointmentTimeController" access="global">
+    <apex:attribute name="YourScheduledApptDividerD" description="Your Scheduled Appt Divider" type="String" />
+    <apex:attribute name="YourScheduledApptDividerM" description="Your Scheduled Appt Mobile Divider" type="String" />
+    <apex:attribute name="ServiceProviderDivider" description="Your Scheduled Appt Mobile Divider" type="String" />
+    <apex:attribute name="ServiceProviderDividerM" description="Your Scheduled Appt Mobile Divider" type="String" />
+    <apex:attribute name="RescheduleButton" description="Reschedule appointment button" type="String" />
+    <apex:attribute name="PhoneNum" description="SP Name" type="String" />
+    <apex:attribute name="PhoneIcon" description="Phone Icon" type="String" />
+    <apex:attribute name="jobDate" description="Job date" type="DateTime" />
+    <apex:attribute name="jobTime" description="Job time" type="DateTime" />
+    <apex:attribute name="SectionTitle" description="Section Title" type="String" />
+    <apex:attribute name="timeZone" description="Time Zone" type="String" />
+    <apex:attribute name="OrangeBannerD" description="Orange Banner Desktop" type="String" />
+    <apex:attribute name="OrangeBannerM" description="Orange Banner Mobile" type="String" />
+    <apex:attribute name="CoreCallLoggingCallNowD" description="Call Now Desktop" type="String" />
+    <apex:attribute name="CoreCallLoggingCallNowM" description="Call Now Mobile" type="String" />
+    <apex:attribute name="BannerNumber1" description="Customer Order Number" type="String" />
+    <apex:attribute name="BannerNumber2" description="Customer Order Number" type="String" />
+    <apex:attribute name="custTimeZone" description="Time Zone" type="String" assignTo="{!timeZone}" />
+
+    <apex:attribute name="jobTime" description="Job time" type="DateTime" assignTo="{!apptStart}" />
+
+    <!--=========================== START SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** =========================================================-->
+    <tr>
+        <td valign="top">
+            <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
+                style="Margin: 0 auto; width:600px;" width="600">
+                <tr>
+                    <td valign="top">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto"
+                            width="600">
+                            <tr style="border:0; margin: 0 auto; padding:0; border-collapse:collapse">
+                                <td class="mso_text" align="center" valign="top" height="25"
+                                    style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; height: 25px; mso-line-height-rule: exactly; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:22px; line-height: 100%; color:#000000; font-weight:normal;">
+                                    {!SectionTitle}</td>
+                            </tr>
+                            <tr>
+                                <td height="5"
+                                    style="height: 5px; mso-line-height-rule: exactly; line-height: 100%; font-size: 5px; border:0; margin: 0 auto; padding:0; border-collapse:collapse">
+                                    &nbsp;
+
+
+                                </td>
+                            </tr>
+
+                            <tr height="3" valighn="top"
+                                style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly">
+                                <td class="hide" valign="top"
+                                    style="border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; width: 600px; height: 3px; line-height:100%; font-size: 3px"
+                                    height="3"><img src="{!YourScheduledApptDividerD}" align="left" width="600"
+                                        class="fluid" />
+                                </td>
+                            </tr>
+                            <!--[if !mso]><!-- -->
+                            <tr style="max-height: 0px; overflow: hidden;display:none;float:left;border:0; margin: 0 auto; padding:0; border-collapse:collapse; mso-line-height-rule:exactly; height: 3px; line-height:100%; font-size: 3px"
+                                class="show">
+                                <th valign="top"><img src="{!YourScheduledApptDividerM}" style=" height: 3px;"
+                                        height="3" class="fluid" />
+                                </th>
+                            </tr>
+                            <!--<![endif]-->
+                            <tr>
+                                <td height="25"
+                                    style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">
+                                    &nbsp;
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mso_text" align="left" valign="top"
+                                    style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:30px; line-height: 34px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
+                                    <b>
+                                        <!-- <apex:outputText rendered="{!jobDate != null}"
+                                            value="{0,date,MMM' 'dd', 'yyyy}">
+                                            <apex:Param value="{!jobDate -(10/24)}" />
+                                        </apex:OutputText>
+
+                                        &#8212; -->
+
+                                        <apex:outputText rendered="{!jobTime != null}">
+                                            {!timeZoneApptTimeString}
+                                        </apex:outputText>
+
+                                        {!custTimeZone}
+                                    </b>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="25"
+                                    style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="hide"
+                                    style="background-image: url('{!OrangeBannerD}'); text-align: left; vertical-align: middle; width: 600px; height:75px; margin: 0 auto; padding:0; border-collapse:collapse;"
+                                    background="{!OrangeBannerD}" background-position="center" background-size="contain"
+                                    width="600px" height="75px" line-height="30px" font-size="30px" text-align="left"
+                                    valign="middle">
+                                    <!--[if gte mso 9]>
+                                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:75px;">
+                                        <v:fill type="frame" src="{!OrangeBannerD}" />
+                                        <v:textbox inset="10px,22.5px,10px,22.5px">
+                                        <![endif]-->
+
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                        style="Margin: 0 auto; width: 100%;">
+                                        <tr>
+                                            <td width="20px">
+                                                &nbsp;
+                                            </td>
+                                            <td width="25px">
+                                                <center>
+                                                    <img src="{!phoneIcon}" width="24"
+                                                        style="width: 24px; margin: 0 auto; padding:0; border-collapse:collapse;" />
+                                                </center>
+                                            </td>
+                                            <td width="5px">
+                                                &nbsp;
+                                            </td>
+                                            <td width="560px" align="left"
+                                                style="align: left; text-align:left; margin: 0 auto; padding:0; border-collapse:collapse;">
+
+                                                <a href=" tel:{!BannerNumber1}" vertical-align="middle"
+                                                    line-height="28px" font-size="24px"
+                                                    style="text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight: bold; font-size:24px; text-decoration:none; color:#ffffff;">CALL
+                                                    NOW TO RESCHEDULE: {!BannerNumber1}</a>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if gte mso 9]>
+                                       </v:textbox>
+                                        </v:fill>
+                                       </v:rect>
+                                       <![endif]-->
+                                </td>
+
+                                <td class="show-for-small">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="tel:{!BannerNumber1}"> <img src="{!RescheduleButton}" /></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="10"
+                                                style="height: 10px; mso-line-height-rule: exactly; line-height: 100%; font-size: 10px;">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <!--[if gte mso 9]>
+                            </v:textbox>
+                            </v:fill>
+                            </v:rect>
+                            <![endif]-->
+
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!--================================== END SERVICE PROVIDER DETAILS **PLEASE DO NOT TOUCH** =================================================================-->
+
+</apex:component>
