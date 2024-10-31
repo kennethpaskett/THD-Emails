@@ -64,8 +64,19 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
 
                         <!--===============HEADER SECTION===================-->
-                        <c:pvfc_Header_08 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_img_global, 'global/logos/HD-HomeServicesLogo.png')}" titleCopy="Good news - we've rescheduled your appointment!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_img_mva, 'mva/header/appointmentRescheduledHero-D.jpeg')}" imgPathMobile="{!URLFOR($Resource.CX_img_mva, 'mva/header/appointmentRescheduledHero-M.jpeg')}" imgPathDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icons/black/phone.png')}" ></c:pvfc_Header_08>
+                        <c:pvfc_Header_08 logoLink="https://www.homedepot.com/services/" imgLogo="{!URLFOR($Resource.CX_img_global, 'global/logos/HD-HomeServicesLogo.png')}" titleCopy="Good news - we've rescheduled your appointment!" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!URLFOR($Resource.CX_img_mva, 'mva/header/appointmentRescheduled-D.jpeg')}" imgPathMobile="{!URLFOR($Resource.CX_img_mva, 'mva/header/appointmentRescheduled-M.jpeg')}" imgPathDivider="{!URLFOR($Resource.CX_img_global, 'global/dividers/CTQDivider.png')}" phoneIcon="{!URLFOR($Resource.CX_img_global, 'global/icons/black/phone.png')}" ></c:pvfc_Header_08>
                         <!--===============HEADER SECTION===================-->
+                        <tr><td>
+
+                        <!-- {!DocumentHelper.getDocumentURLByName('CXiconCalendar.png')} -->
+
+                            <c:pvfc_ImageResponsive docName="CX_LibraryMVAAppointmentRescheduledHeroD" mobileDocName="CX_LibraryMVAAppointmentRescheduledHeroM" imageAlt="Image Responsive" />
+
+                            <table><tr><td>
+                                <c:pvfc_imgFromDoc docName="CX_LibraryMVAAppointmentRescheduledHeroD" altTag="APEX CLASS W/ DOCUMENT NAME" />
+                            </td></tr></table>
+
+                        </td></tr>
                           
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_07 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy1="Your new virtual appointment details are listed below along with the number our associate will call. We look forward to helping you with your project!" journey="{!relatedTo.Journey__c}"></c:pvfc_Greeting_07>

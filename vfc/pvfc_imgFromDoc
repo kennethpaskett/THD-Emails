@@ -1,0 +1,8 @@
+<apex:component access="global" controller="DocumentHelper">
+    <!-- Define attributes for the component -->
+    <apex:attribute name="docName" description="Unique Name of Document" type="String" assignTo="{!dName}" />
+    <apex:attribute name="altTag" description="Alt Text to be used with image" type="String" />
+    <apex:attribute name="width" description="Width of the image in numerical form only (no px). Image will default to 100% if not provided." type="String" />
+
+    <img src="{!documentURL}" alt="{!altTag}" width="{!width}" style="display: block; border: 0; border: none; width: 100%; width: {!width}px; max-width: 100%; max-width: {!width}px; height: auto;" />
+</apex:component>
