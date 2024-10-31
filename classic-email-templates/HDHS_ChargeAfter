@@ -72,6 +72,36 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                             imgPathFull="{!$Label.CXLibraryDTChargeAfterHero}" >
                         </c:pvfc_Header_11_v2>
                         <!--===============HEADER SECTION===================-->
+
+                        <tr><td>
+                        <!-- Light mode image -->
+                        <img src="https://placehold.co/600x400/ECEFF1/F96302?text=Light+Mode" alt="Light Logo" style="display:block;" width="600" height="400" class="light-mode" />
+
+                        <!-- Dark mode image (hidden by default) -->
+                        <img src="https://placehold.co/600x400/001529/F96302?text=Dark+Mode" alt="Dark Logo" style="display:none;" width="600" height="400" class="dark-mode" />
+
+                        <style>
+                        /* Dark Mode Support */
+                        @media (prefers-color-scheme: dark) {
+                            .light-mode {
+                                display: none !important;
+                            }
+                            .dark-mode {
+                                display: block !important;
+                            }
+                        }
+                        </style>
+
+                        <!--[if mso]>
+                        <style>
+                        /* For Outlook, hide the dark mode image */
+                        .dark-mode {
+                            display: none !important;
+                        }
+                        </style>
+                        <![endif]-->
+                        </td></tr>
+
                           
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for choosing The Home Depot. Your application for The Home Depot Financing is ready and only takes a few minutes to complete. Find out which financing options are available to you by pre-qualifying today. Checking to see if you pre-qualify will not impact your credit score."></c:pvfc_Greeting_04>
