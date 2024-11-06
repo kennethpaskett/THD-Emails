@@ -71,6 +71,10 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_HDIS custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We know you’re looking forward to your {!relatedTo.ProductName__c} project. Right now, your materials are still in production. There is nothing you need to do, but we wanted to share an update while you wait. When your products are ready, we’ll let you know and reach out to schedule your installation." greetingsCopy2="If you have any questions, please call: " phoneNum1="{!relatedTo.RefPhone__c}"></c:pvfc_Greeting_HDIS>
                         <!--===============GREETING SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_4_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_4_M}" imageAlt="Your Journey - You're on Step 4. Installation: Prep Home and Installation." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                           
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
