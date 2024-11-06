@@ -172,7 +172,7 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============/WHAT HAPPENS NEXT SECTION===================-->
 
                         <!--===============PROGRESS BAR SECTION===================-->
-                        <c:pvfc_ImageResponsive docName="CX_img_HDIS_ProgressBar_1_D" imageAlt="Your Journey - You're on Step 1. Getting Started: Design Consultation, Product Selection, and Project Quote." />
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_1_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_1_M}" imageAlt="Your Journey - You're on Step 1. Getting Started: Design Consultation, Product Selection, and Project Quote." />
                         <!--===============/PROGRESS BAR SECTION===================-->
 
                         <!--===============QUICK LINKS SECTION===================-->
