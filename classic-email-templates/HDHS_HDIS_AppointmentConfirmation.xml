@@ -70,7 +70,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                           
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re looking forward to learning more about your {!relatedTo.ProductName__c} project goals! You can review your appointment details and what to expect. There will be some important choices to make during your consultation, so please have a property owner present."></c:pvfc_Greeting_04>
-                        <!--===============GREETING SECTION===================--> 
+                        <!--===============GREETING SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_1_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_1_M}" imageAlt="Your Journey - You're on Step 1. Getting Started: Design Consultation, Product Selection, and Project Quote." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                           
                         <!--===============NON GARAGE or CLOSET ORGANIZATION===================--> 
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 

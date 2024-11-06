@@ -123,6 +123,10 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         </apex:outputText>  
                         <!--===============VIDEO SECTION===================-->
 
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_1_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_1_M}" imageAlt="Your Journey - You're on Step 1. Getting Started: Design Consultation, Product Selection, and Project Quote." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
+
                         <!--===============WHAT HAPPENS NEXT SECTION===================-->
                         <c:pvfc_WhatNext_08 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
                         BulletOneText="Before your appointment, gather any project ideas you may have, review our instructional video, and collect your project measurements. Please submit your project measurement form at least 24 hours before your appointment."

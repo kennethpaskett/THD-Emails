@@ -83,10 +83,13 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <c:pvfc_Appointment_SP_Info_01 CUName="{!relatedTo.SourceName__c}" YourScheduledApptDividerD="{!$Label.CX_LibraryIPSYourAppointmentBarD}" YourScheduledApptDividerM="{!$Label.CX_LibraryIPSYourAppointmentBarM}" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" SPemail="{!relatedTo.BranchName__c}" SPPhoneNum="{!relatedTo.RefPhone__c}" SectionTitle="Your Appointment Details" SectionTitle2="Consultant Name" jobDate="{!relatedTo.RefDateTime__c}" jobStartTime="{!relatedTo.RefDateTime__c}" ></c:pvfc_Appointment_SP_Info_01>
                         <!--===============APPOINTMENT SECTION===================-->
 
-                          
                         <!--===============DOWNLOAD TEAMS SECTION===================--> 
                         <c:pvfc_DownloadTeams_01 LaunchMeetingCTA="{!$Label.CX_LibraryDownloadButton}" ComputerIcon="{!$Label.CX_LibraryIPSComputerIcon}" OrangeDivider="{!$Label.CX_LibraryIPSOrangeBar}" LaunchMeetingURL="{!relatedTo.RefURL__c}" SectionTitle="Download Microsoft Teams To Your Tablet Or Computer" PhoneNum="{!RelatedTo.RefPhone__c}"></c:pvfc_DownloadTeams_01>
                         <!--===============DOWNLOAD TEAMS SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_1_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_1_M}" imageAlt="Your Journey - You're on Step 1. Getting Started: Design Consultation, Product Selection, and Project Quote." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
  
                         <!--===============WHAT HAPPENS NEXT SECTION===================-->
                         <c:pvfc_WhatNext_08 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
