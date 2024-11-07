@@ -75,7 +75,12 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                             <c:pvfc_HDIS_Call_Now_01 YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}" custName="{!relatedTo.CustomerName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custemail="{!relatedTo.ToEmail__c}" custPhone="{!relatedTo.StorePhone__c}" jobNumber="{!relatedTo.DocumentNo__c}" 
                              OrangeBannerD="{!$Label.CX_LibraryCoreOrangePaintBanner2}" OrangeBannerM="{!$Label.CX_LibraryCoreOrangePaintBanner2}" CoreCallLoggingCallNowD="{!$Label.CX_LibraryCoreCallLoggingCallNowD}" CoreCallLoggingCallNowM="{!$Label.CX_LibraryCoreCallLoggingCallNowM}" PhoneIcon="{!$Label.CX_LibraryWhitePhoneIcon}" BannerNumber1="{!relatedTo.PhoneNumber__c}"></c:pvfc_HDIS_Call_Now_01>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_4_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_4_M}" imageAlt="Your Journey - You're on Step 4. Installation: Prep Home and Installation." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
+                        
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
                         <!--===============QUICK LINKS SECTION===================-->

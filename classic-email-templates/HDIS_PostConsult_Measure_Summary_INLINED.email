@@ -79,7 +79,9 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <c:pvfc_sales_banner_03 headline="Questions or Need Help?" Label1="Call" Copy1="{!relatedTo.AltPhone__c}" image="{!$Label.CX_LibraryGrayQuestionMark}" ></c:pvfc_sales_banner_03>
                         <!--===============SALES MANAGER SECTION===================-->
 
-                         
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_4_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_4_M}" imageAlt="Your Journey - You're on Step 4. Installation: Prep Home and Installation." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                           
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>

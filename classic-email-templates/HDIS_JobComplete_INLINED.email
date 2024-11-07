@@ -80,6 +80,10 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <c:pvfc_HDIS_Banner_01 heroLink="{!relatedTo.RefURL__c}" imgPathFull="{!$Label.CX_LibraryHDISCareBannerD}" imgPathMobile="{!$Label.CX_LibraryHDISCareBannerM}" ></c:pvfc_HDIS_Banner_01>
                         <!--===============HEADER SECTION===================-->
 
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_4_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_4_M}" imageAlt="Your Journey - You're on Step 4. Installation: Prep Home and Installation." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
+
                         <!--===============WHATS NEXT SECTION===================--> 
                         <c:pvfc_ProjectDetails_01 YourScheduledApptDividerD="{!$Label.CX_LibraryCoreYourScheduledApptDivider}" YourScheduledApptDividerM="{!$Label.CX_LibraryCoreYourScheduledApptDividerM}" JobNumber="{!relatedTo.DocumentNo__c}" CompletedDate="{!relatedTo.RefDateTime__c}" Address="{!relatedTo.Street__c} {!relatedTo.City__c}, {!relatedTo.State__c}, {!relatedTo.Zipcode__c}" custName=""></c:pvfc_ProjectDetails_01>  
                         <!--===============WHATS NEXT SECTION===================--> 

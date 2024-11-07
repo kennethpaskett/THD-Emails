@@ -175,7 +175,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <apex:outputText rendered="{!relatedTo.StoreCity__c != 'Job Complete'}">
                         <c:pvfc_ProjectResources_01 RefName="{!relatedTo.StoreCity__c}" Product="{!relatedTo.ProductName__c}" headline="Your Project Resources" subhead="Guides" copy="How to Prepare your home for Kitchen Installation" copy2="How to Prepare your home for Home Organization" copyLink="{!relatedTo.RefURL__c}" copy2Link="{!relatedTo.AltRefUrl__c}" image="{!$Label.CX_LibraryHDIS_ClipboardIcon}" image2="{!$Label.CX_LibraryHDIS_ResourcesPrepHeroD}" WhyHomeDepotDividerD="{!$Label.CX_LibraryWhyHomeDepotDividerD}" WhyHomeDepotDividerM="{!$Label.CX_LibraryWhyHomeDepotDividerM}"></c:pvfc_ProjectResources_01>
                         </apex:outputText>   
-               <!--====================================================================SCHEDULE PROJECTS RESOURCES SECTION======================================================================================================================-->                                                           
+               <!--====================================================================SCHEDULE PROJECTS RESOURCES SECTION======================================================================================================================-->
+
+                <!--===============PROGRESS BAR SECTION===================-->
+                <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_4_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_4_M}" imageAlt="Your Journey - You're on Step 4. Installation: Prep Home and Installation." />
+                <!--===============/PROGRESS BAR SECTION===================-->                                                 
                           
               <!--====================================================================WHAT NEXT SECTION======================================================================================================================-->                   
                        <apex:outputText rendered="{!relatedTo.StoreCity__c != 'Job Complete'}"> 

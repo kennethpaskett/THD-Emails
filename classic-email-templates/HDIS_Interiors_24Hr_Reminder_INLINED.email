@@ -79,7 +79,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         <c:pvfc_ServiceDetails_07 ServiceAppointmentDivider="{!$Label.CX_LibraryHDISAppointmentDividerD}" ServiceAppointmentDividerM="{!$Label.CX_LibraryHDISAppointmentDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" Title1="Your Installation Appointment" Title2="Your Project Details" jobDate="{!relatedTo.RefDateTime__c}" jobStartTime="{!relatedTo.RefDateTime__c}" jobEndTime="{!relatedTo.AltDateTime__c}"
                         custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c}, {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.PhoneNumber__c}"  custemail="{!relatedTo.ToEmail__c}" Title3="Customer Order Number" orderNumber="{!relatedTo.DocumentNo__c}" Copy1="Your installation coordinator will call to confirm the arrival time."></c:pvfc_ServiceDetails_07>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_4_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_4_M}" imageAlt="Your Journey - You're on Step 4. Installation: Prep Home and Installation." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                           
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 
                         <c:pvfc_WhatToExpect_02 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
