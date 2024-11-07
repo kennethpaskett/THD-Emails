@@ -75,11 +75,14 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Text_Line_01 greetingsCopy="Call your Design Consultant at:"  phoneNum="{!relatedTo.RefPhone__c}"></c:pvfc_Text_Line_01>
                         <!--===============GREETING SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_2_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_2_M}" imageAlt="Your Journey - You're on Step 2. Finalize & Purchase: Finalize Design and Purchase." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                           
                         <!--===============TAKE ADVANTAGE SECTION===================--> 
                         <c:pvfc_Take_Advantage_1Row_V2 OfferPromoImageD="{!$Label.CX_LibraryEOQHomeOrgPromoD}" TagCopy="Take Advantage of a Great Deal!" OfferPromoImageM="{!$Label.CX_LibraryEOQHomeOrgPromoM}" buttonImg="{!$Label.CX_LibraryEOQCallToMoveForwardCTA}" buttonUrl="https://www.homedepot.com/services/c/home-organization/22ef3e97b" TagIcon="{!$Label.CX_LibraryCouponIconOrange}" OfferHeaderText="{!relatedTo.SourceName__c} off Custom Closets & Home Storage" OfferDescText="To move forward with your quote, call your Design Consultant:" SalesNumber="{!relatedTo.AltPhone__c}" SalesName="{!relatedTo.BranchName__c}" OfferDateDesc="{!relatedTo.RefString__c}"></c:pvfc_Take_Advantage_1Row_V2>
                         <!--===============TAKE ADVANTAGE SECTION===================--> 
-                          
                     
                         <!--===============WHY HOME DEPOT SECTION===================--> 
                         <c:pvfc_ValueProps_04 ApplyNowURL="{!relatedTo.RefURL__c}" iconOne="{!$Label.CX_LibraryCoreAffordableIcon}" iconOneHeader="Affordable" iconOneDescription="We offer a wide range of affordable financing options, including The Home Depot Consumer Credit Card and The Home Depot Project Loan." iconTwo="{!$Label.CX_LibraryCoreBlackHomeDepotIcon}" iconTwoHeader="Backed by The Home Depot" iconTwoDescription="All labor, products and installation for your project are 100% backed by The Home Depot." iconThree="{!$Label.CX_LibraryCoreLicensedIcon}" iconThreeHeader="Trusted Professionals" iconThreeDescription="All of our providers are local, licensed and insured. We background check everyone who will come into your home." iconFour="{!$Label.CX_LibraryEOQCustomStorage}" iconFourHeader="Custom Storage Solutions" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" iconFourDescription="Home Depot offers custom storage solutions for every room, including closets, garage, pantry, mudroom, laundry room, home office and more." WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_04>

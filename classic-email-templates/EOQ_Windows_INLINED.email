@@ -71,8 +71,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                           
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="It’s not too late to purchase your new windows and let our experts handle the installation. To move forward with your quote, call your design consultant at {!relatedTo.PhoneNumber__c}."></c:pvfc_Greeting_04>
-                        <!--===============GREETING SECTION===================--> 
-                          
+                        <!--===============GREETING SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_2_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_2_M}" imageAlt="Your Journey - You're on Step 2. Finalize & Purchase: Finalize Design and Purchase." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                           
                         <!--===============TAKE ADVANTAGE SECTION===================--> 
                         <c:pvfc_Take_Advantage_1Row OfferPromoImageD="{!$Label.CX_LibraryEOQWindowsPromoD}" OfferPromoImageM="{!$Label.CX_LibraryEOQWindowsPromoM}" buttonImg="{!$Label.CX_LibraryEOQCallToMoveForwardCTA}" buttonUrl="{!relatedTo.AltPhone__c}" OfferHeaderText="Save on Installed Windows" OfferDescText="The more you buy, the more you save." OfferMoveForward="Contact your Design Consultant today for details:" SalesNumber="{!relatedTo.StorePhone__c}" SalesName="{!relatedTo.StoreName__c}" ></c:pvfc_Take_Advantage_1Row>
