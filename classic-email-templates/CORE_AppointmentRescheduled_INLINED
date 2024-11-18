@@ -86,24 +86,26 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         <c:pvfc_ServiceDetails_03 ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.StorePhone__c}" SPnum2="{!relatedTo.StoreCity__c}" SPemail="{!relatedTo.BranchName__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c}, {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.PhoneNumber__c}"  custemail="{!relatedTo.ToEmail__c}"></c:pvfc_ServiceDetails_03>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_CORE_ProgressBar_2_D}" imageMobileURL="{!$Label.CX_img_CORE_ProgressBar_2_M}" imageAlt="Your Journey - You're on Step 2. Meet with a Licensed Service Provider: Plan your project; Discuss budget, materials, timeline, and more." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                           
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 
                         <c:pvfc_WhatNext_08
                             WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}"
                             WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"
                             BulletOneText="Your service provider will call on the day of your appointment to let you know they’re on the way. Remember, you will need to be present."
-                            BulletTwoText="	During your in-home consultation, our trusted service provider will take any necessary measurements or assessments, review options and provide a project quote."
-                            BulletThreeText="	When you are ready to move forward, our service provider will help you with the payment process and financing options." >
+                            BulletTwoText="During your in-home consultation, our trusted service provider will take any necessary measurements or assessments, review options and provide a project quote."
+                            BulletThreeText="When you are ready to move forward, our service provider will help you with the payment process and financing options." >
                         </c:pvfc_WhatNext_08>
-                        <!--===============WHAT HAPPENS NEXT SECTION===================--> 
-
-                    
+                        <!--===============WHAT HAPPENS NEXT SECTION===================-->
+                        
                         <!--===============WHY HOME DEPOT SECTION===================--> 
                         <c:pvfc_ValueProps_03 ApplyNowURL="{!relatedTo.AltRefUrl__c}" affordableImg="{!$Label.CX_LibraryCoreAffordableIcon}" licensedImg="{!$Label.CX_LibraryCoreLicensedIcon}" blackhomedepotImg="{!$Label.CX_LibraryCoreBlackHomeDepotIcon}" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_03>
-                        <!--===============WHY HOME DEPOT SECTION===================--> 
-                    
-
+                        <!--===============WHY HOME DEPOT SECTION===================-->
+                        
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
                         <!--===============QUICK LINKS SECTION===================-->

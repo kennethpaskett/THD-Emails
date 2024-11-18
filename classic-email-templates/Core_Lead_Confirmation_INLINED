@@ -74,9 +74,12 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         <c:pvfc_ServiceDetails_03 ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.PhoneNumber__c}" SPNum2="{!relatedTo.StoreCity__c}" SPemail="{!relatedTo.RefString__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.AltPhone__c}"  custemail="{!relatedTo.ToEmail__c}"></c:pvfc_ServiceDetails_03>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                          
-                          
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+                        
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_CORE_ProgressBar_1_D}" imageMobileURL="{!$Label.CX_img_CORE_ProgressBar_1_M}" imageAlt="Your Journey - You're on Step 1. Submit a Request: Provide your information; A licensed Service Provider will contact you within 24 hours." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
+                        
                         <apex:outputText rendered="{!relatedTo.CustomerName__c != 'SF&I Sheds'}">  
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 
                         <c:pvfc_WhatNext_01 bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}" bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}" bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}" WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}"  phoneNum1="{!relatedTo.StoreName__c}" phoneNum2="{!relatedTo.StoreCity__c}" bulletOneTxt1="We'll call you to schedule an appointment that works for you." bulletTwoTxt1="You can" bulletThreeTxt1="During your in-home consultation," bulletOneTxt2="It is important you are home during this time." bulletTwoTxt2="prepare for your appointment by creating open access to the installation or service area." bulletThreeTxt2="our trusted service provider will take any necessary measurements or assessments, review options and provide a quote" bulletThreeTxt3="based on your needs and budget."></c:pvfc_WhatNext_01>
@@ -125,4 +128,4 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
 </body>
 </html>
 </messaging:htmlEmailBody>
-</messaging:emailTemplate>C
+</messaging:emailTemplate>

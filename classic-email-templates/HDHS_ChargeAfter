@@ -72,19 +72,22 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                             imgPathFull="{!$Label.CXLibraryDTChargeAfterHero}" >
                         </c:pvfc_Header_11_v2>
                         <!--===============HEADER SECTION===================-->
-                          
+                        
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for choosing The Home Depot. Your application for The Home Depot Financing is ready and only takes a few minutes to complete. Find out which financing options are available to you by pre-qualifying today. Checking to see if you pre-qualify will not impact your credit score."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================--> 
                           
                         <!--===============REVIEW PAY BUTTON SECTION===================--> 
                         <c:pvfc_ReviewPayButton_01 buttonURL="{!relatedTo.LongText__c}" buttonImg="{!$Label.CXLibraryPreQualifyCTA}" ></c:pvfc_ReviewPayButton_01>
-                        <!--===============REVIEW PAY BUTTON SECTION===================--> 
-                          
-                          
+                        <!--===============REVIEW PAY BUTTON SECTION===================-->
+                        
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_12 greetingsCopy="Your pre-qualification financing application link will expire after three days. Please do not use it until you are ready to apply."></c:pvfc_Greeting_12>
-                        <!--===============GREETING SECTION===================-->  
+                        <!--===============GREETING SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_CORE_ProgressBar_3_D}" imageMobileURL="{!$Label.CX_img_CORE_ProgressBar_3_M}" imageAlt="Your Journey - You're on Step 3. Finalize & Purchase: Make a final decision; Purchase your project." />
+                        <!--===============/PROGRESS BAR SECTION===================--> 
 
                         <!--===============QUICK LINKS SECTION===================-->
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>

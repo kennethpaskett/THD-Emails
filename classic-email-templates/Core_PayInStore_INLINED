@@ -74,7 +74,11 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         <c:pvfc_ServiceDetails_04 ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.AltPhone__c}" SPNum2="{!relatedTo.Street__c}" SPemail="{!relatedTo.RefString__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" OrderNum="{!relatedTo.RefNumber__c}" Balance="{!relatedTo.Amount__c}"></c:pvfc_ServiceDetails_04>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_CORE_ProgressBar_3_D}" imageMobileURL="{!$Label.CX_img_CORE_ProgressBar_3_M}" imageAlt="Your Journey - You're on Step 3. Finalize & Purchase: Make a final decision; Purchase your project." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
                           
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 
                         <c:pvfc_WhatNext_04 bulletOneImg="{!$Label.CX_LibraryCoreBulletNumberOne}" bulletTwoImg="{!$Label.CX_LibraryCoreBulletNumberTwo}" bulletThreeImg="{!$Label.CX_LibraryCoreBulletNumberThree}" WhatNextDivider="{!$Label.CX_LibraryCorePayInStoreDividerD}" WhatNextDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"

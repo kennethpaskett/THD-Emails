@@ -73,11 +73,14 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============GREETING SECTION===================-->                          
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                            <c:pvfc_ServiceDetails_02 ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.StorePhone__c}" SPNum2="{!relatedTo.StoreCity__c}" SPemail="{!relatedTo.RefString__c}" 
-                             OrangeBannerD="{!$Label.CX_LibraryCoreOrangePaintBanner}" OrangeBannerM="{!$Label.CX_LibraryCoreOrangePaintBannerM}" CoreCallLoggingCallNowD="{!$Label.CX_LibraryCoreCallLoggingCallNowD}" CoreCallLoggingCallNowM="{!$Label.CX_LibraryCoreCallLoggingCallNowM}" BannerNumber1="{!relatedTo.PhoneNumber__c}" BannerNumber2="{!relatedTo.StoreCity__c}"></c:pvfc_ServiceDetails_02>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================-->  
+                        <c:pvfc_ServiceDetails_02 ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.StorePhone__c}" SPNum2="{!relatedTo.StoreCity__c}" SPemail="{!relatedTo.RefString__c}" OrangeBannerD="{!$Label.CX_LibraryCoreOrangePaintBanner}" OrangeBannerM="{!$Label.CX_LibraryCoreOrangePaintBannerM}" CoreCallLoggingCallNowD="{!$Label.CX_LibraryCoreCallLoggingCallNowD}" CoreCallLoggingCallNowM="{!$Label.CX_LibraryCoreCallLoggingCallNowM}" BannerNumber1="{!relatedTo.PhoneNumber__c}" BannerNumber2="{!relatedTo.StoreCity__c}"></c:pvfc_ServiceDetails_02>
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+                        
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_CORE_ProgressBar_1_D}" imageMobileURL="{!$Label.CX_img_CORE_ProgressBar_1_M}" imageAlt="Your Journey - You're on Step 1. Submit a Request: Provide your information; A licensed Service Provider will contact you within 24 hours." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
+                        
                         <!--===============QUICK LINKS SECTION===================-->
-                                               
                         <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
                         <!--===============QUICK LINKS SECTION===================-->
                           

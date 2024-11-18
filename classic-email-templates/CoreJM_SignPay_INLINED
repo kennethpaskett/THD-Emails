@@ -87,6 +87,10 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                             <td align="center" class="mso_text" style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal; padding:0 0 0 0; mso-padding-alt:0 0 0 0;"><b>If you would like to pay by phone or have questions, call your service provider, {!relatedTo.SourceName__c}: <a class="a2" href="tel:{!relatedTo.RefPhone__c}">{!relatedTo.RefPhone__c}</a></b></td>
                         </tr>
 
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_CORE_ProgressBar_3_D}" imageMobileURL="{!$Label.CX_img_CORE_ProgressBar_3_M}" imageAlt="Your Journey - You're on Step 3. Finalize & Purchase: Make a final decision; Purchase your project." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
+
                         <!--===============WHATS NEXT SECTION===================--> 
                         <c:pvfc_WhatNext_08 WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" BulletOneText="Enter your email address in the portal to get your verification code." BulletTwoText="Once you gain access to your account, you can review and sign your documents and process your payment." BulletThreeText="We'll email a copy of your receipt, and your Service Provider will follow up regarding next steps." ></c:pvfc_WhatNext_08>  
                         <!--===============WHATS NEXT SECTION===================-->
