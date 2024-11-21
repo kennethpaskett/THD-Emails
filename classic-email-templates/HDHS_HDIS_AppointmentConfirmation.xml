@@ -1,4 +1,15 @@
-<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" >
+
+<!--=============== .ICS CALENDAR ATTACHMENT ===============--> 
+<c:pvfc_ICSAttachmentBuilder
+    eventTitle="Home Depot Design Consultation (In-Home)"
+    eventDescription="We're looking forward to learning more about your project goals! You can review your appointment details and what to expect. There will be some important choices to make during your consultation, so please have a property owner present."
+    eventDate="{!relatedTo.RefDateTime__c}"
+    eventStartDateTime="{!relatedTo.RefDateTime__c}"
+    eventDuration="90"
+    eventLocation="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" />
+<!--=============== /.ICS CALENDAR ATTACHMENT ===============-->
+
  <messaging:htmlEmailBody >
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -66,7 +77,22 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                         <c:pvfc_ServiceDetails_HDIS logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get ready for your in-home consultation!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreCity__c}" imgPathFull="{!$Label.CX_LibraryHDHS_HDIS_AppointmentConfirmationHeroD}" imgPathMobile="{!$Label.CX_LibraryHDHS_HDIS_AppointmentConfirmationHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}"  Title="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.PhoneNumber__c}" SPNum2="{!relatedTo.StoreCity__c}" SPemail="{!relatedTo.RefString__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.AltPhone__c}"  custemail="{!relatedTo.ToEmail__c}"  jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.StoreName__c}"></c:pvfc_ServiceDetails_HDIS>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
+                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
+
+                        <tr>
+                            <td height="24" style="height: 24px; line-height: 100%; mso-line-height-rule: exactly; font-size: 24px;">&nbsp;</td>
+                        </tr>  
+
+                        <!--=============== ADD TO CALENDAR ===============-->
+                        <c:pvfc_AddToCalendar_01
+                            Copy="Add appointment details to your calendar by choosing your email type:"
+                            eventTitle="Home Depot Design Consultation (In-Home)"
+                            eventDescription="We're looking forward to learning more about your project goals! You can review your appointment details and what to expect. There will be some important choices to make during your consultation, so please have a property owner present."
+                            eventDate="{!relatedTo.RefDateTime__c}"
+                            eventStartDateTime="{!relatedTo.RefDateTime__c}"
+                            eventDuration="90"
+                            eventLocation="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" />
+                        <!--=============== /ADD TO CALENDAR ===============-->
                           
                         <!--===============GREETING SECTION===================-->  
                         <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re looking forward to learning more about your {!relatedTo.ProductName__c} project goals! You can review your appointment details and what to expect. There will be some important choices to make during your consultation, so please have a property owner present."></c:pvfc_Greeting_04>
