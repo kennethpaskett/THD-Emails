@@ -1,15 +1,4 @@
-<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" >
-
-<!--=============== .ICS CALENDAR ATTACHMENT ===============--> 
-<c:pvfc_ICSAttachmentBuilder
-    eventTitle="Home Depot Design Consultation (In-Home)"
-    eventDescription="We're looking forward to learning more about your project goals! You can review your appointment details and what to expect. There will be some important choices to make during your consultation, so please have a property owner present."
-    eventDate="{!relatedTo.RefDateTime__c}"
-    eventStartDateTime="{!relatedTo.RefDateTime__c}"
-    eventDuration="90"
-    eventLocation="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" />
-<!--=============== /.ICS CALENDAR ATTACHMENT ===============-->
-
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
  <messaging:htmlEmailBody >
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -74,34 +63,23 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                       <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
 <!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
 
+                        <!--===============HEADER SECTION===================-->
+                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get ready for your in-home consultation!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreCity__c}" imgPathFull="{!$Label.CX_LibraryHDHS_HDIS_AppointmentConfirmationHeroD}" imgPathMobile="{!$Label.CX_LibraryHDHS_HDIS_AppointmentConfirmationHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <!--===============HEADER SECTION===================-->
                           
                         <!--===============SERVICE AND CUSTOMER SECTION===================--> 
-                        <c:pvfc_ServiceDetails_HDIS logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Get ready for your in-home consultation!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreCity__c}" imgPathFull="{!$Label.CX_LibraryHDHS_HDIS_AppointmentConfirmationHeroD}" imgPathMobile="{!$Label.CX_LibraryHDHS_HDIS_AppointmentConfirmationHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}"  Title="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.PhoneNumber__c}" SPNum2="{!relatedTo.StoreCity__c}" SPemail="{!relatedTo.RefString__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.AltPhone__c}"  custemail="{!relatedTo.ToEmail__c}"  jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.StoreName__c}"></c:pvfc_ServiceDetails_HDIS>
-                        <!--===============SERVICE AND CUSTOMER SECTION===================-->
-
-                        <tr>
-                            <td height="24" style="height: 24px; line-height: 100%; mso-line-height-rule: exactly; font-size: 24px;">&nbsp;</td>
-                        </tr>  
-
-                        <!--=============== ADD TO CALENDAR ===============-->
-                        <c:pvfc_AddToCalendar_01
-                            Copy="Add appointment details to your calendar by choosing your email type:"
-                            eventTitle="Home Depot Design Consultation (In-Home)"
-                            eventDescription="We're looking forward to learning more about your project goals! You can review your appointment details and what to expect. There will be some important choices to make during your consultation, so please have a property owner present."
-                            eventDate="{!relatedTo.RefDateTime__c}"
-                            eventStartDateTime="{!relatedTo.RefDateTime__c}"
-                            eventDuration="90"
-                            eventLocation="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" />
-                        <!--=============== /ADD TO CALENDAR ===============-->
+                        <c:pvfc_ServiceDetails_09 Title="Your Appointment Details" ServiceProviderDivider="{!$Label.CX_LibraryCoreServiceProviderDetailsDivider}" ServiceProviderDividerM="{!$Label.CX_LibraryCoreServiceProviderDetailsDividerM}" YourInformationDivider="{!$Label.CX_LibraryCoreYourInformationDivider}" YourInformationDividerM="{!$Label.CX_LibraryCoreYourInformationDividerM}"  SPName="{!relatedTo.SourceName__c}" SPNum1="{!relatedTo.PhoneNumber__c}" SPNum2="{!relatedTo.StoreCity__c}" SPemail="{!relatedTo.RefString__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}" Address1="{!relatedTo.Street__c}" Address2="{!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custPhone="{!relatedTo.AltPhone__c}"  custemail="{!relatedTo.ToEmail__c}"  jobDate="{!relatedTo.RefDateTime__c}" jobTime="{!relatedTo.StoreName__c}"></c:pvfc_ServiceDetails_09>
+                        <!--===============SERVICE AND CUSTOMER SECTION===================--> 
                           
                         <!--===============GREETING SECTION===================-->  
-                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re looking forward to learning more about your {!relatedTo.ProductName__c} project goals! You can review your appointment details and what to expect. There will be some important choices to make during your consultation, so please have a property owner present."></c:pvfc_Greeting_04>
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="We’re looking forward to learning more about your {!relatedTo.ProductName__c} project goals! Please review your appointment details. There will be some important choices to make during your consultation, so please have a property owner present."></c:pvfc_Greeting_04>
                         <!--===============GREETING SECTION===================-->
 
                         <!--===============PROGRESS BAR SECTION===================-->
                         <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_1_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_1_M}" imageAlt="Your Journey - You're on Step 1. Getting Started: Design Consultation, Product Selection, and Project Quote." />
                         <!--===============/PROGRESS BAR SECTION===================-->
-                          
+
                         <!--===============NON GARAGE or CLOSET ORGANIZATION===================--> 
                         <!--===============WHAT HAPPENS NEXT SECTION===================--> 
                         <apex:outputText rendered="{!!(relatedTo.ProductName__c == 'Garage Organization' || relatedTo.ProductName__c == 'Closet Organization')}">
@@ -117,13 +95,14 @@ body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !impor
                         <!--===============/WHAT HAPPENS NEXT SECTION===================-->
 
                         <!--===============PROJECT GUIDES SECTION===================-->
-                        <C:pvfc_LinkedBulletedListWithIcon_01 sectionHeaderText="Project Guides" headerDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" headerDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" itemOneIcon="{!$Label.CX_LibraryIconToolbelt}" itemOneText="Home Organization Services" itemOneLink="https://www.homedepot.com/services/c/home-organization/22ef3e97b" itemTwoIcon="{!$Label.CX_LibraryIconPricetag}" itemTwoText="Home Organization Cost Guide" itemTwoLink="https://www.homedepot.com/services/c/cost-install-custom-closet/22ef3e97b" itemThreeIcon="{!$Label.CX_LibraryIconClipboard}" itemThreeText="Home Organization Design Guide" itemThreeLink="https://online.fliphtml5.com/asnje/jmew/#p=1"></c:pvfc_LinkedBulletedListWithIcon_01>
+                        <c:pvfc_LinkedBulletedListWithIcon_01 sectionHeaderText="Project Guides" headerDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" headerDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" itemOneIcon="{!$Label.CX_LibraryIconToolbelt}" itemOneText="Home Organization Services" itemOneLink="https://www.homedepot.com/services/c/home-organization/22ef3e97b" itemTwoIcon="{!$Label.CX_LibraryIconPricetag}" itemTwoText="Home Organization Cost Guide" itemTwoLink="https://www.homedepot.com/services/c/cost-install-custom-closet/22ef3e97b" itemThreeIcon="{!$Label.CX_LibraryIconClipboard}" itemThreeText="Home Organization Design Guide" itemThreeLink="https://online.fliphtml5.com/asnje/jmew/#p=1"></c:pvfc_LinkedBulletedListWithIcon_01>
                         <!--===============/PROJECT GUIDES SECTION===================-->
                         </apex:outputText>
                         <!--===============/GARAGE or CLOSET ORGANIZATION===================--> 
+
                     
                         <!--===============WHY HOME DEPOT SECTION===================--> 
-                        <c:pvfc_ValueProps_03 ApplyNowURL="{!relatedTo.AltRefUrl__c}" affordableImg="{!$Label.CX_LibraryCoreAffordableIcon}" licensedImg="{!$Label.CX_LibraryCoreLicensedIcon}" blackhomedepotImg="{!$Label.CX_LibraryCoreBlackHomeDepotIcon}" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_03>
+                        <c:pvfc_ValueProps_03 affordableImg="{!$Label.CX_LibraryCoreAffordableIcon}" licensedImg="{!$Label.CX_LibraryCoreLicensedIcon}" blackhomedepotImg="{!$Label.CX_LibraryCoreBlackHomeDepotIcon}" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_03>
                         <!--===============WHY HOME DEPOT SECTION===================-->
                     
 

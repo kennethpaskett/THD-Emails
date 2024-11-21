@@ -1,0 +1,75 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->
+<!-- recipientType="User" relatedToType="Quote" -->
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<c:evfc_EmailStylesMin ></c:evfc_EmailStylesMin> 
+  
+</head>
+
+<body>
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+<c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01>
+
+<!-- @begin email body frame, DO NOT REMOVE PLEASE-->
+    <table class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 700px; border: none; Margin: 0 auto;">
+        <!--[if !mso]><!--><tr><!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all">
+<!-- @begin email body interior -->
+
+<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="Thank you for purchasing new floors - now get ready for installation!" phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CX_LibraryThankYouPPD}" imgPathMobile="{!$Label.CX_LibraryThankYouPPM}" ></c:pvfc_Header_01>
+
+
+<c:pvfc_Greeting_01 custFirstName="{!relatedTo.CustomerName__c}" greetingsCopy="Now that you've completed your payment, our Authorized Service Provider will reach out to schedule your installation. Please note it takes 24 hours to process your order. After that time, if you would like to make any changes, call your local Home Depot store. We want the process to be as smooth and easy as possible, so we've included some steps to help you prepare your home for installation below."></c:pvfc_Greeting_01>
+
+<c:pvfc_ProductReceipt_grid_02 quoteNbr="{!relatedTo.RefNumber__c}" measureID="{!relatedTo.DocumentNo__c}" ></c:pvfc_ProductReceipt_grid_02>
+
+<c:pvfc_PrepareInstallList_01 image1URL="{!$Label.CX_LibraryInstall01}" image1ALT="Carpet" image2URL="{!$Label.CX_LibraryInstall02}" image2ALT="Hardwood" image3URL="{!$Label.CX_LibraryInstall03}" image3ALT="Tile" CopyURL="{!relatedTo.RefURL__c}"></c:pvfc_PrepareInstallList_01>
+
+<c:pvfc_Store_JobDetails_2Col_01 iconImagePath="{!$Label.CX_LibraryStoreIcon}" orderNumber="{!relatedTo.ProductName__c}" measureNumber="{!relatedTo.DocumentNo__c}"  storeName="{!relatedTo.StoreName__c}" storeStreet="{!relatedTo.Street__c}" storeCity="{!relatedTo.City__c}" storeState="{!relatedTo.State__c}" storezip="{!relatedTo.Zipcode__c}" storephone="{!relatedTo.RefPhone__c}"></c:pvfc_Store_JobDetails_2Col_01>
+
+    <div class="hues-1">
+        <table class="width-1" style="text-align: left;width: 700px; max-width: 700px" role="presentation">
+            <tr class="row-2">
+                <td class="column">
+                    <table>
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar4_Desktop}" imageAlt="Your Flooring Journey - You're on Step 4. Prep & Install: Schedule & prep your home, Installation." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+<c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
+
+<c:pvfc_Footer_01 ></c:pvfc_Footer_01>
+
+<!--===============PIXEL TRACKING===================-->
+<c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+<!--===============PIXEL TRACKING===================-->
+
+
+
+<!-- @end email body -->
+    </td><td class="hide-for-small">&zwnj;</td></tr></table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

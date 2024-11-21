@@ -1,0 +1,28 @@
+                        <tr><td>
+                        <!-- Light mode image -->
+                        <img src="https://placehold.co/600x400/ECEFF1/F96302?text=Light+Mode" alt="Light Logo" style="display:block;" width="600" height="400" class="light-mode" />
+
+                        <!-- Dark mode image (hidden by default) -->
+                        <img src="https://placehold.co/600x400/001529/F96302?text=Dark+Mode" alt="Dark Logo" style="display:none;" width="600" height="400" class="dark-mode" />
+
+                        <style>
+                        /* Dark Mode Support */
+                        @media (prefers-color-scheme: dark) {
+                            .light-mode {
+                                display: none !important;
+                            }
+                            .dark-mode {
+                                display: block !important;
+                            }
+                        }
+                        </style>
+
+                        <!--[if mso]>
+                        <style>
+                        /* For Outlook, hide the dark mode image */
+                        .dark-mode {
+                            display: none !important;
+                        }
+                        </style>
+                        <![endif]-->
+                        </td></tr>

@@ -1,0 +1,105 @@
+<apex:component controller="AppointmentTimeController" access="global">
+    <apex:attribute name="headline" description="headline" type="String" />
+    <apex:attribute name="copy" description="copy" type="String" />
+    <apex:attribute name="copy2" description="copy" type="String" />
+    <apex:attribute name="buttonURL" description="Button URL" type="String" />
+    <apex:attribute name="buttonCopy" description="Button copy" type="String" />
+    <apex:attribute name="iconURL" description="Lightbulb icon URL" type="String" />
+    <apex:attribute name="noProd1URL" description="No Product Image URL 1" type="String" />
+    <apex:attribute name="noProd2URL" description="No Product Image URL 2" type="String" />
+    <apex:attribute name="noProd3URL" description="No Product Image URL 3" type="String" />
+    <apex:attribute name="noProd1ALT" description="No Product Image1 ALT text" type="String" />
+    <apex:attribute name="noProd2ALT" description="No Product Image2 ALT text" type="String" />
+    <apex:attribute name="noProd3ALT" description="No Product Image3 ALT text" type="String" />
+    <apex:attribute name="NameString" description="Name String" type="String"/>
+
+    <!-- Component Definition -->  
+<apex:outputText rendered="{!NameString == 'No Product Selected' || NameString == 'Reminder'}">  
+<tr>
+    <td bgcolor="#efefef" valign="top">
+        <table bgcolor="#efefef" class="wrapper" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:600px;" width="600">      
+            <tr>
+                <td valign="top">
+                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:100%">
+                        <tr class="row-7">
+                            <td valign="top">
+                                <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="value-props-icon" valign="top" style="padding:25px 0px 0px 15px; max-width: 50px; width: 50px;"><img class="steps-number" src="{!iconURL}" width="30" style="max-width: 30px;" alt="Cart" /></td>
+                                        <td style="padding:25px 0px 0px 0px; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:18px; line-height: 22px; color:#000000; font-weight:bold;">&nbsp;{!headline}</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr><td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td></tr>
+                        <tr class="row-7">
+                            <td colspan="2" style="padding:0px 15px 0px 15px; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal;">{!copy}
+                            </td>
+                        </tr>
+                         <tr><td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td></tr>
+                        <tr>
+                            <td valign="top">
+                                <table class="gray_titles_2col" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width:300px;" width="300">
+                                    <tr>
+                                        <td class="" valign="top">
+
+                                            <!-- orange box button -->
+                                            <div class="btn-1" style="margin: 0px 0 10px">
+                                                <!--[if mso]><v:rect style="width: 260px; height: 80px; v-text-anchor: middle;" arcsize="200%" strokecolor="#c76929" fillcolor="#F96302" strokeweight="1pt">
+                                                <center><![endif]-->
+                                                <a href="{!buttonURL}">
+                                                    <span class="btn" style="width: 260px; max-width: 260px; background-color: #F96302; border-bottom:2px solid #c76929;">
+                                                        <span class="btn-text" style="height: 50px; line-height: 125%; "><apex:outputText escape="false" value="{!buttonCopy}" /> </span>
+                                                    </span>
+                                                </a>
+                                                <!--[if mso]></center></v:rect><![endif]-->
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr><td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td></tr>
+                        <tr class="row-7">
+                            <td colspan="2" style="padding:0px 15px 0px 15px; font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:16px; line-height: 20px; color:#000000; font-weight:normal;">{!copy2}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="25" style="height: 25px; mso-line-height-rule: exactly; line-height: 100%; font-size: 25px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td valign="top">
+                                <table class="width-5" style="text-align: left;width:600px;max-width:600px;" role="presentation">
+                                    <tr class="row-7">
+                                        <td class="column small-6" valign="top" style="padding:0px 0px 0px 15px;">
+
+                                            <div class="height-05" aria-hidden="true">&nbsp;</div>
+                                            <img class="" src="{!noProd1URL}" width="200" style="max-width: 200px;" alt="{!noProd1ALT}" />
+
+                                        </td>
+                                        <td class="column small-6" valign="top" align="middle">
+
+                                            <div class="np-middle" style="padding:0px 10px;">
+                                                <div class="height-05" aria-hidden="true">&nbsp;</div>
+                                                <img class="" src="{!noProd2URL}" width="200" style="max-width: 200px;" alt="{!noProd2ALT}" />
+                                            </div>
+                                        </td>
+                                        <td class="column hide-for-small" valign="top" align="right" style="padding:0px 15px 0px 0px;">
+
+                                            <div class="height-05" aria-hidden="true">&nbsp;</div>
+                                            <img class="" src="{!noProd3URL}" width="200" style="max-width: 200px;" alt="{!noProd3ALT}" />
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</apex:outputText>
+</apex:component>

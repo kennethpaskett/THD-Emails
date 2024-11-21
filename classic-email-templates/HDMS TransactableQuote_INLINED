@@ -1,0 +1,84 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}" relatedToType="hms_EmailData__c"> <!-- recipientType="Contact"  -->
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+    
+<head>
+
+<c:evfc_EmailStylesMin ></c:evfc_EmailStylesMin> 
+  
+</head>
+
+<body>
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+<c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01>
+
+<!-- @begin email body frame, DO NOT REMOVE 1-Commit2-->
+    <table style="width: 100%;" lang="en" role="presentation">
+        <!--[if !mso]><!--><tr><!--<![endif]-->
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all" style="max-width: 700px !important;">
+<!-- @begin email body interior -->
+
+<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="Get excited - your flooring quote is ready!" phoneNum="{!relatedTo.PhoneNumber__c}" imgPathFull="{!$Label.CX_LibraryTransactionalQuoteHeroM}" imgPathMobile="{!$Label.CX_LibraryTransactionalQuoteHeroM}" ></c:pvfc_Header_01>
+
+<c:pvfc_Greeting_01 custFirstName="{!relatedTo.CustomerName__c}" greetingsCopy="Your itemized flooring quote below includes the cost of labor and materials. After your purchase, we'll call to schedule your installation."></c:pvfc_Greeting_01>
+<apex:outputPanel rendered="{!Not(ISBLANK(relatedTo.AltRefUrl2__c))}">
+    <c:pvfc_QuoteDetails_2col_01 selectNumber="{!relatedTo.RefPhone__c}" selectLink="{!relatedTo.RefString__c}{!relatedTo.StoreStreet__c}" hdmsProductName="{!relatedTo.ProductName__c}" recordTypeName="{!relatedTo.StoreCity__c}" recStage="{!relatedTo.CaseStatus__c}" recDisposition="{!relatedTo.BranchName__c}" customerStoreNumber="{!relatedTo.StorePhone__c}" quoteSource="{!relatedTo.SourceName__c}" quoteData="{!relatedTo.TotalAmount__c}" expDate="{!relatedTo.ExpirationDate__c}" timeZone="{!relatedTo.TimeZone__c}" floorPlanURL="{!relatedTo.AltRefUrl2__c}" buttonCopy="Purchase&nbsp;Now" buttonURL="{!relatedTo.RefURL__c}" PhoneIcon="{!$Label.CX_LibraryOrangePhoneIcon}" LaptopIcon="{!$Label.CX_LibraryOrangeLaptopIcon}" ></c:pvfc_QuoteDetails_2col_01>
+</apex:outputpanel>  
+<apex:outputPanel rendered="{!(ISBLANK(relatedTo.AltRefUrl2__c))}">
+    <c:pvfc_QuoteDetails_2col_01 selectNumber="{!relatedTo.RefPhone__c}" selectLink="{!relatedTo.RefString__c}{!relatedTo.StoreStreet__c}" hdmsProductName="{!relatedTo.ProductName__c}" recordTypeName="{!relatedTo.StoreCity__c}" recStage="{!relatedTo.CaseStatus__c}" recDisposition="{!relatedTo.BranchName__c}" customerStoreNumber="{!relatedTo.StorePhone__c}" quoteSource="{!relatedTo.SourceName__c}" quoteData="{!relatedTo.TotalAmount__c}" expDate="{!relatedTo.ExpirationDate__c}" timeZone="{!relatedTo.TimeZone__c}" floorPlanURL="{!relatedTo.AltRefUrl__c}" buttonCopy="Purchase&nbsp;Now" buttonURL="{!relatedTo.RefURL__c}" PhoneIcon="{!$Label.CX_LibraryOrangePhoneIcon}" LaptopIcon="{!$Label.CX_LibraryOrangeLaptopIcon}" ></c:pvfc_QuoteDetails_2col_01>
+</apex:outputpanel>  
+<c:pvfc_QuoteDetails_grid quoteNbr="{!relatedTo.DocumentNo__c}"></c:pvfc_QuoteDetails_grid>
+
+<table class="width-1" role="presentation">
+
+<!--===============PROGRESS BAR SECTION===================-->
+<c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Desktop}" imageMobileURL="{!$Label.CX_LibraryHDMSFlooringProgressBar3_Mobile}" imageAlt="Your Flooring Journey - You're on Step 3. Finalize & Purchase: Review quote, Finalize products, and Purchase." />
+<!--===============/PROGRESS BAR SECTION===================-->
+
+</table>
+
+<table class="width-1" role="presentation">
+    <tr>
+        <td>
+
+<c:pvfc_ValueProps_01 ApplyNowURL="{!relatedTo.LongText__c}"></c:pvfc_ValueProps_01>
+
+        </td>
+    </tr>
+</table>
+
+
+
+<!--Sandhya End Sandhya -->
+<!--
+<c:pvfc_CreditOffer_01 hdmsGrandTotal="{!relatedTo.TotalAmount__c}" buttonCopy="Apply&nbsp;Now" buttonURL="https://www.homedepot.com/c/Credit_Center" imageURL="{!$Label.CX_LibrarySpecialFinancingIcon}" imageALT="Credit Cards" ></c:pvfc_CreditOffer_01>
+-->
+
+<c:pvfc_QuickLinks_HDMS ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_HDMS>
+
+<c:pvfc_Footer_01 ></c:pvfc_Footer_01>
+
+<!--===============PIXEL TRACKING===================-->
+<c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+<!--===============PIXEL TRACKING===================-->
+
+
+<!-- @end email body -->
+    </td><td class="hide-for-small">&zwnj;</td></tr></table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
+<!-- $<c:HDMSCitiDetails value="0" QutId="{!relatedTo.Id}"></c:HDMSCitiDetails> -->

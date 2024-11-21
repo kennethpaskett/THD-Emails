@@ -1,0 +1,223 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<!--================= START CSS SECTION **PLEASE DO NOT TOUCH** ====================================-->
+
+<c:evfc_CSSEmailTemplates ></c:evfc_CSSEmailTemplates> 
+
+<!--=============================== END CSS SECTION **PLEASE DO NOT TOUCH** ============================================================--> 
+  
+</head>
+
+<body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+        <!--[if !mso]><!-->
+        <tr>
+        <!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width: 100% !important; border-top-style: none; Margin: 0; padding:0;">
+                
+                <table class="wrapper" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 640px; border: none;">   
+<!--==================================================================START PREHEADER SECTION============================================================================== -->
+    
+<div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+    <c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01></div>
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+<div style="display:none; max-height:0px; overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+    
+<!--========================================================================END PREHEADER SECTION================================================================================= -->
+    
+    
+
+<!-- ========================================^^^^^^^^^THE BELOW SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^======================================== -->    
+    
+    <tr>
+        <td bgcolor="#ffffff" valign="top">
+            <table class="mob_width94" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="Margin:0 auto; width:600px;">
+                <tr>
+                    <td align="center">
+                      <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
+<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
+
+                          
+            <!--====================================================================HEADER SECTION======================================================================================================================-->   
+        
+                          
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Scheduled'}">
+                        <!--===============HEADER SECTION===================-->
+                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Great news – your installation appointment is soon!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreStreet__c}" imgPathFull="{!$Label.CX_LibraryHDIS_ApptScheduledHeroD}" imgPathMobile="{!$Label.CX_LibraryHDIS_ApptScheduledHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText>
+                          
+                        
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Rescheduled'}">
+                        <!--===============HEADER SECTION===================-->
+                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Your installation appointment has been rescheduled!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreStreet__c}" imgPathFull="{!$Label.CX_LibraryHDIS_RescheduledInstallHeroD}" imgPathMobile="{!$Label.CX_LibraryHDIS_RescheduledInstallHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText>
+                          
+                          
+                          
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Additional Install'}">
+                        <!--===============HEADER SECTION===================-->
+                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Great news – you have another installation appointment coming up!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreStreet__c}" imgPathFull="{!$Label.CX_LibraryHDIS_AnotherInstallHeroD}" imgPathMobile="{!$Label.CX_LibraryHDIS_AnotherInstallHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText>
+                        
+                          
+                          
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Job Complete'}">
+                        <!--===============HEADER SECTION===================-->
+                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
+                        <c:pvfc_Header_09 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Your installation is finished!" phoneNum1="{!relatedTo.RefPhone__c}" phoneNum2="{!relatedTo.StoreStreet__c}" imgPathFull="{!$Label.CX_LibraryHDIS_JobCompleteHeroD}" imgPathMobile="{!$Label.CX_LibraryHDIS_JobCompleteHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_09>
+                        <!--===============HEADER SECTION===================-->
+                        </apex:outputText>
+     
+            <!--====================================================================GREETING SECTION======================================================================================================================-->   
+                        
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Scheduled'}">
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04_v2 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for scheduling your {!relatedTo.ProductName__c} installation. You'll find your appointment details listed below. If you have multiple product installations, you'll see each appointment type listed. As additional jobs are scheduled, we'll email your appointment dates. Your installation coordinator will call before your appointment to confirm your time window. We've also included some helpful information to get you and your home ready for installation." greetingsCopy2="If you have any questions or need to reschedule, please call us at" greetingsCopyLink="{!relatedTo.RefPhone__c}"></c:pvfc_Greeting_04_v2>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>
+                          
+                          
+                          
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Rescheduled'}">
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04_v2 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Your rescheduled {!relatedTo.ProductName__c} installation appointment details are listed below as well as some helpful information to get you and your home ready for installation." greetingsCopy2="If you have any questions or need to reschedule, please call us at" greetingsCopyLink="{!relatedTo.RefPhone__c}"></c:pvfc_Greeting_04_v2>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>
+                          
+                          
+                          
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Additional Install'}">
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04_v2 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Thank you for scheduling your {!relatedTo.ProductName__c} installation. We've updated your appointment details below to include another installation date. Your installation coordinator will call before your appointment to confirm your time window. We've also included some information to help you prepare for installation. " greetingsCopy2="If you have any questions or need to reschedule, please call us at" greetingsCopyLink="{!relatedTo.RefPhone__c}"></c:pvfc_Greeting_04_v2>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText>
+                          
+                          
+                        
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Job Complete'}">
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="Congrats on your completed project! We hope you are happy with your installation. Your feedback is important to us, so keep an eye out for a survey about your experience. We've also put together some tips to help you care for and maintain your new products."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText> 
+                          
+                          
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Job Complete' && relatedTo.Amount__c != 0}">
+                         <!--===============PAY BALANCE SECTION===================--> 
+                        <c:pvfc_PayBalance_01 Name="{!relatedTo.FirstName__c}" number="{!relatedTo.RefPhone__c}" image="{!$Label.CX_LibraryHDIS_OrangeMoneyIcon}" copy="you still have a remaining balance on your project." ></c:pvfc_PayBalance_01>
+                        <!--===============PAY BALANCE SECTION===================-->  
+                         </apex:outputText>
+                          
+                          
+                        
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Job Complete'}">
+                        <c:pvfc_ProjectResources_01 RefName="{!relatedTo.StoreCity__c}" Product="{!relatedTo.ProductName__c}" Date1="{!relatedTo.ExpirationDate__c}" Date2="{!relatedTo.RefDate__c}" Date3="{!relatedTo.AltDate__c}" Date4="{!relatedTo.RefDateTime__c}" Date5="{!relatedTo.AltDateTime__c}" headline="Your Project Resources" subhead="Guides" copy="Care and Maintenance for your Kitchen Installation Project" copyLink="https://www.homedepot.com/services/h/maintenance-cabinets-counters-backsplash" copy2="Care and Maintenance for your Home Organization Project" copy2Link="https://www.homedepot.com/services/h/install-maintenance-home-org" image="{!$Label.CX_LibraryHDIS_ClipboardIcon}" image2="{!$Label.CX_LibraryHDIS_CareMaintenanceHeroD}" WhyHomeDepotDividerD="{!$Label.CX_LibraryWhyHomeDepotDividerD}" WhyHomeDepotDividerM="{!$Label.CX_LibraryWhyHomeDepotDividerM}"></c:pvfc_ProjectResources_01>
+                        </apex:outputText> 
+                          
+                          
+                          
+                <!--==================================================================== RESCHEDULED APPOINTMENT SECTION======================================================================================================================-->         
+                          
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c == 'Rescheduled'}">
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_ScheduledAppt_05 YourScheduledApptDividerD="{!$Label.CX_LibraryCoreYourScheduledApptDivider}" YourScheduledApptDividerM="{!$Label.CX_LibraryCoreYourScheduledApptDividerM}" Project="{!relatedTo.ProductName__c}" jobDate1="{!relatedTo.ExpirationDate__c}" jobDate2="{!relatedTo.RefDate__c}" jobDate3="{!relatedTo.AltDate__c}" jobDate4="{!relatedTo.RefDateTime__c}" jobDate5="{!relatedTo.AltDateTime__c}"></c:pvfc_ScheduledAppt_05>
+                        <!--===============GREETING SECTION===================-->
+                        </apex:outputText> 
+                        
+               <!--====================================================================SCHEDULE PROJECTS SECTION======================================================================================================================-->           
+               
+                        <!--===============SCHEDULE PROJECTS SECTION===================--> 
+                        <c:pvfc_ScheduledProject_01 headline="Your Scheduled Projects" Date1="{!relatedTo.RefDate__c}" Date2="{!relatedTo.AltDate__c}" Date3="{!relatedTo.ExpirationDate__c}" DateTime1="{!relatedTo.RefDateTime__c}" DateTime2="{!relatedTo.AltDateTime__c}" Status1="{!relatedTo.CaseStatus__c}" Status2="{!relatedTo.CustomerName__c}" Status3="{!relatedTo.StoreZipcode__c}" Status4="{!relatedTo.StoreName__c}" Status5="{!relatedTo.SourceName__c}" copy="Cabinet Makeover" copy2="Backsplash" copy3="Countertops" copy4="Closet Organization" copy5="Garage Organization" image="{!$Label.CX_LibraryHDIS_SinkIcon}" image2="{!$Label.CX_LibraryHDIS_BacksplashIcon}" image3="{!$Label.CX_LibraryHDIS_FloorIcon}" image4="{!$Label.CX_LibraryHDIS_ClosetIcon}" image5="{!$Label.CX_LibraryHDIS_GarageIcon}" WhyHomeDepotDividerD="{!$Label.CX_LibraryWhyHomeDepotDividerD}" WhyHomeDepotDividerM="{!$Label.CX_LibraryWhyHomeDepotDividerM}" CheckImg="{!$Label.CX_Library_HDIS_GreenCheckMark}"></c:pvfc_ScheduledProject_01>
+                        <!--===============SCHEDULE PROJECTS SECTION===================-->
+                        
+               <!--====================================================================SCHEDULE PROJECTS SECTION======================================================================================================================-->         
+
+                         
+                         
+               <!--====================================================================SCHEDULE PROJECTS DETAILS SECTION======================================================================================================================-->                                 
+                        <c:pvfc_ProjectDetails_02 YourScheduledApptDividerD="{!$Label.CX_LibraryCoreYourScheduledApptDivider}" YourScheduledApptDividerM="{!$Label.CX_LibraryCoreYourScheduledApptDividerM}" JobNumber="{!relatedTo.RefNumber__c}" Email="{!relatedTo.ToEmail__c}" Phone="{!relatedTo.PhoneNumber__c}" Address="{!relatedTo.Street__c}, {!relatedTo.City__c}, {!relatedTo.State__c} {!relatedTo.Zipcode__c}" custName="{!relatedTo.FirstName__c} {!relatedTo.LastName__c}"></c:pvfc_ProjectDetails_02>
+                          
+               <!--====================================================================SCHEDULE PROJECTS DETAILS SECTION======================================================================================================================-->                                                                                
+                                                                          
+
+               <!--====================================================================SCHEDULE PROJECTS RESOURCES SECTION======================================================================================================================-->
+                        <apex:outputText rendered="{!relatedTo.StoreCity__c != 'Job Complete'}">
+                        <c:pvfc_ProjectResources_01 RefName="{!relatedTo.StoreCity__c}" Product="{!relatedTo.ProductName__c}" headline="Your Project Resources" subhead="Guides" copy="How to Prepare your home for Kitchen Installation" copy2="How to Prepare your home for Home Organization" copyLink="{!relatedTo.RefURL__c}" copy2Link="{!relatedTo.AltRefUrl__c}" image="{!$Label.CX_LibraryHDIS_ClipboardIcon}" image2="{!$Label.CX_LibraryHDIS_ResourcesPrepHeroD}" WhyHomeDepotDividerD="{!$Label.CX_LibraryWhyHomeDepotDividerD}" WhyHomeDepotDividerM="{!$Label.CX_LibraryWhyHomeDepotDividerM}"></c:pvfc_ProjectResources_01>
+                        </apex:outputText>   
+               <!--====================================================================SCHEDULE PROJECTS RESOURCES SECTION======================================================================================================================-->
+
+                <!--===============PROGRESS BAR SECTION===================-->
+                <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_4_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_4_M}" imageAlt="Your Journey - You're on Step 4. Installation: Prep Home and Installation." />
+                <!--===============/PROGRESS BAR SECTION===================-->                                                 
+                          
+              <!--====================================================================WHAT NEXT SECTION======================================================================================================================-->                   
+                       <apex:outputText rendered="{!relatedTo.StoreCity__c != 'Job Complete'}"> 
+                          
+                       <c:pvfc_WhatNext_09 BulletOneText="Get your home ready for installation! Properly preparing your home before your installation appointment helps the process go smoothly and efficiently. We put together some important tips to get ready at the link above." BulletTwoText="On the day of your appointment, your installation coordinator will call to confirm the arrival time. As a reminder, you will need to be present on the first and final day of your installation." BulletThreeText="When your installer arrives, they will conduct a walkthrough of the install area, set up a workstation and reconfirm your designs and selections." WhatNextDivider="{!$Label.CX_LibraryCoreWhatHappensNextDivider}" WhatNextDividerM="{!$Label.CX_LibraryCoreWhatHappensNextDividerM}" ></c:pvfc_WhatNext_09> 
+                       
+                       </apex:outputText> 
+              <!--====================================================================WHAT NEXT SECTION======================================================================================================================--> 
+                          
+
+                                          
+
+                        <!--===============QUICK LINKS SECTION===================-->
+                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Services" ql_03_URL="https://www.homedepot.com/services/" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
+                        <!--===============QUICK LINKS SECTION===================-->
+                          
+                        <!--===============FOOTER SECTION===================--> 
+                        <c:pvfc_Footer_02 ></c:pvfc_Footer_02>
+                        <!--===============FOOTER SECTION===================-->
+
+                        <!--===============PIXEL TRACKING===================-->
+                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+                        <!--===============PIXEL TRACKING===================-->
+
+<!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>   
+<!-- =========================**********************NO CODING BELOW THIS LINE********************************=============================== -->                        
+</table>
+</td>
+<td class="hide-for-small">&zwnj;</td>
+</tr>
+</table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

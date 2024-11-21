@@ -1,0 +1,56 @@
+<apex:component access="global">
+  <apex:attribute name="imgPathFull" description="Path for the hero image, full-size" type="String" />
+  <apex:attribute name="titleCopy" description="Title headline" type="String" />
+  <apex:attribute name="logoLink" description="Logo image URL" type="String" />
+
+    <!-- Component Definition -->    
+    <div id="header" class="hues-1" >
+        <table bgcolor="#FFFFFF"  role="presentation" style="width: 700px; max-width:700px;">
+            <tr>
+                <td class="column-first" style="text-align: left;" width="27%">
+
+                    <table class="img-wrap">
+                        <a href="{!logoLink}">
+                            <img src="{!$Label.CX_LibraryHSLogoIcon_v2}" width="126" style="max-width: 126px;" alt="The Home Depot Home Services" />
+                        </a>
+                    </table>
+
+                </td>
+                <td width="33%" ><table width="410" border="0">
+                  <tr>
+                    <th bgcolor="#FFFFFF" scope="row">&nbsp;</th>
+                  </tr>
+                </table></td>
+               
+                
+            </tr>
+        </table>
+
+        <hr class="orange-border" style="max-width:700px" align="center" />
+
+        <div class="height-05" aria-hidden="true">&nbsp;</div>
+
+        <table class="width-2" role="presentation">
+            <tr>
+                <td class="" style="text-align: left;">
+                
+                    <span class="main-title" style="font-weight: bold;"><apex:outputText escape="false" value="{!titleCopy}" /></span> 
+
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>
+
+                    <table class="img-wrap">
+                        <tr>
+                            <td class="hide-for-small" valign="middle">
+                                <img src="{!imgPathFull}" style="display:block;border:0;border:none; width: 700px;" width="700" alt=""/>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="height-1" aria-hidden="true">&nbsp;</div>
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</apex:component>

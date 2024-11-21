@@ -1,0 +1,121 @@
+<messaging:emailTemplate subject="{!relatedTo.Title__c}"  relatedToType="hms_EmailData__c" recipientType="Lead" > 
+ <messaging:htmlEmailBody >
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+    <base target="_blank"></base>
+
+<head>
+
+<!--================================== START CSS SECTION **PLEASE DO NOT TOUCH** =================================================================-->
+
+<c:evfc_CSSEmailTemplates ></c:evfc_CSSEmailTemplates> 
+
+<!--================================== END CSS SECTION **PLEASE DO NOT TOUCH** =================================================================--> 
+  
+</head>
+
+<body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td, th, .btn-text {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+
+<!-- @begin email body frame, DO NOT REMOVE -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 100% !important; width: 100% !important; background: #ffffff; Margin: 0; padding: 0;">
+        <!--[if !mso]><!-->
+        <tr>
+        <!--<![endif]-->
+      
+            <td class="hide-for-small">&zwnj;</td>
+            <td id="all" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width: 100% !important; border-top-style: none; Margin: 0; padding:0;">
+                
+                <table class="wrapper" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 640px; border: none;">   
+<!--==================================================================START PREHEADER SECTION============================================================================== -->
+    
+<div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+    <c:evfc_PreviewText_01 previewText="{!relatedTo.AltString__c}"></c:evfc_PreviewText_01></div>
+    
+    <!--=========================================INSERT PREHEADER DATA HERE============================================ -->
+    
+<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+<div style="display:none; max-height:0px; overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+    
+<!--=====================================================================END PREHEADER SECTION============================================================================== -->
+    
+    
+
+<!-- ========================================^^^^^^^^^THE BELOW SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^======================================== -->    
+    
+    <tr>
+        <td bgcolor="#ffffff" valign="top">
+            <table class="mob_width94" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="Margin:0 auto; width:600px;">
+                <tr>
+                    <td align="center">
+                      <table align="center" cellpadding="0" cellspacing="0" border="0" style="Margin: 0 auto; width: 100%">
+<!-- ========================================^^^^^^^^^THE ABOVE SECTION IS THE STARTER CONTAINER FOR THE ENTIRE EMAIL. TOUCH ONLY IF YOU ARE PROFICIENT IN HTML EMAIL^^^^^^^^^^^========================================= -->  
+
+                        <!--===============HEADER SECTION===================-->
+                        <!-- {!$Label.CX_LibraryQuoteReadyD} {!$Label.CX_LibraryQuoteReadyM} -->
+                        <c:pvfc_Header_08 logoLink="https://www.homedepot.com/services/" imgLogo="{!$Label.CX_LibraryCoreLeadHDLogo}" titleCopy="Minimize Clutter, Maximize Savings" phoneNum="{!relatedTo.RefPhone__c}" imgPathFull="{!$Label.CX_LibraryEOQHomeOrgHeroD}" imgPathMobile="{!$Label.CX_LibraryEOQHomeOrgHeroM}" imgPathDivider="{!$Label.CX_LibraryCTQDivider}" phoneIcon="{!$Label.CX_LibraryCTQPhoneIcon}" ></c:pvfc_Header_08>
+                        <!--===============HEADER SECTION===================--> 
+                          
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Greeting_04 custFirstName="{!relatedTo.FirstName__c}" greetingsCopy="It’s not too late to move forward with a perfect storage solution for your home. Now is the perfect opportunity to continue with your project quote."></c:pvfc_Greeting_04>
+                        <!--===============GREETING SECTION===================--> 
+                        
+                        <!--===============GREETING SECTION===================-->  
+                        <c:pvfc_Text_Line_01 greetingsCopy="Call your Design Consultant at:"  phoneNum="{!relatedTo.RefPhone__c}"></c:pvfc_Text_Line_01>
+                        <!--===============GREETING SECTION===================-->
+
+                        <!--===============PROGRESS BAR SECTION===================-->
+                        <c:pvfc_ImageResponsive imageDesktopURL="{!$Label.CX_img_HDIS_ProgressBar_2_D}" imageMobileURL="{!$Label.CX_img_HDIS_ProgressBar_2_M}" imageAlt="Your Journey - You're on Step 2. Finalize & Purchase: Finalize Design and Purchase." />
+                        <!--===============/PROGRESS BAR SECTION===================-->
+                          
+                        <!--===============TAKE ADVANTAGE SECTION===================--> 
+                        <c:pvfc_Take_Advantage_1Row_V2 OfferPromoImageD="{!$Label.CX_LibraryEOQHomeOrgPromoD}" TagCopy="Take Advantage of a Great Deal!" OfferPromoImageM="{!$Label.CX_LibraryEOQHomeOrgPromoM}" buttonImg="{!$Label.CX_LibraryEOQCallToMoveForwardCTA}" buttonUrl="https://www.homedepot.com/services/c/home-organization/22ef3e97b" TagIcon="{!$Label.CX_LibraryCouponIconOrange}" OfferHeaderText="{!relatedTo.SourceName__c} off Custom Closets & Home Storage" OfferDescText="To move forward with your quote, call your Design Consultant:" SalesNumber="{!relatedTo.AltPhone__c}" SalesName="{!relatedTo.BranchName__c}" OfferDateDesc="{!relatedTo.RefString__c}"></c:pvfc_Take_Advantage_1Row_V2>
+                        <!--===============TAKE ADVANTAGE SECTION===================--> 
+                    
+                        <!--===============WHY HOME DEPOT SECTION===================--> 
+                        <c:pvfc_ValueProps_04 ApplyNowURL="{!relatedTo.RefURL__c}" iconOne="{!$Label.CX_LibraryCoreAffordableIcon}" iconOneHeader="Affordable" iconOneDescription="We offer a wide range of affordable financing options, including The Home Depot Consumer Credit Card and The Home Depot Project Loan." iconTwo="{!$Label.CX_LibraryCoreBlackHomeDepotIcon}" iconTwoHeader="Backed by The Home Depot" iconTwoDescription="All labor, products and installation for your project are 100% backed by The Home Depot." iconThree="{!$Label.CX_LibraryCoreLicensedIcon}" iconThreeHeader="Trusted Professionals" iconThreeDescription="All of our providers are local, licensed and insured. We background check everyone who will come into your home." iconFour="{!$Label.CX_LibraryEOQCustomStorage}" iconFourHeader="Custom Storage Solutions" exteriorstoreImgFull="{!$Label.CX_LibraryCoreStoreExteriorD}" iconFourDescription="Home Depot offers custom storage solutions for every room, including closets, garage, pantry, mudroom, laundry room, home office and more." WhyHomeDepotDivider="{!$Label.CX_LibraryCoreWhyHomeDepotDivider}" WhyHomeDepotDividerM="{!$Label.CX_LibraryCoreWhyHomeDepotDividerM}" ></c:pvfc_ValueProps_04>
+                        <!--===============WHY HOME DEPOT SECTION===================--> 
+                    
+                       
+                        <!--===============QUICK LINKS SECTION===================-->
+                        <c:pvfc_QuickLinks_Promotions ql_01_copy="Licenses" ql_02_copy="Unsubscribe" ql_03_copy="Home Depot Home Organization Services" ql_03_URL="https://www.homedepot.com/services/c/home-organization/22ef3e97b?vfrom=tile&hp=b" custEmail="{!relatedTo.ToEmail__c}"></c:pvfc_QuickLinks_Promotions>
+                        <!--===============QUICK LINKS SECTION===================-->
+                          
+                          
+                        <!--===============FOOTER SECTION===================--> 
+                        <c:pvfc_Footer_05 legalCopy1="Receive {!relatedTo.SourceName__c} off the total product and installation cost on installed garage and closet organization systems. Offer valid from {!relatedTo.LongText__c} only at participating U.S. The Home Depot stores. Minimum purchase of $1500 required. Minimum qualifying purchase value excludes taxes. Some restrictions apply. Discount not valid for prior purchases. Offer not valid in all markets. Ask an associate for details and license numbers. Home Depot local Service Providers are background checked, insured, licensed and/or registered. License or registration numbers held by or on behalf of Home Depot U.S.A., Inc. are available at http://homedepot.com/licensenumbers or at the Customers Notice board in The Home Depot store. State specific licensing information includes: AL 51289, 1924; AK 25084; AZ ROC252435, ROC092581; AR 228160518; CA 602331; CT HIC.533772; DC 420214000109, 410517000372; FL CRC046858, CGC1514813; GA RBCO005730, GCCO005540; HI CT-22120; ID RCE-19683; IA C091302; LA 43960, 557308, 883162; MD 85434, 42144; MA 112785, CS-107774; MI 2101089942, 2102119069; MN BC147263; MS 22222-MC; MT 37730; NE 26085; NV 38686; NJ 13VH09277500; NM 86302; NC 31521; ND 29073; OR 95843; The Home Depot U.S.A., Inc. is a Registered General Contractor in Rhode Island and its Registration Number is 9480; SC GLG110120; TN 47781; UT 286936-5501; VA 2705-068841; WA HOMED088RH; WV WV036104; WI 1046796. *With credit approval for qualifying purchases made on The Home Depot or EXPO Design Center Consumer Credit Card. APR: 17.99% - 26.99%. Minimum interest charge: $2. See card agreement for details including APR applicable to you. Offer is only valid for consumer accounts; 6 months everyday credit offer is subject to change without notice; see store for details." ></c:pvfc_Footer_05>
+                        <!--===============FOOTER SECTION===================-->
+
+                        <!--===============PIXEL TRACKING===================-->
+                        <c:Email_Tracking_VFC emailTrackingId="{!relatedTo.emailTrackingId__c}" emailApiUrl="{!$Label.EmailTrackingAPIURL}"> </c:Email_Tracking_VFC>
+                        <!--===============PIXEL TRACKING===================-->
+
+<!--================================== STARTER CONTAINER END ************PLEASE DO NOT TOUCH BELOW************* =================================================================-->                                                                                    
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>   
+<!-- =========================**********************NO CODING BELOW THIS LINE********************************=============================== -->                        
+</table>
+</td>
+<td class="hide-for-small">&zwnj;</td>
+</tr>
+</table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
