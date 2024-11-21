@@ -1,10 +1,13 @@
 <apex:component controller="EmailAddToCalendarLinks" access="global">
-    <apex:attribute name="Copy" description="text" type="String" />
+    <apex:attribute name="Copy" description="Text to be displayed above the links." type="String" />
     <apex:attribute name="eventTitle" description="Title to be used on Calendar Event" type="String" assignTo="{!evtTitle}"/>
     <apex:attribute name="eventDescription" description="Text to be used in the body of the Calendar Event" type="String" assignTo="{!evtDescription}"/>
     <apex:attribute name="eventDate" description="Date of the Event" type="Date" assignTo="{!evtDate}"/>
     <apex:attribute name="eventStartTime" description="Start Time of the Event" type="Time" assignTo="{!evtStartTime}"/>
     <apex:attribute name="eventEndTime" description="End Time of the Event" type="Time" assignTo="{!evtEndTime}"/>
+    <apex:attribute name="eventStartDateTime" description="Start DateTime of the Event (Datetime type)" type="Datetime" assignTo="{!evtStartDateTime}" />
+    <apex:attribute name="eventEndDateTime" description="End DateTime of the Event (Datetime type)" type="Datetime" assignTo="{!evtEndDateTime}" />
+    <apex:attribute name="eventDuration" description="If not end Time or DateTime are proivded you can add the length of the event in minutes" type="Integer" assignTo="{!evtDuration}" />
     <apex:attribute name="eventTimeZone" description="Time Zone of the Event" type="String" assignTo="{!evtTimeZone}"/>
     <apex:attribute name="eventLocation" description="Location of the Event" type="String" assignTo="{!evtLocation}"/>
 
