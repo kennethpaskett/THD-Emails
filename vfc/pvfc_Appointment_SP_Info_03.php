@@ -179,7 +179,7 @@
                                                 style="font-family:Arial, Helvetica, sans-serif; text-align:left; font-size:30px; line-height: 34px; color:#000000; font-weight:bold; padding:0 0 0 0; mso-padding-alt:0 0 0 0;">
                                                 <b>
                                                     <apex:outputText value="{0,date,EEEE, MMM' 'dd', 'yyyy}">
-                                                        <apex:Param value="{!jobDate - (4/24)}" />
+                                                        <apex:Param value="{!jobDate}" />
                                                     </apex:OutputText>
                                                 </b>
                                             </td>                                            
